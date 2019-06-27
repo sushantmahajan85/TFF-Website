@@ -1,0 +1,32 @@
+.composition{
+    position: relative;
+
+    &-all{
+        
+width:55%;
+position: absolute;
+border-radius: 2px;
+box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.397);
+z-index: 10;
+outline-offset: 1.1rem;
+    }
+}
+.composition-all:hover{
+    z-index: 20;
+    transform: scale(1.05);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.473);
+    outline: 1rem solid $medium-green;
+}
+
+.img-1{
+    left: 0;
+    top: -2rem;
+    }
+        .img-2{
+    right:0;
+    top:3rem; 
+        }
+        .img-3{
+    top:8rem;
+    left:20%;
+        }

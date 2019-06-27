@@ -1,0 +1,153 @@
+   
+  /*.logo-box{
+          position: absolute;
+          top: 30px;
+          left: 30px;        
+  } */
+  .logo {
+    height: 3.5rem;
+    position: absolute;
+    top: 3rem;
+    left: 3rem; }
+  
+  .logo:hover {
+    animation-name: moveinrightsmall;
+    animation-duration: 0.5s; }
+  
+  .heading {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular'
+   'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+  
+  .main-heading {
+    color: #ffffff;
+    text-transform: uppercase; }
+  
+  .main-heading-upr {
+    letter-spacing: 3.5rem;
+    display: block;
+    font-weight: 700;
+    font-size: 5.5rem;
+    animation: moveinleft 1s; }
+  
+  .main-heading-lwr {
+    display: block;
+    letter-spacing: 1.7rem;
+    font-weight: 700;
+    animation: moveinright 1s;
+    margin-bottom: 4rem; }
+  
+    .heading-secondary{
+
+background-image: linear-gradient(to right,
+#7ed56f,#55c57a);
+display:inline-block;
+font-weight: 700;
+font-size: 3.5rem;
+-webkit-background-clip: text;
+color: transparent;
+text-transform: uppercase;
+font-family: $family;
+padding-left: 1rem;
+padding-bottom: 6rem;
+
+  
+  &:hover{
+    transform: skew(5deg,2deg) scale(1.1);
+    text-shadow: 1rem 3rem 5rem 
+    rgba(0, 0, 0, 0.349);
+
+  } 
+
+ }
+ .heading-main-small{
+   text-transform: uppercase;
+   
+   font-weight: 700;
+   font-size: 1.6rem;
+   color: #525151;
+   margin-bottom: 2rem;
+
+ }
+ .paragraph{
+   font-size: 1.6rem;
+  font-family:$family;
+   color: #414040;
+   &:not(:last-child){
+     margin-bottom: 3rem;
+   }
+ }
+ .btn-link{
+   color: #7ed56f;
+   font-size: 1.6rem;
+ }
+   .section_pic{
+     padding: 30rem 0;
+     background-image: url(../img/raul-angel-1532359-unsplash.jpg);
+     background-size: cover;
+    background-position: center;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+  }
+
+     .section_box_1{
+       background-color:#ffffffe8;
+       padding: 2.5rem;
+       text-align: center;
+       font-size: 1.5rem;
+       margin-top: -14rem;
+       
+       border-radius: 4px;
+       
+       
+     }
+     .section_box_2{
+      background-color:#ffffffe8;
+      padding: 2.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      margin-top: -14rem;
+      
+      border-radius: 4px;
+    }
+    .section_box_3{
+      background-color:#ffffffe8;
+      padding: 2.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      margin-top: -14rem;
+      
+      border-radius: 4px;
+    }
+    .section_box_4{
+      background-color:#ffffffe8;
+      padding: 2.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      margin-top: -14rem;
+      
+      border-radius: 4px;
+    }
+    .section_icon{
+      font-size: 6.7rem;
+      margin-bottom: 0.9rem;
+      background-image: linear-gradient(to right,#7ed56f,#55c57a);
+display:inline-block;
+-webkit-background-clip: text;
+color: transparent;
+      
+    }
+   [class^="section_box_"]{
+     transform: skewY(7deg);
+     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
+     transition: all 0.3sec;
+     &:hover{
+       box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
+       transform: translateY(-1rem) scale(1.1) skewY(7deg);
+     }
+   }
