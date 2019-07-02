@@ -21,4 +21,11 @@
         margin-right: 6rem;
     }
 }
+.col-1-of-3{
+    width: 34rem;
+    float:left;
+    &:not(:last-child){
+        margin-right: 6rem;
+    }
+}
 }
