@@ -92,7 +92,7 @@ padding-bottom: 6rem;
      background-size: cover;
     background-position: center;
   transform: skewY(-7deg);
-  margin-top: -10rem;
+  margin-top: -15rem;
   }
 
      .section_box_1{
@@ -145,7 +145,7 @@ color: transparent;
    [class^="section_box_"]{
      transform: skewY(7deg);
      box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
-     transition: all 0.3sec;
+     transition: all 0.2s;
      &:hover{
        box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
        transform: translateY(-1rem) scale(1.1) skewY(7deg);
@@ -201,17 +201,27 @@ letter-spacing: 0.1rem;
      text-align: center;
      color:whitesmoke;
      margin-right: 10rem;
-     
+     border-bottom: 1px #eeeeee solid;
      
     }
     .location_text{
-      color:whitesmoke;
+      color:grey;
       display: inline-block;
       text-align: center;
+      
     }
     .patiala{
 display: block;
 text-align: center;
+
+    }
+    
+    .text{
+      position: absolute;
+      top: -4.2rem;
+    }
+    .text-mini{
+      position: relative;
     }
     .team_section{
       background-color: #f7f7f7;
@@ -236,31 +246,52 @@ text-align: center;
         padding-bottom: 6rem;
     
     }
-  .box-1{
+  .square-box-1{
     background-color:#ffffffe8;
     padding: 12rem;
     text-align: center;
     font-size: 1.5rem;
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
     border-radius: 4px;
+    transition: all 0.2s;
+    &:hover{
+      box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
+    transform: translateY(-1rem) scale(1.1);
+    }
   }
-  .box-2{
+  .square-box-2{
+    background-image: url(../img/logo_2018.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
     background-color:#ffffffe8;
     padding: 12rem;
     text-align: center;
     font-size: 1.5rem;
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
+    transition: all 0.2s;
+    border-radius: 4px;
+    &:hover{
+      box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
+    transform: translateY(-1rem) scale(1.1);
+    }
+  }
+  .square-box-3{
+    background-image: url(../img/logo_2017.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:#ffffffe8;
+    padding: 12rem;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
+transition: all 0.2s;
     
     border-radius: 4px;
-  }
-  .box-3{
-    background-color:#ffffffe8;
-    padding: 12rem;
-    text-align: center;
-    font-size: 1.5rem;
-    box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
-
-    
-    border-radius: 4px;
+    &:hover{
+      box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
+    transform: translateY(-1rem) scale(1.1);
+    }
   }
   
