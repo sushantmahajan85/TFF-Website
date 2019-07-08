@@ -176,9 +176,11 @@ color: transparent;
    .footer{
      background-color: #333333;
      padding: 15rem 0;
-     
+     @include respond (phone){
+  padding: 10rem 0;
+      
+     }
      font-size: 1.7rem;
-
      &_logo-box{
 margin-top: -11.5rem;
        text-align: center;
@@ -222,7 +224,7 @@ letter-spacing: 0.1rem;
    .location{
      text-align: center;
      color:whitesmoke;
-     margin-right: 10rem;
+     
      border-bottom: 1px #eeeeee solid;
      
     }
@@ -241,6 +243,11 @@ text-align: center;
     .text{
       position: absolute;
       top: -4.2rem;
+      text-align: center;
+      @include respond (phone){
+        margin-top: 10rem;
+        
+       }
     }
     .text-mini{
       position: relative;

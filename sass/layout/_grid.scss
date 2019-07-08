@@ -1,32 +1,53 @@
 .row{
     max-width: 114rem;
     margin: 0 auto;
-    &:not(:last-child){
-        margin-bottom: $gutter-horizontal;
     @include clearfix;
+    &:not(:last-child){
+        margin-bottom: 8rem;
+   }
+   
+   @include respond(tab-port){
+       max-width: 60rem;
+   }
+   @include respond(phone){
+       max-width: 50rem;
+   }
 }
-    
+
     .col-1-of-2{
-        width:54rem;
+    
+       width:54rem;
+        
           float: left;
           &:not(:last-child){
+
               margin-right: 6rem;
+              @include respond (phone){
+                margin-right: 0;
+               }
           }
         
         
 }
 .col-1-of-4{
-    width: 24rem;
+    margin: 0 auto;
+   max-width: 24rem;
     float:left;
     &:not(:last-child){
         margin-right: 6rem;
+        @include respond (phone){
+            margin-right: 0;
     }
 }
+}
 .col-1-of-3{
+    margin: 0 auto;
     width: 34rem;
     float:left;
     &:not(:last-child){
         margin-right: 6rem;
+        @include respond (phone){
+            margin-right: 0;
     }
-}
+    }
 }
