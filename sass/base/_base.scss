@@ -25,7 +25,10 @@
     background-size: cover;
     padding: 3rem;
     @include respond(tab-port){
-      padding: 0;
+      padding: 1rem;
     }
+    @include respond (phone){
+      padding: 0.2rem;
+}
   }
   

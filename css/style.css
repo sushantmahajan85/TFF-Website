@@ -24,7 +24,10 @@ body {
   padding: 3rem; }
   @media (max-width: 56.25em) {
     body {
-      padding: 0; } }
+      padding: 1rem; } }
+  @media (max-width: 37.5em) {
+    body {
+      padding: 0.2rem; } }
 
 .row {
   max-width: 114rem;
@@ -226,7 +229,7 @@ body {
   font-size: 1.7rem; }
   @media (max-width: 37.5em) {
     .footer {
-      padding: 10rem 0; } }
+      padding: 10rem 0 4.5rem 0; } }
   .footer_logo-box {
     margin-top: -11.5rem;
     text-align: center;
@@ -235,12 +238,19 @@ body {
     height: auto;
     width: 12rem; }
   .footer_list {
-    list-style: none; }
+    list-style: none;
+    text-align: center; }
   .footer_item {
     display: inline-block;
     letter-spacing: 0.1rem; }
+    @media (max-width: 37.5em) {
+      .footer_item {
+        letter-spacing: 0; } }
     .footer_item:not(:last-child) {
       margin-right: 3rem; }
+      @media (max-width: 37.5em) {
+        .footer_item:not(:last-child) {
+          margin-right: 1rem; } }
   .footer_link:link, .footer_link:visited {
     text-decoration: none;
     text-transform: uppercase;

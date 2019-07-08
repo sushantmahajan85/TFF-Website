@@ -177,7 +177,7 @@ color: transparent;
      background-color: #333333;
      padding: 15rem 0;
      @include respond (phone){
-  padding: 10rem 0;
+  padding: 10rem 0 4.5rem 0;
       
      }
      font-size: 1.7rem;
@@ -196,13 +196,19 @@ width: 12rem;
      }
      &_list{
 list-style: none;
-
+text-align: center;
      }
      &_item{
 display: inline-block;
 letter-spacing: 0.1rem;
+@include respond (phone){
+  letter-spacing: 0;
+}
 
-&:not(:last-child){margin-right: 3rem;}
+&:not(:last-child){margin-right: 3rem;
+  @include respond (phone){
+    margin-right: 1rem;
+}}
      }
      &_link{
 &:link,&:visited{
