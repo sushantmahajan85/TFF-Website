@@ -13,7 +13,7 @@
         font-size: 50%;
       }
       @include respond(phone){
-        font-size: 40.625%;
+        font-size: 45.625%;
       }
      
       @include respond(big-desktop){
@@ -23,5 +23,9 @@
   
   body {
     background-size: cover;
-    padding: 3rem; }
+    padding: 3rem;
+    @include respond(tab-port){
+      padding: 0;
+    }
+  }
   

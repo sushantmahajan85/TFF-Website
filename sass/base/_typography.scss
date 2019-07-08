@@ -33,14 +33,29 @@
     display: block;
     font-weight: 700;
     font-size: 5.5rem;
-    animation: moveinleft 1s; }
+    animation: moveinleft 1s;
+   @include respond (tab-port){
+     letter-spacing: 2.5rem;
+   }
+   @include respond (phone){
+    letter-spacing: 2rem;
+  }
+  }
   
   .main-heading-lwr {
     display: block;
     letter-spacing: 1.7rem;
     font-weight: 700;
     animation: moveinright 1s;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    @include respond (tab-port){
+      letter-spacing: 1.5rem;
+    }
+    @include respond (phone){
+     letter-spacing: 1.1rem;
+   }
+  }
+
   
     .heading-secondary{
 
@@ -55,7 +70,14 @@ text-transform: uppercase;
 font-family: $family;
 padding-left: 1rem;
 padding-bottom: 6rem;
-
+@include respond (tab-port){
+  font-weight: 500;
+  padding-bottom: 3rem;
+}
+@include respond (phone){
+ font-weight: 300;
+ padding-bottom: 2rem;
+}
   
   &:hover{
     transform: skew(5deg,2deg) scale(1.1);
