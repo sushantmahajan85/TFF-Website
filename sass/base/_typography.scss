@@ -321,6 +321,10 @@ text-align: center;
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
     transition: all 0.2s;
     border-radius: 4px;
+    @include respond (tab-port){
+      padding: 5rem 5rem 23rem 5rem;
+      
+     }
     &:hover{
       box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
     transform: translateY(-1rem) scale(1.1);
