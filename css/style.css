@@ -335,7 +335,7 @@ body {
   transition: all 0.2s; }
   @media (max-width: 56.25em) {
     .square-box-1 {
-      padding: 5rem 2rem 29rem 20rem; } }
+      padding: 5rem 10rem 25rem 1rem; } }
   .square-box-1:hover {
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
     transform: translateY(-1rem) scale(1.1); }
@@ -357,7 +357,7 @@ body {
   border-radius: 4px; }
   @media (max-width: 56.25em) {
     .square-box-2 {
-      padding: 5rem 2rem 29rem 2rem; } }
+      padding: 5rem 10rem 25rem 1rem; } }
   .square-box-2:hover {
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
     transform: translateY(-1rem) scale(1.1); }
@@ -376,7 +376,7 @@ body {
   border-radius: 4px; }
   @media (max-width: 56.25em) {
     .square-box-3 {
-      padding: 5rem 2rem 29rem 2rem; } }
+      padding: 5rem 10rem 25rem 1rem; } }
   .square-box-3:hover {
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
     transform: translateY(-1rem) scale(1.1); }
