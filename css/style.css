@@ -40,23 +40,30 @@ body {
   @media (max-width: 56.25em) {
     .row {
       max-width: 60rem; } }
-  @media (max-width: 37.5em) {
+  @media (max-width: 56.25em) {
     .row {
-      max-width: 50rem; } }
+      width: 50rem; } }
 
 .col-1-of-2 {
   width: 54rem;
   float: left; }
   .col-1-of-2:not(:last-child) {
     margin-right: 6rem; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .col-1-of-2:not(:last-child) {
-        margin-right: 0; } }
+        margin-right: 0;
+        margin-bottom: 6rem; } }
+  @media (max-width: 56.25em) {
+    .col-1-of-2 {
+      width: 100% !important; } }
 
 .col-1-of-4 {
   margin: 0 auto;
   max-width: 24rem;
   float: left; }
+  @media (max-width: 56.25em) {
+    .col-1-of-4 {
+      width: 100% !important; } }
   .col-1-of-4:not(:last-child) {
     margin-right: 6rem; }
     @media (max-width: 37.5em) {
@@ -64,14 +71,17 @@ body {
         margin-right: 0; } }
 
 .col-1-of-3 {
-  margin: 0 auto;
   width: 34rem;
   float: left; }
+  @media (max-width: 56.25em) {
+    .col-1-of-3 {
+      width: 100% !important; } }
   .col-1-of-3:not(:last-child) {
     margin-right: 6rem; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .col-1-of-3:not(:last-child) {
-        margin-right: 0; } }
+        margin-right: 0;
+        margin-bottom: 6rem; } }
 
 /*.logo-box{
           position: absolute;
@@ -173,12 +183,12 @@ body {
   background-size: cover;
   background-position: center;
   transform: skewY(-7deg);
-  margin-top: -15rem; }
+  margin-top: -15rem;
+  text-align: center; }
 
 .section_box_1 {
   background-color: #ffffffe8;
   padding: 2.5rem;
-  text-align: center;
   font-size: 1.5rem;
   margin-top: -14rem;
   border-radius: 4px; }
@@ -219,6 +229,9 @@ body {
   transform: skewY(7deg);
   box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
   transition: all 0.2s; }
+  @media (max-width: 56.25em) {
+    [class^="section_box_"] {
+      margin: 2rem; } }
   [class^="section_box_"]:hover {
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
     transform: translateY(-1rem) scale(1.1) skewY(7deg); }
@@ -240,6 +253,9 @@ body {
   .footer_list {
     list-style: none;
     text-align: center; }
+    @media (max-width: 56.25em) {
+      .footer_list {
+        display: block; } }
   .footer_item {
     display: inline-block;
     letter-spacing: 0.1rem; }
@@ -317,6 +333,9 @@ body {
   .square-box-1:hover {
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
     transform: translateY(-1rem) scale(1.1); }
+
+.centre {
+  text-align: center; }
 
 .square-box-2 {
   background-image: url(../img/logo_2018.jpeg);

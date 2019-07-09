@@ -5,13 +5,12 @@
     &:not(:last-child){
         margin-bottom: 8rem;
    }
-   
-   @include respond(tab-port){
-       max-width: 60rem;
-   }
-   @include respond(phone){
-       max-width: 50rem;
-   }
+   @include respond (tab-port){
+    max-width: 60rem;
+}
+@include respond (tab-port){
+    width: 50rem;
+}
 }
 
     .col-1-of-2{
@@ -22,9 +21,13 @@
           &:not(:last-child){
 
               margin-right: 6rem;
-              @include respond (phone){
+              @include respond (tab-port){
                 margin-right: 0;
+                margin-bottom: 6rem;
+              }
                }
+               @include respond (tab-port){
+                width: 100% !important;
           }
         
         
@@ -33,6 +36,9 @@
     margin: 0 auto;
    max-width: 24rem;
     float:left;
+    @include respond (tab-port){
+        width: 100% !important;
+  }
     &:not(:last-child){
         margin-right: 6rem;
         @include respond (phone){
@@ -41,13 +47,21 @@
 }
 }
 .col-1-of-3{
-    margin: 0 auto;
+    
     width: 34rem;
     float:left;
+    @include respond (tab-port){
+        width: 100% !important;
+  }
     &:not(:last-child){
         margin-right: 6rem;
-        @include respond (phone){
+        @include respond (tab-port){
             margin-right: 0;
+            margin-bottom: 6rem;
+            
+            
     }
     }
+
+
 }
