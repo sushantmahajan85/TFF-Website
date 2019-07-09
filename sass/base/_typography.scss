@@ -172,7 +172,7 @@ color: transparent;
      transform: skewY(7deg);
      box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
      transition: all 0.2s;
-     @include respond (tab-port){
+     @include respond (tab-land){
       margin: 2rem;
 }
      &:hover{
@@ -274,11 +274,12 @@ text-align: center;
       background-color: #f7f7f7;
       padding: 30rem 0 18rem 0;
       margin-top: -20vh;
+      @include respond(tab-land){
+        padding: 40rem 0 15rem 0;
+      }
       @include respond (tab-port){
         padding: 30rem 0 15rem 0;
-        
        }
-
     }
     .team_section-meet{
       
@@ -304,6 +305,9 @@ text-align: center;
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
     border-radius: 4px;
     transition: all 0.2s;
+    @include respond(tab-land){
+      padding: 5rem 10rem 29rem 10rem;
+    }
     @include respond (tab-port){
       padding: 5rem 7rem 25rem 7rem;
       
@@ -328,6 +332,9 @@ text-align: center;
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
     transition: all 0.2s;
     border-radius: 4px;
+    @include respond(tab-land){
+      padding: 5rem 10rem 29rem 10rem;
+    }
     @include respond (tab-port){
       padding: 5rem 7rem 25rem 7rem;
       
@@ -348,6 +355,9 @@ text-align: center;
     font-size: 1.5rem;
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
 transition: all 0.2s;
+@include respond(tab-land){
+  padding: 5rem 10rem 29rem 10rem;
+}
 @include respond (tab-port){
   padding:  5rem 7rem 25rem 7rem;
   

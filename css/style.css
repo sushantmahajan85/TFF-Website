@@ -8,13 +8,16 @@ html {
   font-family: 'Montserrat', sans-serif; }
   @media (max-width: 75em) {
     html {
-      font-size: 56.25%; } }
+      font-size: 60.25%; } }
   @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
   @media (max-width: 37.5em) {
     html {
-      font-size: 45.625%; } }
+      font-size: 43.625%; } }
+  @media (max-width: 22.2em) {
+    html {
+      font-size: 35.625%; } }
   @media (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -39,6 +42,9 @@ body {
     margin-bottom: 8rem; }
   @media (max-width: 56.25em) {
     .row {
+      max-width: 65rem; } }
+  @media (max-width: 56.25em) {
+    .row {
       max-width: 60rem; } }
   @media (max-width: 37.5em) {
     .row {
@@ -49,11 +55,11 @@ body {
   float: left; }
   .col-1-of-2:not(:last-child) {
     margin-right: 6rem; }
-    @media (max-width: 56.25em) {
+    @media (max-width: 75em) {
       .col-1-of-2:not(:last-child) {
         margin-right: 0;
         margin-bottom: 6rem; } }
-  @media (max-width: 56.25em) {
+  @media (max-width: 75em) {
     .col-1-of-2 {
       width: 100% !important; } }
 
@@ -61,24 +67,25 @@ body {
   margin: 0 auto;
   max-width: 24rem;
   float: left; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 75em) {
     .col-1-of-4 {
       width: 100% !important; } }
   .col-1-of-4:not(:last-child) {
     margin-right: 6rem; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 75em) {
       .col-1-of-4:not(:last-child) {
-        margin-right: 0; } }
+        margin-right: 0;
+        margin-bottom: 6rem; } }
 
 .col-1-of-3 {
   width: 34rem;
   float: left; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 75em) {
     .col-1-of-3 {
-      width: 100% !important; } }
+      width: 100%; } }
   .col-1-of-3:not(:last-child) {
     margin-right: 6rem; }
-    @media (max-width: 56.25em) {
+    @media (max-width: 75em) {
       .col-1-of-3:not(:last-child) {
         margin-right: 0;
         margin-bottom: 6rem; } }
@@ -232,7 +239,7 @@ body {
   transform: skewY(7deg);
   box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
   transition: all 0.2s; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 75em) {
     [class^="section_box_"] {
       margin: 2rem; } }
   [class^="section_box_"]:hover {
@@ -310,6 +317,9 @@ body {
   background-color: #f7f7f7;
   padding: 30rem 0 18rem 0;
   margin-top: -20vh; }
+  @media (max-width: 75em) {
+    .team_section {
+      padding: 40rem 0 15rem 0; } }
   @media (max-width: 56.25em) {
     .team_section {
       padding: 30rem 0 15rem 0; } }
@@ -336,6 +346,9 @@ body {
   box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
   border-radius: 4px;
   transition: all 0.2s; }
+  @media (max-width: 75em) {
+    .square-box-1 {
+      padding: 5rem 10rem 29rem 10rem; } }
   @media (max-width: 56.25em) {
     .square-box-1 {
       padding: 5rem 7rem 25rem 7rem; } }
@@ -358,6 +371,9 @@ body {
   box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
   transition: all 0.2s;
   border-radius: 4px; }
+  @media (max-width: 75em) {
+    .square-box-2 {
+      padding: 5rem 10rem 29rem 10rem; } }
   @media (max-width: 56.25em) {
     .square-box-2 {
       padding: 5rem 7rem 25rem 7rem; } }
@@ -377,6 +393,9 @@ body {
   box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
   transition: all 0.2s;
   border-radius: 4px; }
+  @media (max-width: 75em) {
+    .square-box-3 {
+      padding: 5rem 10rem 29rem 10rem; } }
   @media (max-width: 56.25em) {
     .square-box-3 {
       padding: 5rem 7rem 25rem 7rem; } }
@@ -443,10 +462,10 @@ body {
   margin-top: -30vh; }
   @media (max-width: 75em) {
     .section-about {
-      padding: 29rem 0 60rem 0; } }
+      padding: 50rem 0 75rem 0; } }
   @media (max-width: 56.25em) {
     .section-about {
-      padding: 30rem 0 55rem 0; } }
+      padding: 45rem 0 55rem 0; } }
   @media (max-width: 37.5em) {
     .section-about {
       padding: 35rem 0 50rem 0; } }
@@ -532,7 +551,7 @@ body {
   position: relative;
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
   backface-visibility: hidden; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 75em) {
     .header {
       clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
       background-size: 100% 100%; } }

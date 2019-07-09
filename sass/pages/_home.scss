@@ -3,10 +3,10 @@
     padding: 34rem 0 34rem 0;
     margin-top: -30vh;
     @include respond (tab-land){
-        padding: 29rem 0 60rem 0;
+        padding: 50rem 0 75rem 0;
       }
     @include respond (tab-port){
-        padding: 30rem 0 55rem 0;
+        padding: 45rem 0 55rem 0;
       }
       @include respond (phone){
         padding: 35rem 0 50rem 0;
