@@ -111,11 +111,14 @@ padding-bottom: 6rem;
    .section_pic{
      padding: 30rem 0;
      background-image: url(../img/raul-angel-1532359-unsplash.jpg);
-     background-size: 100% 100%;
+     background-size: cover;
     background-position: center;
   transform: skewY(-7deg);
   margin-top: -15rem;
   text-align: center;
+  @include respond (tab-port){
+    background-size: 100% 100%;
+  }
   }
 
      .section_box_1{
@@ -269,7 +272,7 @@ text-align: center;
     }
     .team_section{
       background-color: #f7f7f7;
-      padding: 30rem 0 35rem 0;
+      padding: 30rem 0 18rem 0;
       margin-top: -20vh;
       @include respond (tab-port){
         padding: 30rem 0 15rem 0;
