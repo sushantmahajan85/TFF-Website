@@ -307,6 +307,9 @@ body {
   background-color: #f7f7f7;
   padding: 30rem 0 35rem 0;
   margin-top: -20vh; }
+  @media (max-width: 56.25em) {
+    .team_section {
+      padding: 30rem 0 15rem 0; } }
 
 .team_section-meet {
   text-align: center; }

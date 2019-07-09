@@ -271,7 +271,10 @@ text-align: center;
       background-color: #f7f7f7;
       padding: 30rem 0 35rem 0;
       margin-top: -20vh;
-      
+      @include respond (tab-port){
+        padding: 30rem 0 15rem 0;
+        
+       }
 
     }
     .team_section-meet{
