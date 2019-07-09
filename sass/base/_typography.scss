@@ -116,13 +116,15 @@ padding-bottom: 6rem;
   transform: skewY(-7deg);
   margin-top: -15rem;
   text-align: center;
+  
   @include respond (tab-port){
     background-size: 100% 100%;
+    padding: 20rem 0;
   }
   }
 
      .section_box_1{
-       background-color:#ffffffe8;
+       background-color:rgba(255, 255, 255, 0.918);
        padding: 2.5rem;
        
        font-size: 1.5rem;
@@ -133,7 +135,7 @@ padding-bottom: 6rem;
        
      }
      .section_box_2{
-      background-color:#ffffffe8;
+      background-color:rgba(255, 255, 255, 0.918);
       padding: 2.5rem;
       text-align: center;
       font-size: 1.5rem;
@@ -142,7 +144,7 @@ padding-bottom: 6rem;
       border-radius: 4px;
     }
     .section_box_3{
-      background-color:#ffffffe8;
+      background-color:rgba(255, 255, 255, 0.918);
       padding: 2.5rem;
       text-align: center;
       font-size: 1.5rem;
@@ -151,7 +153,7 @@ padding-bottom: 6rem;
       border-radius: 4px;
     }
     .section_box_4{
-      background-color:#ffffffe8;
+      background-color:rgba(255, 255, 255, 0.918);
       padding: 2.5rem;
       text-align: center;
       font-size: 1.5rem;
@@ -175,6 +177,7 @@ color: transparent;
      @include respond (tab-land){
       margin: 2rem;
 }
+
      &:hover{
        box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
        transform: translateY(-1rem) scale(1.1) skewY(7deg);
