@@ -40,9 +40,9 @@ body {
   @media (max-width: 56.25em) {
     .row {
       max-width: 60rem; } }
-  @media (max-width: 56.25em) {
+  @media (max-width: 37.5em) {
     .row {
-      width: 50rem; } }
+      max-width: 50rem; } }
 
 .col-1-of-2 {
   width: 54rem;
@@ -180,7 +180,7 @@ body {
 .section_pic {
   padding: 30rem 0;
   background-image: url(../img/raul-angel-1532359-unsplash.jpg);
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   transform: skewY(-7deg);
   margin-top: -15rem;
@@ -357,7 +357,7 @@ body {
   border-radius: 4px; }
   @media (max-width: 56.25em) {
     .square-box-2 {
-      padding: 5rem 2rem 29rem 20rem; } }
+      padding: 5rem 2rem 29rem 2rem; } }
   .square-box-2:hover {
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
     transform: translateY(-1rem) scale(1.1); }
@@ -376,7 +376,7 @@ body {
   border-radius: 4px; }
   @media (max-width: 56.25em) {
     .square-box-3 {
-      padding: 5rem 2rem 29rem 20rem; } }
+      padding: 5rem 2rem 29rem 2rem; } }
   .square-box-3:hover {
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
     transform: translateY(-1rem) scale(1.1); }
@@ -525,7 +525,7 @@ body {
   background-image: url(../img/new.jpg);
   height: 95vh;
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
   position: relative;
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
   backface-visibility: hidden; }

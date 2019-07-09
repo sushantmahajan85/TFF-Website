@@ -111,7 +111,7 @@ padding-bottom: 6rem;
    .section_pic{
      padding: 30rem 0;
      background-image: url(../img/raul-angel-1532359-unsplash.jpg);
-     background-size: cover;
+     background-size: 100% 100%;
     background-position: center;
   transform: skewY(-7deg);
   margin-top: -15rem;
@@ -326,7 +326,7 @@ text-align: center;
     transition: all 0.2s;
     border-radius: 4px;
     @include respond (tab-port){
-      padding: 5rem 2rem 29rem 20rem;
+      padding: 5rem 2rem 29rem 2rem;
       
      }
     &:hover{
@@ -346,7 +346,7 @@ text-align: center;
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
 transition: all 0.2s;
 @include respond (tab-port){
-  padding: 5rem 2rem 29rem 20rem;
+  padding:  5rem 2rem 29rem 2rem;
   
  }
     border-radius: 4px;

@@ -8,8 +8,8 @@
    @include respond (tab-port){
     max-width: 60rem;
 }
-@include respond (tab-port){
-    width: 50rem;
+@include respond (phone){
+    max-width: 50rem;
 }
 }
 
