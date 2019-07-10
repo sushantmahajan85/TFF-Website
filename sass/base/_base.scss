@@ -1,0 +1,36 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box; }
+    html{
+      font-size: 62.5%;
+      font-family: 'Montserrat', sans-serif;
+      @include respond(tab-land){
+        font-size: 60.25%;
+      }
+     
+      @include respond(tab-port){
+        font-size: 50%;
+      }
+      @include respond(phone){
+        font-size: 43.625%;
+      }
+      @include respond(small-phone){
+        font-size: 35.625%;
+      }
+      @include respond(big-desktop){
+        font-size: 75%;
+        }
+    }
+  
+  body {
+    background-size: cover;
+    padding: 3rem;
+    @include respond(tab-port){
+      padding: 1rem;
+    }
+    @include respond (phone){
+      padding: 0.2rem;
+}
+  }
+  

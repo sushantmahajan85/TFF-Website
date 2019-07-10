@@ -1,0 +1,375 @@
+   
+  /*.logo-box{
+          position: absolute;
+          top: 30px;
+          left: 30px;        
+  } */
+  .logo {
+    height: 3.5rem;
+    position: absolute;
+    top: 3rem;
+    left: 3rem; }
+  
+  .logo:hover {
+    animation-name: moveinrightsmall;
+    animation-duration: 0.5s; }
+  
+  .heading {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular'
+   'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+  
+  .main-heading {
+    color: #ffffff;
+    text-transform: uppercase; }
+  
+  .main-heading-upr {
+    letter-spacing: 3.5rem;
+    display: block;
+    font-weight: 700;
+    font-size: 5.5rem;
+    animation: moveinleft 1s;
+   @include respond (tab-port){
+     letter-spacing: 2.5rem;
+   }
+   @include respond (phone){
+    letter-spacing: 2rem;
+  }
+  }
+  
+  .main-heading-lwr {
+    display: block;
+    letter-spacing: 1.7rem;
+    font-weight: 700;
+    animation: moveinright 1s;
+    margin-bottom: 4rem;
+    @include respond (tab-port){
+      letter-spacing: 1.5rem;
+    }
+    @include respond (phone){
+     letter-spacing: 1.1rem;
+   }
+  }
+
+  
+    .heading-secondary{
+
+background-image: linear-gradient(to right,
+#7ed56f,#55c57a);
+display:inline-block;
+font-weight: 700;
+font-size: 3.5rem;
+-webkit-background-clip: text;
+color: transparent;
+text-transform: uppercase;
+font-family: $family;
+padding-left: 1rem;
+padding-bottom: 6rem;
+@include respond (tab-port){
+  font-weight: 500;
+  padding-bottom: 3rem;
+}
+@include respond (phone){
+ font-weight: 300;
+ padding-bottom: 2rem;
+}
+  
+  &:hover{
+    transform: skew(5deg,2deg) scale(1.1);
+    text-shadow: 1rem 3rem 5rem 
+    rgba(0, 0, 0, 0.349);
+
+  } 
+
+ }
+ .heading-main-small{
+   text-transform: uppercase;
+   
+   font-weight: 700;
+   font-size: 1.6rem;
+   color: #525151;
+   margin-bottom: 2rem;
+
+ }
+ .paragraph{
+   font-size: 1.6rem;
+  font-family:$family;
+   color: #414040;
+   &:not(:last-child){
+     margin-bottom: 3rem;
+   }
+ }
+ .btn-link{
+   color: #7ed56f;
+   font-size: 1.6rem;
+ }
+   .section_pic{
+     padding: 30rem 0;
+     background-image: url(../img/raul-angel-1532359-unsplash.jpg);
+     background-size: cover;
+    background-position: center;
+  transform: skewY(-7deg);
+  margin-top: -15rem;
+  text-align: center;
+  
+  @include respond (tab-port){
+    background-size: 100% 100%;
+    padding: 20rem 0;
+  }
+  }
+
+     .section_box_1{
+       background-color:rgba(255, 255, 255, 0.918);
+       padding: 2.5rem;
+       
+       font-size: 1.5rem;
+       margin-top: -14rem;
+       
+       border-radius: 4px;
+       
+       
+     }
+     .section_box_2{
+      background-color:rgba(255, 255, 255, 0.918);
+      padding: 2.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      margin-top: -14rem;
+      
+      border-radius: 4px;
+    }
+    .section_box_3{
+      background-color:rgba(255, 255, 255, 0.918);
+      padding: 2.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      margin-top: -14rem;
+      
+      border-radius: 4px;
+    }
+    .section_box_4{
+      background-color:rgba(255, 255, 255, 0.918);
+      padding: 2.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      margin-top: -14rem;
+      
+      border-radius: 4px;
+    }
+    .section_icon{
+      font-size: 6.7rem;
+      margin-bottom: 0.9rem;
+      background-image: linear-gradient(to right,#7ed56f,#55c57a);
+display:inline-block;
+-webkit-background-clip: text;
+color: transparent;
+      
+    }
+   [class^="section_box_"]{
+     transform: skewY(7deg);
+     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
+     transition: all 0.2s;
+     @include respond (tab-land){
+      margin: 2rem;
+}
+
+     &:hover{
+       box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
+       transform: translateY(-1rem) scale(1.1) skewY(7deg);
+     }
+   }
+   .footer{
+     background-color: #333333;
+     padding: 15rem 0;
+     @include respond (phone){
+  padding: 10rem 0 4.5rem 0;
+      
+     }
+     font-size: 1.7rem;
+     &_logo-box{
+margin-top: -11.5rem;
+       text-align: center;
+       padding: 5rem;
+     }
+     &_logo{
+height: auto;
+width: 12rem;
+
+     }
+     &_navigation{
+
+     }
+     &_list{
+list-style: none;
+text-align: center;
+border-top: 0.5px solid darkgrey;
+padding: 2rem;
+
+@include respond (tab-port){
+  display: block;
+}
+
+     }
+     &_item{
+display: inline-block;
+letter-spacing: 0.1rem;
+@include respond (phone){
+  letter-spacing: 0;
+
+}
+
+&:not(:last-child){margin-right: 2.5rem;
+  @include respond (phone){
+    margin-right: 1rem;
+}}
+     }
+     &_link{
+&:link,&:visited{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: gray;
+}
+&:hover,&:visited{
+  
+  background-color: whitesmoke;
+  transform: rotate(5deg) scale(1.33);
+  border-radius: 50px;
+  padding: 0.5rem 0.35rem;
+   box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
+}
+     }
+   }
+   
+   .location{
+     text-align: center;
+     color:whitesmoke;
+     
+     
+     
+    }
+    .location_text{
+      color:grey;
+      display: inline-block;
+      text-align: center;
+      
+    }
+    .patiala{
+display: block;
+text-align: center;
+
+    }
+    
+    .text{
+      position: absolute;
+      border-top: 0.5px solid darkgrey;
+      text-align: center;
+      padding: 2rem;
+      
+    }
+    .text-mini{
+      position: relative;
+    }
+    .team_section{
+      background-color: #f7f7f7;
+      padding: 30rem 0 18rem 0;
+      margin-top: -20vh;
+      @include respond(tab-land){
+        padding: 40rem 0 15rem 0;
+      }
+      @include respond (tab-port){
+        padding: 30rem 0 15rem 0;
+       }
+    }
+    .team_section-meet{
+      
+      text-align: center;
+    }
+    .team_section-text{
+      background-image: linear-gradient(to right, #7ed56f, #55c57a);
+        display: inline-block;
+        font-weight: 700;
+        font-size: 3.5rem;
+        -webkit-background-clip: text;
+        color: transparent;
+        text-transform: uppercase;
+        padding-left: 1rem;
+        padding-bottom: 6rem;
+    
+    }
+  .square-box-1{
+    background-color:#ffffffe8;
+    padding: 12rem;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
+    border-radius: 4px;
+    transition: all 0.2s;
+    @include respond(tab-land){
+      padding: 5rem 10rem 29rem 10rem;
+    }
+    @include respond (tab-port){
+      padding: 5rem 7rem 25rem 7rem;
+      
+     }
+    &:hover{
+      box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
+    transform: translateY(-1rem) scale(1.1);
+    }
+  }
+  .centre{
+    text-align: center;
+  }
+  .square-box-2{
+    background-image: url(../img/logo_2018.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:#ffffffe8;
+    padding: 12rem;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
+    transition: all 0.2s;
+    border-radius: 4px;
+    @include respond(tab-land){
+      padding: 5rem 10rem 29rem 10rem;
+    }
+    @include respond (tab-port){
+      padding: 5rem 7rem 25rem 7rem;
+      
+     }
+    &:hover{
+      box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
+    transform: translateY(-1rem) scale(1.1);
+    }
+  }
+  .square-box-3{
+    background-image: url(../img/logo_2017.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:#ffffffe8;
+    padding: 12rem;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
+transition: all 0.2s;
+@include respond(tab-land){
+  padding: 5rem 10rem 29rem 10rem;
+}
+@include respond (tab-port){
+  padding:  5rem 7rem 25rem 7rem;
+  
+ }
+    border-radius: 4px;
+    &:hover{
+      box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
+    transform: translateY(-1rem) scale(1.1);
+    }
+  }
+  
