@@ -11,5 +11,8 @@
     @include respond(tab-land){clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
     background-size: 100% 100%;
     }
+    @include respond(land-port){
+        background-image: url(../img/Photo-23.jpg);
+    }
 }
  
