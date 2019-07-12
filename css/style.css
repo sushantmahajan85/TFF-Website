@@ -252,8 +252,7 @@ body {
   font-size: 1.7rem; }
   @media (max-width: 37.5em) {
     .footer {
-      padding: 10rem 0 1rem 0;
-      display: table; } }
+      padding: 10rem 0 1rem 0; } }
   .footer_logo-box {
     margin-top: -11.5rem;
     text-align: center;
