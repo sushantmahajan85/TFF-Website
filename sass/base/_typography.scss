@@ -69,7 +69,7 @@ color: transparent;
 text-transform: uppercase;
 font-family: $family;
 padding-left: 1rem;
-padding-bottom: 6rem;
+padding-bottom: 8rem;
 @include respond (tab-port){
   font-weight: 500;
   padding-bottom: 3rem;
@@ -184,9 +184,10 @@ color: transparent;
    }
    .footer{
      background-color: #333333;
-     padding: 15rem 0;
+     padding: 13rem 0 2rem 0;
      @include respond (phone){
-  padding: 10rem 0 4.5rem 0;
+  padding: 10rem 0 1rem 0;
+  display: table;
       
      }
      font-size: 1.7rem;
@@ -297,7 +298,7 @@ text-align: center;
         color: transparent;
         text-transform: uppercase;
         padding-left: 1rem;
-        padding-bottom: 6rem;
+        padding-bottom: 8rem;
     
     }
   .square-box-1{
@@ -371,4 +372,35 @@ transition: all 0.2s;
     transform: translateY(-1rem) scale(1.1);
     }
   }
-  
+  .copyright{
+    
+    &_text{
+      text-align: center;
+      font-size: 1.6rem;
+      color: lightgrey;
+
+display: block;
+font-weight: 600;
+letter-spacing: 0.2rem;
+@include respond (tab-port){
+  font-weight: 400;
+  letter-spacing: 0;
+ }
+    }
+    &_span{
+      display: block;
+    }
+    &_link{
+      &:link,&:visited{
+        
+      text-decoration: none;
+      color: white;
+     
+      transition: all 0.2s;
+      }
+      &:hover,&:active{
+        color: tan;
+       transform: scale(1.1); 
+      }
+    }
+  }

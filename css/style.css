@@ -152,7 +152,7 @@ body {
   text-transform: uppercase;
   font-family: "Lucida Sans", "Lucida Sans Regular" "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding-left: 1rem;
-  padding-bottom: 6rem; }
+  padding-bottom: 8rem; }
   @media (max-width: 56.25em) {
     .heading-secondary {
       font-weight: 500;
@@ -248,11 +248,12 @@ body {
 
 .footer {
   background-color: #333333;
-  padding: 15rem 0;
+  padding: 13rem 0 2rem 0;
   font-size: 1.7rem; }
   @media (max-width: 37.5em) {
     .footer {
-      padding: 10rem 0 4.5rem 0; } }
+      padding: 10rem 0 1rem 0;
+      display: table; } }
   .footer_logo-box {
     margin-top: -11.5rem;
     text-align: center;
@@ -334,7 +335,7 @@ body {
   color: transparent;
   text-transform: uppercase;
   padding-left: 1rem;
-  padding-bottom: 6rem; }
+  padding-bottom: 8rem; }
 
 .square-box-1 {
   background-color: #ffffffe8;
@@ -400,6 +401,30 @@ body {
   .square-box-3:hover {
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
     transform: translateY(-1rem) scale(1.1); }
+
+.copyright_text {
+  text-align: center;
+  font-size: 1.6rem;
+  color: lightgrey;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 0.2rem; }
+  @media (max-width: 56.25em) {
+    .copyright_text {
+      font-weight: 400;
+      letter-spacing: 0; } }
+
+.copyright_span {
+  display: block; }
+
+.copyright_link:link, .copyright_link:visited {
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s; }
+
+.copyright_link:hover, .copyright_link:active {
+  color: tan;
+  transform: scale(1.1); }
 
 .popup {
   background-color: rgba(0, 0, 0, 0.808);
