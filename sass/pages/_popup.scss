@@ -37,6 +37,23 @@ display: table-cell;
 vertical-align: middle;
 padding: 2rem 5rem;
     }
+    &_cross{
+        &:link,&:visited{
+            font-size: 4rem;
+            text-decoration: none;
+            color: black;
+            float: right;
+            position: absolute;
+            top: 1rem;
+            left: 108rem;
+            @include respond (tab-port){
+                position: absolute;
+                top: 1rem;
+                left: 65rem;
+              }
+        }
+        
+    }
     &_img{
         background-position: center;
         background-size: 100% 100%;
