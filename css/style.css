@@ -455,14 +455,17 @@ body {
     width: 33.33333333334%;
     vertical-align: middle;
     display: table-cell; }
+    @media (max-width: 56.25em) {
+      .popup_left {
+        width: 0%; } }
   .popup_right {
-    width: 66.666666666666667%;
+    width: 66.66666667;
     display: table-cell;
     vertical-align: middle;
     padding: 2rem 5rem; }
     @media (max-width: 56.25em) {
       .popup_right {
-        padding: 0.5rem 5rem 0.5rem 2rem; } }
+        width: 100%; } }
   .popup_cross:link, .popup_cross:visited {
     font-size: 4rem;
     text-decoration: none;
@@ -493,9 +496,13 @@ body {
       .popup_paragraph {
         column-count: unset;
         column-rule: unset;
-        column-gap: unset; } }
+        column-gap: unset;
+        text-align: start; } }
   .popup_heading {
     color: yellow; }
+    @media (max-width: 56.25em) {
+      .popup_heading {
+        text-align: center; } }
 
 .popup1 {
   background-color: rgba(0, 0, 0, 0.808);
@@ -965,7 +972,7 @@ body {
   opacity: 0; }
 
 .header {
-  background-image: url(../img/new.jpg);
+  background-image: url(../img/Photo-24.jpg);
   height: 95vh;
   background-position: center;
   background-size: cover;
@@ -976,3 +983,6 @@ body {
     .header {
       clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
       background-size: 100% 100%; } }
+  @media (min-width: 600px) {
+    .header {
+      background-image: url(../img/new.jpg); } }
