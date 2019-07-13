@@ -70,3 +70,219 @@ padding: 2rem 5rem;
         color: yellow;
     }
 }
+.popup1{
+    background-color: rgba(0, 0, 0, 0.808);
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 99999999999999999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+     &:target{
+         opacity: 1;
+         visibility: visible;
+     }
+    &_content{
+        width: 75%;
+        height: 50rem;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        overflow: hidden;
+        display: table;
+        border-radius: 5px;
+    }
+    &_left{
+width: 33.33333333334%;
+vertical-align: middle;
+display: table-cell;
+    }
+    &_right{
+width: 66.666666666666667%;
+
+display: table-cell;
+vertical-align: middle;
+padding: 2rem 5rem;
+    }
+    &_cross{
+        &:link,&:visited{
+            font-size: 4rem;
+            text-decoration: none;
+            color: black;
+            float: right;
+            position: absolute;
+            top: 1rem;
+            left: 108rem;
+            @include respond (tab-port){
+                position: absolute;
+                top: 1rem;
+                left: 65rem;
+              }
+        }
+        
+    }
+    &_img{
+        background-position: center;
+        background-size: 100% 100%;
+        display: block;
+        width: 100%;
+    }
+    &_paragraph{
+        column-count: 2;
+        column-rule: 0.5px solid darkgrey;
+        column-gap: 4rem;
+        hyphens: auto;
+    }
+    &_heading{
+        color: yellow;
+    }
+}
+.popup2{
+    background-color: rgba(0, 0, 0, 0.808);
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 99999999999999999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+     &:target{
+         opacity: 1;
+         visibility: visible;
+     }
+    &_content{
+        width: 75%;
+        height: 50rem;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        overflow: hidden;
+        display: table;
+        border-radius: 5px;
+    }
+    &_left{
+width: 33.33333333334%;
+vertical-align: middle;
+display: table-cell;
+    }
+    &_right{
+width: 66.666666666666667%;
+
+display: table-cell;
+vertical-align: middle;
+padding: 2rem 5rem;
+    }
+    &_cross{
+        &:link,&:visited{
+            font-size: 4rem;
+            text-decoration: none;
+            color: black;
+            float: right;
+            position: absolute;
+            top: 1rem;
+            left: 108rem;
+            @include respond (tab-port){
+                position: absolute;
+                top: 1rem;
+                left: 65rem;
+              }
+        }
+        
+    }
+    &_img{
+        background-position: center;
+        background-size: 100% 100%;
+        display: block;
+        width: 100%;
+    }
+    &_paragraph{
+        column-count: 2;
+        column-rule: 0.5px solid darkgrey;
+        column-gap: 4rem;
+        hyphens: auto;
+    }
+    &_heading{
+        color: yellow;
+    }
+}
+.popup3{
+    background-color: rgba(0, 0, 0, 0.808);
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 99999999999999999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+     &:target{
+         opacity: 1;
+         visibility: visible;
+     }
+    &_content{
+        width: 75%;
+        height: 50rem;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        overflow: hidden;
+        display: table;
+        border-radius: 5px;
+    }
+    &_left{
+width: 33.33333333334%;
+vertical-align: middle;
+display: table-cell;
+    }
+    &_right{
+width: 66.666666666666667%;
+
+display: table-cell;
+vertical-align: middle;
+padding: 2rem 5rem;
+    }
+    &_cross{
+        &:link,&:visited{
+            font-size: 4rem;
+            text-decoration: none;
+            color: black;
+            float: right;
+            position: absolute;
+            top: 1rem;
+            left: 108rem;
+            @include respond (tab-port){
+                position: absolute;
+                top: 1rem;
+                left: 65rem;
+              }
+        }
+        
+    }
+    &_img{
+        background-position: center;
+        background-size: 100% 100%;
+        display: block;
+        width: 100%;
+    }
+    &_paragraph{
+        column-count: 2;
+        column-rule: 0.5px solid darkgrey;
+        column-gap: 4rem;
+        hyphens: auto;
+    }
+    &_heading{
+        color: yellow;
+    }
+}
