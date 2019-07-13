@@ -36,6 +36,9 @@ width: 66.666666666666667%;
 display: table-cell;
 vertical-align: middle;
 padding: 2rem 5rem;
+@include respond (tab-port){
+    padding: 0.5rem 5rem 0.5rem 2rem;
+  }
     }
     &_cross{
         &:link,&:visited{
@@ -59,9 +62,18 @@ padding: 2rem 5rem;
         background-size: 100% 100%;
         display: block;
         width: 100%;
+        @include respond (tab-port){
+            display: none;
+          }
     }
     &_paragraph{
         column-count: 2;
+        @include respond (tab-port){
+        column-count: unset;
+        column-rule: unset;
+        column-gap: unset;
+          }
+
         column-rule: 0.5px solid darkgrey;
         column-gap: 4rem;
         hyphens: auto;
@@ -108,6 +120,9 @@ width: 66.666666666666667%;
 display: table-cell;
 vertical-align: middle;
 padding: 2rem 5rem;
+@include respond (tab-port){
+    padding: 0.5rem 5rem 0.5rem 2rem;
+  }
     }
     &_cross{
         &:link,&:visited{
@@ -131,9 +146,17 @@ padding: 2rem 5rem;
         background-size: 100% 100%;
         display: block;
         width: 100%;
+        @include respond (tab-port){
+            display: none;
+          }
     }
     &_paragraph{
         column-count: 2;
+        @include respond (tab-port){
+            column-count: unset;
+            column-rule: unset;
+            column-gap: unset;
+        }
         column-rule: 0.5px solid darkgrey;
         column-gap: 4rem;
         hyphens: auto;
@@ -180,7 +203,10 @@ width: 66.666666666666667%;
 display: table-cell;
 vertical-align: middle;
 padding: 2rem 5rem;
-    }
+@include respond (tab-port){
+    padding: 0.5rem 5rem 0.5rem 2rem;
+  }    
+}
     &_cross{
         &:link,&:visited{
             font-size: 4rem;
@@ -203,11 +229,19 @@ padding: 2rem 5rem;
         background-size: 100% 100%;
         display: block;
         width: 100%;
+        @include respond (tab-port){
+            display: none;
+          }
     }
     &_paragraph{
         column-count: 2;
         column-rule: 0.5px solid darkgrey;
         column-gap: 4rem;
+        @include respond (tab-port){
+            column-count: unset;
+            column-rule: unset;
+            column-gap: unset;
+        }
         hyphens: auto;
     }
     &_heading{
@@ -252,6 +286,9 @@ width: 66.666666666666667%;
 display: table-cell;
 vertical-align: middle;
 padding: 2rem 5rem;
+@include respond (tab-port){
+    padding: 0.5rem 5rem 0.5rem 2rem;
+  }
     }
     &_cross{
         &:link,&:visited{
@@ -265,7 +302,7 @@ padding: 2rem 5rem;
             @include respond (tab-port){
                 position: absolute;
                 top: 1rem;
-                left: 65rem;
+                right: 1rem;
               }
         }
         
@@ -273,14 +310,22 @@ padding: 2rem 5rem;
     &_img{
         background-position: center;
         background-size: 100% 100%;
-        display: block;
         width: 100%;
+        display: block;
+
+        @include respond (tab-port){
+            display: none;
+          }
     }
     &_paragraph{
         column-count: 2;
         column-rule: 0.5px solid darkgrey;
         column-gap: 4rem;
         hyphens: auto;
+        @include respond (tab-port){
+            column-count: unset;
+            column-rule: unset;
+            column-gap: unset;}
     }
     &_heading{
         color: yellow;
