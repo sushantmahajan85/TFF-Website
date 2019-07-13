@@ -440,6 +440,7 @@ body {
     opacity: 1;
     visibility: visible; }
   .popup_content {
+    background-image: linear-gradient(white, darkgrey);
     width: 75%;
     height: 50rem;
     background-color: white;
@@ -525,6 +526,9 @@ body {
     width: 33.33333333334%;
     vertical-align: middle;
     display: table-cell; }
+    @media (max-width: 56.25em) {
+      .popup1_left {
+        width: 0%; } }
   .popup1_right {
     width: 66.666666666666667%;
     display: table-cell;
