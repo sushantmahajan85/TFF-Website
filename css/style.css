@@ -32,129 +32,6 @@ body {
     body {
       padding: 0.2rem; } }
 
-#trapezoid {
-  background-color: blue; }
-
-* {
-  box-sizing: border-box; }
-
-body {
-  font-family: Helvetica, sans-serif; }
-
-/* The actual timeline (the vertical ruler) */
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto; }
-
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px; }
-
-/* Container around content */
-.container {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%; }
-
-/* The circles on the timeline */
-.container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: #FF9F;
-  border: 4px solid #FF9F;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1; }
-
-/* Place the container to the left */
-.left {
-  left: 0; }
-
-/* Place the container to the right */
-.right {
-  left: 50%; }
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white; }
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent; }
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px; }
-
-/* The actual content */
-.content {
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px; }
-
-.content:hover {
-  border-color: yellow;
-  border-width: 5px;
-  font-size: 20px; }
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .timeline::after {
-    left: 31px; }
-  /* Full-width containers */
-  .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px; }
-  /* Make sure that all arrows are pointing leftwards */
-  .container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent; }
-  /* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-    left: 15px; }
-  /* Make all right containers behave like the left ones */
-  .right {
-    left: 0%; } }
-
-.zoom:hover {
-  transform: scale(1.5);
-  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */ }
-
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -211,6 +88,336 @@ body {
       .col-1-of-3:not(:last-child) {
         margin-right: 0;
         margin-bottom: 6rem; } }
+
+.core_heading {
+  margin-top: 3rem;
+  text-align: center; }
+
+.core_card {
+  transition: all 0.2s;
+  box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733); }
+  .core_card:hover {
+    transform: scale(1.1); }
+
+.core_name {
+  color: white;
+  font-weight: 500;
+  font-size: 3rem;
+  text-transform: uppercase; }
+
+.core_title {
+  color: goldenrod;
+  font-size: 1.6rem;
+  font-weight: 200;
+  margin-top: 1rem;
+  text-transform: uppercase; }
+
+.core_content {
+  background-color: #333333;
+  border-radius: 10px;
+  padding: 1rem; }
+
+.core_picture {
+  background-size: contain;
+  background-position: centre;
+  display: flex;
+  overflow: hidden; }
+
+.centre_text {
+  text-align: center; }
+
+.square-box-92 {
+  background-color: #ffffffe8;
+  padding: 12rem;
+  background-size: 100% 100%; }
+  @media (max-width: 75em) {
+    .square-box-92 {
+      padding: 5rem 10rem 29rem 10rem; } }
+  @media (max-width: 56.25em) {
+    .square-box-92 {
+      padding: 5rem 6rem 27rem 6rem; } }
+
+.sq1 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq2 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq3 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq4 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq5 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq6 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq7 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq8 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq9 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq10 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq11 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq12 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq13 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq14 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq15 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq16 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq17 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq18 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq19 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq20 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq21 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq22 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq23 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq24 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq25 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq26 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq27 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq28 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq29 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq30 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq31 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq32 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq33 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq34 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq35 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq36 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq37 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq38 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq39 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq40 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq41 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq42 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq43 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq44 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq45 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq46 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq47 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq48 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq49 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq50 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq51 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq52 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq53 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq54 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq55 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq56 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq57 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq58 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq59 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq60 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq61 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq62 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq63 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq64 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq65 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq66 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq67 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq68 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq69 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq70 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq71 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq72 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq73 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq74 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq75 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq76 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq77 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq78 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq79 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq80 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq81 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq82 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq83 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq84 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq85 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq86 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq87 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq88 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq89 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq90 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq91 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq92 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq93 {
+  background-image: url(../img/tff-logo.png); }
+
+.sq94 {
+  background-image: url(../img/tff-logo.png); }
 
 /*.logo-box{
           position: absolute;
@@ -460,28 +667,32 @@ body {
   padding-bottom: 8rem; }
 
 .square-box-1 {
+  background-image: url(../img/exbo.jpeg);
   background-color: #ffffffe8;
   padding: 12rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
   font-size: 1.5rem;
   box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
-  border-radius: 4px;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  border-radius: 4px; }
+  .square-box-1:hover {
+    box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
+    transform: translateY(-1rem) scale(1.1); }
   @media (max-width: 75em) {
     .square-box-1 {
       padding: 5rem 10rem 29rem 10rem; } }
   @media (max-width: 56.25em) {
     .square-box-1 {
       padding: 5rem 6rem 27rem 6rem; } }
-  .square-box-1:hover {
-    box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
-    transform: translateY(-1rem) scale(1.1); }
 
 .centre {
   text-align: center; }
 
 .square-box-2 {
-  background-image: url(../img/logo_2018.jpeg);
+  background-image: url(../img/core.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -503,7 +714,7 @@ body {
     transform: translateY(-1rem) scale(1.1); }
 
 .square-box-3 {
-  background-image: url(../img/logo_2017.jpg);
+  background-image: url(../img/faculty.jpeg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;

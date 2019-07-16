@@ -302,13 +302,22 @@ text-align: center;
     
     }
   .square-box-1{
+    background-image: url(../img/exbo.jpeg);
     background-color:#ffffffe8;
     padding: 12rem;
-    text-align: center;
-    font-size: 1.5rem;
-    box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
-    border-radius: 4px;
-    transition: all 0.2s;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+background-position: center;
+text-align: center;
+font-size: 1.5rem;
+box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
+transition: all 0.2s;
+border-radius: 4px;
+
+&:hover{
+  box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
+transform: translateY(-1rem) scale(1.1);
+}
     @include respond(tab-land){
       padding: 5rem 10rem 29rem 10rem;
     }
@@ -316,16 +325,12 @@ text-align: center;
       padding: 5rem 6rem 27rem 6rem;
       
      }
-    &:hover{
-      box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
-    transform: translateY(-1rem) scale(1.1);
     }
-  }
   .centre{
     text-align: center;
   }
   .square-box-2{
-    background-image: url(../img/logo_2018.jpeg);
+    background-image: url(../img/core.jpeg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -349,7 +354,7 @@ text-align: center;
     }
   }
   .square-box-3{
-    background-image: url(../img/logo_2017.jpg);
+    background-image: url(../img/faculty.jpeg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -404,3 +409,4 @@ letter-spacing: 0.2rem;
       }
     }
   }
+
