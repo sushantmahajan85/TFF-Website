@@ -127,7 +127,7 @@ body {
 
 .square-box-92 {
   background-color: #ffffffe8;
-  padding: 12rem;
+  padding: 120px;
   background-size: 100% 100%; }
   @media (max-width: 75em) {
     .square-box-92 {
@@ -135,6 +135,9 @@ body {
   @media (max-width: 56.25em) {
     .square-box-92 {
       padding: 5rem 6rem 27rem 6rem; } }
+
+::selection {
+  color: red; }
 
 .sq1 {
   background-image: url(../img/tff-logo.png); }
@@ -787,7 +790,6 @@ body {
     opacity: 1;
     visibility: visible; }
   .popup_content {
-    background-image: linear-gradient(white, darkgrey);
     width: 75%;
     height: 50rem;
     background-color: white;
@@ -1185,6 +1187,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: start; }
+  @media (max-width: 56.25em) {
+    .navigation_list {
+      text-align: center; } }
 
 .navigation_item {
   font-size: 3rem;
@@ -1195,6 +1200,9 @@ body {
   padding: 1rem 2rem;
   font-weight: 400;
   width: 100%; }
+  @media (max-width: 56.25em) {
+    .navigation_item {
+      font-size: 2.5rem; } }
 
 .navigation_link:link, .navigation_link:visited {
   text-decoration: none;

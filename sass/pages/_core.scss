@@ -45,7 +45,7 @@ text-transform: uppercase;
 }
 .square-box-92{
     background-color:#ffffffe8;
-    padding: 12rem;
+    padding: 120px;
 background-size: 100% 100%;
     
     @include respond(tab-land){
@@ -55,6 +55,9 @@ background-size: 100% 100%;
       padding: 5rem 6rem 27rem 6rem;
       
      }
+    }
+    ::selection{
+        color: red;
     }
  
 .sq1{
