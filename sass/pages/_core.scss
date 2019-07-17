@@ -5,6 +5,7 @@
         text-align: center;
     }
     &_card{
+        
         transition: all 0.2s;
         
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
@@ -29,7 +30,7 @@ text-transform: uppercase;
     }
     &_content{
         background-color: #333333;
-        border-radius: 10px;
+        
         padding: 1rem;
     }
     &_picture{

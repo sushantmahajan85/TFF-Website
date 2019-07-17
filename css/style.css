@@ -114,7 +114,6 @@ body {
 
 .core_content {
   background-color: #333333;
-  border-radius: 10px;
   padding: 1rem; }
 
 .core_picture {
@@ -418,6 +417,20 @@ body {
 
 .sq94 {
   background-image: url(../img/tff-logo.png); }
+
+.square-box-exbo {
+  background-color: #ffffffe8;
+  padding: 12rem;
+  background-size: 100% 100%; }
+  @media (max-width: 75em) {
+    .square-box-exbo {
+      padding: 5rem 10rem 29rem 10rem; } }
+  @media (max-width: 56.25em) {
+    .square-box-exbo {
+      padding: 5rem 6rem 27rem 6rem; } }
+
+.se1 {
+  background-image: url(../img/Photo-23.jpg); }
 
 /*.logo-box{
           position: absolute;
