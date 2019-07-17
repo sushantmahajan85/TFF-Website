@@ -790,6 +790,7 @@ body {
     opacity: 1;
     visibility: visible; }
   .popup_content {
+    opacity: .95;
     width: 75%;
     height: 50rem;
     background-color: white;
@@ -867,6 +868,7 @@ body {
     opacity: 1;
     visibility: visible; }
   .popup1_content {
+    opacity: .95;
     width: 75%;
     height: 50rem;
     background-color: white;
@@ -944,6 +946,7 @@ body {
     opacity: 1;
     visibility: visible; }
   .popup2_content {
+    opacity: .95;
     width: 75%;
     height: 50rem;
     background-color: white;
@@ -1021,6 +1024,7 @@ body {
     opacity: 1;
     visibility: visible; }
   .popup3_content {
+    opacity: .95;
     width: 75%;
     height: 50rem;
     background-color: white;
@@ -1098,6 +1102,7 @@ body {
     opacity: 1;
     visibility: visible; }
   .popup4_content {
+    opacity: .95;
     width: 75%;
     height: 50rem;
     background-color: white;
