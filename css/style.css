@@ -32,6 +32,22 @@ body {
     body {
       padding: 0.2rem; } }
 
+@media (max-width: 37.5em) {
+  .footer-box1 {
+    margin-left: 4rem; } }
+
+@media (max-width: 37.5em) {
+  .footer-box2 {
+    margin-left: 4rem; } }
+
+@media (max-width: 37.5em) {
+  .footer-box3 {
+    margin-left: 4rem; } }
+
+@media (max-width: 37.5em) {
+  .footer-box4 {
+    margin-left: 4rem; } }
+
 .footer_text {
   color: white;
   text-transform: uppercase;
@@ -75,7 +91,6 @@ body {
       width: 100% !important; } }
 
 .col-1-of-4 {
-  margin: 0 auto;
   width: 24rem;
   float: left; }
   @media (max-width: 75em) {

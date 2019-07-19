@@ -1,16 +1,24 @@
 .footer-box1{
     
-    
+    @include respond(phone){
+    margin-left: 4rem;
+      }
 }
 .footer-box2{
-    
+    @include respond(phone){
+        margin-left: 4rem;
+      }
     }
 .footer-box3{
-    
+    @include respond(phone){
+        margin-left: 4rem;
+          }
 }
 .footer-box4{
     
-    
+    @include respond(phone){
+        margin-left: 4rem;
+          }
 }
 .footer_text{
     color: white;
