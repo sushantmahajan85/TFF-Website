@@ -183,10 +183,10 @@ color: transparent;
      }
    }
    .footer{
-     background-color: #333333;
+     background-color: black;
      padding: 13rem 0 2rem 0;
      @include respond (phone){
-  padding: 10rem 0 1rem 0;
+  padding: 13rem 0 1rem 0;
   
       
      }
@@ -377,8 +377,13 @@ transition: all 0.2s;
     transform: translateY(-1rem) scale(1.1);
     }
   }
+  .navbar{
+    padding: 2rem 0;
+    background-color: #333333;
+  }
   .copyright{
-    
+    border-top: 1px dotted grey;
+    padding-top: 1rem;
     &_text{
       text-align: center;
       font-size: 1.6rem;

@@ -32,6 +32,18 @@ body {
     body {
       padding: 0.2rem; } }
 
+.footer_text {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  border-bottom: 0.6px dotted gray;
+  padding: 1rem; }
+
+.footer_para {
+  color: white;
+  padding: 1rem;
+  font-size: 1.4rem; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -64,7 +76,7 @@ body {
 
 .col-1-of-4 {
   margin: 0 auto;
-  max-width: 24rem;
+  width: 24rem;
   float: left; }
   @media (max-width: 75em) {
     .col-1-of-4 {
@@ -593,12 +605,12 @@ body {
     transform: translateY(-1rem) scale(1.1) skewY(7deg); }
 
 .footer {
-  background-color: #333333;
+  background-color: black;
   padding: 13rem 0 2rem 0;
   font-size: 1.7rem; }
   @media (max-width: 37.5em) {
     .footer {
-      padding: 10rem 0 1rem 0; } }
+      padding: 13rem 0 1rem 0; } }
   .footer_logo-box {
     margin-top: -16rem;
     text-align: center;
@@ -751,29 +763,33 @@ body {
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
     transform: translateY(-1rem) scale(1.1); }
 
-.copyright_text {
-  text-align: center;
-  font-size: 1.6rem;
-  color: lightgrey;
-  display: block;
-  font-weight: 600;
-  letter-spacing: 0.2rem; }
-  @media (max-width: 56.25em) {
-    .copyright_text {
-      font-weight: 400;
-      letter-spacing: 0; } }
+.navbar {
+  padding: 2rem 0;
+  background-color: #333333; }
 
-.copyright_span {
-  display: block; }
-
-.copyright_link:link, .copyright_link:visited {
-  text-decoration: none;
-  color: white;
-  transition: all 0.2s; }
-
-.copyright_link:hover, .copyright_link:active {
-  color: tan;
-  transform: scale(1.1); }
+.copyright {
+  border-top: 1px dotted grey;
+  padding-top: 1rem; }
+  .copyright_text {
+    text-align: center;
+    font-size: 1.6rem;
+    color: lightgrey;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 0.2rem; }
+    @media (max-width: 56.25em) {
+      .copyright_text {
+        font-weight: 400;
+        letter-spacing: 0; } }
+  .copyright_span {
+    display: block; }
+  .copyright_link:link, .copyright_link:visited {
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s; }
+  .copyright_link:hover, .copyright_link:active {
+    color: tan;
+    transform: scale(1.1); }
 
 .popup {
   background-color: rgba(0, 0, 0, 0.808);
@@ -1288,12 +1304,11 @@ body {
       text-align: start; } }
 
 .navigation_item {
-  font-size: 3rem;
+  font-size: 2rem;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  margin: 2rem;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   font-weight: 400;
   width: 100%; }
   @media (max-width: 56.25em) {
