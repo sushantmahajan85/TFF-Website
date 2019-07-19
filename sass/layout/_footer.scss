@@ -1,37 +1,42 @@
 .footer-box1{
     
     @include respond(phone){
-    margin-left: 4rem;
+    margin-left: 3.5rem;
       }
 }
 .footer-box2{
     @include respond(phone){
-        margin-left: 4rem;
+        margin-left: 3.5rem;
       }
     }
 .footer-box3{
     @include respond(phone){
-        margin-left: 4rem;
+        margin-left: 3.5rem;
           }
 }
 .footer-box4{
     
     @include respond(phone){
-        margin-left: 4rem;
+        margin-left: 3.5rem;
           }
 }
 .footer_text{
     color: white;
     text-transform: uppercase;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     border-bottom: 0.6px dotted gray;
     padding: 1rem;
 }
 .footer_para{
     color: white;
     padding: 1rem;
-    font-size: 1.4rem;
-
+    hyphens: auto;
+    font-size: 1.3rem;
+    display: inline-block;
+    
+    @include respond(phone){
+        width: 80%;
+      }
 }
 .fb{
     
