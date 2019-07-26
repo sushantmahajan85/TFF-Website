@@ -108,12 +108,12 @@ padding-bottom: 8rem;
    font-size: 1.6rem;
  }
    .section_pic{
-     padding: 30rem 0;
+     padding: 35rem 0;
      background-image: url(../img/Webp.net-compress-image.jpg);
      background-size: cover;
     background-position: center;
   transform: skewY(-7deg);
-  margin-top: -15rem;
+  margin-top: -18rem;
   text-align: center;
   
   @include respond (tab-port){
