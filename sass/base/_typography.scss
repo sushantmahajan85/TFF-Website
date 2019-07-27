@@ -20,8 +20,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular'
-   'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
 }
   
   .main-heading {
@@ -67,7 +65,7 @@ font-size: 3.5rem;
 -webkit-background-clip: text;
 color: transparent;
 text-transform: uppercase;
-font-family: $family;
+
 padding-left: 1rem;
 padding-bottom: 8rem;
 @include respond (tab-port){
@@ -97,7 +95,7 @@ padding-bottom: 8rem;
  }
  .paragraph{
    font-size: 1.6rem;
-  font-family:$family;
+  
    color: #414040;
    &:not(:last-child){
      margin-bottom: 3rem;
@@ -151,6 +149,7 @@ padding-bottom: 8rem;
       
       border-radius: 4px;
     }
+    @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
     .section_box_4{
       background-color:rgba(255, 255, 255, 0.918);
       padding: 2.5rem;
@@ -174,7 +173,7 @@ color: transparent;
      box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
      transition: all 0.2s;
      color:#525151;     font-size: 1.5rem;
-     
+     width: 80%;
      @include respond (tab-land){
       margin: 2rem;
 }
@@ -309,7 +308,7 @@ text-align: center;
   .square-box-1{
     background-image: url(../img/template_1.jpg);
     background-color:#ffffffe8;
-    padding: 26rem 6rem;
+    padding: 26rem ;                                                                                                                                                               
 background-size: 100% 100%;
 background-repeat: no-repeat;
 background-position: center;

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 * {
   padding: 0%;
   margin: 0%;
@@ -5,7 +7,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: Georgia, 'Times New Roman', Times, serif; }
+  font-family: 'Raleway', sans-serif; }
   @media (max-width: 75em) {
     html {
       font-size: 60.25%; } }
@@ -487,8 +489,7 @@ body {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular' 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  text-align: center; }
 
 .main-heading {
   color: #ffffff;
@@ -528,7 +529,6 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   text-transform: uppercase;
-  font-family: "Lucida Sans", "Lucida Sans Regular" "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding-left: 1rem;
   padding-bottom: 8rem; }
   @media (max-width: 56.25em) {
@@ -552,7 +552,6 @@ body {
 
 .paragraph {
   font-size: 1.6rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular" "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #414040; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
@@ -618,7 +617,8 @@ body {
   box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
   transition: all 0.2s;
   color: #525151;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  width: 80%; }
   @media (max-width: 75em) {
     [class^="section_box_"] {
       margin: 2rem; } }
@@ -721,7 +721,7 @@ body {
 .square-box-1 {
   background-image: url(../img/template_1.jpg);
   background-color: #ffffffe8;
-  padding: 26rem 6rem;
+  padding: 26rem;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
