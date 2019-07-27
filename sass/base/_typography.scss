@@ -20,6 +20,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular'
+   'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
 }
   
   .main-heading {
@@ -30,7 +32,7 @@
     letter-spacing: 3.5rem;
     display: block;
     font-weight: 700;
-    font-size: 5.5rem;
+    font-size: 5rem;
     animation: moveinleft 1s;
    @include respond (tab-port){
      letter-spacing: 2.5rem;
@@ -56,25 +58,20 @@
 
   
     .heading-secondary{
-
-background-image: linear-gradient(to right,
-#7ed56f,#55c57a);
-display:inline-block;
-font-weight: 700;
-font-size: 3.5rem;
--webkit-background-clip: text;
-color: transparent;
-text-transform: uppercase;
-
-padding-left: 1rem;
-padding-bottom: 8rem;
+      display: inline-block;
+      font-weight: 1100;
+      font-size: 2.3rem;
+      color: rgb(119, 103, 9);
+      text-transform: uppercase;
+      margin-bottom: 8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 @include respond (tab-port){
-  font-weight: 500;
-  padding-bottom: 3rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
 }
 @include respond (phone){
  font-weight: 300;
- padding-bottom: 2rem;
+ margin-bottom: 2rem;
 }
   
   &:hover{
@@ -89,14 +86,15 @@ padding-bottom: 8rem;
    text-transform: uppercase;
    font-weight: 700;
    font-size: 1.6rem;
-   color: #525151;
+   color:black;
    margin-bottom: 2rem;
 
  }
  .paragraph{
    font-size: 1.6rem;
-  
-   color: #414040;
+   font-family: "Ubuntu" ,serif;
+   color: #555555;
+   line-height: 2rem;
    &:not(:last-child){
      margin-bottom: 3rem;
    }
@@ -149,7 +147,6 @@ padding-bottom: 8rem;
       
       border-radius: 4px;
     }
-    @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
     .section_box_4{
       background-color:rgba(255, 255, 255, 0.918);
       padding: 2.5rem;
@@ -173,7 +170,9 @@ color: transparent;
      box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
      transition: all 0.2s;
      color:#525151;     font-size: 1.5rem;
-     width: 80%;
+     font-size: 1.5rem;
+   font-family: "Ubuntu" ,serif;
+   color: #555555;
      @include respond (tab-land){
       margin: 2rem;
 }
@@ -187,7 +186,7 @@ color: transparent;
      background-color: black;
      padding: 13rem 0 2rem 0;
      @include respond (phone){
-  padding: 13rem 0 1rem 0;
+  padding: 15rem 0 0.5rem 0;
   
       
      }
@@ -288,19 +287,26 @@ text-align: center;
       @include respond (tab-port){
         padding: 30rem 0 15rem 0;
        }
+       &-paragraph{
+         font-size: 1.8rem;
+         font-weight: 500;
+         color: #555555;
+         text-align: center;
+         line-height: 3rem;
+         font-family: "Ubuntu" ,serif;
+       }
     }
     .team_section-meet{
       
       text-align: center;
     }
     .team_section-text{
-      background-image: linear-gradient(to right, #7ed56f, #55c57a);
         display: inline-block;
         font-weight: 700;
-        font-size: 3.5rem;
-        -webkit-background-clip: text;
-        color: transparent;
+        font-size: 2.5rem;
+        color: darkolivegreen;
         text-transform: uppercase;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         padding-left: 1rem;
         padding-bottom: 8rem;
     
@@ -308,7 +314,7 @@ text-align: center;
   .square-box-1{
     background-image: url(../img/template_1.jpg);
     background-color:#ffffffe8;
-    padding: 26rem ;                                                                                                                                                               
+    padding: 26rem 6rem;                                                                                                                                              
 background-size: 100% 100%;
 background-repeat: no-repeat;
 background-position: center;
@@ -386,16 +392,17 @@ transition: all 0.2s;
     background-color: #333333;
   }
   .copyright{
-    border-top: 1px dotted grey;
+    border-top: 1.5px dotted grey;
     padding-top: 1rem;
+    font-family: "Ubuntu" ,serif;
+    
     &_text{
       text-align: center;
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       color: lightgrey;
 
 display: block;
-font-weight: 600;
-letter-spacing: 0.2rem;
+font-weight: 500;
 @include respond (tab-port){
   font-weight: 400;
   letter-spacing: 0;
@@ -403,6 +410,8 @@ letter-spacing: 0.2rem;
     }
     &_span{
       display: block;
+      
+      right:0;
     }
     &_link{
       &:link,&:visited{

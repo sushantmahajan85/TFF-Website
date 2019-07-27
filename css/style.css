@@ -1,13 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 * {
   padding: 0%;
   margin: 0%;
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%;
-  font-family: 'Raleway', sans-serif; }
+  font-size: 62.5%; }
   @media (max-width: 75em) {
     html {
       font-size: 60.25%; } }
@@ -34,9 +32,11 @@ body {
     body {
       padding: 0.2rem; } }
 
-@media (max-width: 37.5em) {
-  .footer-box1 {
-    margin-left: 3.5rem; } }
+.footer-box1 {
+  font-family: 'Raleway', sans-serif; }
+  @media (max-width: 37.5em) {
+    .footer-box1 {
+      margin-left: 3.5rem; } }
 
 @media (max-width: 37.5em) {
   .footer-box2 {
@@ -489,7 +489,8 @@ body {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center; }
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular' 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
 .main-heading {
   color: #ffffff;
@@ -499,7 +500,7 @@ body {
   letter-spacing: 3.5rem;
   display: block;
   font-weight: 700;
-  font-size: 5.5rem;
+  font-size: 5rem;
   animation: moveinleft 1s; }
   @media (max-width: 56.25em) {
     .main-heading-upr {
@@ -522,23 +523,21 @@ body {
       letter-spacing: 1.1rem; } }
 
 .heading-secondary {
-  background-image: linear-gradient(to right, #7ed56f, #55c57a);
   display: inline-block;
-  font-weight: 700;
-  font-size: 3.5rem;
-  -webkit-background-clip: text;
-  color: transparent;
+  font-weight: 1100;
+  font-size: 2.3rem;
+  color: #776709;
   text-transform: uppercase;
-  padding-left: 1rem;
-  padding-bottom: 8rem; }
+  margin-bottom: 8rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
   @media (max-width: 56.25em) {
     .heading-secondary {
-      font-weight: 500;
-      padding-bottom: 3rem; } }
+      font-weight: 400;
+      margin-bottom: 3rem; } }
   @media (max-width: 37.5em) {
     .heading-secondary {
       font-weight: 300;
-      padding-bottom: 2rem; } }
+      margin-bottom: 2rem; } }
   .heading-secondary:hover {
     transform: skew(5deg, 2deg) scale(1.1);
     text-shadow: 1rem 3rem 5rem rgba(0, 0, 0, 0.349); }
@@ -547,12 +546,14 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.6rem;
-  color: #525151;
+  color: black;
   margin-bottom: 2rem; }
 
 .paragraph {
   font-size: 1.6rem;
-  color: #414040; }
+  font-family: "Ubuntu" ,serif;
+  color: #555555;
+  line-height: 2rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
@@ -618,7 +619,9 @@ body {
   transition: all 0.2s;
   color: #525151;
   font-size: 1.5rem;
-  width: 80%; }
+  font-size: 1.5rem;
+  font-family: "Ubuntu" ,serif;
+  color: #555555; }
   @media (max-width: 75em) {
     [class^="section_box_"] {
       margin: 2rem; } }
@@ -632,7 +635,7 @@ body {
   font-size: 1.7rem; }
   @media (max-width: 37.5em) {
     .footer {
-      padding: 13rem 0 1rem 0; } }
+      padding: 15rem 0 0.5rem 0; } }
   .footer_logo-box {
     margin-top: -16rem;
     text-align: center;
@@ -703,25 +706,31 @@ body {
   @media (max-width: 56.25em) {
     .team_section {
       padding: 30rem 0 15rem 0; } }
+  .team_section-paragraph {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #555555;
+    text-align: center;
+    line-height: 3rem;
+    font-family: "Ubuntu" ,serif; }
 
 .team_section-meet {
   text-align: center; }
 
 .team_section-text {
-  background-image: linear-gradient(to right, #7ed56f, #55c57a);
   display: inline-block;
   font-weight: 700;
-  font-size: 3.5rem;
-  -webkit-background-clip: text;
-  color: transparent;
+  font-size: 2.5rem;
+  color: darkolivegreen;
   text-transform: uppercase;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding-left: 1rem;
   padding-bottom: 8rem; }
 
 .square-box-1 {
   background-image: url(../img/template_1.jpg);
   background-color: #ffffffe8;
-  padding: 26rem;
+  padding: 26rem 6rem;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -792,21 +801,22 @@ body {
   background-color: #333333; }
 
 .copyright {
-  border-top: 1px dotted grey;
-  padding-top: 1rem; }
+  border-top: 1.5px dotted grey;
+  padding-top: 1rem;
+  font-family: "Ubuntu" ,serif; }
   .copyright_text {
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: lightgrey;
     display: block;
-    font-weight: 600;
-    letter-spacing: 0.2rem; }
+    font-weight: 500; }
     @media (max-width: 56.25em) {
       .copyright_text {
         font-weight: 400;
         letter-spacing: 0; } }
   .copyright_span {
-    display: block; }
+    display: block;
+    right: 0; }
   .copyright_link:link, .copyright_link:visited {
     text-decoration: none;
     color: white;
@@ -878,6 +888,7 @@ body {
         display: none; } }
   .popup_paragraph {
     column-count: 2;
+    font-family: "Ubuntu" ,serif;
     font-size: 1.7rem;
     font-weight: 600;
     column-rule: 0.5px solid darkgrey;
@@ -958,6 +969,7 @@ body {
         display: none; } }
   .popup1_paragraph {
     column-count: 2;
+    font-family: "Ubuntu" ,serif;
     font-size: 1.7rem;
     font-weight: 600;
     column-rule: 0.5px solid darkgrey;
@@ -1040,6 +1052,7 @@ body {
     column-count: 2;
     font-size: 1.7rem;
     font-weight: 600;
+    font-family: "Ubuntu" ,serif;
     column-rule: 0.5px solid darkgrey;
     column-gap: 4rem;
     hyphens: auto; }
@@ -1119,6 +1132,7 @@ body {
   .popup3_paragraph {
     column-count: 2;
     font-size: 1.7rem;
+    font-family: "Ubuntu" ,serif;
     font-weight: 600;
     column-rule: 0.5px solid darkgrey;
     column-gap: 4rem;
@@ -1198,6 +1212,7 @@ body {
         display: none; } }
   .popup4_paragraph {
     column-count: 2;
+    font-family: "Ubuntu" ,serif;
     font-size: 1.7rem;
     font-weight: 600;
     column-rule: 0.5px solid darkgrey;
@@ -1342,12 +1357,13 @@ body {
       text-align: start; } }
 
 .navigation_item {
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 2rem 4rem;
-  margin: 1rem;
+  margin: 0.8rem;
   font-weight: 450;
   width: 100%; }
   @media (max-width: 56.25em) {
@@ -1408,9 +1424,10 @@ body {
   color: #777;
   background-color: #fff;
   display: inline-block;
-  font-size: 1.9rem;
-  padding: 1rem 5rem;
-  border-radius: 10rem;
+  font-size: 1.5rem;
+  padding: 1rem 4rem;
+  border-radius: 6rem;
+  font-family: cursive;
   position: relative; }
 
 .link:hover {
