@@ -108,12 +108,12 @@ padding-bottom: 8rem;
    font-size: 1.6rem;
  }
    .section_pic{
-     padding: 35rem 0;
+     padding: 35rem 0 19rem 0;
      background-image: url(../img/Webp.net-compress-image.jpg);
      background-size: cover;
     background-position: center;
   transform: skewY(-7deg);
-  margin-top: -18rem;
+  margin-top: -14rem;
   text-align: center;
   
   @include respond (tab-port){
@@ -173,6 +173,8 @@ color: transparent;
      transform: skewY(7deg);
      box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
      transition: all 0.2s;
+     color:#525151;     font-size: 1.5rem;
+     
      @include respond (tab-land){
       margin: 2rem;
 }
@@ -276,6 +278,9 @@ text-align: center;
     }
     .team_section{
       background-color: #f7f7f7;
+      
+      background-position: center;
+      background-size: cover;
       padding: 30rem 0 18rem 0;
       margin-top: -20vh;
       @include respond(tab-land){
@@ -302,9 +307,9 @@ text-align: center;
     
     }
   .square-box-1{
-    background-image: url(../img/exbo.jpeg);
+    background-image: url(../img/template_1.jpg);
     background-color:#ffffffe8;
-    padding: 12rem;
+    padding: 26rem 6rem;
 background-size: 100% 100%;
 background-repeat: no-repeat;
 background-position: center;
@@ -330,12 +335,12 @@ transform: translateY(-1rem) scale(1.1);
     text-align: center;
   }
   .square-box-2{
-    background-image: url(../img/core.jpeg);
+    background-image: url(../img/template_2.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-color:#ffffffe8;
-    padding: 12rem;
+    padding: 26rem 6rem;
     text-align: center;
     font-size: 1.5rem;
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
@@ -354,12 +359,12 @@ transform: translateY(-1rem) scale(1.1);
     }
   }
   .square-box-3{
-    background-image: url(../img/faculty.jpeg);
+    background-image: url(../img/template_3.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-color:#ffffffe8;
-    padding: 12rem;
+    padding: 26rem 6rem;
     text-align: center;
     font-size: 1.5rem;
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);

@@ -5,7 +5,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: Georgia, 'Times New Roman', Times, serif; }
   @media (max-width: 75em) {
     html {
       font-size: 60.25%; } }
@@ -51,15 +51,15 @@ body {
 .footer_text {
   color: white;
   text-transform: uppercase;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   border-bottom: 0.6px dotted gray;
   padding: 1rem; }
 
 .footer_para {
-  color: white;
+  color: whitesmoke;
+  line-height: 2rem;
   padding: 1rem;
-  hyphens: auto;
-  font-size: 1.3rem;
+  font: 400 12px/1.8 "Open Sans", sans-serif;
   display: inline-block; }
   @media (max-width: 37.5em) {
     .footer_para {
@@ -562,12 +562,12 @@ body {
   font-size: 1.6rem; }
 
 .section_pic {
-  padding: 35rem 0;
+  padding: 35rem 0 19rem 0;
   background-image: url(../img/Webp.net-compress-image.jpg);
   background-size: cover;
   background-position: center;
   transform: skewY(-7deg);
-  margin-top: -18rem;
+  margin-top: -14rem;
   text-align: center; }
   @media (max-width: 56.25em) {
     .section_pic {
@@ -616,7 +616,9 @@ body {
 [class^="section_box_"] {
   transform: skewY(7deg);
   box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  color: #525151;
+  font-size: 1.5rem; }
   @media (max-width: 75em) {
     [class^="section_box_"] {
       margin: 2rem; } }
@@ -691,6 +693,8 @@ body {
 
 .team_section {
   background-color: #f7f7f7;
+  background-position: center;
+  background-size: cover;
   padding: 30rem 0 18rem 0;
   margin-top: -20vh; }
   @media (max-width: 75em) {
@@ -715,9 +719,9 @@ body {
   padding-bottom: 8rem; }
 
 .square-box-1 {
-  background-image: url(../img/exbo.jpeg);
+  background-image: url(../img/template_1.jpg);
   background-color: #ffffffe8;
-  padding: 12rem;
+  padding: 26rem 6rem;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -740,12 +744,12 @@ body {
   text-align: center; }
 
 .square-box-2 {
-  background-image: url(../img/core.jpeg);
+  background-image: url(../img/template_2.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #ffffffe8;
-  padding: 12rem;
+  padding: 26rem 6rem;
   text-align: center;
   font-size: 1.5rem;
   box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
@@ -762,12 +766,12 @@ body {
     transform: translateY(-1rem) scale(1.1); }
 
 .square-box-3 {
-  background-image: url(../img/faculty.jpeg);
+  background-image: url(../img/template_3.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #ffffffe8;
-  padding: 12rem;
+  padding: 26rem 6rem;
   text-align: center;
   font-size: 1.5rem;
   box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);

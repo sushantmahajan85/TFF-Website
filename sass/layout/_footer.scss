@@ -23,16 +23,16 @@
 .footer_text{
     color: white;
     text-transform: uppercase;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     border-bottom: 0.6px dotted gray;
     
     padding: 1rem;
 }
 .footer_para{
-    color: white;
+    color:whitesmoke;
+  line-height: 2rem;
     padding: 1rem;
-    hyphens: auto;
-    font-size: 1.3rem;
+    font:  400 12px/1.8 "Open Sans", sans-serif;
     display: inline-block;
     
     @include respond(phone){
