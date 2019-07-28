@@ -565,6 +565,8 @@ body {
   padding: 35rem 0 19rem 0;
   background-image: url(../img/Webp.net-compress-image.jpg);
   background-size: cover;
+  font-family: "Ubuntu" ,serif;
+  color: #555555;
   background-position: center;
   transform: skewY(-7deg);
   margin-top: -14rem;
@@ -587,6 +589,8 @@ body {
   text-align: center;
   font-size: 1.5rem;
   margin-top: -14rem;
+  font-family: "Ubuntu" ,serif;
+  color: #555555;
   border-radius: 4px; }
 
 .section_box_3 {
@@ -1427,7 +1431,7 @@ body {
   font-size: 1.5rem;
   padding: 1rem 4rem;
   border-radius: 6rem;
-  font-family: cursive;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: relative; }
 
 .link:hover {
