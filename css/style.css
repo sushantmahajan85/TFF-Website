@@ -38,23 +38,30 @@ body {
     .footer-box1 {
       margin-left: 3.5rem; } }
 
-@media (max-width: 37.5em) {
-  .footer-box2 {
-    margin-left: 3.5rem; } }
+.footer-box2 {
+  font-family: 'Raleway', sans-serif; }
+  @media (max-width: 37.5em) {
+    .footer-box2 {
+      margin-left: 3.5rem; } }
 
-@media (max-width: 37.5em) {
-  .footer-box3 {
-    margin-left: 3.5rem; } }
+.footer-box3 {
+  font-family: 'Raleway', sans-serif; }
+  @media (max-width: 37.5em) {
+    .footer-box3 {
+      margin-left: 3.5rem; } }
 
-@media (max-width: 37.5em) {
-  .footer-box4 {
-    margin-left: 3.5rem; } }
+.footer-box4 {
+  font-family: 'Raleway', sans-serif; }
+  @media (max-width: 37.5em) {
+    .footer-box4 {
+      margin-left: 3.5rem; } }
 
 .footer_text {
   color: white;
   text-transform: uppercase;
   font-size: 1.6rem;
   border-bottom: 0.6px dotted gray;
+  font: 400 12px/1.8 "Open Sans", sans-serif;
   padding: 1rem; }
 
 .footer_para {
@@ -1234,6 +1241,330 @@ body {
       .popup4_heading {
         text-align: center; } }
 
+.popup6 {
+  background-color: rgba(0, 0, 0, 0.808);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 99999999999999999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s; }
+  .popup6:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup6_content {
+    opacity: .95;
+    width: 75%;
+    height: 50rem;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    display: table;
+    border-radius: 5px; }
+  .popup6_left {
+    width: 33.33333333334%;
+    vertical-align: middle;
+    display: table-cell; }
+    @media (max-width: 56.25em) {
+      .popup6_left {
+        width: 0%; } }
+  .popup6_right {
+    width: 66.66666667;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 2rem 5rem; }
+    @media (max-width: 56.25em) {
+      .popup6_right {
+        width: 100%; } }
+  .popup6_cross:link, .popup6_cross:visited {
+    font-size: 4rem;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: 1rem;
+    right: 2rem; }
+    @media (max-width: 56.25em) {
+      .popup6_cross:link, .popup6_cross:visited {
+        position: absolute;
+        top: 1rem;
+        right: 1rem; } }
+  .popup6_img {
+    background-position: center;
+    background-size: 100% 100%;
+    display: block;
+    width: 100%; }
+    @media (max-width: 56.25em) {
+      .popup6_img {
+        display: none; } }
+  .popup6_paragraph {
+    column-count: 2;
+    font-family: "Ubuntu" ,serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    column-rule: 0.5px solid darkgrey;
+    column-gap: 4rem;
+    hyphens: auto; }
+    @media (max-width: 56.25em) {
+      .popup6_paragraph {
+        column-count: unset;
+        column-rule: unset;
+        column-gap: unset;
+        text-align: start; } }
+  .popup6_heading {
+    color: yellow; }
+    @media (max-width: 56.25em) {
+      .popup6_heading {
+        text-align: center; } }
+
+.popup7 {
+  background-color: rgba(0, 0, 0, 0.808);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 99999999999999999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s; }
+  .popup7:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup7_content {
+    opacity: .95;
+    width: 75%;
+    height: 50rem;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    display: table;
+    border-radius: 5px; }
+  .popup7_left {
+    width: 33.33333333334%;
+    vertical-align: middle;
+    display: table-cell; }
+    @media (max-width: 56.25em) {
+      .popup7_left {
+        width: 0%; } }
+  .popup7_right {
+    width: 66.66666667;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 2rem 5rem; }
+    @media (max-width: 56.25em) {
+      .popup7_right {
+        width: 100%; } }
+  .popup7_cross:link, .popup7_cross:visited {
+    font-size: 4rem;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: 1rem;
+    right: 2rem; }
+    @media (max-width: 56.25em) {
+      .popup7_cross:link, .popup7_cross:visited {
+        position: absolute;
+        top: 1rem;
+        right: 1rem; } }
+  .popup7_img {
+    background-position: center;
+    background-size: 100% 100%;
+    display: block;
+    width: 100%; }
+    @media (max-width: 56.25em) {
+      .popup7_img {
+        display: none; } }
+  .popup7_paragraph {
+    column-count: 2;
+    font-family: "Ubuntu" ,serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    column-rule: 0.5px solid darkgrey;
+    column-gap: 4rem;
+    hyphens: auto; }
+    @media (max-width: 56.25em) {
+      .popup7_paragraph {
+        column-count: unset;
+        column-rule: unset;
+        column-gap: unset;
+        text-align: start; } }
+  .popup7_heading {
+    color: yellow; }
+    @media (max-width: 56.25em) {
+      .popup7_heading {
+        text-align: center; } }
+
+.popup8 {
+  background-color: rgba(0, 0, 0, 0.808);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 99999999999999999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s; }
+  .popup8:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup8_content {
+    opacity: .95;
+    width: 75%;
+    height: 50rem;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    display: table;
+    border-radius: 5px; }
+  .popup8_left {
+    width: 33.33333333334%;
+    vertical-align: middle;
+    display: table-cell; }
+    @media (max-width: 56.25em) {
+      .popup8_left {
+        width: 0%; } }
+  .popup8_right {
+    width: 66.66666667;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 2rem 5rem; }
+    @media (max-width: 56.25em) {
+      .popup8_right {
+        width: 100%; } }
+  .popup8_cross:link, .popup8_cross:visited {
+    font-size: 4rem;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: 1rem;
+    right: 2rem; }
+    @media (max-width: 56.25em) {
+      .popup8_cross:link, .popup8_cross:visited {
+        position: absolute;
+        top: 1rem;
+        right: 1rem; } }
+  .popup8_img {
+    background-position: center;
+    background-size: 100% 100%;
+    display: block;
+    width: 100%; }
+    @media (max-width: 56.25em) {
+      .popup8_img {
+        display: none; } }
+  .popup8_paragraph {
+    column-count: 2;
+    font-family: "Ubuntu" ,serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    column-rule: 0.5px solid darkgrey;
+    column-gap: 4rem;
+    hyphens: auto; }
+    @media (max-width: 56.25em) {
+      .popup8_paragraph {
+        column-count: unset;
+        column-rule: unset;
+        column-gap: unset;
+        text-align: start; } }
+  .popup8_heading {
+    color: yellow; }
+    @media (max-width: 56.25em) {
+      .popup8_heading {
+        text-align: center; } }
+
+.popup9 {
+  background-color: rgba(0, 0, 0, 0.808);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 99999999999999999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s; }
+  .popup9:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup9_content {
+    opacity: .95;
+    width: 75%;
+    height: 50rem;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    display: table;
+    border-radius: 5px; }
+  .popup9_left {
+    width: 33.33333333334%;
+    vertical-align: middle;
+    display: table-cell; }
+    @media (max-width: 56.25em) {
+      .popup9_left {
+        width: 0%; } }
+  .popup9_right {
+    width: 66.66666667;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 2rem 5rem; }
+    @media (max-width: 56.25em) {
+      .popup9_right {
+        width: 100%; } }
+  .popup9_cross:link, .popup9_cross:visited {
+    font-size: 4rem;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: 1rem;
+    right: 2rem; }
+    @media (max-width: 56.25em) {
+      .popup9_cross:link, .popup9_cross:visited {
+        position: absolute;
+        top: 1rem;
+        right: 1rem; } }
+  .popup9_img {
+    background-position: center;
+    background-size: 100% 100%;
+    display: block;
+    width: 100%; }
+    @media (max-width: 56.25em) {
+      .popup9_img {
+        display: none; } }
+  .popup9_paragraph {
+    column-count: 2;
+    font-family: "Ubuntu" ,serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    column-rule: 0.5px solid darkgrey;
+    column-gap: 4rem;
+    hyphens: auto; }
+    @media (max-width: 56.25em) {
+      .popup9_paragraph {
+        column-count: unset;
+        column-rule: unset;
+        column-gap: unset;
+        text-align: start; } }
+  .popup9_heading {
+    color: yellow; }
+    @media (max-width: 56.25em) {
+      .popup9_heading {
+        text-align: center; } }
+
 @keyframes moveinleft {
   0% {
     transform: translateX(-13rem); }
@@ -1422,6 +1753,50 @@ body {
     .section-about {
       padding: 38rem 0 60rem 0; } }
 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px; }
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s; }
+
+.sidenav a:hover {
+  color: #f1f1f1; }
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+  .sidenav a {
+    font-size: 18px; } }
+
+.nav_logo {
+  position: fixed;
+  top: 5.5rem;
+  left: 7rem;
+  z-index: 1;
+  padding: .5rem;
+  background-color: black; }
+
 .link:link,
 .link:visited {
   text-decoration: none;
@@ -1497,6 +1872,7 @@ body {
   opacity: 0; }
 
 .header {
+  z-index: 0.5;
   background-image: url(../img/Photo-24.jpg);
   height: 95vh;
   background-position: center;

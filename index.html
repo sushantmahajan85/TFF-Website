@@ -19,22 +19,26 @@
     </head>
     <body>
         <script type="text/javascript" src="tffjs.js"></script>
-        <div class="navigation">
-            <input type="checkbox" class="navigation_checkbox" id="navi-toggle">
-        <label for="navi-toggle" class="navigation_button"><i class="material-icons" style="font-size:28px">menu</i></label>
-        <div class="navigation_back" id="navigation_back">&nbsp;</div>
-        <nav class="navigation_nav">
-            <ul class="navigation_list">
-                <li class="navigation_item"><a href="#popup" class="navigation_link" id="navigation_link" onclick="hideGreen()"><span class="navigation_number">01</span>about us</a></li>
-                <li class="navigation_item"><a href="TFF.html" class="navigation_link" id="navigation_link"  onclick="hideGreen()"><span class="navigation_number">02</span>our events</a></li>
-                <li class="navigation_item"><a href="#square-box-1" class="navigation_link" id="navigation_link"  onclick="hideGreen()"><span class="navigation_number">03</span>our team</a></li>
-                
-                <li class="navigation_item"><a href="https://m.me/thaparfoodfestival?fbclid=IwAR33YHwRwEPvAnL_LT_nFH0iOJAwM7UswztcEHzR6k2KaIWrZCox1MPioHY" class="navigation_link" id="navigation_link" onclick="hideGreen()"><span class="navigation_number">04</span>contact us</a></li>
-                <li class="navigation_item"><a href="#popup4" class="navigation_link" id="navigation_link"  onclick="hideGreen()"><span class="navigation_number">05</span>theme</a></li>
-            </ul>
-        </nav>
-        </div>
-           
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+          
+          <span class="nav_logo" style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776; </span>
+          
+          <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("nav_logo").style.visibility = "hidden";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+          </script>          
         <header class="header">
             
             <div class="heading">
@@ -77,7 +81,7 @@
                 <div class="row">
                 <div class="col-1-of-4">
                 
-                <div class="section_box_1">
+              <a href="#popup7">  <div class="section_box_1">
                     <i class="section_icon icon-basic-world"></i>
 
                     <h3 class="heading-main-small">SPONSOR 1</h3>
@@ -85,10 +89,11 @@
                             quibusdam illum, in, et sed minima provident</p>
                 
                 </div>
+              </a>
                 </div>
-                <div class="col-1-of-4">
+                   <div class="col-1-of-4">
                 
-                    <div class="section_box_2">
+                  <a href="#popup8">  <div class="section_box_2">
                         <i class="section_icon icon-basic-pin1"></i>
     
                         <h3 class="heading-main-small">SPONSOR 2</h3>
@@ -96,10 +101,11 @@
                                 quibusdam illum, in, et sed minima provident</p>
                     
                     </div>
+                </a>
                     </div>
                     <div class="col-1-of-4">
                 
-                        <div class="section_box_3">
+                    <a href="#popup9">    <div class="section_box_3">
                             <i class="section_icon icon-basic-clock"></i>
         
                             <h3 class="heading-main-small">SPONSOR 3</h3>
@@ -107,10 +113,11 @@
                                     quibusdam illum, in, et sed minima provident</p>
                         
                         </div>
+                    </a>
                         </div>
                         <div class="col-1-of-4">
                 
-                            <div class="section_box_4">
+                          <a href="#popup6">                        <div class="section_box_4">
                                 <i class="section_icon icon-basic-pin2"></i>
             
                                 <h3 class="heading-main-small">SPONSOR 4</h3>
@@ -118,6 +125,7 @@
                                         quibusdam illum, in, et sed minima provident</p>
                             
                             </div>
+                            </a>
                             </div>
                 
             </div></section>
@@ -272,5 +280,106 @@
                 </div>
             </div>
         </div>
+        <div class="popup6" id="popup6">
+            <div class="bg-video">
+                    <video  class="bg-video_content" autoplay loop muted>
+                        <source src="img/coverr-philippines-spices-1559212666899.mp4" type="video/mp4">
+                    </video>
+                </div>
+       
+                <div class="popup6_content">
+                
+                   
+                    <div class="popup6_left"><img src="img/about2.jpeg" alt="hi" class="popup6_img">
+                    <img src="img/about3.jpeg" alt="hi" class="popup6_img"></div>
+                    <div class="popup6_right">
+                        <a href="#footer" class="popup6_cross">&times;</a>
+                    <h1 class="heading-secondary popup6_heading u-centre">about us</h1>
+                    <p class="paragraph popup6_paragraph">Thapar Food Festival is the most magnificent and awe-inspiring festivity ever happened, one-of-a-kind. Keeping the sky as the limit, we always venture hard to content the ever-growing foodie in you. TFF is not just a festival,  but also a mission to let food break barriers and make everyone happy on a common stage. We are a journey, ever-growing indulging masses in merry-making. Come, experience edible infinity.</p>    
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="popup6" id="popup6">
+                <div class="bg-video">
+                        <video  class="bg-video_content" autoplay loop muted>
+                            <source src="img/coverr-philippines-spices-1559212666899.mp4" type="video/mp4">
+                        </video>
+                    </div>
+           
+                    <div class="popup6_content">
+                    
+                       
+                        <div class="popup6_left"><img src="img/about2.jpeg" alt="hi" class="popup6_img">
+                        <img src="img/about3.jpeg" alt="hi" class="popup6_img"></div>
+                        <div class="popup6_right">
+                            <a href="#footer" class="popup6_cross">&times;</a>
+                        <h1 class="heading-secondary popup6_heading u-centre">about us</h1>
+                        <p class="paragraph popup6_paragraph">Thapar Food Festival is the most magnificent and awe-inspiring festivity ever happened, one-of-a-kind. Keeping the sky as the limit, we always venture hard to content the ever-growing foodie in you. TFF is not just a festival,  but also a mission to let food break barriers and make everyone happy on a common stage. We are a journey, ever-growing indulging masses in merry-making. Come, experience edible infinity.</p>    
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="popup7" id="popup7">
+                    <div class="bg-video">
+                            <video  class="bg-video_content" autoplay loop muted>
+                                <source src="img/coverr-philippines-spices-1559212666899.mp4" type="video/mp4">
+                            </video>
+                        </div>
+               
+                        <div class="popup7_content">
+                        
+                           
+                            <div class="popup7_left"><img src="img/about2.jpeg" alt="hi" class="popup7_img">
+                            <img src="img/about3.jpeg" alt="hi" class="popup7_img"></div>
+                            <div class="popup7_right">
+                                <a href="#footer" class="popup7_cross">&times;</a>
+                            <h1 class="heading-secondary popup7_heading u-centre">about us</h1>
+                            <p class="paragraph popup7_paragraph">Thapar Food Festival is the most magnificent and awe-inspiring festivity ever happened, one-of-a-kind. Keeping the sky as the limit, we always venture hard to content the ever-growing foodie in you. TFF is not just a festival,  but also a mission to let food break barriers and make everyone happy on a common stage. We are a journey, ever-growing indulging masses in merry-making. Come, experience edible infinity.</p>    
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup8" id="popup8">
+                        <div class="bg-video">
+                                <video  class="bg-video_content" autoplay loop muted>
+                                    <source src="img/coverr-philippines-spices-1559212666899.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                   
+                            <div class="popup8_content">
+                            
+                               
+                                <div class="popup8_left"><img src="img/about2.jpeg" alt="hi" class="popup8_img">
+                                <img src="img/about3.jpeg" alt="hi" class="popup8_img"></div>
+                                <div class="popup8_right">
+                                    <a href="#footer" class="popup8_cross">&times;</a>
+                                <h1 class="heading-secondary popup8_heading u-centre">about us</h1>
+                                <p class="paragraph popup8_paragraph">Thapar Food Festival is the most magnificent and awe-inspiring festivity ever happened, one-of-a-kind. Keeping the sky as the limit, we always venture hard to content the ever-growing foodie in you. TFF is not just a festival,  but also a mission to let food break barriers and make everyone happy on a common stage. We are a journey, ever-growing indulging masses in merry-making. Come, experience edible infinity.</p>    
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup9" id="popup9">
+                            <div class="bg-video">
+                                    <video  class="bg-video_content" autoplay loop muted>
+                                        <source src="img/coverr-philippines-spices-1559212666899.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                       
+                                <div class="popup9_content">
+                                
+                                   
+                                    <div class="popup9_left"><img src="img/about2.jpeg" alt="hi" class="popup9_img">
+                                    <img src="img/about3.jpeg" alt="hi" class="popup9_img"></div>
+                                    <div class="popup9_right">
+                                        <a href="#footer" class="popup9_cross">&times;</a>
+                                    <h1 class="heading-secondary popup9_heading u-centre">about us</h1>
+                                    <p class="paragraph popup9_paragraph">Thapar Food Festival is the most magnificent and awe-inspiring festivity ever happened, one-of-a-kind. Keeping the sky as the limit, we always venture hard to content the ever-growing foodie in you. TFF is not just a festival,  but also a mission to let food break barriers and make everyone happy on a common stage. We are a journey, ever-growing indulging masses in merry-making. Come, experience edible infinity.</p>    
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                                            
     </body>
 </html>
