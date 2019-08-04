@@ -19,7 +19,7 @@
   position: fixed;
   z-index: 2;
   top: 0;
-  left: 0;
+  right: 0;
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
@@ -54,6 +54,9 @@ background-size: 220%;
   margin-left: 50px;
   color: white;
   background-image: none;
+  &:hover{
+    color: purple;
+  }
 }
 
 @media screen and (max-height: 450px) {
@@ -62,11 +65,11 @@ background-size: 220%;
 }
 .nav_logo{
   position:fixed;
-  top: 5.5rem;
-  left: 7rem;
+  top: 5.6rem;
+  right:  6.5rem;
 z-index: 1;
 
-padding: .1rem .5rem;
+padding: 0rem .5rem;
 background-color: black;
 
 }

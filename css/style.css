@@ -1754,6 +1754,9 @@ body {
   margin-left: 4rem;
   margin-top: 4rem; }
 
+.section_pic a {
+  text-decoration: none; }
+
 .fas {
   padding: 20px;
   font-size: 30px;
@@ -1798,7 +1801,7 @@ body {
   position: fixed;
   z-index: 2;
   top: 0;
-  left: 0;
+  right: 0;
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
@@ -1828,6 +1831,8 @@ body {
   margin-left: 50px;
   color: white;
   background-image: none; }
+  .sidenav .closebtn:hover {
+    color: purple; }
 
 @media screen and (max-height: 450px) {
   .sidenav {
@@ -1837,10 +1842,10 @@ body {
 
 .nav_logo {
   position: fixed;
-  top: 5.5rem;
-  left: 7rem;
+  top: 5.6rem;
+  right: 6.5rem;
   z-index: 1;
-  padding: .1rem .5rem;
+  padding: 0rem .5rem;
   background-color: black; }
 
 .link:link,
