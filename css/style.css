@@ -596,8 +596,6 @@ body {
   text-align: center;
   font-size: 1.5rem;
   margin-top: -14rem;
-  font-family: "Ubuntu" ,serif;
-  color: #555555;
   border-radius: 4px; }
 
 .section_box_3 {
@@ -628,11 +626,8 @@ body {
   transform: skewY(7deg);
   box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
   transition: all 0.2s;
-  color: #525151;
   font-size: 1.5rem;
-  font-size: 1.5rem;
-  font-family: "Ubuntu" ,serif;
-  color: #555555; }
+  font-family: "Ubuntu" ,serif; }
   @media (max-width: 75em) {
     [class^="section_box_"] {
       margin: 2rem; } }
@@ -708,7 +703,7 @@ body {
 .team_section {
   background-color: #f7f7f7;
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
   padding: 30rem 0 18rem 0;
   margin-top: -20vh; }
   @media (max-width: 75em) {
@@ -835,6 +830,10 @@ body {
   .copyright_link:hover, .copyright_link:active {
     color: tan;
     transform: scale(1.1); }
+
+.section_text {
+  text-decoration: none;
+  color: #555555; }
 
 .popup {
   background-color: rgba(0, 0, 0, 0.808);
@@ -1692,18 +1691,16 @@ body {
       text-align: start; } }
 
 .navigation_item {
-  font-size: 2.5rem;
+  font-size: .2rem;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 2rem 4rem;
   margin: 0.8rem;
-  font-weight: 450;
   width: 100%; }
   @media (max-width: 56.25em) {
     .navigation_item {
-      font-size: 2.5rem; } }
+      font-size: 1.2rem; } }
 
 .navigation_link:link, .navigation_link:visited {
   text-decoration: none;
@@ -1739,6 +1736,48 @@ body {
   .material-icons:hover {
     color: red; }
 
+.nav_tff {
+  text-align: start;
+  color: white;
+  font-size: 2.5rem;
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+  font-family: 'Courier New', Courier, monospace; }
+
+.sidenav {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.follow_us {
+  text-align: start;
+  color: white;
+  font-size: 2.5rem;
+  margin-left: 4rem;
+  margin-top: 4rem; }
+
+.fas {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%; }
+
+.fas:hover {
+  opacity: 0.7; }
+
+.fa-facebook {
+  background: #c7cbd4;
+  color: white; }
+
+.fa-instagram {
+  background: #c4c6cc;
+  color: white; }
+
+.nav_logos {
+  background-image: none;
+  margin-top: 3.5rem; }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 28rem 0 40rem 0;
@@ -1766,22 +1805,29 @@ body {
   padding-top: 60px; }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 28px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 17.5px;
+  color: #555555;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+  background-size: 220%;
+  color: #grey;
   display: block;
-  transition: 0.3s; }
+  transition: 0.5s all;
+  margin-bottom: 1.3rem; }
 
 .sidenav a:hover {
-  color: #f1f1f1; }
+  color: black;
+  background-position: 100%; }
 
 .sidenav .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
-  margin-left: 50px; }
+  font-size: 25px;
+  margin-left: 50px;
+  color: white;
+  background-image: none; }
 
 @media screen and (max-height: 450px) {
   .sidenav {
@@ -1794,7 +1840,7 @@ body {
   top: 5.5rem;
   left: 7rem;
   z-index: 1;
-  padding: .5rem;
+  padding: .1rem .5rem;
   background-color: black; }
 
 .link:link,
@@ -1873,10 +1919,11 @@ body {
 
 .header {
   z-index: 0.5;
+  font-family: "decade";
   background-image: url(../img/Photo-24.jpg);
   height: 95vh;
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
   position: relative;
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
   backface-visibility: hidden; }
@@ -1886,7 +1933,7 @@ body {
       background-size: 100% 100%; } }
   @media (min-width: 600px) {
     .header {
-      background-image: url(../img/new.jpg); } }
+      background-image: url(../img/tff_final.jpg); } }
 
 .bg-video {
   width: 100%;

@@ -139,8 +139,6 @@
       font-size: 1.5rem;
       margin-top: -14rem;
       
-   font-family: "Ubuntu" ,serif;
-   color: #555555;
       border-radius: 4px;
     }
     .section_box_3{
@@ -174,19 +172,22 @@ color: transparent;
      transform: skewY(7deg);
      box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
      transition: all 0.2s;
-     color:#525151;     font-size: 1.5rem;
+       
+     
      font-size: 1.5rem;
    font-family: "Ubuntu" ,serif;
-   color: #555555;
+   
      @include respond (tab-land){
       margin: 2rem;
 }
+   
+
 
      &:hover{
        box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
        transform: translateY(-1rem) scale(1.1) skewY(7deg);
      }
-   }
+    }
    .footer{
      background-color: black;
      padding: 13rem 0 2rem 0;
@@ -283,7 +284,7 @@ text-align: center;
       background-color: #f7f7f7;
       
       background-position: center;
-      background-size: cover;
+      background-size: 100% 100%;
       padding: 30rem 0 18rem 0;
       margin-top: -20vh;
       @include respond(tab-land){
@@ -432,4 +433,9 @@ font-weight: 500;
       }
     }
   }
-
+.section_text{
+  
+text-decoration: none;
+color:#555555;
+  
+}
