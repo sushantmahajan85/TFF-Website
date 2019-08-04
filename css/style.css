@@ -130,6 +130,36 @@ body {
         margin-right: 0;
         margin-bottom: 6rem; } }
 
+.se2 {
+  background-image: url(../img/pg2.jpeg); }
+
+.se3 {
+  background-image: url(../img/pg3.jpeg); }
+
+.se4 {
+  background-image: url(../img/pg4.jpeg); }
+
+.se5 {
+  background-image: url(../img/pg1.jpeg); }
+
+.pi1 {
+  background-image: url(../img/pi1.jpeg); }
+
+.pi2 {
+  background-image: url(../img/pi2.jpeg); }
+
+.pi3 {
+  background-image: url(../img/pi3.jpeg); }
+
+.pi4 {
+  background-image: url(../img/pi4.jpeg); }
+
+.pi5 {
+  background-image: url(../img/pi5.jpeg); }
+
+.pi6 {
+  background-image: url(../img/pi6.jpeg); }
+
 .core_heading {
   margin-top: 3rem;
   text-align: center; }

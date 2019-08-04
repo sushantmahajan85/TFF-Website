@@ -24,7 +24,7 @@ body {
   content: '';
   position: absolute;
   width: 6px;
-  background-color:black;
+  background-color:rgb(2,2,48);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -35,8 +35,9 @@ body {
 .container {
   padding: 10px 40px;
   position: relative;
-  background-color: inherit;
-  width: 50%;
+  background-color:inherit;
+  width:50%;
+  color:rgba(2,1,38,1));
 }
 
 /* The circles on the timeline */
@@ -46,8 +47,8 @@ body {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color:#FF9F;
-  border: 4px solid #FF9F;
+  background-color:rgb(169,168,179);
+  border: 4px solid rgb(2,2,48);
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -122,6 +123,7 @@ body {
   width: 100%;
   padding-left: 70px;
   padding-right: 25px;
+  color:rgb(169,168,179);
   }
   
   /* Make sure that all arrows are pointing leftwards */
@@ -146,14 +148,62 @@ body {
 .zoom:hover {
   transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-
+.zoom{
+	 border: 4px solid rgb(2,2,48);
+}
+.rectangle {
+  height: auto;
+  width: 100%;
+ background-image:url("BG7.png");
+  font-size: 50px;
+   text-align:center;
+   color:white;
+   font-family:Simplifica; 
+}
+.date:p{
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+  color:white;
+	}
 </style>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Sep 11, 2019 16:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
 </head>
-<body>	
-<div style="font-size: 50px; text-align:center;color:black;font-family:Simplifica; ">OUR EVENTS</div>
+<body >	
+<div class="rectangle"><br><p>HELLO! WELCOME TO THE EVENTS PAGE OF<br>THAPAR FOOD FESTIVAL<br>MAIN DAY COUNTDOWN</p><p id="demo"></p><br></div>
 <div class="timeline">
 	<div>
-		
   <div class="container left">
     <div class="content">
       <h2>DESERT BAZAAR</h2>
@@ -161,7 +211,7 @@ body {
     </div>
   </div>
   <img src="DB2.jpg" class="zoom" style="float:right;width:20%;margin-top:-280px;border-radius:50%;position:relative;">
-  <img src="DB2.jpg" class="zoom" style="float:right;width:20%;margin-top:-280px;margin-right:280px;border-radius:50%;position:relative;">
+  <img src="DB1.jpg" class="zoom" style="float:right;width:20%;margin-top:-280px;margin-right:280px;border-radius:50%;position:relative;">
 </div>
 <div>
   <div class="container right">
@@ -170,8 +220,8 @@ body {
       <p>XXXLife can be quite boring if laughter is missing and laughter comes with humour. And hence humour is a basic necessity of life just like food. And comedy along with food i.e. two necessities altogether is a deadly combo. So we bring to you an evening 'food comedy' with some best comedy stars of canvas laugh club, that will make you laugh hard and kick out all your stress and we will surely kick out your snack hunger.</p>
     </div>
   </div>
-  <img src="OR2.jpg" class="zoom" style="float:left;width:20%;margin-top:-250px;border-radius:50%;position:relative;margin-right:30px;">
-  <img src="OR1.jpg" class="zoom" style="float:left;width:20%;margin-top:-250px;margin-left:300px;border-radius:50%;position:relative;">
+   <img src="OR1.jpg" class="zoom" style="float:left;width:20%;margin-top:-250px;border-radius:50%;position:relative;">
+  <img src="OR2.jpg" class="zoom" style="float:left;width:20%;margin-top:-250px;margin-left:280px;border-radius:50%;position:relative;">
 </div>
 <div>
   <div class="container left">
@@ -236,8 +286,8 @@ Desire  , Compete , Win lots of grand prizes</p>
       <p>XXXMissing local food ?Ever been mesmirized by the concept of food trucks. So here's a surprise for all you food lovers  , presenting Food Truck , the next event of TFF '19 where hot and lip smacking food prepared in food trucks will be served to all food enthusiasts</p>
     </div> 
   </div>
-<img src="MD1.jpg" class="zoom" style="float:left;width:20%;margin-top:-220px;border-radius:50%;">
-  <img src="MD2.jpg" class="zoom" style="float:left;width:20%;margin-top:-220px;margin-left:80px;border-radius:50%;"> 
+<img src="MD1.jpg" class="zoom" style="float:left;width:20%;margin-top:-250px;border-radius:50%;position:relative;">
+  <img src="MD2.jpg" class="zoom" style="float:left;width:20%;margin-top:-250px;margin-left:280px;border-radius:50%;position:relative;"> 
 </div>
 </div>
 
