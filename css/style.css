@@ -68,7 +68,7 @@ body {
   color: whitesmoke;
   line-height: 2rem;
   padding: 1rem;
-  font: 400 12px/1.8 "Open Sans", sans-serif;
+  font-family: 'Amaranth';
   display: inline-block; }
   @media (max-width: 37.5em) {
     .footer_para {
@@ -588,9 +588,9 @@ body {
 
 .paragraph {
   font-size: 1.6rem;
-  font-family: "Ubuntu" ,serif;
+  font-family: 'Amaranth';
   color: #555555;
-  line-height: 2rem; }
+  line-height: 2.5rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
@@ -602,7 +602,6 @@ body {
   padding: 35rem 0 19rem 0;
   background-image: url(../img/Webp.net-compress-image.jpg);
   background-size: cover;
-  font-family: "Ubuntu" ,serif;
   color: #555555;
   background-position: center;
   transform: skewY(-7deg);
@@ -678,7 +677,7 @@ body {
     padding: 5rem; }
   .footer_logo {
     height: auto;
-    width: 25rem; }
+    width: 10rem; }
   .footer_list {
     list-style: none;
     text-align: center;
@@ -748,7 +747,7 @@ body {
     color: #555555;
     text-align: center;
     line-height: 3rem;
-    font-family: "Ubuntu" ,serif; }
+    font-family: 'Amaranth'; }
 
 .team_section-meet {
   text-align: center; }
@@ -764,7 +763,7 @@ body {
   padding-bottom: 8rem; }
 
 .square-box-1 {
-  background-image: url(../img/template_1.jpg);
+  background-image: url(../img/Template17.jpg);
   background-color: #ffffffe8;
   padding: 26rem 6rem;
   background-size: 100% 100%;
@@ -789,7 +788,7 @@ body {
   text-align: center; }
 
 .square-box-2 {
-  background-image: url(../img/template_2.jpg);
+  background-image: url(../img/TEMPLATE2016.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -811,7 +810,7 @@ body {
     transform: translateY(-1rem) scale(1.1); }
 
 .square-box-3 {
-  background-image: url(../img/template_3.jpg);
+  background-image: url(../img/Template18.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -862,6 +861,7 @@ body {
     transform: scale(1.1); }
 
 .section_text {
+  font-family: 'Amaranth';
   text-decoration: none;
   color: #555555; }
 
@@ -1978,3 +1978,9 @@ body {
     object-fit: cover;
     height: 100%;
     width: 100%; }
+
+.header_logo-box {
+  padding: 3rem;
+  position: absolute;
+  top: 2rem;
+  left: 2rem; }

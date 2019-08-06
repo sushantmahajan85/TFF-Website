@@ -15,16 +15,24 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
         <title>Thapar Food Festival</title>
     </head>
     <body>
+            <div class="loader">
+                    <div class="bubble">
+                      <div class="bubble__shine bubble__shine--lg"></div>
+                      <div class="bubble__shine bubble__shine--sm"></div>
+                    </div>
+                    <p class="text">
+                       Lo<span class="text__highlight">a</span>din<span class="text__highlight">g</span></p>
+                  </div>
         <script type="text/javascript" src="tffjs.js"></script>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <h3 class="nav_tff"> Thapar Food Festival</h3>
           <div class="navigation_link navigation_item">  <a href="#popup" onclick="closeNav()">About</a>
-            <a href="#" onclick="closeNav()">Team</a>
             <a href="TFF.html" onclick="closeNav()">Events</a>
             <a href="#section_pic" onclick="closeNav()">Sponsors</a>
             <a href="#popup4" onclick="closeNav()">Theme</a>
@@ -50,7 +58,9 @@
           }
           </script>          
         <header class="header">
-            
+                <div class="header_logo-box">
+                        <img src="img/white_logo.png" alt="logo" class="footer_logo"></div>
+                    
            <!-- <div class="heading">
                 <h1 class="main-heading">
                     <span class="main-heading-upr">THAPAR FOOD FESTIVAL</span>
@@ -63,7 +73,7 @@
             <section class="section-about" id="section-about">
                 <div class="u-centre">
                 <h2 class="heading-secondary">
-                     achievements
+                     about us
                 </h2>
                 </div>
                 <div class="row">
@@ -76,7 +86,7 @@
                         quibusdam illum, in, et sed minima provident dolor quo ex consectetur est quidem enim totam voluptatem!</p>
 
 
-                        <a href="#" class="btn-link">Learn more &rarr;</a>
+                        <a href="#popup" class="btn-link">Learn more &rarr;</a>
                         </div>
                         <div class="col-1-of-2">
                             <div class="composition">
@@ -143,9 +153,7 @@
                 <div class="team_section-meet">
                     <h1 class="team_section-text"> memories </h1>
                 </div>
-                <div class="row team_section-paragraph" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ea iure esse ab at ipsam repellat non nam, reiciendis porro harum amet doloribus magni ducimus nobis itaque facere consectetur consequuntur.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis id eius praesentium expedita unde, nam pariatur omnis porro molestias, quas quia rerum illum minus ducimus a maxime possimus, nemo temporibus.
-                </div>
+                <div class="row team_section-paragraph" style="width: 80%">Memories are treasures one will always preserve. One may not live a moment again, but can remember and cherish it forever. Thapar Food Festival has created a plethora of memories, that cherish this unique concoction of food,fun and satisfaction. Below are glimpse of the same: </div>
                 <div class="row">
                    <a href="2016.html"class="col-1-of-3  square-box-2"> </a>
                     <a href="2017.html"class="col-1-of-3  square-box-1" id="square-box-1"></a>
@@ -157,14 +165,12 @@
 
         </main>
         
+        <img src="img/footer-background.jpg" alt="footerbackground" style="width: 100% ; margin-bottom: -2rem">
         <footer class="footer" id="footer">
-<div class="footer_logo-box">
-    <img src="img/logo-green-small-2x.png" alt="logo" class="footer_logo"></div>
+<!--<div class="footer_logo-box">
+    <img src="img/white_logo.png" alt="logo" class="footer_logo"></div>-->
 <div class="row">
-    <div class="col-1-of-4 footer-box1">
-        <h2 class="footer_text">about us</h2>
-    <p class="footer_para">Lorem ipsum, dolor sit amet consectetur bhjdsb hwbkch fsddbs fhhsx kcgh hjjv, kyjy ylgy jtd kufyu  dxn gaezs gserhbgxf xbdf gzegvcs gzsgv   adipisicing elit. Odit quidem fbdfbdf dsgdfbgdht htrhbdf fevsv thdsfbv grhts grag brgza garwgz </p>
-    </div>
+   
     <div class="col-1-of-4  footer-box2">
         <h2 class="footer_text">facebook</h2>
     <i class="fb"><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthaparfoodfestival&tabs=timeline&width=240&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="240" height="400" style="border:none;overflow:hidden;padding-top: 1rem " scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></i>
@@ -180,6 +186,10 @@
     <div class="col-1-of-4 footer-box4">
         <h2 class="footer_text">location</h2>
     <i class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442.9312390990526!2d76.361363700999!3d30.352904031681735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39102f534a87b5c5%3A0xda1d3ed337e382b3!2sThapar+University%2C+Prem+Nagar%2C+Patiala%2C+Punjab+147004!5e0!3m2!1sen!2sin!4v1563525294236!5m2!1sen!2sin" width="240" height="400" frameborder="0" style="border:0;  padding-top: 1rem" allowfullscreen></iframe></i>    
+    </div>
+    <div class="col-1-of-4 footer-box1">
+        <h2 class="footer_text">contact us</h2>
+    <p class="footer_para">Lorem ipsum, dolor sit amet consectetur bhjdsb hwbkch fsddbs fhhsx kcgh hjjv, kyjy ylgy jtd kufyu  dxn gaezs gserhbgxf xbdf gzegvcs gzsgv   adipisicing elit. Odit quidem fbdfbdf dsgdfbgdht htrhbdf fevsv thdsfbv grhts grag brgza garwgz </p>
     </div>
   </div>
 <div class="copyright">
@@ -203,7 +213,7 @@
                 <div class="popup_left"><img src="img/about2.jpeg" alt="hi" class="popup_img">
                 <img src="img/about3.jpeg" alt="hi" class="popup_img"></div>
                 <div class="popup_right">
-                    <a href="#footer" class="popup_cross">&times;</a>
+                    <a href="#section-about" class="popup_cross">&times;</a>
                 <h1 class="heading-secondary popup_heading u-centre">about us</h1>
                 <p class="paragraph popup_paragraph">Thapar Food Festival is the most magnificent and awe-inspiring festivity ever happened, one-of-a-kind. Keeping the sky as the limit, we always venture hard to content the ever-growing foodie in you. TFF is not just a festival,  but also a mission to let food break barriers and make everyone happy on a common stage. We are a journey, ever-growing indulging masses in merry-making. Come, experience edible infinity.</p>    
                 
@@ -283,10 +293,7 @@
                 <div class="popup4_right">
                     <a href="#section-about" class="popup4_cross">&times;</a>
                 <h1 class="heading-secondary popup4_heading">THEME</h1>
-                <p class="paragraph popup4_paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem suscipit amet quasi dolores tempora vero, minima sed nisi nulla laborum fuga excepturi qui ut ipsa. Porro tempora enim laboriosam ipsam
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis praesentium quam officiis corporis maiores dolore veritatis, velit modi et, voluptas magni error, molestiae illum! Quae ex nostrum aperiam excepturi molestias
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolore, enim consequatur voluptatibus delectus magni numquam ducimus inventore, aliquam quidem, suscipit minus deleniti! Voluptas voluptatum voluptate soluta aliquid porro quae.  </p>    
-                
+                <p class="paragraph popup4_paragraph">This world is full of colours, Colours that excitr us and makes the earth a happierplace to live. These colours when fuse together, impart their individual expertise and present verstality. This time, we, at TFF has decided to let all lips murmur "Oh!My God" by letting spices and flavours fuse wild in the right way.     
                 </div>
             </div>
         </div>

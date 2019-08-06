@@ -34,13 +34,11 @@
     color:whitesmoke;
   line-height: 2rem;
     padding: 1rem;
-    font:  400 12px/1.8 "Open Sans", sans-serif;
+    
+    font-family: 'Amaranth';
     display: inline-block;
     
     @include respond(phone){
         width: 80%;
       }
-}
-.fb{
-    
 }
