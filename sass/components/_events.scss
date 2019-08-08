@@ -1,0 +1,81 @@
+.events{
+    margin: -4rem;
+    &_img1{
+     padding: 18rem;
+     border-radius: 10rem;
+     background-size: 100% 100%;
+        background-image: linear-gradient(to right top,#ffe259, #ffa751);
+    }
+    &_img2{
+        padding: 10rem;
+        
+     background-size: 100% 100%;
+        
+        background-image: linear-gradient(to right top,#5433FF, #20BDFF,#A5FECB);
+    }
+    &_img3{
+        padding: 10rem;
+        
+     background-size: 100% 100%;
+        
+        background-image: linear-gradient(to right top,#8E2DE2,#4A00E0);
+    }&_img4{
+        padding: 10rem;
+        
+     background-size: 100% 100%;
+        
+        background-image: linear-gradient(to right top,#aa4b6b, #6b6b83,#3b8d99);
+    }&_img5{
+        padding: 10rem;
+        
+     background-size: 100% 100%;
+        
+        background-image: linear-gradient(to right top,#c31432, #240b36);
+    }&_img6{
+        padding: 10rem;
+        
+     background-size: 100% 100%;
+        
+        background-image: linear-gradient(to right top,#f12711,#f5af19);
+    }
+    &_paragraph{
+        color: white;
+        font-size: 1.7rem;
+        padding-top: 1rem;
+        line-height: 2.4rem;
+       
+    }
+    &_heading-small{
+        color: white;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+        font-weight: 400;
+    }
+    &_heading{
+        color:white;
+        padding: 0.5rem 0.6rem;
+        border: 1.5px solid rgb(223, 222, 214);
+        border-radius: 2px;
+        display: inline-block;
+        font-weight: 600;
+        letter-spacing: 0.3rem;
+        font-family: 'Courier New', Courier, monospace;
+        
+        font-size: 3rem;
+    }
+    &_pic{
+        box-shadow: 2rem 2rem 5rem rgba(0, 0, 0, 0.397);
+        outline-offset: 1rem;
+        transform: scale(1.05);
+        box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.473);
+        outline: 0.75rem solid rgb(208, 211, 212);
+    
+        &:hover{
+            transform: scale(1.05);
+            box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.473);
+            outline: 1rem solid white;
+        }
+    }
+}
