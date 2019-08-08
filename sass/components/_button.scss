@@ -1,12 +1,20 @@
+.discover_events{
+position: absolute;
+top: 82%;
+left: 45%;
+
+transform: translate(-50%,-50%);
+
+}
 .link:link,
   .link:visited {
     text-decoration: none;
     color: #777;
-    background-color: #fff;
+    background-color:white;
     display:inline-block ;
-    font-size: 1.5rem;
-    padding: 1rem 4rem;
-    border-radius: 6rem;
+    font-size:2.4rem;
+    padding: 2rem 6rem;
+    border-radius: 4px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: relative;
   }
@@ -27,7 +35,7 @@
     left: 0%;
     z-index: -1;
     background-color: #fff;
-  border-radius: 10rem;
+  border-radius: 6px;
   transition: all 0.4s;
   }
   .link:hover::after{

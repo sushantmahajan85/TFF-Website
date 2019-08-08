@@ -1,17 +1,18 @@
 .events{
     margin: -4rem;
     &_img1{
-     padding: 18rem;
-     border-radius: 10rem;
-     background-size: 100% 100%;
-        background-image: linear-gradient(to right top,#ffe259, #ffa751);
+     padding: 15rem;
+     background-position: center;
+     background-size: cover;
+     
+     background-image: linear-gradient(to right,rgba(21, 101, 192, 0.836),#b92c27da),url(https://lh6.googleusercontent.com/5mDPQrSZajziAFPln7cdVwQlu83OGmox-xQZ6o6txaI7YnQW6Ss7MmLUrRCieHXIAaIHU9A=w16383);
     }
     &_img2{
         padding: 10rem;
         
      background-size: 100% 100%;
         
-        background-image: linear-gradient(to right top,#5433FF, #20BDFF,#A5FECB);
+        background-image: linear-gradient(to right top,#f12711,#f5af19);
     }
     &_img3{
         padding: 10rem;
@@ -30,16 +31,37 @@
         
      background-size: 100% 100%;
         
-        background-image: linear-gradient(to right top,#c31432, #240b36);
+        background-image: linear-gradient(to right top,#5433FF, #20BDFF,#A5FECB);
     }&_img6{
         padding: 10rem;
         
      background-size: 100% 100%;
         
-        background-image: linear-gradient(to right top,#f12711,#f5af19);
+        background-image: linear-gradient(to right top,#c31432, #240b36);
+    }
+    &_img7{
+        padding: 10rem;
+        
+     background-size: 100% 100%;
+        
+        background-image: linear-gradient(to right top,#dd3e54,#6be585);
+    }&_img8{
+        padding: 10rem;
+        
+     background-size: 100% 100%;
+        
+        background-image: linear-gradient(to right top,#FF416C,#FF4B2B);
+    }&_img9{
+        padding: 10rem;
+        
+     background-size: 100% 100%;
+        
+        background-image: linear-gradient(to right top,purple,pink,#f64f59);
     }
     &_paragraph{
         color: white;
+        
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 1.7rem;
         padding-top: 1rem;
         line-height: 2.4rem;
@@ -51,7 +73,7 @@
         padding-bottom: 0.5rem;
         font-size: 1.8rem;
         letter-spacing: 0.1rem;
-        font-weight: 400;
+        font-weight: 800;
     }
     &_heading{
         color:white;
@@ -59,7 +81,7 @@
         border: 1.5px solid rgb(223, 222, 214);
         border-radius: 2px;
         display: inline-block;
-        font-weight: 600;
+        font-weight: 1000;
         letter-spacing: 0.3rem;
         font-family: 'Courier New', Courier, monospace;
         
@@ -73,9 +95,42 @@
         outline: 0.75rem solid rgb(208, 211, 212);
     
         &:hover{
+           
             transform: scale(1.05);
             box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.473);
             outline: 1rem solid white;
         }
+    }
+    &_header{
+        text-align: center;
+        
+    }
+    .eventos{
+        display: inline-block;
+border-radius: 2.5px;
+        margin-bottom: 3rem;
+        color: #FF416C;
+        font-size: 3rem;
+        font-weight: 800;
+        padding: 1rem;
+        background-color: white;
+    }
+    &_header-heading{
+        font-size: 2.5rem;
+        color: white;
+        font-weight: 1200;
+letter-spacing: 0.8rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding: 2rem;
+    }
+    &_header-heading-small{
+font-size: 1.4rem;
+font-weight: 800;
+padding: 0.5rem;
+color: rgb(34, 33, 33);
+background-color: white;
+display: inline-block;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
     }
 }

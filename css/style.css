@@ -509,14 +509,14 @@ body {
 .events {
   margin: -4rem; }
   .events_img1 {
-    padding: 18rem;
-    border-radius: 10rem;
-    background-size: 100% 100%;
-    background-image: linear-gradient(to right top, #ffe259, #ffa751); }
+    padding: 15rem;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(21, 101, 192, 0.836), #b92c27da), url(https://lh6.googleusercontent.com/5mDPQrSZajziAFPln7cdVwQlu83OGmox-xQZ6o6txaI7YnQW6Ss7MmLUrRCieHXIAaIHU9A=w16383); }
   .events_img2 {
     padding: 10rem;
     background-size: 100% 100%;
-    background-image: linear-gradient(to right top, #5433FF, #20BDFF, #A5FECB); }
+    background-image: linear-gradient(to right top, #f12711, #f5af19); }
   .events_img3 {
     padding: 10rem;
     background-size: 100% 100%;
@@ -528,13 +528,26 @@ body {
   .events_img5 {
     padding: 10rem;
     background-size: 100% 100%;
-    background-image: linear-gradient(to right top, #c31432, #240b36); }
+    background-image: linear-gradient(to right top, #5433FF, #20BDFF, #A5FECB); }
   .events_img6 {
     padding: 10rem;
     background-size: 100% 100%;
-    background-image: linear-gradient(to right top, #f12711, #f5af19); }
+    background-image: linear-gradient(to right top, #c31432, #240b36); }
+  .events_img7 {
+    padding: 10rem;
+    background-size: 100% 100%;
+    background-image: linear-gradient(to right top, #dd3e54, #6be585); }
+  .events_img8 {
+    padding: 10rem;
+    background-size: 100% 100%;
+    background-image: linear-gradient(to right top, #FF416C, #FF4B2B); }
+  .events_img9 {
+    padding: 10rem;
+    background-size: 100% 100%;
+    background-image: linear-gradient(to right top, purple, pink, #f64f59); }
   .events_paragraph {
     color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.7rem;
     padding-top: 1rem;
     line-height: 2.4rem; }
@@ -544,14 +557,14 @@ body {
     padding-bottom: 0.5rem;
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
-    font-weight: 400; }
+    font-weight: 800; }
   .events_heading {
     color: white;
     padding: 0.5rem 0.6rem;
     border: 1.5px solid #dfded6;
     border-radius: 2px;
     display: inline-block;
-    font-weight: 600;
+    font-weight: 1000;
     letter-spacing: 0.3rem;
     font-family: 'Courier New', Courier, monospace;
     font-size: 3rem; }
@@ -565,6 +578,32 @@ body {
       transform: scale(1.05);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.473);
       outline: 1rem solid white; }
+  .events_header {
+    text-align: center; }
+  .events .eventos {
+    display: inline-block;
+    border-radius: 2.5px;
+    margin-bottom: 3rem;
+    color: #FF416C;
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 1rem;
+    background-color: white; }
+  .events_header-heading {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 1200;
+    letter-spacing: 0.8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2rem; }
+  .events_header-heading-small {
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding: 0.5rem;
+    color: #222121;
+    background-color: white;
+    display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
 /*.logo-box{
           position: absolute;
@@ -1938,15 +1977,21 @@ body {
   padding: 0rem .5rem;
   background-color: black; }
 
+.discover_events {
+  position: absolute;
+  top: 82%;
+  left: 45%;
+  transform: translate(-50%, -50%); }
+
 .link:link,
 .link:visited {
   text-decoration: none;
   color: #777;
-  background-color: #fff;
+  background-color: white;
   display: inline-block;
-  font-size: 1.5rem;
-  padding: 1rem 4rem;
-  border-radius: 6rem;
+  font-size: 2.4rem;
+  padding: 2rem 6rem;
+  border-radius: 4px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: relative; }
 
@@ -1967,7 +2012,7 @@ body {
   left: 0%;
   z-index: -1;
   background-color: #fff;
-  border-radius: 10rem;
+  border-radius: 6px;
   transition: all 0.4s; }
 
 .link:hover::after {
