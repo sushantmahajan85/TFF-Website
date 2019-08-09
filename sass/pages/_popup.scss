@@ -73,7 +73,7 @@ padding: 2rem 5rem;
     }
     &_paragraph{
         column-count: 2;
-        font-family: "Ubuntu" ,serif;
+        
         font-size: 1.7rem;
         font-weight: 600;
         @include respond (tab-port){
@@ -167,9 +167,8 @@ padding: 2rem 5rem;
           }
     }
     &_paragraph{
-        column-count: 2;font-family: "Ubuntu" ,serif;
-        font-size: 1.7rem;
-        font-weight: 600;
+        column-count: 2;font-size: 1.7rem;
+        font-weight: 400;
         @include respond (tab-port){
         column-count: unset;
         column-rule: unset;
@@ -263,8 +262,9 @@ padding: 2rem 5rem;
     &_paragraph{
         column-count: 2;
         font-size: 1.7rem;
-        font-weight: 600;
-        font-family: "Ubuntu" ,serif;
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+        
         @include respond (tab-port){
         column-count: unset;
         column-rule: unset;
@@ -358,7 +358,8 @@ padding: 2rem 5rem;
     &_paragraph{
         column-count: 2;
         font-size: 1.7rem;
-        font-family: "Ubuntu" ,serif;        font-weight: 600;
+                font-weight: 400;
+        letter-spacing: 0.1rem;
         @include respond (tab-port){
         column-count: unset;
         column-rule: unset;
@@ -452,9 +453,10 @@ padding: 2rem 5rem;
     }
     &_paragraph{
         column-count: 2;
-        font-family: "Ubuntu" ,serif;
+        
         font-size: 1.7rem;
-        font-weight: 600;
+        font-weight: 400;
+        letter-spacing: 0.1rem;
         @include respond (tab-port){
         column-count: unset;
         column-rule: unset;
@@ -548,9 +550,9 @@ padding: 2rem 5rem;
     }
     &_paragraph{
         column-count: 2;
-        font-family: "Ubuntu" ,serif;
         font-size: 1.7rem;
-        font-weight: 600;
+        font-weight: 400;
+        letter-spacing: 0.1rem;
         @include respond (tab-port){
         column-count: unset;
         column-rule: unset;
@@ -644,9 +646,9 @@ padding: 2rem 5rem;
     }
     &_paragraph{
         column-count: 2;
-        font-family: "Ubuntu" ,serif;
+    
         font-size: 1.7rem;
-        font-weight: 600;
+        font-weight: 400;
         @include respond (tab-port){
         column-count: unset;
         column-rule: unset;
@@ -740,9 +742,10 @@ padding: 2rem 5rem;
     }
     &_paragraph{
         column-count: 2;
-        font-family: "Ubuntu" ,serif;
+        font-family: 'Amaranth';
         font-size: 1.7rem;
-        font-weight: 600;
+        font-weight: 400;
+        letter-spacing: 0.1rem;
         @include respond (tab-port){
         column-count: unset;
         column-rule: unset;
@@ -836,9 +839,8 @@ padding: 2rem 5rem;
     }
     &_paragraph{
         column-count: 2;
-        font-family: "Ubuntu" ,serif;
         font-size: 1.7rem;
-        font-weight: 600;
+        font-weight: 400;
         @include respond (tab-port){
         column-count: unset;
         column-rule: unset;

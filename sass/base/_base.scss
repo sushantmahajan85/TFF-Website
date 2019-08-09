@@ -2,10 +2,11 @@
 * {
     padding: 0%;
     margin: 0%;
-    box-sizing: border-box; }
+    box-sizing: border-box; 
+  backface-visibility: hidden;}
     html{
       font-size: 62.5%;
-      
+      backface-visibility: hidden;
       @include respond(tab-land){
         font-size: 60.25%;
       }
@@ -26,6 +27,7 @@
   
   body {
     background-size: cover;
+    backface-visibility: hidden;
     padding: 3rem;
     @include respond(tab-port){
       padding: 1rem;
