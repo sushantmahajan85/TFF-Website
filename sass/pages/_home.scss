@@ -1,7 +1,11 @@
 .section-about{
     background-color: #f7f7f7;
-    padding: 28rem 0 40rem 0;
-    
+    background-image: url(../img/pattern1.jpg);
+    padding: 30rem 0 37rem 0;
+    // background-image: url(../img/20087.jpg);
+     
+
+     
     margin-top: -30vh;
     @include respond (tab-land){
         padding: 50rem 0 80rem 0;
@@ -71,5 +75,10 @@ z-index: 1;
 
 padding: 0rem .5rem;
 background-color: black;
+@include respond (tab-port){
+position: absolute;
+top: 3.1rem;
+right: 3rem; 
+}
 
 }

@@ -78,11 +78,13 @@
         color:white;
         padding: 0.5rem 0.6rem;
         border: 1.5px solid rgb(223, 222, 214);
-        border-radius: 2px;
+        border-radius: 2rem;
         display: inline-block;
         font-weight: 1000;
         letter-spacing: 0.3rem;
-        font-family: 'Courier New', Courier, monospace;
+        outline: 2px solid white;
+        outline-offset: 0.6rem;
+        font-family: 'Amaranth';
         
         font-size: 3rem;
     }

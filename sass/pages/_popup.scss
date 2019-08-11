@@ -28,7 +28,7 @@
     }
     &_left{
 width: 33.33333333334%;
-vertical-align: middle;
+vertical-align: top;
 display: table-cell;
 @include respond (tab-port){
     width: 0%;
@@ -88,7 +88,7 @@ padding: 2rem 5rem;
         hyphens: auto;
     }
     &_heading{
-        color: yellow;
+        
         @include respond (tab-port){
             text-align: center;
           }
@@ -110,7 +110,7 @@ padding: 2rem 5rem;
          visibility: visible;
      }
     &_content{
-      opacity: .95;  
+      opacity: .85;  
         width: 75%;
         height: 50rem;
         background-color: white;
@@ -181,7 +181,7 @@ padding: 2rem 5rem;
         hyphens: auto;
     }
     &_heading{
-        color: yellow;
+        
         @include respond (tab-port){
             text-align: center;
           }
@@ -277,7 +277,6 @@ padding: 2rem 5rem;
         hyphens: auto;
     }
     &_heading{
-        color: yellow;
         @include respond (tab-port){
             text-align: center;
           }
@@ -372,7 +371,6 @@ padding: 2rem 5rem;
         hyphens: auto;
     }
     &_heading{
-        color: yellow;
         @include respond (tab-port){
             text-align: center;
           }
@@ -469,7 +467,6 @@ padding: 2rem 5rem;
         hyphens: auto;
     }
     &_heading{
-        color: yellow;
         @include respond (tab-port){
             text-align: center;
           }
@@ -565,7 +562,6 @@ padding: 2rem 5rem;
         hyphens: auto;
     }
     &_heading{
-        color: yellow;
         @include respond (tab-port){
             text-align: center;
           }
@@ -661,7 +657,6 @@ padding: 2rem 5rem;
         hyphens: auto;
     }
     &_heading{
-        color: yellow;
         @include respond (tab-port){
             text-align: center;
           }
@@ -758,7 +753,6 @@ padding: 2rem 5rem;
         hyphens: auto;
     }
     &_heading{
-        color: yellow;
         @include respond (tab-port){
             text-align: center;
           }
@@ -853,7 +847,6 @@ padding: 2rem 5rem;
         hyphens: auto;
     }
     &_heading{
-        color: yellow;
         @include respond (tab-port){
             text-align: center;
           }
