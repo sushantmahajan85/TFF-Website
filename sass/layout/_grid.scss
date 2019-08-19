@@ -3,7 +3,7 @@
     margin: 0 auto;
     @include clearfix;
     &:not(:last-child){
-        margin-bottom: 8rem;
+        margin-bottom: 4rem;
    }
    @include respond(tab-port){
     max-width: 65rem;
@@ -46,7 +46,7 @@
         margin-right: 6rem;
         @include respond (tab-land){
             margin-right: 0;
-            margin-bottom: 6rem;
+            margin-bottom: 4rem;
     }
 }
 }
@@ -54,6 +54,7 @@
     
     width: 34rem;
     float:left;
+    align-items: center;
     @include respond (tab-land){
         width: 100% ;
   }
