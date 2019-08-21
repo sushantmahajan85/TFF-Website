@@ -82,8 +82,7 @@
         display: inline-block;
         font-weight: 1000;
         letter-spacing: 0.3rem;
-        outline: 2px solid white;
-        outline-offset: 0.6rem;
+        
         font-family: 'Amaranth';
         
         font-size: 3rem;
@@ -202,4 +201,44 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 @keyframes rotating {
     0%, 10% {transform: rotate(0deg);}
     60%, 100% {transform: rotate(-1turn);}
+}
+.md1{
+    background-position: center;
+background-size: 100% 100%;
+background-image: url(../img/);
+}
+.md2{
+    background-position: center;
+background-size: 100% 100%;
+background-image: url(../img/OR1.jpg);
+}
+.md3{
+    background-position: center;
+    background-size: 100% 100%;
+    background-image: url(../img/CO2.jpg);
+}
+.md4{
+    background-position: center;
+    background-size: 100% 100%;
+    background-image: url(../img/ME1.jpg);
+}
+.md5{
+background-position: center;
+background-size: 100% 100%;
+    background-image: url(../img/DO2.jpg);
+}
+.md6{
+    background-position: center;
+    background-size: 100% 100%;
+    background-image: url(../img/MV1.jpg);
+}
+.md7{
+    background-position: center;
+    background-size: 100% 100%;
+    background-image: url(../img/IT2.jpg);
+}
+.md8{
+    background-position: center;
+    background-size: 100% 100%;
+    background-image: url(../img/MD1.jpg);
 }
