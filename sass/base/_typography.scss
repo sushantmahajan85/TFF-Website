@@ -62,7 +62,6 @@
       font-weight: 1100;
       font-size: 4rem;
       font-family: 'Amaranth';
-      background-clip: text;
    -webkit-background-clip: text;
    color: transparent;
       background-image: linear-gradient(to right ,#f12711,#f5af19);
@@ -188,7 +187,6 @@
          background-image: linear-gradient(to right ,#f12711,#f5af19);
 display:inline-block;
 -webkit-background-clip: text;
-background-clip: text;
 color: transparent;
       
     }
@@ -233,7 +231,9 @@ height: auto;
 width: 10rem;
 
      }
-     
+     &_navigation{
+
+     }
      &_list{
 list-style: none;
 text-align: center;
@@ -337,7 +337,6 @@ text-align: center;
         font-size: 4rem;
      
    -webkit-background-clip: text;
-   background-clip: text;
    color: transparent;
       background-image: linear-gradient(to right ,#f12711,#f5af19);   
    font-family: 'Amaranth';
@@ -353,7 +352,7 @@ text-align: center;
   .square-box-1{
     background-image: url(../img/gallery17.jpg);
     background-color:#ffffffe8;
-    padding: 16rem;                                                                                                                                              
+    padding: 16.5rem;                                                                                                                                              
 background-size: 100% 100%;
 background-repeat: no-repeat;
 background-position: center;
@@ -368,10 +367,10 @@ border-radius: 4px;
 transform: translateY(-1rem) scale(1.1);
 }
     @include respond(tab-land){
-      padding: 13rem;
+      padding: 25rem 10rem 29rem 10rem;
     }
     @include respond (tab-port){
-      padding: 13rem;
+      padding: 25rem 10rem 27rem 6rem;
       
      }
     }
@@ -384,17 +383,17 @@ transform: translateY(-1rem) scale(1.1);
     background-repeat: no-repeat;
     background-position: center;
     background-color:#ffffffe8;
-    padding: 16rem;
+    padding: 16.5rem;
     text-align: center;
     font-size: 1.5rem;
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
     transition: all 0.2s;
     border-radius: 4px;
     @include respond(tab-land){
-      padding: 13rem;
+      padding: 25rem 10rem 29rem 10rem;
     }
     @include respond (tab-port){
-      padding: 13rem;
+      padding: 25rem 6rem 27rem 6rem;
       
      }
     &:hover{
@@ -408,7 +407,7 @@ transform: translateY(-1rem) scale(1.1);
     background-repeat: no-repeat;
     background-position: center;
     background-color:#ffffffe8;
-    padding: 16rem;
+    padding: 16.5rem;
     text-align: center;
     font-size: 1.5rem;
     offset: 1rem;
@@ -416,10 +415,10 @@ transform: translateY(-1rem) scale(1.1);
     box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
 transition: all 0.2s;
 @include respond(tab-land){
-  padding: 13rem;
+  padding: 25rem 10rem 29rem 10rem;
 }
 @include respond (tab-port){
-  padding:  13rem;
+  padding:  25rem 6rem 27rem 6rem;
   
  }
     border-radius: 4px;
