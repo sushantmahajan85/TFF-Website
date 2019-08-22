@@ -62,6 +62,7 @@
       font-weight: 1100;
       font-size: 4rem;
       font-family: 'Amaranth';
+      background-clip: text;
    -webkit-background-clip: text;
    color: transparent;
       background-image: linear-gradient(to right ,#f12711,#f5af19);
@@ -187,6 +188,7 @@
          background-image: linear-gradient(to right ,#f12711,#f5af19);
 display:inline-block;
 -webkit-background-clip: text;
+background-clip: text;
 color: transparent;
       
     }
@@ -231,9 +233,7 @@ height: auto;
 width: 10rem;
 
      }
-     &_navigation{
-
-     }
+     
      &_list{
 list-style: none;
 text-align: center;
@@ -337,6 +337,7 @@ text-align: center;
         font-size: 4rem;
      
    -webkit-background-clip: text;
+   background-clip: text;
    color: transparent;
       background-image: linear-gradient(to right ,#f12711,#f5af19);   
    font-family: 'Amaranth';
