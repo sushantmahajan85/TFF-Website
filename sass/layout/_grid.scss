@@ -2,10 +2,10 @@
     max-width: 114rem;
     margin: 0 auto;
     @include clearfix;
-    &:not(:last-child){
+    
         margin-bottom: 8rem;
-   }
-   @include respond(tab-port){
+   
+   @include respond(tab-land){
     max-width: 65rem;
   }
    @include respond (tab-port){

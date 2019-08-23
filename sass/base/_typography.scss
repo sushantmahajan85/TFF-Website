@@ -309,13 +309,13 @@ text-align: center;
       background-image: url(../img/ooo.jpg);
       // background-position: center;
       // background-size: fill;
-      padding: 30rem 0 37rem 0;
+      padding: 30rem 0 17rem 0;
       margin-top: -20vh;
       @include respond(tab-land){
         padding: 40rem 0 15rem 0;
       }
       @include respond (tab-port){
-        padding: 30rem 0 15rem 0;
+        padding: 30rem 0 13rem 0;
        }
        &-paragraph{
          font-size: 1.8rem;
@@ -370,8 +370,7 @@ transform: translateY(-1rem) scale(1.1);
       padding: 25rem 10rem 29rem 10rem;
     }
     @include respond (tab-port){
-      padding: 25rem 10rem 27rem 6rem;
-      
+      padding:  9rem 6rem 27rem 6rem;
      }
     }
   .centre{
@@ -393,8 +392,7 @@ transform: translateY(-1rem) scale(1.1);
       padding: 25rem 10rem 29rem 10rem;
     }
     @include respond (tab-port){
-      padding: 25rem 6rem 27rem 6rem;
-      
+      padding:  9rem 6rem 27rem 6rem;    
      }
     &:hover{
       box-shadow: 0 1.4rem 4rem rgba(0, 0, 0, 0.733);
@@ -418,7 +416,7 @@ transition: all 0.2s;
   padding: 25rem 10rem 29rem 10rem;
 }
 @include respond (tab-port){
-  padding:  25rem 6rem 27rem 6rem;
+  padding:  9rem 6rem 27rem 6rem;
   
  }
     border-radius: 4px;
@@ -476,4 +474,12 @@ color:#555555;
 }
 .yellow{
   color: #f5af19;
+}
+.center{
+  text-align: center;
+  margin-top: 3rem;
+  @include respond (tab-port){
+   margin-bottom: 2rem;
+   margin-top: 2rem;
+  }
 }
