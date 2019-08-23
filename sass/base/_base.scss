@@ -28,13 +28,11 @@
   body {
     background-size: cover;
     backface-visibility: hidden;
-    padding: 3rem;
+    padding: 2rem;
     @include respond(tab-port){
       padding: 1rem;
     }
-    @include respond (phone){
-      padding: 0.2rem;
-}
+ 
   }
   .popup_image{
     transition:all 0.4s; 
