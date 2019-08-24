@@ -33,7 +33,7 @@ body {
       padding: 1rem; } }
   @media (max-width: 37.5em) {
     body {
-      padding: 0; } }
+      padding: 0rem; } }
 
 .popup_image {
   transition: all 0.4s; }
