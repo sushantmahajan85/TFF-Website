@@ -18,9 +18,25 @@
         <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
         <title>Thapar Food Festival</title>
-       
+        <script>
+                !function(f,b,e,v,n,t,s)
+                {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t,s)}(window, document,'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+                fbq('init', '907170169616450');
+                fbq('track', 'PageView');
+              </script>
+              <noscript><img height="1" width="1" style="display:none"
+                src="https://www.facebook.com/tr?id=907170169616450&ev=PageView&noscript=1"
+              /></noscript>
     </head>
-    <body><div class="loader_wrapper">
+    <body onload="myFunction()">
+            <div id="loading" ></div>
+        <!-- <div class="loader_wrapper">
         <div class="loader">
             <span></span>
             <span></span>
@@ -31,6 +47,8 @@
 $(".loader_wrapper").fadeOut("slow");
           });
           </script>
+          
+     -->
         <script type="text/javascript" src="tffjs.js"></script>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -184,14 +202,14 @@ $(".loader_wrapper").fadeOut("slow");
         <h2 class="footer_text">facebook</h2>
     <i class="fb"><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthaparfoodfestival&tabs=timeline&width=260&height=380&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="260" height="380" style="border:none;overflow:hidden;padding-top: 1rem " scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></i>
     </div>
-    <div class="col-1-of-4 footer-box3">
+    <div class="col-1-of-4 footer-box3"> 
         <h2 class="footer_text">instagram</h2>
-    <ul class="insta">    <!-- InstaWidget -->
+     <ul class="insta">    <!-- InstaWidget  -->
         <iframe id="  6da550fc6c7aea21c02074923a107a19d31304a5502d0e6236dc681f8508d4f9" style="border: 0px; width: 260px; height: 380px;padding-top: 1rem; margin: 0px;" 
         scrolling="no" frameborder="no" src="https://instawidget.net/embed?u=6da550fc6c7aea21c02074923a107a19d31304a5502d0e6236dc681f8508d4f9"></iframe>    
     </ul>
         
-        </div>
+        </div>-->
     <div class="col-1-of-4 footer-box4">
         <h2 class="footer_text">location</h2>
     <i class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442.9312390990526!2d76.361363700999!3d30.352904031681735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39102f534a87b5c5%3A0xda1d3ed337e382b3!2sThapar+University%2C+Prem+Nagar%2C+Patiala%2C+Punjab+147004!5e0!3m2!1sen!2sin!4v1563525294236!5m2!1sen!2sin" width="260" height="380" frameborder="0" style="border:0;  padding-top: 1rem" allowfullscreen></iframe></i>    
@@ -206,6 +224,19 @@ $(".loader_wrapper").fadeOut("slow");
 </div>
 
         </footer>
+        <script>
+                // $(document).ready(function(){
+                    // 	$('div#loading').removeAttr('id');
+                // });
+                var preloader = document.getElementById("loading");
+                // window.addEventListener('load', function(){
+                // 	preloader.style.display = 'none';
+                // 	})
+        
+                function myFunction(){
+                    preloader.style.display = 'none';
+                };
+            </script>
         <div class="popup" id="popup">
                 <div class="bg-video">
                         <video  class="bg-video_content" autoplay loop muted>
@@ -245,12 +276,7 @@ $(".loader_wrapper").fadeOut("slow");
             </div>
         </div>
         <div class="popup2" id="popup2">
-                <div class="bg-video">
-                        <video  class="bg-video_content" autoplay loop muted>
-                            <source src="sass/img/coverr-man-made-1558726189545.mp4" type="video/mp4">
-                        </video>
-                    </div>
-            
+               
             <div class="popup2_content">
                 <div class="popup2_left"><img src="sass/img/about2.jpeg" alt="hi" class="popup2_img">
                 <img src="sass/img/about3.jpeg" alt="hi" class="popup2_img"></div>
@@ -332,7 +358,7 @@ $(".loader_wrapper").fadeOut("slow");
                             <div class="popup7_right">
                                 <a href="#section_pic" class="popup7_cross">&times;</a>
                             <h1 class="heading-secondary popup7_heading u-centre">COCA-COLA</h1>
-                            <p class="paragraph popup7_paragraph">Thapar Food Festival is the most magnificent and awe-inspiring festivity ever happened, one-of-a-kind. Keeping the sky as the limit, we always venture hard to content the ever-growing foodie in you. TFF is not just a festival,  but also a mission to let food break barriers and make everyone happy on a common stage. We are a journey, ever-growing indulging masses in merry-making. Come, experience edible infinity.</p>    
+                            <p class="paragraph popup7_paragraph">The most famous brand ruling over the soft drinks industry since more than 127 years with 500 different products. For the second consecutive time, Thapar Food Festival holds pride to have the Coca-Cola Company as our Title Sponsor.</p>    
                             
                             </div>
                         </div>

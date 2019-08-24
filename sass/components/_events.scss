@@ -5,8 +5,8 @@
      background-position: center;
      background-size: cover;
  
-     background-image: linear-gradient(to right,rgba(21, 101, 192, 0.836),#b92c27da),url(https://lh5.googleusercontent.com/T4H_FTEQVztbe8WU52vHFpaZ0Oy4RUnxIzwybXiBkTbHVfw2lEKWsxmQRTYpEnud1siAdIs=w16383);
-    }
+     background-image: linear-gradient(to right,rgba(21, 101, 192, 0.836),#b92c27da);
+     }
     &_img2{
         padding: 10rem;
         
@@ -232,4 +232,13 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 .md8{
     background-size: cover;
     background-image: url(../img/MD2.jpg);
+}
+#loading{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #fff
+	url(../img/loader.gif)
+	 no-repeat center center;	
+	z-index: 99999;
 }
