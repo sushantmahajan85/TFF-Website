@@ -455,12 +455,12 @@ font-weight: 500;
       &:link,&:visited{
         
       text-decoration: none;
-      color: white;
+color: tan;
      
       transition: all 0.2s;
       }
       &:hover,&:active{
-        color: tan;
+        color:white;
        transform: scale(1.1); 
       }
     }

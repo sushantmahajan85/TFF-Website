@@ -1806,10 +1806,10 @@ body {
     right: 0; }
   .copyright_link:link, .copyright_link:visited {
     text-decoration: none;
-    color: white;
+    color: tan;
     transition: all 0.2s; }
   .copyright_link:hover, .copyright_link:active {
-    color: tan;
+    color: white;
     transform: scale(1.1); }
 
 .section_text {
