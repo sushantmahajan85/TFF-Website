@@ -240,5 +240,25 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 	background: #fff
 	url(../img/loader.gif)
 	 no-repeat center center;	
-	z-index: 99999;
+    z-index: 99999;
+    display: block;
+}
+.wait{
+    font-weight: 1200;
+    display: inline-block;
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    color: rgb(214, 136, 18);
+    font-size: 3rem;
+    font-family: 'Cabin Sketch', cursive;
+    display: inline-block;
+    text-align: center;
+    
+}
+.ready{
+    display: block;
+    
 }
