@@ -1604,8 +1604,9 @@ body {
   width: 100%;
   height: 100vh;
   background: #fff url(../img/loader.gif) no-repeat center center;
-  z-index: 99999;
-  display: block; }
+  z-index: 99999999999999999999999999999999999999999;
+  display: block;
+  margin: -2rem; }
 
 .wait {
   font-weight: 1200;
