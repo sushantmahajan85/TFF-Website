@@ -1607,6 +1607,9 @@ body {
   z-index: 99999999999999999999999999999999999999999;
   display: block;
   margin: -2rem; }
+  @media (max-width: 56.25em) {
+    #loading {
+      margin: 0%; } }
 
 .wait {
   font-weight: 1200;
