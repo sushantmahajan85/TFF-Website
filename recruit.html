@@ -25,11 +25,11 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="RecruitForm/vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="RecruitForm/css/util.css">
-	<link rel="stylesheet" type="text/css" href="RecruitForm/css/main.css">
+	<link rel="stylesheet" type="text/css" href="sass/css/style.css">
+	
 <!--===============================================================================================-->
 </head>
-<body>
+<body style="padding:unset">
 
 <div class="bg-contact100" style="background-image: url('RecruitForm/images/bg-01.jpg');">
 	
@@ -51,7 +51,7 @@
 
 					<form target="_self" class="contact100-form validate-form" onsubmit="return postToGoogle();" action="" id="recruit_form">
 						<div class="wrap-input100 validate-input" data-validate="Name is required">
-							<span class="label-input100">Thapar aapko kis naam se jaanta hai?
+							<span class="label-input100">Name on your Aadhar card
 							</span>
 							<input class="input100" type="text" name="entry.49493946" id="name" placeholder="Enter full name">
 							<span class="focus-input100"></span>
@@ -61,9 +61,9 @@
 							<span class="label-input100">Dear</span>
 							<br>
 							<!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
-							<label for="male" class="radio100" >Male</label>
+							<label for="male" class="radio100 label-input100" >Male</label>
 							<input id="male"  type="radio" name="entry.737531847" id="gender" value="Male" />
-							<label for="female" class="radio100" >Female</label>
+							<label for="female" class="radio100 label-input100" >Female</label>
 							<input id="female"  type="radio" name="entry.737531847" id="gender" value="Female" />
 							<span class="focus-input100"></span>
 						</div>
@@ -72,13 +72,13 @@
 							<%=errors['data.email'].msg%>
 						<%}%> -->
 						<div class="wrap-input100 validate-input" data-validate="Roll No is required">
-							<span class="label-input100">Proxy kis number pe lagvate ho?</span>
+							<span class="label-input100">Proxy kis number per lagate ho?</span>
 							<input class="input100" type="text" name="entry.1670025806" id="roll" placeholder="Enter Roll Number">
 							<span class="focus-input100"></span>
 							
 						</div>
 						<div class="wrap-input100 validate-input" data-validate="Name is required">
-							<span class="label-input100">विशेषज्ञता kisme paa rhe ho?</span>
+							<span class="label-input100">Kaun si branch mein ho?</span>
 							<input class="input100" type="text" name="entry.600816742" id ="branch" placeholder="Enter Branch">
 							<span class="focus-input100"></span>
 							
@@ -90,7 +90,7 @@
 							
 						</div> -->
 						<div class="wrap-input100 validate-input" data-validate="Phone is required">
-							<span class="label-input100">Aapko khushkhabri kis number pe sunayein?</span>
+							<span class="label-input100">Aap ko updates kis number per chahiye(WhatsApp please)</span>
 							<input class="input100" type="text" name="entry.1965159740" id="phone" placeholder="Enter phone number">
 							<span class="focus-input100"></span>
 						</div>
@@ -100,45 +100,39 @@
 							<%}%> -->
 						</div>
 						<div class="wrap-input100 validate-input" data-validate="Required">
-							<span class="label-input100">Kahan ke rehne vaale ho?</span>
-							<input class="input100" type="text" name="entry.1690533821" id="place" placeholder="Enter City">
+							<span class="label-input100">Aapka shehar aur uski khasiyat?</span>
+							<input class="input100" type="text" name="entry.1690533821" id="place" placeholder="Enter City and famous food">
 							<span class="focus-input100"></span>
 						</div>
 						<div class="wrap-input100 validate-input" data-validate="Required">
-							<span class="label-input100">How much time can you devote for TFF?</span>
+							<span class="label-input100">How much time are you ready to devote to tff?</span>
 							<input class="input100" type="text" name="entry.1025971147" id="timeDevote" placeholder="Enter time you can devote">
 							<span class="focus-input100"></span>
 							
 						</div>
 						<div class="wrap-input100 validate-input" data-validate="Required">
-							<span class="label-input100">What societies have you been a part of?</span>
+							<span class="label-input100">Kaun kaun si societies mein kam Kiya hai?</span>
 							<input class="input100" type="text" name="entry.1234333045" id="otherSocities"placeholder="Enter Socities">
 							<span class="focus-input100"></span>
 							
 						</div>
 						<div class="wrap-input100 validate-input" data-validate="Required">
-							<span class="label-input100">How do you like spending your free time?</span>
+							<span class="label-input100">Apne free time mein kya karte ho?</span>
 							<input class="input100" type="text" name="entry.1056349084" id="Hobbies" placeholder="Enter Your Hobbies!">
 							<span class="focus-input100"></span>
 							
 						</div>
 						<div class="wrap-input100 validate-input" data-validate="Required">
-							<span class="label-input100">Describe yourself in 3 words</span>
+							<span class="label-input100">Describe yourself in 3 words.</span>
 							<input class="input100" type="text" name="entry.1814998359" id="des" placeholder="">
 							<span class="focus-input100"></span>
 							
 						</div>
 
 						<div class="wrap-input100 validate-input" data-validate = "Message is required">
-							<span class="label-input100">Views about TFF'19.</span>
+							<span class="label-input100">What is the best and worst thing about tff-19?</span>
 							<textarea class="input100" name="entry.2061973106" id="message" placeholder="Your Comment..."></textarea>
 							<span class="focus-input100"></span>
-						</div>
-						<div class="wrap-input100 validate-input" data-validate="Required">
-							<span class="label-input100">Apni City se kaunsi dish laoge?</span>
-							<input class="input100" type="text" name="entry.1413529514" id="famous" placeholder="Special Food of your city">
-							<span class="focus-input100"></span>
-							
 						</div>
 						<p style="border-bottom: 1px solid #b2b2b2;">Rate yourself from 1-5
 						</p>
@@ -148,15 +142,15 @@
 							<span class="label-input100">Build & Lead a team</span>
 							<br>
 							<!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
-							<label for="rating1" class="radio100" >1</label>
+							<label for="rating1" class="radio100 label-input100" >1</label>
 							<input id="rating1"  type="radio" name="entry.1694120072" value="1" />
-							<label for="rating2" class="radio100" >2</label>
+							<label for="rating2" class="radio100 label-input100" >2</label>
 							<input id="rating2"  type="radio" name="entry.1694120072" value="2" />
-							<label for="rating3" class="radio100" >3</label>
+							<label for="rating3" class="radio100 label-input100" >3</label>
 							<input id="rating3"  type="radio" name="entry.1694120072" value="3" />
-							<label for="rating4" class="radio100" >4</label>
+							<label for="rating4" class="radio100 label-input100" >4</label>
 							<input id="rating4"  type="radio" name="entry.1694120072" value="4" />
-							<label for="rating5" class="radio100" >5</label>
+							<label for="rating5" class="radio100 label-input100" >5</label>
 							<input id="rating5"  type="radio" name="entry.1694120072" value="5" />
 							
 							<span class="focus-input100"></span>
@@ -165,15 +159,15 @@
 							<span class="label-input100">Stay positive under pressure</span>
 							<br>
 							<!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
-							<label for="rating1" class="radio100" >1</label>
+							<label for="rating1" class="radio100 label-input100" >1</label>
 							<input id="rating1"  type="radio" name="entry.200074965" id="rateQ2" value="1" />
-							<label for="rating2" class="radio100" >2</label>
+							<label for="rating2" class="radio100 label-input100" >2</label>
 							<input id="rating2"  type="radio" name="entry.200074965" id="rateQ2" value="2" />
-							<label for="rating3" class="radio100" >3</label>
+							<label for="rating3" class="radio100 label-input100" >3</label>
 							<input id="rating3"  type="radio" name="entry.200074965" id="rateQ2" value="3" />
-							<label for="rating4" class="radio100" >4</label>
+							<label for="rating4" class="radio100 label-input100" >4</label>
 							<input id="rating4"  type="radio" name="entry.200074965" id="rateQ2" value="4" />
-							<label for="rating5" class="radio100" >5</label>
+							<label for="rating5" class="radio100 label-input100" >5</label>
 							<input id="rating5"  type="radio" name="entry.200074965" id="rateQ2" value="5" />
 							
 							<span class="focus-input100"></span>
@@ -182,15 +176,15 @@
 							<span class="label-input100">Proactively reach out & help others</span>
 							<br>
 							<!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
-							<label for="rating1" class="radio100" >1</label>
+							<label for="rating1" class="radio100 label-input100" >1</label>
 							<input id="rating1"  type="radio" name="entry.1343528650" id="rateQ3" value="1" />
-							<label for="rating2" class="radio100" >2</label>
+							<label for="rating2" class="radio100 label-input100" >2</label>
 							<input id="rating2"  type="radio" name="entry.1343528650" id="rateQ3" value="2" />
-							<label for="rating3" class="radio100" >3</label>
+							<label for="rating3" class="radio100 label-input100" >3</label>
 							<input id="rating3"  type="radio" name="entry.1343528650" id="rateQ3" value="3" />
-							<label for="rating4" class="radio100" >4</label>
+							<label for="rating4" class="radio100 label-input100" >4</label>
 							<input id="rating4"  type="radio" name="entry.1343528650" id="rateQ3" value="4" />
-							<label for="rating5" class="radio100" >5</label>
+							<label for="rating5" class="radio100 label-input100" >5</label>
 							<input id="rating5"  type="radio" name="entry.1343528650" id="rateQ3" value="5" />
 							
 							<span class="focus-input100"></span>
@@ -199,15 +193,15 @@
 							<span class="label-input100">Come up with active solutions</span>
 							<br>
 							<!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
-							<label for="rating1" class="radio100" >1</label>
+							<label for="rating1" class="radio100 label-input100" >1</label>
 							<input id="rating1"  type="radio" name="entry.280603844" id="rateQ4" value="1" />
-							<label for="rating2" class="radio100" >2</label>
+							<label for="rating2" class="radio100 label-input100" >2</label>
 							<input id="rating2"  type="radio" name="entry.280603844" id="rateQ4" value="2" />
-							<label for="rating3" class="radio100" >3</label>
+							<label for="rating3" class="radio100 label-input100" >3</label>
 							<input id="rating3"  type="radio" name="entry.280603844" id="rateQ4" value="3" />
-							<label for="rating4" class="radio100" >4</label>
+							<label for="rating4" class="radio100 label-input100" >4</label>
 							<input id="rating4"  type="radio" name="entry.280603844" id="rateQ4" value="4" />
-							<label for="rating5" class="radio100" >5</label>
+							<label for="rating5" class="radio100 label-input100" >5</label>
 							<input id="rating5"  type="radio" name="entry.280603844" id="rateQ4" value="5" />
 							
 							<span class="focus-input100"></span>
@@ -216,23 +210,36 @@
 							<span class="label-input100">Get things done on time/Punctuality</span>
 							<br>
 							<!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
-							<label for="rating1" class="radio100" >1</label>
+							<label for="rating1" class="radio100 label-input100" >1</label>
 							<input id="rating1"  type="radio" name="entry.1656877776" id="rateQ5" value="1" />
-							<label for="rating2" class="radio100" >2</label>
+							<label for="rating2" class="radio100 label-input100" >2</label>
 							<input id="rating2"  type="radio" name="entry.1656877776" id="rateQ5" value="2" />
-							<label for="rating3" class="radio100" >3</label>
+							<label for="rating3" class="radio100 label-input100" >3</label>
 							<input id="rating3"  type="radio" name="entry.1656877776" id="rateQ5" value="3" />
-							<label for="rating4" class="radio100" >4</label>
+							<label for="rating4" class="radio100 label-input100" >4</label>
 							<input id="rating4"  type="radio" name="entry.1656877776" id="rateQ5" value="4" />
-							<label for="rating5" class="radio100" >5</label>
+							<label for="rating5" class="radio100 label-input100" >5</label>
 							<input id="rating5"  type="radio" name="entry.1656877776" id="rateQ5" value="5" />
 							
 							<span class="focus-input100"></span>
 						</div>
+						<div class="wrap-input100 validate-input" data-validate="Required">
+							<span class="label-input100">Witty!</span>
+							<input class="input100" type="text" name="entry.1413529514" id="Witty" placeholder="">
+							<span class="focus-input100"></span>
+							
+						</div>
 						
 						<div class="wrap-input100 validate-input" data-validate="Required">
-							<span class="label-input100">What value you can add to TFF?</span>
-							<input class="input100" type="text" name="entry.1470925297" id="value" placeholder="Special Food of your city">
+							<span class="label-input100">Submit your work(if any)</span>
+							<input class="input100" type="text" name="entry.1470925297" id="url" placeholder="URL">
+							<span class="focus-input100"></span>
+							
+						</div>
+						
+						<div class="wrap-input100 validate-input" data-validate="Required">
+							<span class="label-input100">If you have 60 rupees in Thapar what will you eat and why?</span>
+							<input class="input100" type="text" name="entry.1470925297" id="thaparFood" placeholder="Special Food of your Thapar">
 							<span class="focus-input100"></span>
 							
 						</div>
@@ -302,13 +309,15 @@
 						var Hobbies = $("#Hobbies").val();
 						var des = $("#des").val();
 						var message = $("#message").val();
-						var famous = $("#famous").val();
+						var witty = $("#witty").val();
 						var rateQ1 = $("input[name='entry.1694120072']").val();
 						var rateQ2 = $("input[name='entry.200074965']").val();
 						var rateQ3 = $("input[name='entry.1343528650']").val();
 						var rateQ4 = $("input[name='entry.280603844']").val();
 						var rateQ5 = $("input[name='entry.1656877776']").val();
-						var value = $("input[name='entry.1470925297']").val();
+						var url = $("url").val();
+						
+						var thaparFood = $("thaparFood").val();
 						 
 						// if(field1 == ""){
 						// 	alert('Please Fill Your Name');
@@ -333,9 +342,9 @@
 							url: "https://docs.google.com/forms/d/e/1FAIpQLSd7g2G9nZJ5FM9jG0-fRZPXNc4Cflv7NjpjhP-CHcYl6HMbZg/formResponse?",
 							data: {"entry.49493946": name, "entry.737531847": gender, "entry.1670025806": roll, "entry.600816742": branch,
 							"entry.1965159740": phone, "entry.1690533821": place, "entry.1025971147": timeDevote, "entry.1234333045": otherSocities,
-							"entry.1056349084": Hobbies, "entry.1814998359": des, "entry.2061973106": message, "entry.1413529514": famous,
+							"entry.1056349084": Hobbies, "entry.1814998359": des, "entry.2061973106": message, "entry.1413529514": witty,
 							"entry.1694120072": rateQ1, "entry.200074965": rateQ2, "entry.1343528650": rateQ3, "entry.280603844": rateQ4,
-							"entry.1656877776": rateQ5, "entry.1470925297": value},
+							"entry.1656877776": rateQ5, "":url, "entry.1470925297": thaparFood},
 							type: "POST",
 							dataType: "xml",
 							success: function(d)
