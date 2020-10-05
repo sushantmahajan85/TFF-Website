@@ -57,16 +57,6 @@
 							<span class="focus-input100"></span>
 						</div>
 
-						<div class="wrap-input100 validate-input" >
-							<span class="label-input100">Dear</span>
-							<br>
-							<!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
-							<label for="male" class="radio100 label-input100" >Male</label>
-							<input id="male"  type="radio" name="entry.737531847" id="gender" value="Male" />
-							<label for="female" class="radio100 label-input100" >Female</label>
-							<input id="female"  type="radio" name="entry.737531847" id="gender" value="Female" />
-							<span class="focus-input100"></span>
-						</div>
 
 						<!-- <% if(errors['data.email']){%>
 							<%=errors['data.email'].msg%>
@@ -232,16 +222,15 @@
 						
 						<div class="wrap-input100 validate-input" data-validate="Required">
 							<span class="label-input100">Submit your work(if any)</span>
-							<input class="input100" type="text" name="entry.1470925297" id="url" placeholder="URL">
+							<input class="input100" type="text" name="entry.1470925297" id="urlValue" placeholder="URL">
 							<span class="focus-input100"></span>
 							
 						</div>
 						
 						<div class="wrap-input100 validate-input" data-validate="Required">
 							<span class="label-input100">If you have 60 rupees in Thapar what will you eat and why?</span>
-							<input class="input100" type="text" name="entry.1470925297" id="thaparFood" placeholder="Special Food of your Thapar">
+							<input class="input100" type="text" name="entry.1622578703" id="thaparFamousFood" placeholder="Special Food of Thapar">
 							<span class="focus-input100"></span>
-							
 						</div>
 
 						<div class="container-contact100-form-btn">
@@ -299,7 +288,6 @@
 	<script>
 		function postToGoogle() {
 						var name = $("#name").val();
-						var gender = $("input[name='entry.737531847']").val();
 						var roll = $("#roll").val();
 						var branch = $("#branch").val();
 						var phone = $("#phone").val();
@@ -309,16 +297,15 @@
 						var Hobbies = $("#Hobbies").val();
 						var des = $("#des").val();
 						var message = $("#message").val();
-						var witty = $("#witty").val();
-						var rateQ1 = $("input[name='entry.1694120072']").val();
-						var rateQ2 = $("input[name='entry.200074965']").val();
-						var rateQ3 = $("input[name='entry.1343528650']").val();
-						var rateQ4 = $("input[name='entry.280603844']").val();
-						var rateQ5 = $("input[name='entry.1656877776']").val();
-						var url = $("url").val();
+						var witty = $("#Witty").val();
+						var rateQ1 = $("input[name='entry.1694120072']:checked").val();
+						var rateQ2 = $("input[name='entry.200074965']:checked").val();
+						var rateQ3 = $("input[name='entry.1343528650']:checked").val();
+						var rateQ4 = $("input[name='entry.280603844']:checked").val();
+						var rateQ5 = $("input[name='entry.1656877776']:checked").val();
+						var url = $("urlValue").val();
+						var thaparFood = $("thaparFamousFood").val();
 						
-						var thaparFood = $("thaparFood").val();
-						 
 						// if(field1 == ""){
 						// 	alert('Please Fill Your Name');
 						// 	document.getElementById("name").focus();
@@ -340,11 +327,11 @@
 			
 						$.ajax({
 							url: "https://docs.google.com/forms/d/e/1FAIpQLSd7g2G9nZJ5FM9jG0-fRZPXNc4Cflv7NjpjhP-CHcYl6HMbZg/formResponse?",
-							data: {"entry.49493946": name, "entry.737531847": gender, "entry.1670025806": roll, "entry.600816742": branch,
+							data: {"entry.49493946": name, "entry.1670025806": roll, "entry.600816742": branch,
 							"entry.1965159740": phone, "entry.1690533821": place, "entry.1025971147": timeDevote, "entry.1234333045": otherSocities,
 							"entry.1056349084": Hobbies, "entry.1814998359": des, "entry.2061973106": message, "entry.1413529514": witty,
 							"entry.1694120072": rateQ1, "entry.200074965": rateQ2, "entry.1343528650": rateQ3, "entry.280603844": rateQ4,
-							"entry.1656877776": rateQ5, "":url, "entry.1470925297": thaparFood},
+							"entry.1656877776": rateQ5, "entry.1470925297": url, "entry.1622578703": thaparFood},
 							type: "POST",
 							dataType: "xml",
 							success: function(d)
@@ -354,9 +341,7 @@
 							},
 							error: function(x, y, z)
 								{
-		
-									$('#success-msg').show();
-									$('#form').hide();
+									console.log("added successfully");
 									
 								}
 						});

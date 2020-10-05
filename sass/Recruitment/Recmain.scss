@@ -193,6 +193,7 @@ iframe {
 @include respond(phone){
   width:450px;
 }
+
 }
 
 /*==================================================================
@@ -421,6 +422,11 @@ textarea.input100 {
 
 /*------------------------------------------------------------------
 [ Responsive ]*/
+@media (max-width: 576px) {
+  .contact100-form {
+    padding: 43px 15px 57px 25px;
+  }
+}
 
 @media (max-width: 480px) {
   .contact100-form {
@@ -437,16 +443,21 @@ textarea.input100 {
     left: unset;
     
     padding: 0 5px;
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 
-@media (max-width: 576px) {
-  .contact100-form {
-    padding: 43px 15px 57px 25px;
+@media (max-width: 440px){
+  .wrap-contact100 {
+    width: 400px;
   }
 }
 
+@media (max-width:370px){
+  .wrap-contact100{
+    width: 350px;
+  }
+}
 
 
 /*------------------------------------------------------------------
