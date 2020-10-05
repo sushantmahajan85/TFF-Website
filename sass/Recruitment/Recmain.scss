@@ -155,6 +155,16 @@ iframe {
 
 /*//////////////////////////////////////////////////////////////////
 [ Contact ]*/
+#section_two {
+  display: none;
+  visibility: hidden;
+
+}
+#section_three {
+  display: none;
+  visibility: hidden;
+
+}
 
 .container-contact100 {
   width: 100%;  
@@ -418,6 +428,7 @@ textarea.input100 {
   -o-transform: translateX(10px);
   transform: translateX(10px);
 }
+
 
 
 /*------------------------------------------------------------------

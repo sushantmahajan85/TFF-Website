@@ -151,6 +151,14 @@ iframe {
 
 /*//////////////////////////////////////////////////////////////////
 [ Contact ]*/
+#section_two {
+  display: none;
+  visibility: hidden; }
+
+#section_three {
+  display: none;
+  visibility: hidden; }
+
 .container-contact100 {
   width: 100%;
   min-height: 100vh;
