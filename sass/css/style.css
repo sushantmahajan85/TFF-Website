@@ -9559,7 +9559,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular' 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  font-family: "Lucida Sans", "Lucida Sans Regular" "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
 
 .main-heading {
   color: #ffffff;
@@ -9595,7 +9595,7 @@ body {
   display: inline-block;
   font-weight: 1100;
   font-size: 4rem;
-  font-family: 'Amaranth';
+  font-family: "Amaranth";
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(to right, #f12711, #f5af19);
@@ -9621,11 +9621,11 @@ body {
   color: #474545;
   letter-spacing: 0.12rem;
   margin-bottom: 2rem;
-  font-family: 'Amaranth'; }
+  font-family: "Amaranth"; }
 
 .paragraph {
   font-size: 1.6rem;
-  font-family: 'Amaranth';
+  font-family: "Amaranth";
   color: #555555;
   line-height: 2.5rem; }
   .paragraph:not(:last-child) {
@@ -9698,10 +9698,10 @@ body {
   color: transparent; }
 
 [class^="section_box_"] {
-  transform: skewY(7deg);
+  transform: skewY(7deg) !important;
   transition: all 0.2s;
   font-size: 1.5rem;
-  font-family: "Ubuntu" ,serif; }
+  font-family: "Ubuntu", serif; }
   @media (max-width: 75em) {
     [class^="section_box_"] {
       margin: 2rem; } }
@@ -9711,7 +9711,7 @@ body {
 .footer {
   background-color: black;
   padding: 13rem 0 2rem 0;
-  font-family: 'Amaranth';
+  font-family: "Amaranth";
   font-size: 1.7rem; }
   @media (max-width: 37.5em) {
     .footer {
@@ -9791,7 +9791,7 @@ body {
     color: #555555;
     text-align: center;
     line-height: 3rem;
-    font-family: 'Amaranth'; }
+    font-family: "Amaranth"; }
 
 .team_section-meet {
   text-align: center; }
@@ -9803,7 +9803,7 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(to right, #f12711, #f5af19);
-  font-family: 'Amaranth';
+  font-family: "Amaranth";
   text-transform: uppercase;
   padding-left: 1rem;
   padding-bottom: 8rem;
@@ -9889,7 +9889,7 @@ body {
 .copyright {
   border-top: 1.5px dotted grey;
   padding-top: 1rem;
-  font-family: 'Amaranth'; }
+  font-family: "Amaranth"; }
   .copyright_text {
     text-align: center;
     font-size: 1.5rem;
@@ -9912,7 +9912,7 @@ body {
     transform: scale(1.1); }
 
 .section_text {
-  font-family: 'Amaranth';
+  font-family: "Amaranth";
   text-decoration: none;
   color: #555555; }
 
