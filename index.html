@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="sass/css/icon-font.css" />
     <link rel="stylesheet" href="sass/css/linea.css" />
     <link rel="stylesheet" href="sass/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-146468970-1"
@@ -144,7 +145,7 @@ $(".loader_wrapper").fadeOut("slow");
     <main>
       <section class="section-about" id="section-about">
         <div class="u-centre">
-          <h2 class="heading-secondary">
+          <h2 class="heading-secondary" data-aos="fade-right">
             about us
           </h2>
         </div>
@@ -196,7 +197,7 @@ $(".loader_wrapper").fadeOut("slow");
         <div class="row">
           <div class="col-1-of-4">
             <a href="#popup7">
-              <div class="section_box_1">
+              <div class="section_box_1" data-aos="fade-up">
                 <i class="section_icon icon-basic-world"></i>
 
                 <h3 class="heading-main-small">TITLE SPONSOR</h3>
@@ -214,7 +215,7 @@ $(".loader_wrapper").fadeOut("slow");
           </div>
           <div class="col-1-of-4">
             <a href="#popup8">
-              <div class="section_box_2">
+              <div class="section_box_2 " data-aos="fade-up" >
                 <i class="section_icon icon-basic-pin1"></i>
 
                 <h3 class="heading-main-small">POWER SPONSOR</h3>
@@ -232,7 +233,7 @@ $(".loader_wrapper").fadeOut("slow");
           </div>
           <div class="col-1-of-4">
             <a href="#popup9">
-              <div class="section_box_3">
+              <div class="section_box_3" data-aos="fade-up">
                 <i class="section_icon icon-basic-clock"></i>
 
                 <h3 class="heading-main-small">CO-SPONSORS</h3>
@@ -250,7 +251,7 @@ $(".loader_wrapper").fadeOut("slow");
           </div>
           <div class="col-1-of-4">
             <a href="#popup6">
-              <div class="section_box_4">
+              <div class="section_box_4" data-aos="fade-up">
                 <i class="section_icon icon-basic-pin2"></i>
 
                 <div class="box_text">
@@ -288,13 +289,14 @@ $(".loader_wrapper").fadeOut("slow");
           </p>
         </div>
         <div class="row">
-          <a href="2016.html" class="col-1-of-3  square-box-2"> </a>
+          <a href="2016.html" class="col-1-of-3  square-box-2" data-aos="fade-up">  </a>
           <a
             href="2017.html"
             class="col-1-of-3  square-box-1"
+            data-aos="fade-up"
             id="square-box-1"
           ></a>
-          <a href="2018.html" class="col-1-of-3 square-box-3"></a>
+          <a href="2018.html" class="col-1-of-3 square-box-3" data-aos="fade-up"></a>
         </div>
       </section>
     </main>
@@ -427,7 +429,7 @@ $(".loader_wrapper").fadeOut("slow");
 
         <div class="popup_right">
           <a href="#section-about" class="popup_cross">&times;</a>
-          <h1 class="heading-secondary popup_heading u-centre">about us</h1>
+          <h1 class="heading-secondary popup_heading u-centre" >about us</h1>
           <p class="paragraph popup_paragraph">
             Thapar Food Festival is the most magnificent and awe-inspiring
             festivity ever happened, one-of-a-kind. Keeping the sky as the
@@ -677,5 +679,9 @@ $(".loader_wrapper").fadeOut("slow");
         style="display:none"
         src="https://www.facebook.com/tr?id=907170169616450&ev=PageView&noscript=1"
     /></noscript>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
