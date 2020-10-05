@@ -303,8 +303,8 @@
 						var rateQ3 = $("input[name='entry.1343528650']:checked").val();
 						var rateQ4 = $("input[name='entry.280603844']:checked").val();
 						var rateQ5 = $("input[name='entry.1656877776']:checked").val();
-						var url = $("urlValue").val();
-						var thaparFood = $("thaparFamousFood").val();
+						var url = $("input[name='entry.1470925297']").val();
+						var thaparFood = $("input[name='entry.1622578703']").val();
 						
 						// if(field1 == ""){
 						// 	alert('Please Fill Your Name');
@@ -342,7 +342,6 @@
 							error: function(x, y, z)
 								{
 									console.log("added successfully");
-									
 								}
 						});
 						return false;
