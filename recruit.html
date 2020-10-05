@@ -101,7 +101,7 @@
 								<span class="focus-input100"></span>
 							</div>		
 							<div class="container-contact100-form-btn">
-								<button class="contact100-form-btn" id="section_one_next" onclick="forward_one()"> 
+								<button type="button" class="contact100-form-btn" id="section_one_next" onclick="forward_one()"> 
 									<span>
 										Next
 										<i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i>
@@ -136,7 +136,7 @@
 								<span class="focus-input100"></span>
 							</div>
 							<div class="container-contact100-form-btn">
-								<button class="contact100-form-btn" id="section_two_next" onclick="forward_two()"> 
+								<button type="button" class="contact100-form-btn" id="section_two_next" onclick="forward_two()"> 
 									<span>
 										Next
 										<i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i>
@@ -144,7 +144,7 @@
 								</button>
 							</div>
 							<div class="container-contact100-form-btn">
-								<button class="contact100-form-btn" id="section_two_prev" onclick="previous_two()"> 
+								<button type="button" class="contact100-form-btn" id="section_two_prev" onclick="previous_two()"> 
 									<span>
 										Back
 										<i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i>
@@ -264,7 +264,7 @@
 							</div>
 							
 							<div class="container-contact100-form-btn">
-								<button class="contact100-form-btn" id="section_three_prev" onclick="previous_three()"> 
+								<button type="button" class="contact100-form-btn" id="section_three_prev" onclick="previous_three()"> 
 									<span>
 										Back
 										<i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i>
@@ -272,7 +272,7 @@
 								</button>
 							</div>
 							<div class="container-contact100-form-btn">
-								<button class="contact100-form-btn" type="submit">
+								<button class="contact100-form-btn" type="submit" > 
 									<span>
 										Submit
 										<i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i>
@@ -283,6 +283,22 @@
 						
 						
 					</form>
+					<div class="col-1-of-4" id="subsuccess">
+						  <div class="section_box_2 " data-aos="fade-up" >
+							<i class="section_icon icon-basic-pin1"></i>
+			
+							<h3 class="heading-main-small">POWER SPONSOR</h3>
+							<p class="section_text">
+								Entry successfully recorded!		
+								<span
+								class="yellow "
+								style="display: block"
+								>Click To Explore</span
+							  >
+							</p>
+						  </div>
+						
+					</div>
 				</div>
 			</div>
 		</div>
@@ -419,6 +435,9 @@
 							error: function(x, y, z)
 								{
 									console.log("added successfully");
+									document.getElementById("subsuccess").style.display = "block";
+									document.getElementById("subsuccess").style.visibility = "visible";
+									
 								}
 						});
 						return false;
