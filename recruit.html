@@ -26,6 +26,12 @@
 	<link rel="stylesheet" type="text/css" href="RecruitForm/vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="sass/css/style.css">
+	<link rel="stylesheet" href="sass/css/radio.css">
+	<link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 	
 <!--===============================================================================================-->
 </head>
@@ -65,8 +71,10 @@
 				<div class="image">
 				</div>
 				
-				<div class="wrap-contact100">
-					<div class="contact100-form-title" style="background-image: url(RecruitForm/images/bg-01.jpg);">
+				<div class="wrap-contact100" id="fullform">
+					<div class="contact100-form-title">
+					
+					<!-- <div class="contact100-form-title" style="background-image: url(RecruitForm/images/bg-01.jpg);"> -->
 						<span class="contact100-form-title-1">
 							Recruitment form
 						</span>
@@ -126,7 +134,7 @@
 								<span class="label-input100">How much time are you ready to devote to tff?</span>
 								<input class="input100" type="text" name="entry.1025971147" id="timeDevote" placeholder="Enter time you can devote">
 								<span class="focus-input100"></span>
-							</div>		
+							</div>
 							<div class="container-contact100-form-btn">
 								<button type="button" class="contact100-form-btn" id="section_one_next" onclick="forward_one()"> 
 									<span>
@@ -184,12 +192,51 @@
 							<p style="border-bottom: 1px solid #b2b2b2;">Rate yourself from 1-5
 							</p>
 							<br>
-						
+
+
+							
 							<div class="wrap-input100 validate-input" style="border-bottom: none;" >
 								<span class="label-input100">Build & Lead a team</span>
 								<br>
+								<ul>
+									<li>
+									  <input type="radio" id="f-option" name="entry.1694120072" value="1">
+									  <label for="f-option">1</label>
+									  <div class="check"></div>
+									</li>
+									
+									<li>
+									  <input type="radio" id="s-option" name="entry.1694120072" value="2">
+									  <label for="s-option">2</label>
+									  
+									  <div class="check"><div class="inside"></div></div>
+									</li>
+									
+									<li>
+									  <input type="radio" id="t-option" name="entry.1694120072" value="3">
+									  <label for="t-option">3</label>
+									  
+									  <div class="check"><div class="inside"></div></div>
+									</li>
+									
+									<li>
+										<input type="radio" id="m-option" name="entry.1694120072" value="4">
+										<label for="m-option">4</label>
+										
+										<div class="check"><div class="inside"></div></div>
+									  </li>
+									  
+									<li>
+										<input type="radio" id="n-option" name="entry.1694120072" value="5">
+										<label for="n-option">5</label>
+										
+										<div class="check"><div class="inside"></div></div>
+									  </li>
+								</ul>
+								<span class="focus-input100"></span>
+							
 								<!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
-								<label for="rating1" class="radio100 label-input100" >1</label>
+								<!-- <label for="rating1" class="radio100 label-input100" >1</label>
 								<input id="rating1"  type="radio" name="entry.1694120072" value="1" />
 								<label for="rating2" class="radio100 label-input100" >2</label>
 								<input id="rating2"  type="radio" name="entry.1694120072" value="2" />
@@ -199,8 +246,8 @@
 								<input id="rating4"  type="radio" name="entry.1694120072" value="4" />
 								<label for="rating5" class="radio100 label-input100" >5</label>
 								<input id="rating5"  type="radio" name="entry.1694120072" value="5" />
-								
-								<span class="focus-input100"></span>
+								 -->
+								<!-- <span class="focus-input100"></span> -->
 							</div>
 							<div class="wrap-input100 validate-input" style="border-bottom: none;">
 								<span class="label-input100">Stay positive under pressure</span>
@@ -310,6 +357,11 @@
 						
 						
 					</form>
+					
+					<!-- Reset CSS -->
+					
+					</div>
+					  
 				</div>
 			</div>
 		</div>
@@ -319,7 +371,29 @@
 
 
 	<div id="dropDownSelect1"></div>
-
+	<div class="successpop" id="successpop">
+		<div class="successpop_content">
+		  <div class="successpop_left">
+			<img src="sass/img/qw.jpg" alt="hi" class="successpop_img" />
+			<!-- <img src="img/about3.jpeg" alt="hi" class="successpop_img">-->
+		  </div>
+		  <div class="successpop_right">
+			<a href="#" onclick="exit_form()" class="successpop_cross">&times;</a>
+			<h1 class="heading-secondary successpop_heading u-centre">COCA-COLA</h1>
+			<p class="paragraph successpop_paragraph">
+			  The most famous brand ruling over the soft drinks industry since
+			  more than 127 years with 500 different products. For the second
+			  consecutive time, Thapar Food Festival holds pride to have the
+			  Coca-Cola Company as our Title Sponsor.
+			</p>
+		  </div>
+		</div>
+	</div>
+	<script>
+		function exit_form(){
+			window.location.href = "/";
+		}
+	</script>
 <!--===============================================================================================-->
 	<script src="RecruitForm/vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
@@ -354,6 +428,7 @@
 	  gtag('config', 'UA-23581568-13');
 	</script>
 	<script>
+
 		function forward_one(){
 			document.getElementById("section_two").style.display = "block";
 			document.getElementById("section_one").style.display = "none";
@@ -434,11 +509,11 @@
 						var url = $("input[name='entry.1470925297']").val();
 						var thaparFood = $("input[name='entry.1622578703']").val();
 						
-						// if(field1 == ""){
-						// 	alert('Please Fill Your Name');
-						// 	document.getElementById("name").focus();
-						// 	return false;
-						// }
+						if(name == ""){
+							alert('Please Fill Your Name');
+							document.getElementById("name").focus();
+							return false;
+						}
 						// if(field2 == ""){
 						// 	alert('Please Fill Your Email');
 						// 	document.getElementById("emailField").focus();
@@ -468,12 +543,17 @@
 								window.location.href = "/";
 							},
 							error: function(x, y, z)
-								{
+								{	
+									document.querySelector(".successpop").style.opacity = 1;
+									document.querySelector(".successpop").style.visibility = "visible";
+									
 									console.log("added successfully");
+
 								}
 						});
 						return false;
 					}
 		</script>
 </body>
+
 </html>
