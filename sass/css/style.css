@@ -163,6 +163,21 @@ iframe {
   display: none;
   visibility: hidden; }
 
+#bg-video2 {
+  display: none;
+  visibility: hidden; }
+
+#bg-video3 {
+  display: none;
+  visibility: hidden; }
+
+.videos {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%; }
+
 .container-contact100 {
   width: 100%;
   min-height: 100vh;
