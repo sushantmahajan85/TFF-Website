@@ -27,17 +27,12 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="sass/css/style.css">
 	<link rel="stylesheet" href="sass/css/radio.css">
-	<link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
-	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 	
 <!--===============================================================================================-->
 </head>
 <body style="padding:unset">
 
-<div class="bg-contact100" style="background-image: url('RecruitForm/images/bg-01.jpg');">
+<div class="bg-contact100">
 	
 	<div class="bg-video" id="bg-video1">
 		<video class="bg-video_content videos" autoplay loop muted>
@@ -103,7 +98,7 @@
 								<span class="focus-input100"></span>
 								
 							</div>
-							<div class="wrap-input100 validate-input" data-validate="Name is required">
+							<div class="wrap-input100 validate-input" data-validate="Branch is required">
 								<span class="label-input100">Kaun si branch mein ho?</span>
 								<input class="input100" type="text" name="entry.600816742" id ="branch" placeholder="Enter Branch">
 								<span class="focus-input100"></span>
@@ -165,7 +160,7 @@
 								
 							</div>
 
-							<div class="wrap-input100 validate-input" data-validate = "Message is required">
+							<div class="wrap-input100 validate-input" data-validate = "Required">
 								<span class="label-input100">What is the best and worst thing about tff-19?</span>
 								<textarea class="input100" name="entry.2061973106" id="message" placeholder="Your Comment..."></textarea>
 								<span class="focus-input100"></span>
@@ -253,7 +248,7 @@
 								<span class="label-input100">Stay positive under pressure</span>
 								<br>
 								<!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
-								<label for="rating1" class="radio100 label-input100" >1</label>
+								<!-- <label for="rating1" class="radio100 label-input100" >1</label>
 								<input id="rating1"  type="radio" name="entry.200074965" id="rateQ2" value="1" />
 								<label for="rating2" class="radio100 label-input100" >2</label>
 								<input id="rating2"  type="radio" name="entry.200074965" id="rateQ2" value="2" />
@@ -263,14 +258,49 @@
 								<input id="rating4"  type="radio" name="entry.200074965" id="rateQ2" value="4" />
 								<label for="rating5" class="radio100 label-input100" >5</label>
 								<input id="rating5"  type="radio" name="entry.200074965" id="rateQ2" value="5" />
-								
+								 -->
+								 <ul>
+									<li>
+									  <input type="radio" id="f-option" name="entry.200074965" value="1">
+									  <label for="f-option">1</label>
+									  <div class="check"></div>
+									</li>
+									
+									<li>
+									  <input type="radio" id="s-option" name="entry.200074965" value="2">
+									  <label for="s-option">2</label>
+									  
+									  <div class="check"><div class="inside"></div></div>
+									</li>
+									
+									<li>
+									  <input type="radio" id="t-option" name="entry.200074965" value="3">
+									  <label for="t-option">3</label>
+									  
+									  <div class="check"><div class="inside"></div></div>
+									</li>
+									
+									<li>
+										<input type="radio" id="m-option" name="entry.200074965" value="4">
+										<label for="m-option">4</label>
+										
+										<div class="check"><div class="inside"></div></div>
+									  </li>
+									  
+									<li>
+										<input type="radio" id="n-option" name="entry.200074965" value="5">
+										<label for="n-option">5</label>
+										
+										<div class="check"><div class="inside"></div></div>
+									  </li>
+								</ul>
 								<span class="focus-input100"></span>
 							</div>
 							<div class="wrap-input100 validate-input" style="border-bottom: none;">
 								<span class="label-input100">Proactively reach out & help others</span>
 								<br>
 								<!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
-								<label for="rating1" class="radio100 label-input100" >1</label>
+								<!-- <label for="rating1" class="radio100 label-input100" >1</label>
 								<input id="rating1"  type="radio" name="entry.1343528650" id="rateQ3" value="1" />
 								<label for="rating2" class="radio100 label-input100" >2</label>
 								<input id="rating2"  type="radio" name="entry.1343528650" id="rateQ3" value="2" />
@@ -280,14 +310,49 @@
 								<input id="rating4"  type="radio" name="entry.1343528650" id="rateQ3" value="4" />
 								<label for="rating5" class="radio100 label-input100" >5</label>
 								<input id="rating5"  type="radio" name="entry.1343528650" id="rateQ3" value="5" />
-								
+								 -->
+								 <ul>
+									<li>
+									  <input type="radio" id="f-option" name="entry.1343528650" value="1">
+									  <label for="f-option">1</label>
+									  <div class="check"></div>
+									</li>
+									
+									<li>
+									  <input type="radio" id="s-option" name="entry.1343528650" value="2">
+									  <label for="s-option">2</label>
+									  
+									  <div class="check"><div class="inside"></div></div>
+									</li>
+									
+									<li>
+									  <input type="radio" id="t-option" name="entry.1343528650" value="3">
+									  <label for="t-option">3</label>
+									  
+									  <div class="check"><div class="inside"></div></div>
+									</li>
+									
+									<li>
+										<input type="radio" id="m-option" name="entry.1343528650" value="4">
+										<label for="m-option">4</label>
+										
+										<div class="check"><div class="inside"></div></div>
+									  </li>
+									  
+									<li>
+										<input type="radio" id="n-option" name="entry.1343528650" value="5">
+										<label for="n-option">5</label>
+										
+										<div class="check"><div class="inside"></div></div>
+									  </li>
+								</ul>
 								<span class="focus-input100"></span>
 							</div>
 							<div class="wrap-input100 validate-input" style="border-bottom: none;">
 								<span class="label-input100">Come up with active solutions</span>
 								<br>
 								<!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
-								<label for="rating1" class="radio100 label-input100" >1</label>
+								<!-- <label for="rating1" class="radio100 label-input100" >1</label>
 								<input id="rating1"  type="radio" name="entry.280603844" id="rateQ4" value="1" />
 								<label for="rating2" class="radio100 label-input100" >2</label>
 								<input id="rating2"  type="radio" name="entry.280603844" id="rateQ4" value="2" />
@@ -297,14 +362,49 @@
 								<input id="rating4"  type="radio" name="entry.280603844" id="rateQ4" value="4" />
 								<label for="rating5" class="radio100 label-input100" >5</label>
 								<input id="rating5"  type="radio" name="entry.280603844" id="rateQ4" value="5" />
-								
+								 -->
+								 <ul>
+									<li>
+									  <input type="radio" id="f-option" name="entry.280603844" value="1">
+									  <label for="f-option">1</label>
+									  <div class="check"></div>
+									</li>
+									
+									<li>
+									  <input type="radio" id="s-option" name="entry.280603844" value="2">
+									  <label for="s-option">2</label>
+									  
+									  <div class="check"><div class="inside"></div></div>
+									</li>
+									
+									<li>
+									  <input type="radio" id="t-option" name="entry.280603844" value="3">
+									  <label for="t-option">3</label>
+									  
+									  <div class="check"><div class="inside"></div></div>
+									</li>
+									
+									<li>
+										<input type="radio" id="m-option" name="entry.280603844" value="4">
+										<label for="m-option">4</label>
+										
+										<div class="check"><div class="inside"></div></div>
+									  </li>
+									  
+									<li>
+										<input type="radio" id="n-option" name="entry.280603844" value="5">
+										<label for="n-option">5</label>
+										
+										<div class="check"><div class="inside"></div></div>
+									</li>
+								</ul>
 								<span class="focus-input100"></span>
 							</div>
 							<div class="wrap-input100 validate-input" style="border-bottom: none;">
 								<span class="label-input100">Get things done on time/Punctuality</span>
 								<br>
 								<!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
-								<label for="rating1" class="radio100 label-input100" >1</label>
+								<!-- <label for="rating1" class="radio100 label-input100" >1</label>
 								<input id="rating1"  type="radio" name="entry.1656877776" id="rateQ5" value="1" />
 								<label for="rating2" class="radio100 label-input100" >2</label>
 								<input id="rating2"  type="radio" name="entry.1656877776" id="rateQ5" value="2" />
@@ -314,7 +414,42 @@
 								<input id="rating4"  type="radio" name="entry.1656877776" id="rateQ5" value="4" />
 								<label for="rating5" class="radio100 label-input100" >5</label>
 								<input id="rating5"  type="radio" name="entry.1656877776" id="rateQ5" value="5" />
-								
+								 -->
+								 <ul>
+									<li>
+									  <input type="radio" id="f-option" name="entry.1656877776" value="1">
+									  <label for="f-option">1</label>
+									  <div class="check"></div>
+									</li>
+									
+									<li>
+									  <input type="radio" id="s-option" name="entry.1656877776" value="2">
+									  <label for="s-option">2</label>
+									  
+									  <div class="check"><div class="inside"></div></div>
+									</li>
+									
+									<li>
+									  <input type="radio" id="t-option" name="entry.1656877776" value="3">
+									  <label for="t-option">3</label>
+									  
+									  <div class="check"><div class="inside"></div></div>
+									</li>
+									
+									<li>
+										<input type="radio" id="m-option" name="entry.1656877776" value="4">
+										<label for="m-option">4</label>
+										
+										<div class="check"><div class="inside"></div></div>
+									  </li>
+									  
+									<li>
+										<input type="radio" id="n-option" name="entry.1656877776" value="5">
+										<label for="n-option">5</label>
+										
+										<div class="check"><div class="inside"></div></div>
+									  </li>
+								</ul>
 								<span class="focus-input100"></span>
 							</div>
 							<div class="wrap-input100 validate-input" data-validate="Required">
@@ -341,7 +476,7 @@
 								<button type="button" class="contact100-form-btn" id="section_three_prev" onclick="previous_three()"> 
 									<span>
 										Back
-										<i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i>
+										<i class="fa fa-long-arrow-left m-l-7"  aria-hidden="true"></i>
 									</span>
 								</button>
 							</div>
@@ -512,6 +647,92 @@
 						if(name == ""){
 							alert('Please Fill Your Name');
 							document.getElementById("name").focus();
+							return false;
+						}
+						
+						if(roll == ""){
+							alert('Please Fill Your RollNo');
+							document.getElementById("roll").focus();
+							return false;
+						}
+						if(branch == ""){
+							alert('Please Fill Your Branch');
+							document.getElementById("name").focus();
+							return false;
+						}
+						if(phone == "" || phone.length > 10 || phone.length < 10){
+							alert('Please Fill Your PhoneNo');
+							document.getElementById("phone").focus();
+							return false;
+						}
+						if(place == ""){
+							alert('Please Fill Your City');
+							document.getElementById("place").focus();
+							return false;
+						}
+						if(timeDevote == ""){
+							alert('Please Fill Your Name');
+							document.getElementById("timeDevote").focus();
+							return false;
+						}
+						if(otherSocities == ""){
+							alert('Please Fill Your otherSocities');
+							document.getElementById("otherSocities").focus();
+							return false;
+						}
+						if(Hobbies == ""){
+							alert('Please Fill Your Hobbies');
+							document.getElementById("Hobbies").focus();
+							return false;
+						}
+						if(des == ""){
+							alert('Describe Yourself in 3 word!');
+							document.getElementById("des").focus();
+							return false;
+						}
+						if(message == ""){
+							alert('View toh batao!');
+							document.getElementById("message").focus();
+							return false;
+						}
+						if(witty == ""){
+							alert('Witty Question left!');
+							document.getElementById("witty").focus();
+							return false;
+						}
+						if(rateQ1 == ""){
+							alert('Please Fill Your Name');
+							document.getElementById("rateQ1").focus();
+							return false;
+						}
+						if(rateQ2 == ""){
+							alert('Please Fill Your Name');
+							document.getElementById("rateQ2").focus();
+							return false;
+						}
+						if(rateQ3 == ""){
+							alert('Please Fill Your Name');
+							document.getElementById("rateQ3").focus();
+							return false;
+						}
+						if(rateQ4 == ""){
+							alert('Please Fill Your Name');
+							document.getElementById("rateQ4").focus();
+							return false;
+						}
+						if(rateQ5 == ""){
+							alert('Please Fill Your Name');
+							document.getElementById("rateQ5").focus();
+							return false;
+						}
+						if(url == ""){
+							alert('Please Fill Your Name');
+							document.getElementById("url").focus();
+							return false;
+						}
+						if(thaparFood == ""){
+							alert('Please Fill Your Name');
+							document.getElementById("thaparfood").focus();
 							return false;
 						}
 						// if(field2 == ""){
