@@ -1,479 +1,857 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Recruitment</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <head>
+    <title>Recruitment</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="RecruitForm/images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="RecruitForm/vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="RecruitForm/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="RecruitForm/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="RecruitForm/vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="RecruitForm/vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="RecruitForm/vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="RecruitForm/vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="RecruitForm/vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="sass/css/style.css">
-	
-<!--===============================================================================================-->
-</head>
-<body style="padding:unset">
+    <!--===============================================================================================-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="RecruitForm/images/icons/favicon.ico"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="RecruitForm/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="RecruitForm/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="RecruitForm/fonts/Linearicons-Free-v1.0.0/icon-font.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="RecruitForm/vendor/animate/animate.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="RecruitForm/vendor/css-hamburgers/hamburgers.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="RecruitForm/vendor/animsition/css/animsition.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="RecruitForm/vendor/select2/select2.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="RecruitForm/vendor/daterangepicker/daterangepicker.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="sass/css/style.css" />
 
-<div class="bg-contact100" style="background-image: url('RecruitForm/images/bg-01.jpg');">
-	
-	<div class="bg-video" id="bg-video1">
-		<video class="bg-video_content videos" autoplay loop muted>
-		  <source
-			src="sass/img/1.mp4"
-			type="video/mp4"
-		  />
-		</video>
-	  </div>	
-	  
-	<div class="bg-video" id="bg-video3">
-		<video class="bg-video_content videos" autoplay loop muted>
-		  <source
-			src="sass/img/3.mp4"
-			type="video/mp4"
-		  />
-		</video>
-	  </div>	
-	  
-	<div class="bg-video" id="bg-video2">
-		<video class="bg-video_content videos" autoplay loop muted>
-		  <source
-			src="sass/img/2.mp4"
-			type="video/mp4"
-		  />
-		</video>
-	  </div>	
-		<div class="container-contact100">
-			<div class="wrap-contact100">
-		<!-- <div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div> -->
-				<div class="image">
-				</div>
-				
-				<div class="wrap-contact100">
-					<div class="contact100-form-title" style="background-image: url(RecruitForm/images/bg-01.jpg);">
-						<span class="contact100-form-title-1">
-							Recruitment form
-						</span>
+    <!--===============================================================================================-->
+  </head>
+  <body style="padding:unset">
+    <div
+      class="bg-contact100"
+      style="background-image: url('RecruitForm/images/bg-01.jpg');"
+    >
+      <div class="bg-video" id="bg-video1">
+        <video class="bg-video_content videos" autoplay loop muted>
+          <source src="sass/img/1.mp4" type="video/mp4" />
+        </video>
+      </div>
 
-						<span class="contact100-form-title-2">
-							Welcome To TFF
-						</span>
-					</div>
-					
-					<form target="_self" class="contact100-form validate-form" onsubmit="return postToGoogle();" action="" id="recruit_form">
-						<div id="section_one">
-							<div class="wrap-input100 validate-input" data-validate="Name is required">
-								<span class="label-input100">Name on your Aadhar card
-								</span>
-								<input class="input100" type="text" name="entry.49493946" id="name" placeholder="Enter full name">
-								<span class="focus-input100"></span>
-							</div>
+      <div class="bg-video" id="bg-video3">
+        <video class="bg-video_content videos" autoplay loop muted>
+          <source src="sass/img/3.mp4" type="video/mp4" />
+        </video>
+      </div>
 
+      <div class="bg-video" id="bg-video2">
+        <video class="bg-video_content videos" autoplay loop muted>
+          <source src="sass/img/2.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="container-contact100">
+        <div class="wrap-contact100">
+          <!-- <div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div> -->
+          <div class="image"></div>
 
-							<!-- <% if(errors['data.email']){%>
+          <div class="wrap-contact100">
+            <div
+              class="contact100-form-title"
+              style="background-image: url(RecruitForm/images/bg-01.jpg);"
+            >
+              <span class="contact100-form-title-1">
+                Recruitment form
+              </span>
+
+              <span class="contact100-form-title-2">
+                Welcome To TFF
+              </span>
+            </div>
+
+            <form
+              target="_self"
+              class="contact100-form validate-form"
+              onsubmit="return postToGoogle();"
+              action=""
+              id="recruit_form"
+            >
+              <div id="section_one">
+                <div
+                  class="wrap-input100 validate-input"
+                  data-validate="Name is required"
+                >
+                  <span class="label-input100">Name on your Aadhar card </span>
+                  <input
+                    class="input100"
+                    type="text"
+                    name="entry.49493946"
+                    id="name"
+                    placeholder="Enter full name"
+                  />
+                  <span class="focus-input100"></span>
+                </div>
+
+                <!-- <% if(errors['data.email']){%>
 								<%=errors['data.email'].msg%>
 							<%}%> -->
-							<div class="wrap-input100 validate-input" data-validate="Roll No is required">
-								<span class="label-input100">Proxy kis number per lagate ho?</span>
-								<input class="input100" type="text" name="entry.1670025806" id="roll" placeholder="Enter Roll Number">
-								<span class="focus-input100"></span>
-								
-							</div>
-							<div class="wrap-input100 validate-input" data-validate="Name is required">
-								<span class="label-input100">Kaun si branch mein ho?</span>
-								<input class="input100" type="text" name="entry.600816742" id ="branch" placeholder="Enter Branch">
-								<span class="focus-input100"></span>
-								
-							</div>
-							<!-- <div class="wrap-input100 validate-input" data-validate="CG is required">
+                <div
+                  class="wrap-input100 validate-input"
+                  data-validate="Roll No is required"
+                >
+                  <span class="label-input100"
+                    >Proxy kis number per lagate ho?</span
+                  >
+                  <input
+                    class="input100"
+                    type="text"
+                    name="entry.1670025806"
+                    id="roll"
+                    placeholder="Enter Roll Number"
+                  />
+                  <span class="focus-input100"></span>
+                </div>
+                <div
+                  class="wrap-input100 validate-input"
+                  data-validate="Name is required"
+                >
+                  <span class="label-input100">Kaun si branch mein ho?</span>
+                  <input
+                    class="input100"
+                    type="text"
+                    name="entry.600816742"
+                    id="branch"
+                    placeholder="Enter Branch"
+                  />
+                  <span class="focus-input100"></span>
+                </div>
+                <!-- <div class="wrap-input100 validate-input" data-validate="CG is required">
 								<span class="label-input100">अभियांत्रिकी में क्या grade चल रहा है?</span>
 								<input class="input100" type="text" name="data[CG]" id="CG" placeholder="Enter CG">
 								<span class="focus-input100"></span>
 								
 							</div> -->
-							<div class="wrap-input100 validate-input" data-validate="Phone is required">
-								<span class="label-input100">Aap ko updates kis number per chahiye(WhatsApp please)</span>
-								<input class="input100" type="text" name="entry.1965159740" id="phone" placeholder="Enter phone number">
-								<span class="focus-input100"></span>
-							</div>
-							<div class="errors">
-								<!-- <% if(errors['data.phone']){%>
+                <div
+                  class="wrap-input100 validate-input"
+                  data-validate="Phone is required"
+                >
+                  <span class="label-input100"
+                    >Aap ko updates kis number per chahiye(WhatsApp
+                    please)</span
+                  >
+                  <input
+                    class="input100"
+                    type="text"
+                    name="entry.1965159740"
+                    id="phone"
+                    placeholder="Enter phone number"
+                  />
+                  <span class="focus-input100"></span>
+                </div>
+                <div class="errors">
+                  <!-- <% if(errors['data.phone']){%>
 									<%=errors['data.phone'].msg%>
 								<%}%> -->
-							</div>
-							<div class="wrap-input100 validate-input" data-validate="Required">
-								<span class="label-input100">Aapka shehar aur uski khasiyat?</span>
-								<input class="input100" type="text" name="entry.1690533821" id="place" placeholder="Enter City and famous food">
-								<span class="focus-input100"></span>
-							</div>
-							<div class="wrap-input100 validate-input" data-validate="Required">
-								<span class="label-input100">How much time are you ready to devote to tff?</span>
-								<input class="input100" type="text" name="entry.1025971147" id="timeDevote" placeholder="Enter time you can devote">
-								<span class="focus-input100"></span>
-							</div>		
-							<div class="container-contact100-form-btn">
-								<button type="button" class="contact100-form-btn" id="section_one_next" onclick="forward_one()"> 
-									<span>
-										Next
-										<i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i>
-									</span>
-								</button>
-							</div>
-									
-						</div>
-						<div id="section_two">
-							<div class="wrap-input100 validate-input" data-validate="Required">
-								<span class="label-input100">Kaun kaun si societies mein kam Kiya hai?</span>
-								<input class="input100" type="text" name="entry.1234333045" id="otherSocities"placeholder="Enter Socities">
-								<span class="focus-input100"></span>
-								
-							</div>
-							<div class="wrap-input100 validate-input" data-validate="Required">
-								<span class="label-input100">Apne free time mein kya karte ho?</span>
-								<input class="input100" type="text" name="entry.1056349084" id="Hobbies" placeholder="Enter Your Hobbies!">
-								<span class="focus-input100"></span>
-								
-							</div>
-							<div class="wrap-input100 validate-input" data-validate="Required">
-								<span class="label-input100">Describe yourself in 3 words.</span>
-								<input class="input100" type="text" name="entry.1814998359" id="des" placeholder="">
-								<span class="focus-input100"></span>
-								
-							</div>
+                </div>
+                <div
+                  class="wrap-input100 validate-input"
+                  data-validate="Required"
+                >
+                  <span class="label-input100"
+                    >Aapka shehar aur uski khasiyat?</span
+                  >
+                  <input
+                    class="input100"
+                    type="text"
+                    name="entry.1690533821"
+                    id="place"
+                    placeholder="Enter City and famous food"
+                  />
+                  <span class="focus-input100"></span>
+                </div>
+                <div
+                  class="wrap-input100 validate-input"
+                  data-validate="Required"
+                >
+                  <span class="label-input100"
+                    >How much time are you ready to devote to tff?</span
+                  >
+                  <input
+                    class="input100"
+                    type="text"
+                    name="entry.1025971147"
+                    id="timeDevote"
+                    placeholder="Enter time you can devote"
+                  />
+                  <span class="focus-input100"></span>
+                </div>
+                <div class="container-contact100-form-btn">
+                  <button
+                    type="button"
+                    class="contact100-form-btn"
+                    id="section_one_next"
+                    onclick="forward_one()"
+                  >
+                    <span>
+                      Next
+                      <i
+                        class="fa fa-long-arrow-right m-l-7"
+                        aria-hidden="true"
+                      ></i>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div id="section_two">
+                <div
+                  class="wrap-input100 validate-input"
+                  data-validate="Required"
+                >
+                  <span class="label-input100"
+                    >Kaun kaun si societies mein kam Kiya hai?</span
+                  >
+                  <input
+                    class="input100"
+                    type="text"
+                    name="entry.1234333045"
+                    id="otherSocities"
+                    placeholder="Enter Socities"
+                  />
+                  <span class="focus-input100"></span>
+                </div>
+                <div
+                  class="wrap-input100 validate-input"
+                  data-validate="Required"
+                >
+                  <span class="label-input100"
+                    >Apne free time mein kya karte ho?</span
+                  >
+                  <input
+                    class="input100"
+                    type="text"
+                    name="entry.1056349084"
+                    id="Hobbies"
+                    placeholder="Enter Your Hobbies!"
+                  />
+                  <span class="focus-input100"></span>
+                </div>
+                <div
+                  class="wrap-input100 validate-input"
+                  data-validate="Required"
+                >
+                  <span class="label-input100"
+                    >Describe yourself in 3 words.</span
+                  >
+                  <input
+                    class="input100"
+                    type="text"
+                    name="entry.1814998359"
+                    id="des"
+                    placeholder=""
+                  />
+                  <span class="focus-input100"></span>
+                </div>
 
-							<div class="wrap-input100 validate-input" data-validate = "Message is required">
-								<span class="label-input100">What is the best and worst thing about tff-19?</span>
-								<textarea class="input100" name="entry.2061973106" id="message" placeholder="Your Comment..."></textarea>
-								<span class="focus-input100"></span>
-							</div>
-							<div class="container-contact100-form-btn">
-								<button type="button" class="contact100-form-btn" id="section_two_next" onclick="forward_two()"> 
-									<span>
-										Next
-										<i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i>
-									</span>
-								</button>
-							</div>
-							<div class="container-contact100-form-btn">
-								<button type="button" class="contact100-form-btn" id="section_two_prev" onclick="previous_two()"> 
-									<span>
-										Back
-										<i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i>
-									</span>
-								</button>
-							</div>
-						</div>
-						
-						<div id="section_three">
-							<p style="border-bottom: 1px solid #b2b2b2;">Rate yourself from 1-5
-							</p>
-							<br>
-						
-							<div class="wrap-input100 validate-input" style="border-bottom: none;" >
-								<span class="label-input100">Build & Lead a team</span>
-								<br>
-								<!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
-								<label for="rating1" class="radio100 label-input100" >1</label>
-								<input id="rating1"  type="radio" name="entry.1694120072" value="1" />
-								<label for="rating2" class="radio100 label-input100" >2</label>
-								<input id="rating2"  type="radio" name="entry.1694120072" value="2" />
-								<label for="rating3" class="radio100 label-input100" >3</label>
-								<input id="rating3"  type="radio" name="entry.1694120072" value="3" />
-								<label for="rating4" class="radio100 label-input100" >4</label>
-								<input id="rating4"  type="radio" name="entry.1694120072" value="4" />
-								<label for="rating5" class="radio100 label-input100" >5</label>
-								<input id="rating5"  type="radio" name="entry.1694120072" value="5" />
-								
-								<span class="focus-input100"></span>
-							</div>
-							<div class="wrap-input100 validate-input" style="border-bottom: none;">
-								<span class="label-input100">Stay positive under pressure</span>
-								<br>
-								<!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
-								<label for="rating1" class="radio100 label-input100" >1</label>
-								<input id="rating1"  type="radio" name="entry.200074965" id="rateQ2" value="1" />
-								<label for="rating2" class="radio100 label-input100" >2</label>
-								<input id="rating2"  type="radio" name="entry.200074965" id="rateQ2" value="2" />
-								<label for="rating3" class="radio100 label-input100" >3</label>
-								<input id="rating3"  type="radio" name="entry.200074965" id="rateQ2" value="3" />
-								<label for="rating4" class="radio100 label-input100" >4</label>
-								<input id="rating4"  type="radio" name="entry.200074965" id="rateQ2" value="4" />
-								<label for="rating5" class="radio100 label-input100" >5</label>
-								<input id="rating5"  type="radio" name="entry.200074965" id="rateQ2" value="5" />
-								
-								<span class="focus-input100"></span>
-							</div>
-							<div class="wrap-input100 validate-input" style="border-bottom: none;">
-								<span class="label-input100">Proactively reach out & help others</span>
-								<br>
-								<!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
-								<label for="rating1" class="radio100 label-input100" >1</label>
-								<input id="rating1"  type="radio" name="entry.1343528650" id="rateQ3" value="1" />
-								<label for="rating2" class="radio100 label-input100" >2</label>
-								<input id="rating2"  type="radio" name="entry.1343528650" id="rateQ3" value="2" />
-								<label for="rating3" class="radio100 label-input100" >3</label>
-								<input id="rating3"  type="radio" name="entry.1343528650" id="rateQ3" value="3" />
-								<label for="rating4" class="radio100 label-input100" >4</label>
-								<input id="rating4"  type="radio" name="entry.1343528650" id="rateQ3" value="4" />
-								<label for="rating5" class="radio100 label-input100" >5</label>
-								<input id="rating5"  type="radio" name="entry.1343528650" id="rateQ3" value="5" />
-								
-								<span class="focus-input100"></span>
-							</div>
-							<div class="wrap-input100 validate-input" style="border-bottom: none;">
-								<span class="label-input100">Come up with active solutions</span>
-								<br>
-								<!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
-								<label for="rating1" class="radio100 label-input100" >1</label>
-								<input id="rating1"  type="radio" name="entry.280603844" id="rateQ4" value="1" />
-								<label for="rating2" class="radio100 label-input100" >2</label>
-								<input id="rating2"  type="radio" name="entry.280603844" id="rateQ4" value="2" />
-								<label for="rating3" class="radio100 label-input100" >3</label>
-								<input id="rating3"  type="radio" name="entry.280603844" id="rateQ4" value="3" />
-								<label for="rating4" class="radio100 label-input100" >4</label>
-								<input id="rating4"  type="radio" name="entry.280603844" id="rateQ4" value="4" />
-								<label for="rating5" class="radio100 label-input100" >5</label>
-								<input id="rating5"  type="radio" name="entry.280603844" id="rateQ4" value="5" />
-								
-								<span class="focus-input100"></span>
-							</div>
-							<div class="wrap-input100 validate-input" style="border-bottom: none;">
-								<span class="label-input100">Get things done on time/Punctuality</span>
-								<br>
-								<!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
-								<label for="rating1" class="radio100 label-input100" >1</label>
-								<input id="rating1"  type="radio" name="entry.1656877776" id="rateQ5" value="1" />
-								<label for="rating2" class="radio100 label-input100" >2</label>
-								<input id="rating2"  type="radio" name="entry.1656877776" id="rateQ5" value="2" />
-								<label for="rating3" class="radio100 label-input100" >3</label>
-								<input id="rating3"  type="radio" name="entry.1656877776" id="rateQ5" value="3" />
-								<label for="rating4" class="radio100 label-input100" >4</label>
-								<input id="rating4"  type="radio" name="entry.1656877776" id="rateQ5" value="4" />
-								<label for="rating5" class="radio100 label-input100" >5</label>
-								<input id="rating5"  type="radio" name="entry.1656877776" id="rateQ5" value="5" />
-								
-								<span class="focus-input100"></span>
-							</div>
-							<div class="wrap-input100 validate-input" data-validate="Required">
-								<span class="label-input100">Witty!</span>
-								<input class="input100" type="text" name="entry.1413529514" id="Witty" placeholder="">
-								<span class="focus-input100"></span>
-								
-							</div>
-							
-							<div class="wrap-input100 validate-input" data-validate="Required">
-								<span class="label-input100">Submit your work(if any)</span>
-								<input class="input100" type="text" name="entry.1470925297" id="urlValue" placeholder="URL">
-								<span class="focus-input100"></span>
-								
-							</div>
-							
-							<div class="wrap-input100 validate-input" data-validate="Required">
-								<span class="label-input100">If you have 60 rupees in Thapar what will you eat and why?</span>
-								<input class="input100" type="text" name="entry.1622578703" id="thaparFamousFood" placeholder="Special Food of Thapar">
-								<span class="focus-input100"></span>
-							</div>
-							
-							<div class="container-contact100-form-btn">
-								<button type="button" class="contact100-form-btn" id="section_three_prev" onclick="previous_three()"> 
-									<span>
-										Back
-										<i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i>
-									</span>
-								</button>
-							</div>
-							<div class="container-contact100-form-btn">
-								<button class="contact100-form-btn" type="submit">
-									<span>
-										Submit
-										<i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i>
-									</span>
-								</button>
-							</div>
-						</div>
-						
-						
-					</form>
-				</div>
-			</div>
-		</div>
-		
-</div>
+                <div
+                  class="wrap-input100 validate-input"
+                  data-validate="Message is required"
+                >
+                  <span class="label-input100"
+                    >What is the best and worst thing about tff-19?</span
+                  >
+                  <textarea
+                    class="input100"
+                    name="entry.2061973106"
+                    id="message"
+                    placeholder="Your Comment..."
+                  ></textarea>
+                  <span class="focus-input100"></span>
+                </div>
+                <div style="display: flex;">
+                  <div class="container-contact100-form-btn">
+                    <button
+                      type="button"
+                      class="contact100-form-btn"
+                      id="section_two_prev"
+                      onclick="previous_two()"
+                    >
+                      <span>
+                        <i
+                          class="fa fa-long-arrow-left m-l-7 backi"
+                          aria-hidden="true"
+                        ></i>
+                        Back
+                      </span>
+                    </button>
+                  </div>
+                  <div class="container-contact100-form-btn">
+                    <button
+                      type="button"
+                      class="contact100-form-btn"
+                      id="section_two_next"
+                      onclick="forward_two()"
+                    >
+                      <span>
+                        Next
+                        <i
+                          class="fa fa-long-arrow-right m-l-7 nexti"
+                          aria-hidden="true"
+                        ></i>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
 
+              <div id="section_three">
+                <p style="border-bottom: 1px solid #b2b2b2;">
+                  Rate yourself from 1-5
+                </p>
+                <br />
 
+                <div
+                  class="wrap-input100 validate-input"
+                  style="border-bottom: none;"
+                >
+                  <span class="label-input100">Build & Lead a team</span>
+                  <br />
+                  <!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
+                  <label for="rating1" class="radio100 label-input100">1</label>
+                  <input
+                    id="rating1"
+                    type="radio"
+                    name="entry.1694120072"
+                    value="1"
+                  />
+                  <label for="rating2" class="radio100 label-input100">2</label>
+                  <input
+                    id="rating2"
+                    type="radio"
+                    name="entry.1694120072"
+                    value="2"
+                  />
+                  <label for="rating3" class="radio100 label-input100">3</label>
+                  <input
+                    id="rating3"
+                    type="radio"
+                    name="entry.1694120072"
+                    value="3"
+                  />
+                  <label for="rating4" class="radio100 label-input100">4</label>
+                  <input
+                    id="rating4"
+                    type="radio"
+                    name="entry.1694120072"
+                    value="4"
+                  />
+                  <label for="rating5" class="radio100 label-input100">5</label>
+                  <input
+                    id="rating5"
+                    type="radio"
+                    name="entry.1694120072"
+                    value="5"
+                  />
 
-	<div id="dropDownSelect1"></div>
+                  <span class="focus-input100"></span>
+                </div>
+                <div
+                  class="wrap-input100 validate-input"
+                  style="border-bottom: none;"
+                >
+                  <span class="label-input100"
+                    >Stay positive under pressure</span
+                  >
+                  <br />
+                  <!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
+                  <label for="rating1" class="radio100 label-input100">1</label>
+                  <input
+                    id="rating1"
+                    type="radio"
+                    name="entry.200074965"
+                    id="rateQ2"
+                    value="1"
+                  />
+                  <label for="rating2" class="radio100 label-input100">2</label>
+                  <input
+                    id="rating2"
+                    type="radio"
+                    name="entry.200074965"
+                    id="rateQ2"
+                    value="2"
+                  />
+                  <label for="rating3" class="radio100 label-input100">3</label>
+                  <input
+                    id="rating3"
+                    type="radio"
+                    name="entry.200074965"
+                    id="rateQ2"
+                    value="3"
+                  />
+                  <label for="rating4" class="radio100 label-input100">4</label>
+                  <input
+                    id="rating4"
+                    type="radio"
+                    name="entry.200074965"
+                    id="rateQ2"
+                    value="4"
+                  />
+                  <label for="rating5" class="radio100 label-input100">5</label>
+                  <input
+                    id="rating5"
+                    type="radio"
+                    name="entry.200074965"
+                    id="rateQ2"
+                    value="5"
+                  />
 
-<!--===============================================================================================-->
-	<script src="RecruitForm/vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="RecruitForm/vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="RecruitForm/vendor/bootstrap/js/popper.js"></script>
-	<script src="RecruitForm/vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="RecruitForm/vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="RecruitForm/vendor/daterangepicker/moment.min.js"></script>
-	<script src="RecruitForm/vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="RecruitForm/vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
-	<script src="RecruitForm/js/map-custom.js"></script>
-<!--===============================================================================================-->
-	<script src="RecruitForm/js/main.js"></script>
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
-<!--===============================================================================================-->
-	<!-- <script src="/js/recruit.js"></script> -->
+                  <span class="focus-input100"></span>
+                </div>
+                <div
+                  class="wrap-input100 validate-input"
+                  style="border-bottom: none;"
+                >
+                  <span class="label-input100"
+                    >Proactively reach out & help others</span
+                  >
+                  <br />
+                  <!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
+                  <label for="rating1" class="radio100 label-input100">1</label>
+                  <input
+                    id="rating1"
+                    type="radio"
+                    name="entry.1343528650"
+                    id="rateQ3"
+                    value="1"
+                  />
+                  <label for="rating2" class="radio100 label-input100">2</label>
+                  <input
+                    id="rating2"
+                    type="radio"
+                    name="entry.1343528650"
+                    id="rateQ3"
+                    value="2"
+                  />
+                  <label for="rating3" class="radio100 label-input100">3</label>
+                  <input
+                    id="rating3"
+                    type="radio"
+                    name="entry.1343528650"
+                    id="rateQ3"
+                    value="3"
+                  />
+                  <label for="rating4" class="radio100 label-input100">4</label>
+                  <input
+                    id="rating4"
+                    type="radio"
+                    name="entry.1343528650"
+                    id="rateQ3"
+                    value="4"
+                  />
+                  <label for="rating5" class="radio100 label-input100">5</label>
+                  <input
+                    id="rating5"
+                    type="radio"
+                    name="entry.1343528650"
+                    id="rateQ3"
+                    value="5"
+                  />
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+                  <span class="focus-input100"></span>
+                </div>
+                <div
+                  class="wrap-input100 validate-input"
+                  style="border-bottom: none;"
+                >
+                  <span class="label-input100"
+                    >Come up with active solutions</span
+                  >
+                  <br />
+                  <!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
+                  <label for="rating1" class="radio100 label-input100">1</label>
+                  <input
+                    id="rating1"
+                    type="radio"
+                    name="entry.280603844"
+                    id="rateQ4"
+                    value="1"
+                  />
+                  <label for="rating2" class="radio100 label-input100">2</label>
+                  <input
+                    id="rating2"
+                    type="radio"
+                    name="entry.280603844"
+                    id="rateQ4"
+                    value="2"
+                  />
+                  <label for="rating3" class="radio100 label-input100">3</label>
+                  <input
+                    id="rating3"
+                    type="radio"
+                    name="entry.280603844"
+                    id="rateQ4"
+                    value="3"
+                  />
+                  <label for="rating4" class="radio100 label-input100">4</label>
+                  <input
+                    id="rating4"
+                    type="radio"
+                    name="entry.280603844"
+                    id="rateQ4"
+                    value="4"
+                  />
+                  <label for="rating5" class="radio100 label-input100">5</label>
+                  <input
+                    id="rating5"
+                    type="radio"
+                    name="entry.280603844"
+                    id="rateQ4"
+                    value="5"
+                  />
 
-	  gtag('config', 'UA-23581568-13');
-	</script>
-	<script>
-		function forward_one(){
-			document.getElementById("section_two").style.display = "block";
-			document.getElementById("section_one").style.display = "none";
-			document.getElementById("section_three").style.display = "none";
-			document.getElementById("section_two").style.visibility = "visible";
-			document.getElementById("section_one").style.visibility = "hidden";
-			document.getElementById("section_three").style.visibility = "hidden";
-			document.getElementById("bg-video2").style.visibility = "visible";
-			document.getElementById("bg-video2").style.display = "block";
-			document.getElementById("bg-video1").style.visibility = "hidden";
-			document.getElementById("bg-video1").style.display = "none";
-			document.getElementById("bg-video3").style.visibility = "hidden";
-			document.getElementById("bg-video3").style.display = "none";
-		}
-		
-		function forward_two(){
-			document.getElementById("section_three").style.display = "block";
-			document.getElementById("section_one").style.display = "none";
-			document.getElementById("section_two").style.display = "none";
-			document.getElementById("section_three").style.visibility = "visible";
-			document.getElementById("section_one").style.visibility = "hidden";
-			document.getElementById("section_two").style.visibility = "hidden";
-			document.getElementById("bg-video3").style.visibility = "visible";
-			document.getElementById("bg-video3").style.display = "block";
-			document.getElementById("bg-video1").style.visibility = "hidden";
-			document.getElementById("bg-video1").style.display = "none";
-			document.getElementById("bg-video2").style.visibility = "hidden";
-			document.getElementById("bg-video2").style.display = "none";
-		}
-		function previous_two(){
-			document.getElementById("section_one").style.display = "block";
-			document.getElementById("section_three").style.display = "none";
-			document.getElementById("section_two").style.display = "none";
-			document.getElementById("section_one").style.visibility = "visible";
-			document.getElementById("section_three").style.visibility = "hidden";
-			document.getElementById("section_two").style.visibility = "hidden";
-			document.getElementById("bg-video1").style.visibility = "visible";
-			document.getElementById("bg-video1").style.display = "block";
-			document.getElementById("bg-video3").style.visibility = "hidden";
-			document.getElementById("bg-video3").style.display = "none";
-			document.getElementById("bg-video2").style.visibility = "hidden";
-			document.getElementById("bg-video2").style.display = "none";
-		}
-		function previous_three(){
-			document.getElementById("section_two").style.display = "block";
-			document.getElementById("section_three").style.display = "none";
-			document.getElementById("section_one").style.display = "none";
-			document.getElementById("section_two").style.visibility = "visible";
-			document.getElementById("section_one").style.visibility = "hidden";
-			document.getElementById("section_three").style.visibility = "hidden";
-			document.getElementById("bg-video2").style.visibility = "visible";
-			document.getElementById("bg-video2").style.display = "block";
-			document.getElementById("bg-video1").style.visibility = "hidden";
-			document.getElementById("bg-video1").style.display = "none";
-			document.getElementById("bg-video3").style.visibility = "hidden";
-			document.getElementById("bg-video3").style.display = "none";
-		}
-		
-	</script>
-	<script>
-		function postToGoogle() {
-						var name = $("#name").val();
-						var roll = $("#roll").val();
-						var branch = $("#branch").val();
-						var phone = $("#phone").val();
-						var place = $("#place").val();
-						var timeDevote = $("#timeDevote").val();
-						var otherSocities = $("#otherSocities").val();
-						var Hobbies = $("#Hobbies").val();
-						var des = $("#des").val();
-						var message = $("#message").val();
-						var witty = $("#Witty").val();
-						var rateQ1 = $("input[name='entry.1694120072']:checked").val();
-						var rateQ2 = $("input[name='entry.200074965']:checked").val();
-						var rateQ3 = $("input[name='entry.1343528650']:checked").val();
-						var rateQ4 = $("input[name='entry.280603844']:checked").val();
-						var rateQ5 = $("input[name='entry.1656877776']:checked").val();
-						var url = $("input[name='entry.1470925297']").val();
-						var thaparFood = $("input[name='entry.1622578703']").val();
-						
-						// if(field1 == ""){
-						// 	alert('Please Fill Your Name');
-						// 	document.getElementById("name").focus();
-						// 	return false;
-						// }
-						// if(field2 == ""){
-						// 	alert('Please Fill Your Email');
-						// 	document.getElementById("emailField").focus();
-						// 	return false;
-						// }
-						// if(field3 == "" || field3.length > 10 || field3.length < 10){
-						// 	alert('Please Fill Your Mobile Number');
-						// 	document.getElementById("mobField").focus();
-						// 	return false;
-						// }
-		
-		
-						
-			
-						$.ajax({
-							url: "https://docs.google.com/forms/d/e/1FAIpQLSd7g2G9nZJ5FM9jG0-fRZPXNc4Cflv7NjpjhP-CHcYl6HMbZg/formResponse?",
-							data: {"entry.49493946": name, "entry.1670025806": roll, "entry.600816742": branch,
-							"entry.1965159740": phone, "entry.1690533821": place, "entry.1025971147": timeDevote, "entry.1234333045": otherSocities,
-							"entry.1056349084": Hobbies, "entry.1814998359": des, "entry.2061973106": message, "entry.1413529514": witty,
-							"entry.1694120072": rateQ1, "entry.200074965": rateQ2, "entry.1343528650": rateQ3, "entry.280603844": rateQ4,
-							"entry.1656877776": rateQ5, "entry.1470925297": url, "entry.1622578703": thaparFood},
-							type: "POST",
-							dataType: "xml",
-							success: function(d)
-							{
-								console.log("success!");
-								window.location.href = "/";
-							},
-							error: function(x, y, z)
-								{
-									console.log("added successfully");
-								}
-						});
-						return false;
-					}
-		</script>
-</body>
+                  <span class="focus-input100"></span>
+                </div>
+                <div
+                  class="wrap-input100 validate-input"
+                  style="border-bottom: none;"
+                >
+                  <span class="label-input100"
+                    >Get things done on time/Punctuality</span
+                  >
+                  <br />
+                  <!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
+                  <label for="rating1" class="radio100 label-input100">1</label>
+                  <input
+                    id="rating1"
+                    type="radio"
+                    name="entry.1656877776"
+                    id="rateQ5"
+                    value="1"
+                  />
+                  <label for="rating2" class="radio100 label-input100">2</label>
+                  <input
+                    id="rating2"
+                    type="radio"
+                    name="entry.1656877776"
+                    id="rateQ5"
+                    value="2"
+                  />
+                  <label for="rating3" class="radio100 label-input100">3</label>
+                  <input
+                    id="rating3"
+                    type="radio"
+                    name="entry.1656877776"
+                    id="rateQ5"
+                    value="3"
+                  />
+                  <label for="rating4" class="radio100 label-input100">4</label>
+                  <input
+                    id="rating4"
+                    type="radio"
+                    name="entry.1656877776"
+                    id="rateQ5"
+                    value="4"
+                  />
+                  <label for="rating5" class="radio100 label-input100">5</label>
+                  <input
+                    id="rating5"
+                    type="radio"
+                    name="entry.1656877776"
+                    id="rateQ5"
+                    value="5"
+                  />
+
+                  <span class="focus-input100"></span>
+                </div>
+                <div
+                  class="wrap-input100 validate-input"
+                  data-validate="Required"
+                >
+                  <span class="label-input100">Witty!</span>
+                  <input
+                    class="input100"
+                    type="text"
+                    name="entry.1413529514"
+                    id="Witty"
+                    placeholder=""
+                  />
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div
+                  class="wrap-input100 validate-input"
+                  data-validate="Required"
+                >
+                  <span class="label-input100">Submit your work(if any)</span>
+                  <input
+                    class="input100"
+                    type="text"
+                    name="entry.1470925297"
+                    id="urlValue"
+                    placeholder="URL"
+                  />
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div
+                  class="wrap-input100 validate-input"
+                  data-validate="Required"
+                >
+                  <span class="label-input100"
+                    >If you have 60 rupees in Thapar what will you eat and
+                    why?</span
+                  >
+                  <input
+                    class="input100"
+                    type="text"
+                    name="entry.1622578703"
+                    id="thaparFamousFood"
+                    placeholder="Special Food of Thapar"
+                  />
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="container-contact100-form-btn">
+                  <button
+                    type="button"
+                    class="contact100-form-btn"
+                    id="section_three_prev"
+                    onclick="previous_three()"
+                  >
+                    <span>
+                      Back
+                      <i
+                        class="fa fa-long-arrow-right m-l-7"
+                        aria-hidden="true"
+                      ></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="container-contact100-form-btn">
+                  <button class="contact100-form-btn" type="submit">
+                    <span>
+                      Submit
+                      <i
+                        class="fa fa-long-arrow-right m-l-7"
+                        aria-hidden="true"
+                      ></i>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="dropDownSelect1"></div>
+
+    <!--===============================================================================================-->
+    <script src="RecruitForm/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="RecruitForm/vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="RecruitForm/vendor/bootstrap/js/popper.js"></script>
+    <script src="RecruitForm/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="RecruitForm/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="RecruitForm/vendor/daterangepicker/moment.min.js"></script>
+    <script src="RecruitForm/vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="RecruitForm/vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+    <script src="RecruitForm/js/map-custom.js"></script>
+    <!--===============================================================================================-->
+    <script src="RecruitForm/js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <!--===============================================================================================-->
+    <!-- <script src="/js/recruit.js"></script> -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-23581568-13");
+    </script>
+    <script>
+      function forward_one() {
+        document.getElementById("section_two").style.display = "block";
+        document.getElementById("section_one").style.display = "none";
+        document.getElementById("section_three").style.display = "none";
+        document.getElementById("section_two").style.visibility = "visible";
+        document.getElementById("section_one").style.visibility = "hidden";
+        document.getElementById("section_three").style.visibility = "hidden";
+        document.getElementById("bg-video2").style.visibility = "visible";
+        document.getElementById("bg-video2").style.display = "block";
+        document.getElementById("bg-video1").style.visibility = "hidden";
+        document.getElementById("bg-video1").style.display = "none";
+        document.getElementById("bg-video3").style.visibility = "hidden";
+        document.getElementById("bg-video3").style.display = "none";
+      }
+
+      function forward_two() {
+        document.getElementById("section_three").style.display = "block";
+        document.getElementById("section_one").style.display = "none";
+        document.getElementById("section_two").style.display = "none";
+        document.getElementById("section_three").style.visibility = "visible";
+        document.getElementById("section_one").style.visibility = "hidden";
+        document.getElementById("section_two").style.visibility = "hidden";
+        document.getElementById("bg-video3").style.visibility = "visible";
+        document.getElementById("bg-video3").style.display = "block";
+        document.getElementById("bg-video1").style.visibility = "hidden";
+        document.getElementById("bg-video1").style.display = "none";
+        document.getElementById("bg-video2").style.visibility = "hidden";
+        document.getElementById("bg-video2").style.display = "none";
+      }
+      function previous_two() {
+        document.getElementById("section_one").style.display = "block";
+        document.getElementById("section_three").style.display = "none";
+        document.getElementById("section_two").style.display = "none";
+        document.getElementById("section_one").style.visibility = "visible";
+        document.getElementById("section_three").style.visibility = "hidden";
+        document.getElementById("section_two").style.visibility = "hidden";
+        document.getElementById("bg-video1").style.visibility = "visible";
+        document.getElementById("bg-video1").style.display = "block";
+        document.getElementById("bg-video3").style.visibility = "hidden";
+        document.getElementById("bg-video3").style.display = "none";
+        document.getElementById("bg-video2").style.visibility = "hidden";
+        document.getElementById("bg-video2").style.display = "none";
+      }
+      function previous_three() {
+        document.getElementById("section_two").style.display = "block";
+        document.getElementById("section_three").style.display = "none";
+        document.getElementById("section_one").style.display = "none";
+        document.getElementById("section_two").style.visibility = "visible";
+        document.getElementById("section_one").style.visibility = "hidden";
+        document.getElementById("section_three").style.visibility = "hidden";
+        document.getElementById("bg-video2").style.visibility = "visible";
+        document.getElementById("bg-video2").style.display = "block";
+        document.getElementById("bg-video1").style.visibility = "hidden";
+        document.getElementById("bg-video1").style.display = "none";
+        document.getElementById("bg-video3").style.visibility = "hidden";
+        document.getElementById("bg-video3").style.display = "none";
+      }
+    </script>
+    <script>
+      function postToGoogle() {
+        var name = $("#name").val();
+        var roll = $("#roll").val();
+        var branch = $("#branch").val();
+        var phone = $("#phone").val();
+        var place = $("#place").val();
+        var timeDevote = $("#timeDevote").val();
+        var otherSocities = $("#otherSocities").val();
+        var Hobbies = $("#Hobbies").val();
+        var des = $("#des").val();
+        var message = $("#message").val();
+        var witty = $("#Witty").val();
+        var rateQ1 = $("input[name='entry.1694120072']:checked").val();
+        var rateQ2 = $("input[name='entry.200074965']:checked").val();
+        var rateQ3 = $("input[name='entry.1343528650']:checked").val();
+        var rateQ4 = $("input[name='entry.280603844']:checked").val();
+        var rateQ5 = $("input[name='entry.1656877776']:checked").val();
+        var url = $("input[name='entry.1470925297']").val();
+        var thaparFood = $("input[name='entry.1622578703']").val();
+
+        // if(field1 == ""){
+        // 	alert('Please Fill Your Name');
+        // 	document.getElementById("name").focus();
+        // 	return false;
+        // }
+        // if(field2 == ""){
+        // 	alert('Please Fill Your Email');
+        // 	document.getElementById("emailField").focus();
+        // 	return false;
+        // }
+        // if(field3 == "" || field3.length > 10 || field3.length < 10){
+        // 	alert('Please Fill Your Mobile Number');
+        // 	document.getElementById("mobField").focus();
+        // 	return false;
+        // }
+
+        $.ajax({
+          url:
+            "https://docs.google.com/forms/d/e/1FAIpQLSd7g2G9nZJ5FM9jG0-fRZPXNc4Cflv7NjpjhP-CHcYl6HMbZg/formResponse?",
+          data: {
+            "entry.49493946": name,
+            "entry.1670025806": roll,
+            "entry.600816742": branch,
+            "entry.1965159740": phone,
+            "entry.1690533821": place,
+            "entry.1025971147": timeDevote,
+            "entry.1234333045": otherSocities,
+            "entry.1056349084": Hobbies,
+            "entry.1814998359": des,
+            "entry.2061973106": message,
+            "entry.1413529514": witty,
+            "entry.1694120072": rateQ1,
+            "entry.200074965": rateQ2,
+            "entry.1343528650": rateQ3,
+            "entry.280603844": rateQ4,
+            "entry.1656877776": rateQ5,
+            "entry.1470925297": url,
+            "entry.1622578703": thaparFood,
+          },
+          type: "POST",
+          dataType: "xml",
+          success: function(d) {
+            console.log("success!");
+            window.location.href = "/";
+          },
+          error: function(x, y, z) {
+            console.log("added successfully");
+          },
+        });
+        return false;
+      }
+    </script>
+  </body>
 </html>
