@@ -28,7 +28,7 @@
 	<link rel="stylesheet" type="text/css" href="sass/css/style.css">
 	<link rel="stylesheet" href="sass/css/radio.css">
 	<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 <!--===============================================================================================-->
 </head>
 <body style="padding:unset">
@@ -510,18 +510,28 @@
 	<div id="dropDownSelect1"></div>
 	<div class="successpop" id="successpop">
 		<div class="successpop_content">
-		  <div class="successpop_left">
+		  <!-- <div class="successpop_left">
 			<img src="sass/img/qw.jpg" alt="hi" class="successpop_img" />
-			<!-- <img src="img/about3.jpeg" alt="hi" class="successpop_img">-->
-		  </div>
+			 <img src="img/about3.jpeg" alt="hi" class="successpop_img"
+		  </div> -->
 		  <div class="successpop_right">
 			<a href="#" onclick="exit_form()" class="successpop_cross">&times;</a>
-			<h1 class="heading-secondary successpop_heading u-centre">COCA-COLA</h1>
+			<h1 class="heading-secondary successpop_heading u-centre">Thanks for Registering</h1>
 			<p class="paragraph successpop_paragraph">
-			  The most famous brand ruling over the soft drinks industry since
-			  more than 127 years with 500 different products. For the second
-			  consecutive time, Thapar Food Festival holds pride to have the
-			  Coca-Cola Company as our Title Sponsor.
+				Your form has been successfully submitted. 
+				<br>
+				For more info regarding the shortlisted students, you can follow us
+				<!-- Button Instagram -->
+				<div class="btn__container_pop">
+					<a href="https://instagram.com/thaparfoodfestival?igshid=f4917zov84zo" class="btn_pop">
+					<i class="link_pop fab fa-instagram"></i>
+					<span class="social">instagram</span>
+					</a>
+					<a href="https://www.facebook.com/thaparfoodfestival/" class="btn-f_pop">
+					<i class="link_pop fab fa-facebook"></i>
+					<span class="social">facebook</span>
+					</a>
+				</div>
 			</p>
 		  </div>
 		</div>
@@ -531,6 +541,7 @@
 			window.location.href = "/";
 		}
 	</script>
+	
 <!--===============================================================================================-->
 	<script src="RecruitForm/vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
@@ -646,103 +657,103 @@
 						var url = $("input[name='entry.1470925297']").val();
 						var thaparFood = $("input[name='entry.1622578703']").val();
 						
-						if(name == ""){
-							alert('Please Fill Your Name');
-							document.getElementById("name").focus();
-							return false;
-						}
+						// if(name == ""){
+						// 	alert('Please Fill Your Name');
+						// 	document.getElementById("name").focus();
+						// 	return false;
+						// }
 						
-						if(roll == ""){
-							alert('Please Fill Your RollNo');
-							document.getElementById("roll").focus();
-							return false;
-						}
-						if(branch == ""){
-							alert('Please Fill Your Branch');
-							document.getElementById("name").focus();
-							return false;
-						}
-						if(phone == ""){
-							alert('Please Fill Your PhoneNo');
-							document.getElementById("phone").focus();
-							return false;
-						}
+						// if(roll == ""){
+						// 	alert('Please Fill Your RollNo');
+						// 	document.getElementById("roll").focus();
+						// 	return false;
+						// }
+						// if(branch == ""){
+						// 	alert('Please Fill Your Branch');
+						// 	document.getElementById("name").focus();
+						// 	return false;
+						// }
+						// if(phone == ""){
+						// 	alert('Please Fill Your PhoneNo');
+						// 	document.getElementById("phone").focus();
+						// 	return false;
+						// }
 						
-						if( phone.length > 10 || phone.length < 10){
-							alert('Please fill correct PhoneNo');
-							document.getElementById("phone").focus();
-							return false;
-						}
-						if(place == ""){
-							alert('Please Fill Your City');
-							document.getElementById("place").focus();
-							return false;
-						}
-						if(timeDevote == ""){
-							alert('Please Fill Your Name');
-							document.getElementById("timeDevote").focus();
-							return false;
-						}
-						if(otherSocities == ""){
-							alert('Please Fill Your otherSocities');
-							document.getElementById("otherSocities").focus();
-							return false;
-						}
-						if(Hobbies == ""){
-							alert('Please Fill Your Hobbies');
-							document.getElementById("Hobbies").focus();
-							return false;
-						}
-						if(des == ""){
-							alert('Describe Yourself in 3 word!');
-							document.getElementById("des").focus();
-							return false;
-						}
-						if(message == ""){
-							alert('View toh batao!');
-							document.getElementById("message").focus();
-							return false;
-						}
-						if(witty == ""){
-							alert('Witty Question left!');
-							document.getElementById("witty").focus();
-							return false;
-						}
-						if(rateQ1 == ""){
-							alert('Please Fill Your Name');
-							$("input[name='entry.1694120072']").focus();
-							return false;
-						}
-						if(rateQ2 == ""){
-							alert('Please Fill Your Name');
-							$("input[name='entry.200074965']").focus();
-							return false;
-						}
-						if(rateQ3 == ""){
-							alert('Please Fill Your Name');
-							$("input[name='entry.1343528650']").focus();
-							return false;
-						}
-						if(rateQ4 == ""){
-							alert('Please Fill Your Name');
-							$("input[name='entry.280603844']").focus();
-							return false;
-						}
-						if(rateQ5 == ""){
-							alert('Please Fill Your Name');
-							$("input[name='entry.1656877776']").focus();
-							return false;
-						}
-						if(url == ""){
-							alert('Please Fill Your Name');
-							document.getElementById("url").focus();
-							return false;
-						}
-						if(thaparFood == ""){
-							alert('Please Fill Your Name');
-							document.getElementById("thaparfood").focus();
-							return false;
-						}
+						// if( phone.length > 10 || phone.length < 10){
+						// 	alert('Please fill correct PhoneNo');
+						// 	document.getElementById("phone").focus();
+						// 	return false;
+						// }
+						// if(place == ""){
+						// 	alert('Please Fill Your City');
+						// 	document.getElementById("place").focus();
+						// 	return false;
+						// }
+						// if(timeDevote == ""){
+						// 	alert('Please Fill Your Name');
+						// 	document.getElementById("timeDevote").focus();
+						// 	return false;
+						// }
+						// if(otherSocities == ""){
+						// 	alert('Please Fill Your otherSocities');
+						// 	document.getElementById("otherSocities").focus();
+						// 	return false;
+						// }
+						// if(Hobbies == ""){
+						// 	alert('Please Fill Your Hobbies');
+						// 	document.getElementById("Hobbies").focus();
+						// 	return false;
+						// }
+						// if(des == ""){
+						// 	alert('Describe Yourself in 3 word!');
+						// 	document.getElementById("des").focus();
+						// 	return false;
+						// }
+						// if(message == ""){
+						// 	alert('View toh batao!');
+						// 	document.getElementById("message").focus();
+						// 	return false;
+						// }
+						// if(witty == ""){
+						// 	alert('Witty Question left!');
+						// 	document.getElementById("witty").focus();
+						// 	return false;
+						// }
+						// if(rateQ1 == ""){
+						// 	alert('Please Fill Your Name');
+						// 	$("input[name='entry.1694120072']").focus();
+						// 	return false;
+						// }
+						// if(rateQ2 == ""){
+						// 	alert('Please Fill Your Name');
+						// 	$("input[name='entry.200074965']").focus();
+						// 	return false;
+						// }
+						// if(rateQ3 == ""){
+						// 	alert('Please Fill Your Name');
+						// 	$("input[name='entry.1343528650']").focus();
+						// 	return false;
+						// }
+						// if(rateQ4 == ""){
+						// 	alert('Please Fill Your Name');
+						// 	$("input[name='entry.280603844']").focus();
+						// 	return false;
+						// }
+						// if(rateQ5 == ""){
+						// 	alert('Please Fill Your Name');
+						// 	$("input[name='entry.1656877776']").focus();
+						// 	return false;
+						// }
+						// if(url == ""){
+						// 	alert('Please Fill Your Name');
+						// 	document.getElementById("url").focus();
+						// 	return false;
+						// }
+						// if(thaparFood == ""){
+						// 	alert('Please Fill Your Name');
+						// 	document.getElementById("thaparfood").focus();
+						// 	return false;
+						// }
 						// if(field2 == ""){
 						// 	alert('Please Fill Your Email');
 						// 	document.getElementById("emailField").focus();
