@@ -27,6 +27,7 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="sass/css/style.css">
 	<link rel="stylesheet" href="sass/css/radio.css">
+	<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
 	
 <!--===============================================================================================-->
 </head>
@@ -71,11 +72,11 @@
 					
 					<!-- <div class="contact100-form-title" style="background-image: url(RecruitForm/images/bg-01.jpg);"> -->
 						<span class="contact100-form-title-1">
-							Recruitment form
+							Thapar Food Festival
 						</span>
 
 						<span class="contact100-form-title-2">
-							Welcome To TFF
+							Recruitment form
 						</span>
 					</div>
 					
@@ -184,15 +185,29 @@
 						</div>
 						
 						<div id="section_three">
-							<p style="border-bottom: 1px solid #b2b2b2;">Rate yourself from 1-5
+							<p id="rateQ" style="border-bottom: 1px solid #b2b2b2;">Rate yourself from 1-5
 							</p>
-							<br>
+							
 
 
 							
 							<div class="wrap-input100 validate-input" style="border-bottom: none;" >
 								<span class="label-input100">Build & Lead a team</span>
 								<br>
+								
+								<!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
+								<!-- <label for="rating1" class="radio100 label-input100" >1</label>
+								<input id="rating1"  type="radio" name="entry.1694120072" value="1" />
+								<label for="rating2" class="radio100 label-input100" >2</label>
+								<input id="rating2"  type="radio" name="entry.1694120072" value="2" />
+								<label for="rating3" class="radio100 label-input100" >3</label>
+								<input id="rating3"  type="radio" name="entry.1694120072" value="3" />
+								<label for="rating4" class="radio100 label-input100" >4</label>
+								<input id="rating4"  type="radio" name="entry.1694120072" value="4" />
+								<label for="rating5" class="radio100 label-input100" >5</label>
+								<input id="rating5"  type="radio" name="entry.1694120072" value="5" />
+								 -->
+								<!-- <span class="focus-input100"></span> -->
 								<ul>
 									<li>
 									  <input type="radio" id="f-option" name="entry.1694120072" value="1">
@@ -230,19 +245,6 @@
 								</ul>
 								<span class="focus-input100"></span>
 							
-								<!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
-								<!-- <label for="rating1" class="radio100 label-input100" >1</label>
-								<input id="rating1"  type="radio" name="entry.1694120072" value="1" />
-								<label for="rating2" class="radio100 label-input100" >2</label>
-								<input id="rating2"  type="radio" name="entry.1694120072" value="2" />
-								<label for="rating3" class="radio100 label-input100" >3</label>
-								<input id="rating3"  type="radio" name="entry.1694120072" value="3" />
-								<label for="rating4" class="radio100 label-input100" >4</label>
-								<input id="rating4"  type="radio" name="entry.1694120072" value="4" />
-								<label for="rating5" class="radio100 label-input100" >5</label>
-								<input id="rating5"  type="radio" name="entry.1694120072" value="5" />
-								 -->
-								<!-- <span class="focus-input100"></span> -->
 							</div>
 							<div class="wrap-input100 validate-input" style="border-bottom: none;">
 								<span class="label-input100">Stay positive under pressure</span>
@@ -294,7 +296,7 @@
 										<div class="check"><div class="inside"></div></div>
 									  </li>
 								</ul>
-								<span class="focus-input100"></span>
+								<!-- <span class="focus-input100"></span> -->
 							</div>
 							<div class="wrap-input100 validate-input" style="border-bottom: none;">
 								<span class="label-input100">Proactively reach out & help others</span>
@@ -660,8 +662,14 @@
 							document.getElementById("name").focus();
 							return false;
 						}
-						if(phone == "" || phone.length > 10 || phone.length < 10){
+						if(phone == ""){
 							alert('Please Fill Your PhoneNo');
+							document.getElementById("phone").focus();
+							return false;
+						}
+						
+						if( phone.length > 10 || phone.length < 10){
+							alert('Please fill correct PhoneNo');
 							document.getElementById("phone").focus();
 							return false;
 						}
@@ -702,27 +710,27 @@
 						}
 						if(rateQ1 == ""){
 							alert('Please Fill Your Name');
-							document.getElementById("rateQ1").focus();
+							$("input[name='entry.1694120072']").focus();
 							return false;
 						}
 						if(rateQ2 == ""){
 							alert('Please Fill Your Name');
-							document.getElementById("rateQ2").focus();
+							$("input[name='entry.200074965']").focus();
 							return false;
 						}
 						if(rateQ3 == ""){
 							alert('Please Fill Your Name');
-							document.getElementById("rateQ3").focus();
+							$("input[name='entry.1343528650']").focus();
 							return false;
 						}
 						if(rateQ4 == ""){
 							alert('Please Fill Your Name');
-							document.getElementById("rateQ4").focus();
+							$("input[name='entry.280603844']").focus();
 							return false;
 						}
 						if(rateQ5 == ""){
 							alert('Please Fill Your Name');
-							document.getElementById("rateQ5").focus();
+							$("input[name='entry.1656877776']").focus();
 							return false;
 						}
 						if(url == ""){
