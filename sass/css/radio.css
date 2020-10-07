@@ -18,7 +18,6 @@ font-family: 'Lato', sans-serif;
 h2 {
 	color: #AAAAAA;
 }
-
 .container ul{
   list-style: none;
   margin: 0;
@@ -47,11 +46,33 @@ ul li label{
   font-weight: 300;
   font-size: 1.35em;
   padding: 25px 25px;
-  margin: 20px;
+  margin: 20.5px;
   height: 30px;
   z-index: 9;
   cursor: pointer;
   -webkit-transition: all 0.25s linear;
+}
+
+@media (max-width: 750px){
+    ul li label{
+        margin: 19px;
+    }
+}
+
+@media (max-width: 600px){
+    ul li label{
+        margin: 17.5px;
+    }
+}
+@media (max-width: 500px){
+    ul li label{
+        margin: 14px;
+    }
+}
+@media (max-width: 470px){
+    ul li label{
+        margin: 12px;
+    }
 }
 
 ul li:hover label{

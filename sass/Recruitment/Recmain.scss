@@ -257,6 +257,11 @@ padding: 2rem 5rem;
         }
   }
 }
+#rateQ{
+  font-size: 23px;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
 #bg-video2{
   
   display: none;
@@ -405,16 +410,17 @@ margin-left: 4rem;
 }
 
 .contact100-form-title-1 {
-  font-family: Poppins-Bold;
-  font-size: 23px;
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 30px;
   color: #fff;
   line-height: 1.2;
   text-align: center;
-  padding-bottom: 7px;
+  padding-bottom: 20px;
+
 }
 
 .contact100-form-title-2 {
-  font-family: Poppins-Regular;
+  font-family: Poppins-Bold;
   font-size: 15px;
   color: #fff;
   line-height: 1.5;
@@ -448,6 +454,7 @@ margin-left: 4rem;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 40px 40px;
+  padding-top: unset;
 }
 
 
@@ -465,7 +472,7 @@ margin-left: 4rem;
   font-family: Poppins-Regular;
   font-size: 17.5px;
   color: white;
-  line-height: 1.2;
+  line-height: 1.3;
   text-align: right;
 
   position: unset;
@@ -613,11 +620,14 @@ textarea.input100 {
   .wrap-contact100 {
     width: 560px;
   }
+  .label-input100{
+    line-height: 1.5;
+  }
 
 }
 @media (max-width: 600px) {
   .contact100-form {
-    padding: 43px 15px 57px 25px;
+    padding: 0px 15px 57px 25px;
   }
   
   .wrap-contact100 {
@@ -627,7 +637,7 @@ textarea.input100 {
 
 @media (max-width: 520px) {
   .contact100-form {
-    padding: 43px 15px 57px 15px;
+    padding: 0px 15px 57px 15px;
   }
   .wrap-contact100 {
     width: 450px;
@@ -637,8 +647,8 @@ textarea.input100 {
     position: unset;
     top: unset;
     left: unset;
-    
-    font-size: 13px;
+    line-height: 1.4;
+    font-size: 15px;
   }
 }
 
