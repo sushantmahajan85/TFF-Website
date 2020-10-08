@@ -791,8 +791,8 @@ padding: 2rem 5rem;
             display: none;
           }
     }
-    &_paragraph{
-        column-count: 2;
+    &_paragraph
+        {
         font-size: 1.7rem;
         font-weight: 400;
         @include respond (tab-port){
@@ -800,7 +800,7 @@ padding: 2rem 5rem;
         column-rule: unset;
         column-gap: unset;
         text-align: start;
-          }
+        }
 
         column-rule: 0.5px solid darkgrey;
         column-gap: 4rem;
