@@ -132,10 +132,10 @@
 								<span class="focus-input100"></span>
 							</div>
 							<div class="container-contact100-form-btn">
-								<button type="button" class="contact100-form-btn" id="section_one_next" onclick="forward_one()"> 
+								<button type="button" class="contact100-form-btn nexty" id="section_one_next" onclick="forward_one()"> 
 									<span>
 										Next
-										<i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i>
+										<!-- <i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i> -->
 									</span>
 								</button>
 							</div>
@@ -165,24 +165,28 @@
 								<span class="label-input100">What is the best and worst thing about tff-19?</span>
 								<textarea class="input100" name="entry.2061973106" id="message" placeholder="Your Comment..."></textarea>
 								<span class="focus-input100"></span>
-							</div>
-							<div class="container-contact100-form-btn">
-								<button type="button" class="contact100-form-btn" id="section_two_next" onclick="forward_two()"> 
+              </div>
+              <div style="display: flex;">
+              
+						
+							<div class="container-contact100-form-btn ">
+								<button type="button" class="contact100-form-btn nexty" id="section_two_next" onclick="forward_two()"> 
 									<span>
 										Next
-										<i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i>
+										<!-- <i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i> -->
 									</span>
 								</button>
-							</div>
-							<div class="container-contact100-form-btn">
-								<button type="button" class="contact100-form-btn" id="section_two_prev" onclick="previous_two()"> 
+              </div>
+              <div class="container-contact100-form-btn ">
+								<button type="button" class="contact100-form-btn backy" id="section_two_prev" onclick="previous_two()"> 
 									<span>
 										Back
-										<i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i>
+										<!-- <i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i> -->
 									</span>
 								</button>
 							</div>
-						</div>
+            </div>
+							</div>
 						
 						<div id="section_three">
 							<p id="rateQ" style="border-bottom: 1px solid #b2b2b2;">Rate yourself from 1-5
@@ -315,35 +319,35 @@
 								 -->
 								 <ul>
 									<li>
-									  <input type="radio" id="f-option" name="entry.1343528650" value="1">
-									  <label for="f-option">1</label>
+									  <input type="radio" id="x-option" name="entry.1343528650" value="1">
+									  <label for="x-option">1</label>
 									  <div class="check"></div>
 									</li>
 									
 									<li>
-									  <input type="radio" id="s-option" name="entry.1343528650" value="2">
-									  <label for="s-option">2</label>
+									  <input type="radio" id="y-option" name="entry.1343528650" value="2">
+									  <label for="y-option">2</label>
 									  
 									  <div class="check"><div class="inside"></div></div>
 									</li>
 									
 									<li>
-									  <input type="radio" id="t-option" name="entry.1343528650" value="3">
-									  <label for="t-option">3</label>
+									  <input type="radio" id="z-option" name="entry.1343528650" value="3">
+									  <label for="z-option">3</label>
 									  
 									  <div class="check"><div class="inside"></div></div>
 									</li>
 									
 									<li>
-										<input type="radio" id="m-option" name="entry.1343528650" value="4">
-										<label for="m-option">4</label>
+										<input type="radio" id="l-option" name="entry.1343528650" value="4">
+										<label for="l-option">4</label>
 										
 										<div class="check"><div class="inside"></div></div>
 									  </li>
 									  
 									<li>
-										<input type="radio" id="n-option" name="entry.1343528650" value="5">
-										<label for="n-option">5</label>
+										<input type="radio" id="u-option" name="entry.1343528650" value="5">
+										<label for="u-option">5</label>
 										
 										<div class="check"><div class="inside"></div></div>
 									  </li>
@@ -473,23 +477,25 @@
 								<input class="input100" type="text" name="entry.1622578703" id="thaparFamousFood" placeholder="Special Food of Thapar">
 								<span class="focus-input100"></span>
 							</div>
+							<div style="display: flex;flex-direction:flex-start">
 							
 							<div class="container-contact100-form-btn">
-								<button type="button" class="contact100-form-btn" id="section_three_prev" onclick="previous_three()"> 
-									<span>
-										Back
-										<i class="fa fa-long-arrow-left m-l-7"  aria-hidden="true"></i>
-									</span>
-								</button>
-							</div>
-							<div class="container-contact100-form-btn">
-								<button class="contact100-form-btn" type="submit">
+								<button class="contact100-form-btn nexty" type="submit">
 									<span>
 										Submit
-										<i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i>
+										<!-- <i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i> -->
+									</span>
+								</button>
+              </div>
+              <div class="container-contact100-form-btn">
+								<button type="button" class="contact100-form-btn backy" id="section_three_prev" onclick="previous_three()"> 
+									<span>
+										Back
+										<!-- <i class="fa fa-long-arrow-left m-l-7"  aria-hidden="true"></i> -->
 									</span>
 								</button>
 							</div>
+            </div>
 						</div>
 						
 						
@@ -657,113 +663,113 @@
 						var url = $("input[name='entry.1470925297']").val();
 						var thaparFood = $("input[name='entry.1622578703']").val();
 						
-						// if(name == ""){
-						// 	alert('Please Fill Your Name');
-						// 	document.getElementById("name").focus();
-						// 	return false;
-						// }
+						 if(name == ""){
+						 	alert('Please Fill Your Name');
+						 	document.getElementById("name").focus();
+						 	return false;
+						 }
 						
-						// if(roll == ""){
-						// 	alert('Please Fill Your RollNo');
-						// 	document.getElementById("roll").focus();
-						// 	return false;
-						// }
-						// if(branch == ""){
-						// 	alert('Please Fill Your Branch');
-						// 	document.getElementById("name").focus();
-						// 	return false;
-						// }
-						// if(phone == ""){
-						// 	alert('Please Fill Your PhoneNo');
-						// 	document.getElementById("phone").focus();
-						// 	return false;
-						// }
+						 if(roll == ""){
+						 	alert('Please Fill Your RollNo');
+						 	document.getElementById("roll").focus();
+						 	return false;
+						 }
+						 if(branch == ""){
+						 	alert('Please Fill Your Branch');
+						 	document.getElementById("name").focus();
+						 	return false;
+						 }
+						 if(phone == ""){
+						 	alert('Please Fill Your PhoneNo');
+						 	document.getElementById("phone").focus();
+						 	return false;
+						 }
 						
-						// if( phone.length > 10 || phone.length < 10){
-						// 	alert('Please fill correct PhoneNo');
-						// 	document.getElementById("phone").focus();
-						// 	return false;
-						// }
-						// if(place == ""){
-						// 	alert('Please Fill Your City');
-						// 	document.getElementById("place").focus();
-						// 	return false;
-						// }
-						// if(timeDevote == ""){
-						// 	alert('Please Fill Your Name');
-						// 	document.getElementById("timeDevote").focus();
-						// 	return false;
-						// }
-						// if(otherSocities == ""){
-						// 	alert('Please Fill Your otherSocities');
-						// 	document.getElementById("otherSocities").focus();
-						// 	return false;
-						// }
-						// if(Hobbies == ""){
-						// 	alert('Please Fill Your Hobbies');
-						// 	document.getElementById("Hobbies").focus();
-						// 	return false;
-						// }
-						// if(des == ""){
-						// 	alert('Describe Yourself in 3 word!');
-						// 	document.getElementById("des").focus();
-						// 	return false;
-						// }
-						// if(message == ""){
-						// 	alert('View toh batao!');
-						// 	document.getElementById("message").focus();
-						// 	return false;
-						// }
-						// if(witty == ""){
-						// 	alert('Witty Question left!');
-						// 	document.getElementById("witty").focus();
-						// 	return false;
-						// }
-						// if(rateQ1 == ""){
-						// 	alert('Please Fill Your Name');
-						// 	$("input[name='entry.1694120072']").focus();
-						// 	return false;
-						// }
-						// if(rateQ2 == ""){
-						// 	alert('Please Fill Your Name');
-						// 	$("input[name='entry.200074965']").focus();
-						// 	return false;
-						// }
-						// if(rateQ3 == ""){
-						// 	alert('Please Fill Your Name');
-						// 	$("input[name='entry.1343528650']").focus();
-						// 	return false;
-						// }
-						// if(rateQ4 == ""){
-						// 	alert('Please Fill Your Name');
-						// 	$("input[name='entry.280603844']").focus();
-						// 	return false;
-						// }
-						// if(rateQ5 == ""){
-						// 	alert('Please Fill Your Name');
-						// 	$("input[name='entry.1656877776']").focus();
-						// 	return false;
-						// }
-						// if(url == ""){
-						// 	alert('Please Fill Your Name');
-						// 	document.getElementById("url").focus();
-						// 	return false;
-						// }
-						// if(thaparFood == ""){
-						// 	alert('Please Fill Your Name');
-						// 	document.getElementById("thaparfood").focus();
-						// 	return false;
-						// }
-						// if(field2 == ""){
-						// 	alert('Please Fill Your Email');
-						// 	document.getElementById("emailField").focus();
-						// 	return false;
-						// }
-						// if(field3 == "" || field3.length > 10 || field3.length < 10){
-						// 	alert('Please Fill Your Mobile Number');
-						// 	document.getElementById("mobField").focus();
-						// 	return false;
-						// }
+						 if( phone.length > 10 || phone.length < 10){
+						 	alert('Please fill correct PhoneNo');
+						 	document.getElementById("phone").focus();
+						 	return false;
+						 }
+						 if(place == ""){
+						 	alert('Please Fill Your City');
+						 	document.getElementById("place").focus();
+						 	return false;
+						 }
+						 if(timeDevote == ""){
+						 	alert('Please Fill Your Name');
+						 	document.getElementById("timeDevote").focus();
+						 	return false;
+						 }
+						 if(otherSocities == ""){
+						 	alert('Please Fill Your otherSocities');
+						 	document.getElementById("otherSocities").focus();
+						 	return false;
+						 }
+						 if(Hobbies == ""){
+						 	alert('Please Fill Your Hobbies');
+						 	document.getElementById("Hobbies").focus();
+						 	return false;
+						 }
+						 if(des == ""){
+						 	alert('Describe Yourself in 3 word!');
+						 	document.getElementById("des").focus();
+						 	return false;
+						 }
+						 if(message == ""){
+						 	alert('View toh batao!');
+						 	document.getElementById("message").focus();
+						 	return false;
+						 }
+						 if(witty == ""){
+						 	alert('Witty Question left!');
+						 	document.getElementById("witty").focus();
+						 	return false;
+						 }
+						 if(rateQ1 == ""){
+						 	alert('Please Fill Your Name');
+						 	$("input[name='entry.1694120072']").focus();
+						 	return false;
+						 }
+						 if(rateQ2 == ""){
+						 	alert('Please Fill Your Name');
+						 	$("input[name='entry.200074965']").focus();
+						 	return false;
+						 }
+						 if(rateQ3 == ""){
+						 	alert('Please Fill Your Name');
+					 	$("input[name='entry.1343528650']").focus();
+						 	return false;
+						 }
+						 if(rateQ4 == ""){
+						 	alert('Please Fill Your Name');
+						 	$("input[name='entry.280603844']").focus();
+						 	return false;
+						 }
+						 if(rateQ5 == ""){
+						 	alert('Please Fill Your Name');
+						 	$("input[name='entry.1656877776']").focus();
+					 	return false;
+						 }
+						 if(url == ""){
+						 	alert('Please Fill Your Name');
+						 	document.getElementById("url").focus();
+						 	return false;
+						 }
+						 if(thaparFood == ""){
+						 	alert('Please Fill Your Name');
+						 	document.getElementById("thaparfood").focus();
+						 	return false;
+						 }
+						 if(field2 == ""){
+						 	alert('Please Fill Your Email');
+						 	document.getElementById("emailField").focus();
+						 	return false;
+						 }
+						 if(field3 == "" || field3.length > 10 || field3.length < 10){
+						 	alert('Please Fill Your Mobile Number');
+						 	document.getElementById("mobField").focus();
+						 	return false;
+						 }
 		
 		
 						

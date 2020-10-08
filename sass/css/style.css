@@ -24,7 +24,8 @@
   padding: 0px;
   box-sizing: border-box; }
 
-body, html {
+body,
+html {
   height: 100%;
   font-family: Poppins-Regular, sans-serif;
   /* The image used */
@@ -54,7 +55,12 @@ a:hover {
   text-decoration: none; }
 
 /*---------------------------------------------*/
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0px; }
 
 p {
@@ -64,7 +70,8 @@ p {
   color: #666666;
   margin: 0px; }
 
-ul, li {
+ul,
+li {
   margin: 0px;
   list-style-type: none; }
 
@@ -86,7 +93,8 @@ textarea {
   outline: none;
   border: none; }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
   border-color: transparent !important; }
 
 input:focus::-webkit-input-placeholder {
@@ -169,9 +177,9 @@ iframe {
   z-index: 99999999999999999;
   opacity: 0;
   visibility: hidden;
-  transition: all .3s; }
+  transition: all 0.3s; }
   .successpop_content {
-    opacity: .95;
+    opacity: 0.95;
     width: 75%;
     height: 50rem;
     background-color: white;
@@ -255,10 +263,10 @@ iframe {
   min-height: 100%; }
 
 .wrapper {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -266,7 +274,7 @@ iframe {
   min-height: 100vh; }
 
 .container {
-  background-color: #FFF;
+  background-color: #fff;
   padding: 3em;
   display: grid;
   place-items: center;
@@ -278,7 +286,7 @@ iframe {
   margin-left: 4rem; }
 
 .fa-times {
-  color: #E5E5E5;
+  color: #e5e5e5;
   font-size: 1.5rem;
   position: absolute;
   top: 1em;
@@ -300,20 +308,20 @@ iframe {
   font-weight: 400;
   letter-spacing: 0.05em;
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   padding: 0.8em 4em;
   display: block;
   border-radius: 0.4em;
   margin-bottom: 1.6em; }
 
 .btn-red {
-  background-color: #ED6755;
+  background-color: #ed6755;
   -webkit-box-shadow: 0px 13px 34px -6px #ed6755;
   -moz-box-shadow: 0px 13px 34px -6px #ed6755;
   box-shadow: 0px 13px 34px -6px #ed6755; }
 
 .btn-blue {
-  background-color: #1C1B5E;
+  background-color: #1c1b5e;
   -webkit-box-shadow: 0px 13px 34px -6px #1c1b5e;
   -moz-box-shadow: 0px 13px 34px -6px #1c1b5e;
   box-shadow: 0px 13px 34px -6px #1c1b5e; }
@@ -369,7 +377,7 @@ iframe {
   padding: 64px 15px 64px 15px; }
 
 .contact100-form-title-1 {
-  font-family: 'Sansita Swashed', cursive;
+  font-family: "Sansita Swashed", cursive;
   font-size: 30px;
   color: #fff;
   line-height: 1.2;
@@ -517,6 +525,10 @@ textarea.input100 {
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s; }
+  @media (max-width: 37.5em) {
+    .contact100-form-btn {
+      min-width: 136px;
+      margin-right: 4rem; } }
 
 .contact100-form-btn i {
   -webkit-transition: all 0.4s;
@@ -524,8 +536,32 @@ textarea.input100 {
   -moz-transition: all 0.4s;
   transition: all 0.4s; }
 
+.backy {
+  background-color: #333333 !important; }
+  .backy:hover {
+    background-color: #57b846 !important; }
+
+.nexty {
+  background-color: #57b846 !important; }
+  .nexty:hover {
+    background-color: #333333 !important; }
+
 .contact100-form-btn:hover {
   background-color: #333333; }
+
+.backi {
+  -webkit-transform: translateX(-10px);
+  -moz-transform: translateX(-10px);
+  -ms-transform: translateX(-10px);
+  -o-transform: translateX(-10px);
+  transform: translateX(-10px) !important; }
+
+.nexti {
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+  transform: translateX(10px); }
 
 .contact100-form-btn:hover i {
   -webkit-transform: translateX(10px);
