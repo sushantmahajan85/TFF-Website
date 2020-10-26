@@ -963,25 +963,25 @@ body {
         opacity: 1;
        }
      
-       &:hover {
-        transform: scale(1.1);
-        background: linear-gradient(to right, #ff3019 0%,#c90477 100%);
-        box-shadow: 0px 10px 30px rgba(0,0,0,0.10);
-          .link_pop {
+    //    &:hover {
+    //     transform: scale(1.1);
+    //     background: linear-gradient(to right, #ff3019 0%,#c90477 100%);
+    //     box-shadow: 0px 10px 30px rgba(0,0,0,0.10);
+    //       .link_pop {
               
-            padding-right: 0;
-            transform: translateX(45px);
-            color: #FFF;
-          }
-          .social {
-            transform: translateX(30px);
-            opacity: 0;
-          }
-        }
-       &:active {
-         transform: scale(1);
-         box-shadow: 0px 2px 10px rgba(0,0,0,0.10);
-       }
+    //         padding-right: 0;
+    //         transform: translateX(45px);
+    //         color: #FFF;
+    //       }
+    //       .social {
+    //         transform: translateX(30px);
+    //         opacity: 0;
+    //       }
+    //     }
+    //    &:active {
+    //      transform: scale(1);
+    //      box-shadow: 0px 2px 10px rgba(0,0,0,0.10);
+    //    }
     }
   
   .btn-f_pop {
@@ -1007,26 +1007,26 @@ body {
         opacity: 1;
        }
      
-       &:hover {
-        transform: scale(1.1);
-        background-color: #286ED6;
-        box-shadow: 0px 10px 30px rgba(0,0,0,0.10);
-          .link_pop {
+    //    &:hover {
+    //     transform: scale(1.1);
+    //     background-color: #286ED6;
+    //     box-shadow: 0px 10px 30px rgba(0,0,0,0.10);
+    //       .link_pop {
               
-            padding-right: 0;
-            transform: translateX(45px);
-            color: wheat;
-            background-color: #286ED6;
-          }
-          .social {
-            transform: translateX(30px);
-            opacity: 0;
-          }
-        }
-       &:active {
-         transform: scale(1);
-         box-shadow: 0px 2px 10px rgba(0,0,0,0.10);
-       }
+    //         padding-right: 0;
+    //         transform: translateX(45px);
+    //         color: wheat;
+    //         background-color: #286ED6;
+    //       }
+    //       .social {
+    //         transform: translateX(30px);
+    //         opacity: 0;
+    //       }
+    //     }
+    //    &:active {
+    //      transform: scale(1);
+    //      box-shadow: 0px 2px 10px rgba(0,0,0,0.10);
+    //    }
     }
     .popupimg{
         width: 100%; text-align: center; 
