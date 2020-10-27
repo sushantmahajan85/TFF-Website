@@ -227,6 +227,7 @@ iframe {
         display: none; } }
   .successpop_paragraph {
     column-count: 2;
+    text-align: center;
     font-size: 1.7rem;
     font-weight: 400;
     column-rule: 0.5px solid darkgrey;
@@ -236,8 +237,8 @@ iframe {
       .successpop_paragraph {
         column-count: unset;
         column-rule: unset;
-        column-gap: unset;
-        text-align: start; } }
+        text-align: center;
+        column-gap: unset; } }
   @media (max-width: 56.25em) {
     .successpop_heading {
       text-align: center; } }
@@ -9166,9 +9167,10 @@ body {
 
 .popupimg {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: initial; }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .popupimg {
     margin-bottom: 20px; } }
 

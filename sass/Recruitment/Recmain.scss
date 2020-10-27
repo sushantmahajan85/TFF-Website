@@ -264,14 +264,14 @@ iframe {
   }
   &_paragraph {
     column-count: 2;
-
+    text-align: center;
     font-size: 1.7rem;
     font-weight: 400;
     @include respond(tab-port) {
       column-count: unset;
       column-rule: unset;
+      text-align: center;
       column-gap: unset;
-      text-align: start;
     }
 
     column-rule: 0.5px solid darkgrey;
