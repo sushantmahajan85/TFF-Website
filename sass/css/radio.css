@@ -98,12 +98,17 @@ ul li label{
         margin: 11px;
     }
 }
-@media (max-width: 420px){
+@media (max-width: 425px){
   ul li label{
       margin: 7px;
   }
 }
 
+@media (max-width: 410px){
+  ul li label{
+      margin: 6px;
+  }
+}
 
 ul li:hover label{
 	color: #FFFFFF;
