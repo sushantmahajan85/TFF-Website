@@ -284,6 +284,12 @@ iframe {
     }
   }
 }
+#logo_top{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 #rateQ {
   font-size: 23px;
   margin-bottom: 20px;
@@ -440,7 +446,7 @@ iframe {
   color: #fff;
   line-height: 1.2;
   text-align: center;
-  padding-bottom: 20px;
+  // padding-bottom: 20px;
 }
 
 .contact100-form-title-2 {

@@ -243,6 +243,12 @@ iframe {
     .successpop_heading {
       text-align: center; } }
 
+#logo_top {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; }
+
 #rateQ {
   font-size: 23px;
   margin-bottom: 20px;
@@ -382,8 +388,7 @@ iframe {
   font-size: 30px;
   color: #fff;
   line-height: 1.2;
-  text-align: center;
-  padding-bottom: 20px; }
+  text-align: center; }
 
 .contact100-form-title-2 {
   font-family: Poppins-Bold;
