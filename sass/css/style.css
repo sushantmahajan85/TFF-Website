@@ -227,6 +227,7 @@ iframe {
         display: none; } }
   .successpop_paragraph {
     column-count: 2;
+    text-align: center;
     font-size: 1.7rem;
     font-weight: 400;
     column-rule: 0.5px solid darkgrey;
@@ -236,11 +237,17 @@ iframe {
       .successpop_paragraph {
         column-count: unset;
         column-rule: unset;
-        column-gap: unset;
-        text-align: start; } }
+        text-align: center;
+        column-gap: unset; } }
   @media (max-width: 56.25em) {
     .successpop_heading {
       text-align: center; } }
+
+#logo_top {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; }
 
 #rateQ {
   font-size: 23px;
@@ -381,8 +388,7 @@ iframe {
   font-size: 30px;
   color: #fff;
   line-height: 1.2;
-  text-align: center;
-  padding-bottom: 20px; }
+  text-align: center; }
 
 .contact100-form-title-2 {
   font-family: Poppins-Bold;
@@ -9166,9 +9172,10 @@ body {
 
 .popupimg {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: initial; }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .popupimg {
     margin-bottom: 20px; } }
 

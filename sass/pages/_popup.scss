@@ -1029,9 +1029,10 @@ body {
     //    }
     }
     .popupimg{
-        width: 100%; text-align: center; 
+        width: 100%; text-align: center;
+        padding-bottom: initial;
     }
-    @media (max-width:800px){
+    @media (max-width:900px){
         .popupimg{
         margin-bottom: 20px;
     }
