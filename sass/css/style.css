@@ -247,9 +247,9 @@ iframe {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  margin-top: -100px;
-  margin-bottom: -40px; }
+  width: 70%;
+  margin-top: -120px;
+  margin-bottom: -90px; }
 
 #rateQ {
   font-size: 23px;
@@ -387,14 +387,15 @@ iframe {
 
 .contact100-form-title-1 {
   font-family: "Sansita Swashed", cursive;
-  font-size: 30px;
+  font-size: 50px;
   color: #fff;
   line-height: 1.2;
   text-align: center; }
 
 .contact100-form-title-2 {
-  font-family: Poppins-Bold;
-  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.3rem;
   color: #fff;
   line-height: 1.5;
   text-align: center; }
@@ -589,6 +590,11 @@ textarea.input100 {
 @media (max-width: 600px) {
   .contact100-form {
     padding: 0px 15px 57px 25px; }
+  #logo_top {
+    width: 67%; }
+  .contact100-form-title-2 {
+    font-size: 18px;
+    margin-top: 30px; }
   .wrap-contact100 {
     width: 500px; } }
 
@@ -603,11 +609,17 @@ textarea.input100 {
     top: unset;
     left: unset;
     line-height: 1.4;
-    font-size: 15px; } }
+    font-size: 15px; }
+  .contact100-form-title-2 {
+    font-size: 16px;
+    margin-top: 40px; } }
 
 @media (max-width: 480px) {
   .wrap-contact100 {
-    width: 430px; } }
+    width: 430px; }
+  .contact100-form-title-2 {
+    font-size: 14px;
+    margin-top: 40px; } }
 
 @media (max-width: 460px) {
   .wrap-contact100 {
@@ -615,7 +627,10 @@ textarea.input100 {
 
 @media (max-width: 420px) {
   .wrap-contact100 {
-    width: 350px; } }
+    width: 350px; }
+  .contact100-form-title-2 {
+    font-size: 13px;
+    margin-top: 50px; } }
 
 /*------------------------------------------------------------------
 [ Alert validate ]*/
