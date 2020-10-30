@@ -106,6 +106,12 @@
 								<span class="focus-input100"></span>
 								
 							</div>
+							<div class="wrap-input100 validate-input" data-validate="Required">
+								<span class="label-input100">Email id (thapar)</span>
+								<input class="input100" type="text" name="entry.41547401" id ="email" placeholder="Enter Email">
+								<span class="focus-input100"></span>
+								
+							</div>
 							<!-- <div class="wrap-input100 validate-input" data-validate="CG is required">
 								<span class="label-input100">अभियांत्रिकी में क्या grade चल रहा है?</span>
 								<input class="input100" type="text" name="data[CG]" id="CG" placeholder="Enter CG">
@@ -665,6 +671,7 @@
 						var Hobbies = $("#Hobbies").val();
 						var des = $("#des").val();
 						var message = $("#message").val();
+						var email = $("input[name='entry.41547401']").val();
 						// var witty = $("#Witty").val();
 						var rateQ1 = $("input[name='entry.1694120072']:checked").val();
 						var rateQ2 = $("input[name='entry.200074965']:checked").val();
@@ -726,6 +733,11 @@
 						 	document.getElementById("des").focus();
 						 	return false;
 						 }
+						 if(!email.endsWith("thapar.edu")){
+							alert('Enter Thapar Email only');
+						 	document.getElementById("email").focus();
+						 	return false;	
+						 }
 						 if(message == ""){
 						 	alert('View toh batao!');
 						 	document.getElementById("message").focus();
@@ -772,16 +784,16 @@
 						 	document.getElementById("thaparfood").focus();
 						 	return false;
 						 }
-						 if(field2 == ""){
-						 	alert('Please Fill Your Email');
-						 	document.getElementById("emailField").focus();
-						 	return false;
-						 }
-						 if(field3 == "" || field3.length > 10 || field3.length < 10){
-						 	alert('Please Fill Your Mobile Number');
-						 	document.getElementById("mobField").focus();
-						 	return false;
-						 }
+						//  if(field2 == ""){
+						//  	alert('Please Fill Your Email');
+						//  	document.getElementById("emailField").focus();
+						//  	return false;
+						//  }
+						//  if(field3 == "" || field3.length > 10 || field3.length < 10){
+						//  	alert('Please Fill Your Mobile Number');
+						//  	document.getElementById("mobField").focus();
+						//  	return false;
+						//  }
 		
 		
 						
@@ -790,7 +802,7 @@
 							url: "https://docs.google.com/forms/d/e/1FAIpQLSd7g2G9nZJ5FM9jG0-fRZPXNc4Cflv7NjpjhP-CHcYl6HMbZg/formResponse?",
 							data: {"entry.49493946": name, "entry.1670025806": roll, "entry.600816742": branch,
 							"entry.1965159740": phone, "entry.1690533821": place, "entry.1025971147": timeDevote, "entry.1234333045": otherSocities,
-							"entry.1056349084": Hobbies, "entry.1814998359": des, "entry.2061973106": message, 
+							"entry.1056349084": Hobbies, "entry.1814998359": des, "entry.2061973106": message, "entry.41547401": email,
 							"entry.1694120072": rateQ1, "entry.200074965": rateQ2, "entry.1343528650": rateQ3, "entry.280603844": rateQ4,
 							"entry.1656877776": rateQ5,  "entry.1622578703": thaparFood},
 							type: "POST",

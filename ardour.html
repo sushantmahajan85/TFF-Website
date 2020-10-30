@@ -156,7 +156,6 @@
 								<span class="label-input100">What will be the name of the event?</span>
 								<input class="input100" type="text" name="entry.71852525" id="eventname" placeholder="Enter Name of event">
 								<span class="focus-input100"></span>
-								
 							</div>
 							<div class="wrap-input100 validate-input" data-validate = "Required">
 								<span class="label-input100">What are the different task you will allot to each one of them?</span>
@@ -343,79 +342,83 @@
 						// var url = $("input[name='entry.1470925297']").val();
 						// var thaparFood = $("input[name='entry.1622578703']").val();
 						
-						//  if(name == ""){
-						//  	alert('Please Fill Your Name');
-						//  	document.getElementById("name").focus();
-						//  	return false;
-						//  }
+						 if(name == ""){
+						 	alert('Please fill Your Name');
+						 	document.getElementById("name").focus();
+						 	return false;
+						 }
 						
-						//  if(roll == ""){
-						//  	alert('Please Fill Your RollNo');
-						//  	document.getElementById("roll").focus();
-						//  	return false;
-						//  }
-						//  if(branch == ""){
-						//  	alert('Please Fill Your Branch');
-						//  	document.getElementById("name").focus();
-						//  	return false;
-						//  }
-						//  if(phone == ""){
-						//  	alert('Please Fill Your PhoneNo');
-						//  	document.getElementById("phone").focus();
-						//  	return false;
-						//  }
+						 if(roll == ""){
+						 	alert('Please fill Your RollNo');
+						 	document.getElementById("roll").focus();
+						 	return false;
+						 }
+						 if(branch == ""){
+						 	alert('Please fill Your Branch');
+						 	document.getElementById("name").focus();
+						 	return false;
+                         }
+                         if(!email.endsWith("thapar.edu")){
+                            alert('Please fill Correct Email');
+						 	document.getElementById("email").focus();
+						 	return false;
+                         }
+						 if(email == ""){
+						 	alert('Please fill Your Email');
+						 	document.getElementById("email").focus();
+						 	return false;
+						 }
 						
 						//  if( phone.length > 10 || phone.length < 10){
 						//  	alert('Please fill correct PhoneNo');
 						//  	document.getElementById("phone").focus();
 						//  	return false;
 						//  }
-						//  if(place == ""){
-						//  	alert('Please Fill Your City');
-						//  	document.getElementById("place").focus();
-						//  	return false;
-						//  }
-						//  if(timeDevote == ""){
-						//  	alert('Please Fill time you can devote');
-						//  	document.getElementById("timeDevote").focus();
-						//  	return false;
-						//  }
-						//  if(otherSocities == ""){
-						//  	alert('Please Fill Your otherSocities');
-						//  	document.getElementById("otherSocities").focus();
-						//  	return false;
-						//  }
-						//  if(Hobbies == ""){
-						//  	alert('Please Fill Your Hobbies');
-						//  	document.getElementById("Hobbies").focus();
-						//  	return false;
-						//  }
-						//  if(des == ""){
-						//  	alert('Describe Yourself in 3 word!');
-						//  	document.getElementById("des").focus();
-						//  	return false;
-						//  }
-						//  if(message == ""){
-						//  	alert('View toh batao!');
-						//  	document.getElementById("message").focus();
-						// 	 return false;
-						//  }
-						// //  }
-						// //  if(witty == ""){
-						// //  	alert('Witty Question left!');
-						// //  	document.getElementById("witty").focus();
-						// //  	return false;
-						// //  }
-						//  if(rateQ1 == ""){
-						//  	alert('Please Fill Your Name');
-						//  	$("input[name='entry.1694120072']").focus();
-						//  	return false;
-						//  }
-						//  if(rateQ2 == ""){
-						//  	alert('Please Fill Your Name');
-						//  	$("input[name='entry.200074965']").focus();
-						//  	return false;
-						//  }
+						 if(uniquesell == ""){
+						 	alert('Please fill all details');
+						 	document.getElementById("uniquesell").focus();
+						 	return false;
+						 }
+						 if(reason == ""){
+						 	alert('Please fill all details');
+						 	document.getElementById("reason").focus();
+						 	return false;
+						 }
+						 if(response == ""){
+						 	alert('Please fill all details');
+						 	document.getElementById("response").focus();
+						 	return false;
+						 }
+						 if(friends == ""){
+						 	alert('Please fill all details');
+						 	document.getElementById("friends").focus();
+						 	return false;
+						 }
+						 if(eventname == ""){
+						 	alert('Please fill all details');
+						 	document.getElementById("eventname").focus();
+						 	return false;
+						 }
+						 if(allot == ""){
+						 	alert('Please fill all details');
+						 	document.getElementById("allot").focus();
+							 return false;
+						 }
+						 if(witty == ""){
+						 	alert('Witty Question left!');
+						 	document.getElementById("Witty").focus();
+						 	return false;
+						 }
+						 if(procedure == ""){
+						 	alert('Please fill all details');
+						 	document.getElementById("procedure").focus();
+						 	return false;
+						 }
+						 if(skill == ""){
+						 	alert('Please fill all details');
+						 	document.getElementById("skill").focus();
+						 	return false;
+						 }
 						//  if(rateQ3 == ""){
 						//  	alert('Please Fill Your Name');
 					 	// $("input[name='entry.1343528650']").focus();
