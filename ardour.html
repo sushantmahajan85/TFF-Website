@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Recruitment</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="RecruitForm/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="RecruitForm/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="RecruitForm/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="RecruitForm/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="RecruitForm/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="RecruitForm/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="RecruitForm/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="RecruitForm/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="RecruitForm/vendor/daterangepicker/daterangepicker.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="sass/css/style.css">
+	<link rel="stylesheet" href="sass/css/radio.css">
+	<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<!--===============================================================================================-->
+</head>
+<body style="padding:unset">
+
+<div class="bg-contact100">
+	
+	<div class="bg-video" id="bg-video1">
+		<video class="bg-video_content videos" autoplay loop muted>
+		  <source
+			src="sass/img/forms1.mp4"
+			type="video/mp4"
+		  />
+		</video>
+	  </div>	
+	  
+	<div class="bg-video" id="bg-video3">
+		<video class="bg-video_content videos" autoplay loop muted>
+		  <source
+			src="sass/img/forms2.mp4"
+			type="video/mp4"
+		  />
+		</video>
+	  </div>	
+	  
+	<div class="bg-video" id="bg-video2">
+		<video class="bg-video_content videos" autoplay loop muted>
+		  <source
+			src="sass/img/form3.mp4"
+			type="video/mp4"
+		  />
+		</video>
+	  </div>	
+		<div class="container-contact100">
+			<div class="wrap-contact100">
+		<!-- <div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div> -->
+				<div class="image">
+				</div>
+				
+				<div class="wrap-contact100" id="fullform">
+					<div class="contact100-form-title">
+					
+					<!-- <div class="contact100-form-title" style="background-image: url(RecruitForm/images/bg-01.jpg);"> -->
+						<span class="contact100-form-title-1">
+							<img id="logo_top" src="sass/img/typo 2020_w.png" >
+						</span>
+
+						<span class="contact100-form-title-2">
+							ARDOUR FORM
+						</span>
+					</div>
+					
+					<form target="_self" class="contact100-form validate-form" onsubmit="return postToGoogle();" action="" id="recruit_form">
+						<div id="section_one">
+							<div class="wrap-input100 validate-input" data-validate="Name is required">
+								<span class="label-input100">Name on your Aadhaar card
+								</span>
+								<input class="input100" type="text" name="entry.1258730763" id="name" placeholder="Enter full name">
+								<span class="focus-input100"></span>
+							</div>
+
+
+							<!-- <% if(errors['data.email']){%>
+								<%=errors['data.email'].msg%>
+							<%}%> -->
+							<div class="wrap-input100 validate-input" data-validate="Roll No is required">
+								<span class="label-input100">Proxy kis number per lagate ho?</span>
+								<input class="input100" type="text" name="entry.1631932354" id="roll" placeholder="Enter Roll Number">
+								<span class="focus-input100"></span>
+								
+							</div>
+							<div class="wrap-input100 validate-input" data-validate="Branch is required">
+								<span class="label-input100">Kaun si branch mein ho?</span>
+								<input class="input100" type="text" name="entry.775066577" id ="branch" placeholder="Enter Branch">
+								<span class="focus-input100"></span>
+								
+							</div>
+							<div class="wrap-input100 validate-input" data-validate="Required">
+								<span class="label-input100">Email (thapar)</span>
+								<input class="input100" type="text" name="entry.1851884270" id="email" placeholder="Enter thapar email">
+								<span class="focus-input100"></span>
+								
+							</div>
+							<div class="wrap-input100 validate-input" data-validate="Phone is required">
+								<span class="label-input100">what is your unique selling point?</span>
+								<input class="input100" type="text" name="entry.44849303" id="uniquesell" placeholder="">
+								<span class="focus-input100"></span>
+							</div>
+							<div class="errors">
+								<!-- <% if(errors['data.phone']){%>
+									<%=errors['data.phone'].msg%>
+								<%}%> -->
+							</div>
+							<div class="wrap-input100 validate-input" data-validate="Required">
+								<span class="label-input100">why are you filing this form?</span>
+								<input class="input100" type="text" name="entry.144292572" id="reason" placeholder="Reason to Fill">
+								<span class="focus-input100"></span>
+                            </div>
+                            <div class="wrap-input100 validate-input" data-validate="Required">
+								<span class="label-input100">if your senior asks you to complete a task which seems impossible, how will you proceed with it?</span>
+								<input class="input100" type="text" name="entry.1490075807" id="response" placeholder="Enter response to given condition">
+								<span class="focus-input100"></span>
+                            </div>
+							<div class="container-contact100-form-btn">
+								<button type="button" class="contact100-form-btn nexty" id="section_one_next" onclick="forward_one()"> 
+									<span>
+										Next
+										<!-- <i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i> -->
+									</span>
+								</button>
+							</div>
+									
+						</div>
+						<div id="section_two">
+							
+                            <p id="rateQ" style="border-bottom: 1px solid #b2b2b2;">you have to plan an event with 5 people.
+							</p>
+							<div class="wrap-input100 validate-input" data-validate="Required">
+								<span class="label-input100">Which 5 friends will you choose?</span>
+								<input class="input100" type="text" name="entry.1327295063" id="friends"placeholder="Enter Name of friends">
+								<span class="focus-input100"></span>
+								
+							</div>
+							<div class="wrap-input100 validate-input" data-validate="Required">
+								<span class="label-input100">What will be the name of the event?</span>
+								<input class="input100" type="text" name="entry.71852525" id="eventname" placeholder="Enter Name of event">
+								<span class="focus-input100"></span>
+							</div>
+							<div class="wrap-input100 validate-input" data-validate = "Required">
+								<span class="label-input100">What are the different task you will allot to each one of them?</span>
+								<textarea class="input100" name="entry.130370810" id="allot" placeholder="Allotment of Tasks"></textarea>
+								<span class="focus-input100"></span>
+                            </div>
+							<div class="wrap-input100 validate-input" data-validate = "Required">
+								<span class="label-input100">how will you proceed with the event?</span>
+								<textarea class="input100" name="entry.145778626" id="procedure" placeholder="Event Procedure"></textarea>
+								<span class="focus-input100"></span>
+                            </div>
+							<div class="wrap-input100 validate-input" data-validate = "Required">
+								<span class="label-input100">List any of your skill, you want to polish or explore. (marketing, media, creativity, publicity, web/app development or anything)</span>
+                                    <br>
+                                    <span class="label-input100">Limit-100 words</span>
+								<textarea class="input100" name="entry.1066814659" id="skill" placeholder="Skill"></textarea>
+								<span class="focus-input100"></span>
+                            </div>
+                            
+							<div class="wrap-input100 validate-input" data-validate="Required">
+								<span class="label-input100">Witty!</span>
+								<input class="input100" type="text" name="entry.39614086" id="Witty" placeholder="">
+								<span class="focus-input100"></span>
+								
+							</div>
+                            <div style="display: flex;flex-direction:flex-start">
+							
+                                <div class="container-contact100-form-btn">
+                                    <button class="contact100-form-btn nexty" type="submit">
+                                        <span>
+                                            Submit
+                                            <!-- <i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i> -->
+                                        </span>
+                                    </button>
+                  </div>
+                  <div class="container-contact100-form-btn">
+                                    <button type="button" class="contact100-form-btn backy" id="section_three_prev" onclick="previous_two()"> 
+                                        <span>
+                                            Back
+                                            <!-- <i class="fa fa-long-arrow-left m-l-7"  aria-hidden="true"></i> -->
+                                        </span>
+                                    </button>
+                                </div>
+                </div>
+							</div>
+						
+					</form>
+					
+					<!-- Reset CSS -->
+					
+					</div>
+					  
+				</div>
+			</div>
+		</div>
+		
+</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+	<div class="successpop" id="successpop">
+		<div class="successpop_content">
+		  <!-- <div class="successpop_left">
+			<img src="sass/img/qw.jpg" alt="hi" class="successpop_img" />
+			 <img src="img/about3.jpeg" alt="hi" class="successpop_img"
+		  </div> -->
+		  <div class="successpop_right">
+			<a href="#" onclick="exit_form()" class="successpop_cross">&times;</a>
+			<div class="popupimg">
+			<h1 class="heading-secondary successpop_heading u-centre"><img style="margin: unset; width: 90px;" src="https://image.flaticon.com/icons/svg/1047/1047711.svg" alt="Cookie" class="img"></h1>
+			</div>
+			<p class="paragraph successpop_paragraph" style="column-count: unset;">
+				Your form has been successfully submitted.
+				<br>
+				Congratulations! You Got A Deal  !! <a href="sass/pdf/OS LAB Assignment- 9.pdf" download="deal1"> download</a>
+				<br>
+				
+				Congratulations! You Got A Deal  !! <a href="sass/pdf/OS LAB Assignment- 9.pdf" download="deal2"> download</a>
+				<!-- Button Instagram -->
+				<div class="btn__container_pop">
+					<a href="https://instagram.com/thaparfoodfestival?igshid=f4917zov84zo" class="btn_pop">
+					<i class="link_pop fab fa-instagram" style="background-color:white;"></i>
+					<span class="social">instagram</span>
+					</a>
+					<a href="https://www.facebook.com/thaparfoodfestival/" class="btn-f_pop">
+					<i class="link_pop fab fa-facebook" style="background-color: white;"></i>
+					<span class="social">facebook</span>
+					</a>
+				</div>
+			</p>
+		  </div>
+		</div>
+	</div>
+	<script>
+		function exit_form(){
+			window.location.href = "/";
+		}
+	</script>
+	
+<!--===============================================================================================-->
+	<script src="RecruitForm/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="RecruitForm/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="RecruitForm/vendor/bootstrap/js/popper.js"></script>
+	<script src="RecruitForm/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="RecruitForm/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="RecruitForm/vendor/daterangepicker/moment.min.js"></script>
+	<script src="RecruitForm/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="RecruitForm/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+	<script src="RecruitForm/js/map-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="RecruitForm/js/main.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+<!--===============================================================================================-->
+	<!-- <script src="/js/recruit.js"></script> -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+	<script>
+
+		function forward_one(){
+			document.getElementById("section_two").style.display = "block";
+			document.getElementById("section_one").style.display = "none";
+			// document.getElementById("section_three").style.display = "none";
+			document.getElementById("section_two").style.visibility = "visible";
+			document.getElementById("section_one").style.visibility = "hidden";
+			// document.getElementById("section_three").style.visibility = "hidden";
+			document.getElementById("bg-video2").style.visibility = "visible";
+			document.getElementById("bg-video2").style.display = "block";
+			document.getElementById("bg-video1").style.visibility = "hidden";
+			document.getElementById("bg-video1").style.display = "none";
+			// document.getElementById("bg-video3").style.visibility = "hidden";
+			// document.getElementById("bg-video3").style.display = "none";
+		}
+		
+		function previous_two(){
+			document.getElementById("section_one").style.display = "block";
+			// document.getElementById("section_three").style.display = "none";
+			document.getElementById("section_two").style.display = "none";
+			document.getElementById("section_one").style.visibility = "visible";
+			// document.getElementById("section_three").style.visibility = "hidden";
+			document.getElementById("section_two").style.visibility = "hidden";
+			document.getElementById("bg-video1").style.visibility = "visible";
+			document.getElementById("bg-video1").style.display = "block";
+			// document.getElementById("bg-video3").style.visibility = "hidden";
+			// document.getElementById("bg-video3").style.display = "none";
+			document.getElementById("bg-video2").style.visibility = "hidden";
+			document.getElementById("bg-video2").style.display = "none";
+		}
+	
+	</script>
+	<script>
+		function postToGoogle() {
+						var name = $("#name").val();
+						var roll = $("#roll").val();
+						var branch = $("#branch").val();
+						// var place = $("#place").val();
+						var email= $("#email").val();
+						var uniquesell = $("#uniquesell").val();
+						var reason = $("#reason").val();
+						var response = $("#response").val();
+						var friends = $("#friends").val();
+						var witty = $("#Witty").val();
+						var eventname = $("input[name='entry.71852525']").val();
+						var allot = $("input[name='entry.130370810']").val();
+						var procedure = $("input[name='entry.145778626']").val();
+						var skill = $("input[name='entry.1066814659']").val();
+						// var rateQ5 = $("input[name='entry.1656877776']:checked").val();
+						// var url = $("input[name='entry.1470925297']").val();
+						// var thaparFood = $("input[name='entry.1622578703']").val();
+						
+						 if(name == ""){
+						 	alert('Please fill Your Name');
+						 	document.getElementById("name").focus();
+						 	return false;
+						 }
+						
+						 if(roll == ""){
+						 	alert('Please fill Your RollNo');
+						 	document.getElementById("roll").focus();
+						 	return false;
+						 }
+						 if(branch == ""){
+						 	alert('Please fill Your Branch');
+						 	document.getElementById("name").focus();
+						 	return false;
+                         }
+                         if(!email.endsWith("thapar.edu")){
+                            alert('Please fill Correct Email');
+						 	document.getElementById("email").focus();
+						 	return false;
+                         }
+						 if(email == ""){
+						 	alert('Please fill Your Email');
+						 	document.getElementById("email").focus();
+						 	return false;
+						 }
+						
+						//  if( phone.length > 10 || phone.length < 10){
+						//  	alert('Please fill correct PhoneNo');
+						//  	document.getElementById("phone").focus();
+						//  	return false;
+						//  }
+						 if(uniquesell == ""){
+						 	alert('Please fill all details');
+						 	document.getElementById("uniquesell").focus();
+						 	return false;
+						 }
+						 if(reason == ""){
+						 	alert('Please fill all details');
+						 	document.getElementById("reason").focus();
+						 	return false;
+						 }
+						 if(response == ""){
+						 	alert('Please fill all details');
+						 	document.getElementById("response").focus();
+						 	return false;
+						 }
+						 if(friends == ""){
+						 	alert('Please fill all details');
+						 	document.getElementById("friends").focus();
+						 	return false;
+						 }
+						 if(eventname == ""){
+						 	alert('Please fill all details');
+						 	document.getElementById("eventname").focus();
+						 	return false;
+						 }
+						 if(allot == ""){
+						 	alert('Please fill all details');
+						 	document.getElementById("allot").focus();
+							 return false;
+						 }
+						 if(witty == ""){
+						 	alert('Witty Question left!');
+						 	document.getElementById("Witty").focus();
+						 	return false;
+						 }
+						 if(procedure == ""){
+						 	alert('Please fill all details');
+						 	document.getElementById("procedure").focus();
+						 	return false;
+						 }
+						 if(skill == ""){
+						 	alert('Please fill all details');
+						 	document.getElementById("skill").focus();
+						 	return false;
+						 }
+						//  if(rateQ3 == ""){
+						//  	alert('Please Fill Your Name');
+					 	// $("input[name='entry.1343528650']").focus();
+						//  	return false;
+						//  }
+						//  if(rateQ4 == ""){
+						//  	alert('Please Fill Your Name');
+						//  	$("input[name='entry.280603844']").focus();
+						//  	return false;
+						//  }
+						//  if(rateQ5 == ""){
+						//  	alert('Please Fill Your Name');
+						//  	$("input[name='entry.1656877776']").focus();
+					 	// return false;
+						//  }
+						// //  if(url == ""){
+						// //  	alert('Please Fill Your Name');
+						// //  	document.getElementById("url").focus();
+						// //  	return false;
+						// //  }
+						//  if(thaparFood == ""){
+						//  	alert('Please Fill special food of thapar');
+						//  	document.getElementById("thaparfood").focus();
+						//  	return false;
+						//  }
+						//  if(field2 == ""){
+						//  	alert('Please Fill Your Email');
+						//  	document.getElementById("emailField").focus();
+						//  	return false;
+						//  }
+						//  if(field3 == "" || field3.length > 10 || field3.length < 10){
+						//  	alert('Please Fill Your Mobile Number');
+						//  	document.getElementById("mobField").focus();
+						//  	return false;
+						//  }
+		
+		
+						
+			
+						$.ajax({
+							url: "https://docs.google.com/forms/d/e/1FAIpQLSdutNc9NYRY3BcT-131ORaSn7YqPMPBBHrsxYE3Gi_gN8ukQg/formResponse?",
+							data: {"entry.1258730763": name, "entry.1631932354": roll, "entry.775066577": branch,
+							"entry.1851884270": email, "entry.44849303": uniquesell, "entry.144292572": reason, "entry.1490075807": response,
+							"entry.1327295063": friends, "entry.71852525": eventname, "entry.130370810": allot, 
+							"entry.145778626": procedure, "entry.1066814659": skill, "entry.39614086": witty},
+							type: "POST",
+							dataType: "xml",
+							success: function(d)
+							{
+								console.log("success!");
+								window.location.href = "/";
+							},
+							error: function(x, y, z)
+								{	
+									document.querySelector(".successpop").style.opacity = 1;
+									document.querySelector(".successpop").style.visibility = "visible";
+									console.log("added successfully");
+								}
+						});
+						return false;
+					}
+		</script>
+</body>
+
+</html>
