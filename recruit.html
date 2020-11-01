@@ -32,7 +32,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 <!--===============================================================================================-->
 </head>
-<body style="padding:unset">
+<body style="padding:unset" onload="myfunction()">
 	<!-- <div id="loading" ><h1 class="wait">plzz wait <span class="ready">cooking the code for you</span></h1></div>
 	<div class="loader_wrapper">
         <div class="loader">
@@ -86,7 +86,6 @@ $(".loader_wrapper").fadeOut("slow");
 						<span class="contact100-form-title-1">
 							<img id="logo_top" src="sass/img/typo 2020_w-min.png">
 						</span>
-
 						<span class="contact100-form-title-2">
 							RECRUITMENT FORM
 						</span>
@@ -228,8 +227,6 @@ $(".loader_wrapper").fadeOut("slow");
 									  <input type="radio" id="ratingQ11" name="entry.1694120072" value="1">
 									  
 										<label for="ratingQ11" ></label>
-										
-									
 									  <div class="check"></div>
 									</li>
 									
@@ -535,7 +532,7 @@ $(".loader_wrapper").fadeOut("slow");
 
 
 	<div id="dropDownSelect1"></div>
-	<div class="successpop" id="successpop">
+	<div class="successpop"  id="successpop">
 		<div class="successpop_content">
 		  <!-- <div class="successpop_left">
 			<img src="sass/img/qw.jpg" alt="hi" class="successpop_img" />
@@ -544,7 +541,7 @@ $(".loader_wrapper").fadeOut("slow");
 		  <div class="successpop_right">
 			<!-- <a href="#" onclick="exit_form()" class="successpop_cross">&times;</a> -->
 			<div class="popupimg">
-			<h1 class="heading-secondary successpop_heading u-centre"><img style="margin: unset; width: 90px;" src="https://image.flaticon.com/icons/svg/1047/1047711.svg" alt="Cookie" class="img"></h1>
+			<h1 class="heading-secondary successpop_heading u-centre"><img id="logo_popup" src="sass/img/typo black.png"></h1>
 			</div>
 			<p class="paragraph successpop_paragraph" style="column-count: unset; margin-bottom: 1.5rem;">
 				Thank You for applying . We will look over your submission and will get back to you soon . 
@@ -612,6 +609,20 @@ $(".loader_wrapper").fadeOut("slow");
 	  gtag('js', new Date());
 
 	  gtag('config', 'UA-23581568-13');
+	</script>
+	<script>
+		function myfunction(){
+			int i=0;
+			if(i==1){
+				break;
+			}
+
+			for(i=0;i<1;i++){
+				location.reload();
+
+			}
+
+		}
 	</script>
 	<script>
 		var bgvideo1 = document.getElementById("bgvideo1");
@@ -707,98 +718,98 @@ $(".loader_wrapper").fadeOut("slow");
 						var rateQ5 = $("input[name='entry.1656877776']:checked").val();
 						var thaparFood = $("input[name='entry.1622578703']").val();
 						
-						 if(name == ""){
-						 	alert('Please fill Your Name');
-						 	document.getElementById("name").focus();
-						 	return false;
-						 }
+						//  if(name == ""){
+						//  	alert('Please fill Your Name');
+						//  	document.getElementById("name").focus();
+						//  	return false;
+						//  }
 						
-						 if(roll == ""){
-						 	alert('Please fill Your RollNo');
-						 	document.getElementById("roll").focus();
-						 	return false;
-						 }
-						 if(branch == ""){
-						 	alert('Please fill Your Branch');
-						 	document.getElementById("name").focus();
-						 	return false;
-						 }
-						 if(phone == ""){
-						 	alert('Please fill Your PhoneNo');
-						 	document.getElementById("phone").focus();
-						 	return false;
-						 }
+						//  if(roll == ""){
+						//  	alert('Please fill Your RollNo');
+						//  	document.getElementById("roll").focus();
+						//  	return false;
+						//  }
+						//  if(branch == ""){
+						//  	alert('Please fill Your Branch');
+						//  	document.getElementById("name").focus();
+						//  	return false;
+						//  }
+						//  if(phone == ""){
+						//  	alert('Please fill Your PhoneNo');
+						//  	document.getElementById("phone").focus();
+						//  	return false;
+						//  }
 						
-						 if( phone.length > 10 || phone.length < 10){
-						 	alert('Please fill PhoneNo (10 digits only)');
-						 	document.getElementById("phone").focus();
-						 	return false;
-						 }
-						 if(place == ""){
-						 	alert('Please fill Your City');
-						 	document.getElementById("place").focus();
-						 	return false;
-						 }
-						 if(timeDevote == ""){
-						 	alert('Please fill time you can devote');
-						 	document.getElementById("timeDevote").focus();
-						 	return false;
-						 }
-						 if(otherSocities == ""){
-						 	alert('Please fill Your Socities');
-						 	document.getElementById("otherSocities").focus();
-						 	return false;
-						 }
-						 if(Hobbies == ""){
-						 	alert('Please fill Your Hobbies');
-						 	document.getElementById("Hobbies").focus();
-						 	return false;
-						 }
-						 if(des == ""){
-						 	alert('Describe Yourself in 3 word!');
-						 	document.getElementById("des").focus();
-						 	return false;
-						 }
-						 if(!email.endsWith("thapar.edu")){
-							alert('Enter Thapar Email only');
-						 	document.getElementById("email").focus();
-						 	return false;	
-						 }
-						 if(message == ""){
-						 	alert(" TFF'19 ke View toh batao! ");
-						 	document.getElementById("message").focus();
-							 return false;
-						 }
-						 if(rateQ1 == ""){
-						 	alert('Please rate yourself');
-						 	$("input[name='entry.1694120072']").focus();
-						 	return false;
-						 }
-						 if(rateQ2 == ""){
-						 	alert('Please rate yourself');
-						 	$("input[name='entry.200074965']").focus();
-						 	return false;
-						 }
-						 if(rateQ3 == ""){
-						 	alert('Please rate yourself');
-					 	$("input[name='entry.1343528650']").focus();
-						 	return false;
-						 }
-						 if(rateQ4 == ""){
-						 	alert('Please rate yourself');
-						 	$("input[name='entry.280603844']").focus();
-						 	return false;
-						 }
-						 if(rateQ5 == ""){
-						 	alert('Please rate yourself');
-						 	$("input[name='entry.1656877776']").focus();
-					 	return false;
-						 }
-						 if(thaparFood == ""){
-						 	alert('Kuch to milega hi 60 me, batate jao');
-						 	document.getElementById("thaparfood").focus();
-						 	return false;
-						 }
+						//  if( phone.length > 10 || phone.length < 10){
+						//  	alert('Please fill PhoneNo (10 digits only)');
+						//  	document.getElementById("phone").focus();
+						//  	return false;
+						//  }
+						//  if(place == ""){
+						//  	alert('Please fill Your City');
+						//  	document.getElementById("place").focus();
+						//  	return false;
+						//  }
+						//  if(timeDevote == ""){
+						//  	alert('Please fill time you can devote');
+						//  	document.getElementById("timeDevote").focus();
+						//  	return false;
+						//  }
+						//  if(otherSocities == ""){
+						//  	alert('Please fill Your Socities');
+						//  	document.getElementById("otherSocities").focus();
+						//  	return false;
+						//  }
+						//  if(Hobbies == ""){
+						//  	alert('Please fill Your Hobbies');
+						//  	document.getElementById("Hobbies").focus();
+						//  	return false;
+						//  }
+						//  if(des == ""){
+						//  	alert('Describe Yourself in 3 word!');
+						//  	document.getElementById("des").focus();
+						//  	return false;
+						//  }
+						//  if(!email.endsWith("thapar.edu")){
+						// 	alert('Enter Thapar Email only');
+						//  	document.getElementById("email").focus();
+						//  	return false;	
+						//  }
+						//  if(message == ""){
+						//  	alert(" TFF'19 ke View toh batao! ");
+						//  	document.getElementById("message").focus();
+						// 	 return false;
+						//  }
+						//  if(rateQ1 == ""){
+						//  	alert('Please rate yourself');
+						//  	$("input[name='entry.1694120072']").focus();
+						//  	return false;
+						//  }
+						//  if(rateQ2 == ""){
+						//  	alert('Please rate yourself');
+						//  	$("input[name='entry.200074965']").focus();
+						//  	return false;
+						//  }
+						//  if(rateQ3 == ""){
+						//  	alert('Please rate yourself');
+					 	// $("input[name='entry.1343528650']").focus();
+						//  	return false;
+						//  }
+						//  if(rateQ4 == ""){
+						//  	alert('Please rate yourself');
+						//  	$("input[name='entry.280603844']").focus();
+						//  	return false;
+						//  }
+						//  if(rateQ5 == ""){
+						//  	alert('Please rate yourself');
+						//  	$("input[name='entry.1656877776']").focus();
+					 	// return false;
+						//  }
+						//  if(thaparFood == ""){
+						//  	alert('Kuch to milega hi 60 me, batate jao');
+						//  	document.getElementById("thaparfood").focus();
+						//  	return false;
+						//  }
 		
 		
 						
