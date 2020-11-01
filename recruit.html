@@ -83,7 +83,7 @@
 					
 					<form target="_self" class="contact100-form validate-form" onsubmit="return postToGoogle();" action="" id="recruit_form">
 						<div id="section_one">
-							<div class="wrap-input100 validate-input" data-validate="Name is required">
+							<div class="wrap-input100 validate-input" data-validate="Required">
 								<span class="label-input100">Name on your Aadhaar card
 								</span>
 								<input class="input100" type="text" name="entry.49493946" id="name" placeholder="Enter full name">
@@ -94,23 +94,22 @@
 							<!-- <% if(errors['data.email']){%>
 								<%=errors['data.email'].msg%>
 							<%}%> -->
-							<div class="wrap-input100 validate-input" data-validate="Roll No is required">
-								<span class="label-input100">Proxy kis number per lagate ho?</span>
+							<div class="wrap-input100 validate-input" data-validate="Required">
+								<span class="label-input100">Proxy kis number par lagwate ho?</span>
 								<input class="input100" type="text" name="entry.1670025806" id="roll" placeholder="Enter Roll Number">
 								<span class="focus-input100"></span>
 								
 							</div>
-							<div class="wrap-input100 validate-input" data-validate="Branch is required">
+							<div class="wrap-input100 validate-input" data-validate="Required">
 								<span class="label-input100">Kaun si branch mein ho?</span>
 								<input class="input100" type="text" name="entry.600816742" id ="branch" placeholder="Enter Branch">
 								<span class="focus-input100"></span>
 								
 							</div>
 							<div class="wrap-input100 validate-input" data-validate="Required">
-								<span class="label-input100">Email id (thapar)</span>
-								<input class="input100" type="text" name="entry.41547401" id ="email" placeholder="Enter Email">
+								<span class="label-input100">Email ID</span>
+								<input class="input100" type="text" name="entry.41547401" id ="email" placeholder="Enter your Thapar ID">
 								<span class="focus-input100"></span>
-								
 							</div>
 							<!-- <div class="wrap-input100 validate-input" data-validate="CG is required">
 								<span class="label-input100">अभियांत्रिकी में क्या grade चल रहा है?</span>
@@ -118,8 +117,8 @@
 								<span class="focus-input100"></span>
 								
 							</div> -->
-							<div class="wrap-input100 validate-input" data-validate="Phone is required">
-								<span class="label-input100">Aap ko updates kis number per chahiye(WhatsApp please)</span>
+							<div class="wrap-input100 validate-input" data-validate="Required">
+								<span class="label-input100">Aap ko updates kis number par chahiye (Whatsapp Only)</span>
 								<input class="input100" type="text" name="entry.1965159740" id="phone" placeholder="Enter phone number">
 								<span class="focus-input100"></span>
 							</div>
@@ -130,7 +129,7 @@
 							</div>
 							<div class="wrap-input100 validate-input" data-validate="Required">
 								<span class="label-input100">Aapka shehar aur uski khasiyat?</span>
-								<input class="input100" type="text" name="entry.1690533821" id="place" placeholder="Enter City and famous food">
+								<input class="input100" type="text" name="entry.1690533821" id="place" placeholder="Enter Hometown and its famous food">
 								<span class="focus-input100"></span>
 							</div>
 							<div class="container-contact100-form-btn">
@@ -145,7 +144,7 @@
 						</div>
 						<div id="section_two">
 							<div class="wrap-input100 validate-input" data-validate="Required">
-								<span class="label-input100">How much time are you ready to devote to tff?</span>
+								<span class="label-input100">How much time are you ready to devote to TFF?</span>
 								<input class="input100" type="text" name="entry.1025971147" id="timeDevote" placeholder="Enter time you can devote">
 								<span class="focus-input100"></span>
 							</div>
@@ -157,12 +156,12 @@
 							</div>
 							<div class="wrap-input100 validate-input" data-validate="Required">
 								<span class="label-input100">Apne free time mein kya karte ho?</span>
-								<input class="input100" type="text" name="entry.1056349084" id="Hobbies" placeholder="Enter Your Hobbies!">
+								<input class="input100" type="text" name="entry.1056349084" id="Hobbies" placeholder="Enter Your Hobbies">
 								<span class="focus-input100"></span>
 								
 							</div>
 							<div class="wrap-input100 validate-input" data-validate = "Required">
-								<span class="label-input100">What was the best and worst thing about tff-19?</span>
+								<span class="label-input100">What was the best and the worst thing about TFF'19?</span>
 								<textarea class="input100" name="entry.2061973106" id="message" placeholder="Your Comment..."></textarea>
 								<span class="focus-input100"></span>
               </div>
@@ -465,7 +464,7 @@
 							</div>
 							<div class="wrap-input100 validate-input" data-validate="Required">
 								<span class="label-input100">Describe yourself in 3 words.</span>
-								<input class="input100" type="text" name="entry.1814998359" id="des" placeholder="">
+								<input class="input100" type="text" name="entry.1814998359" id="des" placeholder="In 3 words only">
 								<span class="focus-input100"></span>
 								
 							</div>
@@ -485,7 +484,7 @@
 							</div> -->
 							
 							<div class="wrap-input100 validate-input" data-validate="Required">
-								<span class="label-input100">If you have 60 rupees in Thapar what will you eat and why?</span>
+								<span class="label-input100">If you have 60 rupees in Thapar, what will you eat and why?</span>
 								<input class="input100" type="text" name="entry.1622578703" id="thaparFamousFood" placeholder="Special Food of Thapar">
 								<span class="focus-input100"></span>
 							</div>
@@ -533,18 +532,24 @@
 			 <img src="img/about3.jpeg" alt="hi" class="successpop_img"
 		  </div> -->
 		  <div class="successpop_right">
-			<a href="#" onclick="exit_form()" class="successpop_cross">&times;</a>
+			<!-- <a href="#" onclick="exit_form()" class="successpop_cross">&times;</a> -->
 			<div class="popupimg">
 			<h1 class="heading-secondary successpop_heading u-centre"><img style="margin: unset; width: 90px;" src="https://image.flaticon.com/icons/svg/1047/1047711.svg" alt="Cookie" class="img"></h1>
 			</div>
-			<p class="paragraph successpop_paragraph" style="column-count: unset;">
-				Your form has been successfully submitted.
-				<br>
-				Congratulations! You Got A Deal  !! <a href="sass/pdf/OS LAB Assignment- 9.pdf" download="deal1"> download</a>
-				<br>
+			<p class="paragraph successpop_paragraph" style="column-count: unset; margin-bottom: 1.5rem;">
+				Thank You for applying . We will look over your submission and will get back to you soon . 
 				
-				Congratulations! You Got A Deal  !! <a href="sass/pdf/OS LAB Assignment- 9.pdf" download="deal2"> download</a>
+				In the meantime, we would like to offer you a token of Love for taking out your time.
+				<div style="display: flex; flex-direction: column; text-align: center;">
+				<a href="sass/pdf/CraveLab.pdf" download="TFF_CraveLab" style="margin: -2rem;">The Crave Lab <i  class="fas fa-download" style="font-size: 1.7rem; color: #1C4AEC;"></i></a>
+				<a href="sass/pdf/TheGrazingOwl.pdf" download="TFF_GrazingOwl"style="margin: -2rem;" >The Grazing Owl <i class="fas fa-download" style="font-size: 1.7rem; color: #1C4AEC;"></i></a>
+				</div>
 				<!-- Button Instagram -->
+				<p class="paragraph successpop_paragraph" id="thanksmsg" style="column-count: unset; margin-top: 10px;">
+				We hope you liked your Gift ! As a final step for your submission of Form don't forget to Follow us on Instagram and Facebook to stay tuned .
+				
+				Good Luck !
+			</p>
 				<div class="btn__container_pop">
 					<a href="https://instagram.com/thaparfoodfestival?igshid=f4917zov84zo" class="btn_pop">
 					<i class="link_pop fab fa-instagram" style="background-color:white;"></i>
@@ -681,116 +686,116 @@
 						// var url = $("input[name='entry.1470925297']").val();
 						var thaparFood = $("input[name='entry.1622578703']").val();
 						
-						 if(name == ""){
-						 	alert('Please Fill Your Name');
-						 	document.getElementById("name").focus();
-						 	return false;
-						 }
-						
-						 if(roll == ""){
-						 	alert('Please Fill Your RollNo');
-						 	document.getElementById("roll").focus();
-						 	return false;
-						 }
-						 if(branch == ""){
-						 	alert('Please Fill Your Branch');
-						 	document.getElementById("name").focus();
-						 	return false;
-						 }
-						 if(phone == ""){
-						 	alert('Please Fill Your PhoneNo');
-						 	document.getElementById("phone").focus();
-						 	return false;
-						 }
-						
-						 if( phone.length > 10 || phone.length < 10){
-						 	alert('Please fill correct PhoneNo');
-						 	document.getElementById("phone").focus();
-						 	return false;
-						 }
-						 if(place == ""){
-						 	alert('Please Fill Your City');
-						 	document.getElementById("place").focus();
-						 	return false;
-						 }
-						 if(timeDevote == ""){
-						 	alert('Please Fill time you can devote');
-						 	document.getElementById("timeDevote").focus();
-						 	return false;
-						 }
-						 if(otherSocities == ""){
-						 	alert('Please Fill Your otherSocities');
-						 	document.getElementById("otherSocities").focus();
-						 	return false;
-						 }
-						 if(Hobbies == ""){
-						 	alert('Please Fill Your Hobbies');
-						 	document.getElementById("Hobbies").focus();
-						 	return false;
-						 }
-						 if(des == ""){
-						 	alert('Describe Yourself in 3 word!');
-						 	document.getElementById("des").focus();
-						 	return false;
-						 }
-						 if(!email.endsWith("thapar.edu")){
-							alert('Enter Thapar Email only');
-						 	document.getElementById("email").focus();
-						 	return false;	
-						 }
-						 if(message == ""){
-						 	alert('View toh batao!');
-						 	document.getElementById("message").focus();
-							 return false;
-						 }
-						//  }
-						//  if(witty == ""){
-						//  	alert('Witty Question left!');
-						//  	document.getElementById("witty").focus();
+						//  if(name == ""){
+						//  	alert('Please fill Your Name');
+						//  	document.getElementById("name").focus();
 						//  	return false;
 						//  }
-						 if(rateQ1 == ""){
-						 	alert('Please Fill Your Name');
-						 	$("input[name='entry.1694120072']").focus();
-						 	return false;
-						 }
-						 if(rateQ2 == ""){
-						 	alert('Please Fill Your Name');
-						 	$("input[name='entry.200074965']").focus();
-						 	return false;
-						 }
-						 if(rateQ3 == ""){
-						 	alert('Please Fill Your Name');
-					 	$("input[name='entry.1343528650']").focus();
-						 	return false;
-						 }
-						 if(rateQ4 == ""){
-						 	alert('Please Fill Your Name');
-						 	$("input[name='entry.280603844']").focus();
-						 	return false;
-						 }
-						 if(rateQ5 == ""){
-						 	alert('Please Fill Your Name');
-						 	$("input[name='entry.1656877776']").focus();
-					 	return false;
-						 }
-						//  if(url == ""){
-						//  	alert('Please Fill Your Name');
-						//  	document.getElementById("url").focus();
+						
+						//  if(roll == ""){
+						//  	alert('Please fill Your RollNo');
+						//  	document.getElementById("roll").focus();
 						//  	return false;
 						//  }
-						 if(thaparFood == ""){
-						 	alert('Please Fill special food of thapar');
-						 	document.getElementById("thaparfood").focus();
-						 	return false;
-						 }
+						//  if(branch == ""){
+						//  	alert('Please fill Your Branch');
+						//  	document.getElementById("name").focus();
+						//  	return false;
+						//  }
+						//  if(phone == ""){
+						//  	alert('Please fill Your PhoneNo');
+						//  	document.getElementById("phone").focus();
+						//  	return false;
+						//  }
+						
+						//  if( phone.length > 10 || phone.length < 10){
+						//  	alert('Please fill PhoneNo (10 digits only)');
+						//  	document.getElementById("phone").focus();
+						//  	return false;
+						//  }
+						//  if(place == ""){
+						//  	alert('Please fill Your City');
+						//  	document.getElementById("place").focus();
+						//  	return false;
+						//  }
+						//  if(timeDevote == ""){
+						//  	alert('Please fill time you can devote');
+						//  	document.getElementById("timeDevote").focus();
+						//  	return false;
+						//  }
+						//  if(otherSocities == ""){
+						//  	alert('Please fill Your Socities');
+						//  	document.getElementById("otherSocities").focus();
+						//  	return false;
+						//  }
+						//  if(Hobbies == ""){
+						//  	alert('Please fill Your Hobbies');
+						//  	document.getElementById("Hobbies").focus();
+						//  	return false;
+						//  }
+						//  if(des == ""){
+						//  	alert('Describe Yourself in 3 word!');
+						//  	document.getElementById("des").focus();
+						//  	return false;
+						//  }
+						//  if(!email.endsWith("thapar.edu")){
+						// 	alert('Enter Thapar Email only');
+						//  	document.getElementById("email").focus();
+						//  	return false;	
+						//  }
+						//  if(message == ""){
+						//  	alert(" TFF'19 ke View toh batao! ");
+						//  	document.getElementById("message").focus();
+						// 	 return false;
+						//  }
+						// //  }
+						// //  if(witty == ""){
+						// //  	alert('Witty Question left!');
+						// //  	document.getElementById("witty").focus();
+						// //  	return false;
+						// //  }
+						//  if(rateQ1 == ""){
+						//  	alert('Please rate yourself');
+						//  	$("input[name='entry.1694120072']").focus();
+						//  	return false;
+						//  }
+						//  if(rateQ2 == ""){
+						//  	alert('Please rate yourself');
+						//  	$("input[name='entry.200074965']").focus();
+						//  	return false;
+						//  }
+						//  if(rateQ3 == ""){
+						//  	alert('Please rate yourself');
+					 	// $("input[name='entry.1343528650']").focus();
+						//  	return false;
+						//  }
+						//  if(rateQ4 == ""){
+						//  	alert('Please rate yourself');
+						//  	$("input[name='entry.280603844']").focus();
+						//  	return false;
+						//  }
+						//  if(rateQ5 == ""){
+						//  	alert('Please rate yourself');
+						//  	$("input[name='entry.1656877776']").focus();
+					 	// return false;
+						//  }
+						// //  if(url == ""){
+						// //  	alert('Please fill Your Name');
+						// //  	document.getElementById("url").focus();
+						// //  	return false;
+						// //  }
+						//  if(thaparFood == ""){
+						//  	alert('Kuch to milega hi 60 me, batate jao');
+						//  	document.getElementById("thaparfood").focus();
+						//  	return false;
+						//  }
 						//  if(field2 == ""){
-						//  	alert('Please Fill Your Email');
+						//  	alert('Please fill Your Email');
 						//  	document.getElementById("emailField").focus();
 						//  	return false;
 						//  }
 						//  if(field3 == "" || field3.length > 10 || field3.length < 10){
-						//  	alert('Please Fill Your Mobile Number');
+						//  	alert('Please fill Your Mobile Number');
 						//  	document.getElementById("mobField").focus();
 						//  	return false;
 						//  }

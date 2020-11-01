@@ -9190,11 +9190,12 @@ body {
 .popupimg {
   width: 100%;
   text-align: center;
-  padding-bottom: initial; }
+  padding-bottom: initial;
+  margin-bottom: -5rem; }
 
 @media (max-width: 900px) {
   .popupimg {
-    margin-bottom: 20px; } }
+    margin-bottom: 2px; } }
 
 .ze1 {
   background-image: url(../img/pg2.jpeg); }
