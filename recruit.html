@@ -4,6 +4,9 @@
 	<title>Recruitment</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="TFF'20 Welcomes you to its recruitment form! Be a part of the journey">
+	
+    <link rel="shortcut icon" type="image/png" href="sass/img/favicon.png" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!--===============================================================================================-->
@@ -31,6 +34,20 @@
 	<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 <!--===============================================================================================-->
+<script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-146468970-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-146468970-1");
+    </script>
+    
 </head>
 <body style="padding:unset" >
 	<!-- <div id="loading" ><h1 class="wait">plzz wait <span class="ready">cooking the code for you</span></h1></div>
@@ -106,8 +123,8 @@ $(".loader_wrapper").fadeOut("slow");
 								<%=errors['data.email'].msg%>
 							<%}%> -->
 							<div class="wrap-input100 validate-input" data-validate="Required">
-								<span class="label-input100">Proxy kis number par lagwate the?</span>
-								<input class="input100" type="text" name="entry.1670025806" id="roll" placeholder="Enter roll number">
+								<span class="label-input100">Enter roll number</span>
+								<input class="input100" type="text" name="entry.1670025806" id="roll" placeholder="Kisi zamane me jispe Proxy lgwaate the?">
 								<span class="focus-input100"></span>
 								
 							</div>
@@ -559,12 +576,12 @@ $(".loader_wrapper").fadeOut("slow");
 				Good Luck !
 			</p>
 				<div class="btn__container_pop">
-					<a href="https://instagram.com/thaparfoodfestival?igshid=f4917zov84zo" class="btn_pop">
-					<i class="link_pop fab fa-instagram" style="background-color:white;"></i>
+					<a onclick="newWindow1()" class="btn_pop">
+					<i  class="link_pop fab fa-instagram" style="background-color:white;"></i>
 					<span class="social">instagram</span>
 					</a>
-					<a href="https://www.facebook.com/thaparfoodfestival/" class="btn-f_pop">
-					<i class="link_pop fab fa-facebook" style="background-color: white;"></i>
+					<a onclick="newWindow2()" class="btn-f_pop">
+					<i  class="link_pop fab fa-facebook" style="background-color: white;"></i>
 					<span class="social">facebook</span>
 					</a>
 				</div>
@@ -619,6 +636,15 @@ $(".loader_wrapper").fadeOut("slow");
     	}
 
 		}
+	</script>
+	<script>
+		function newWindow2(){
+			window.open("https://www.facebook.com/thaparfoodfestival/","_blank");
+		}
+		function newWindow1(){
+			window.open("https://instagram.com/thaparfoodfestival?igshid=f4917zov84zo","_blank");
+		}
+		
 	</script>
 	<!-- <script>
 		var bgvideo1 = document.getElementById("bgvideo1");
@@ -714,98 +740,98 @@ $(".loader_wrapper").fadeOut("slow");
 						var rateQ5 = $("input[name='entry.1656877776']:checked").val();
 						var thaparFood = $("input[name='entry.1622578703']").val();
 						
-						//  if(name == ""){
-						//  	alert('Please fill Your Name');
-						//  	document.getElementById("name").focus();
-						//  	return false;
-						//  }
+						 if(name == ""){
+						 	alert('Please fill Your Name');
+						 	document.getElementById("name").focus();
+						 	return false;
+						 }
 						
-						//  if(roll == ""){
-						//  	alert('Please fill Your RollNo');
-						//  	document.getElementById("roll").focus();
-						//  	return false;
-						//  }
-						//  if(branch == ""){
-						//  	alert('Please fill Your Branch');
-						//  	document.getElementById("name").focus();
-						//  	return false;
-						//  }
-						//  if(phone == ""){
-						//  	alert('Please fill Your PhoneNo');
-						//  	document.getElementById("phone").focus();
-						//  	return false;
-						//  }
+						 if(roll == ""){
+						 	alert('Please fill Your RollNo');
+						 	document.getElementById("roll").focus();
+						 	return false;
+						 }
+						 if(branch == ""){
+						 	alert('Please fill Your Branch');
+						 	document.getElementById("name").focus();
+						 	return false;
+						 }
+						 if(phone == ""){
+						 	alert('Please fill Your PhoneNo');
+						 	document.getElementById("phone").focus();
+						 	return false;
+						 }
 						
-						//  if( phone.length > 10 || phone.length < 10){
-						//  	alert('Please fill PhoneNo (10 digits only)');
-						//  	document.getElementById("phone").focus();
-						//  	return false;
-						//  }
-						//  if(place == ""){
-						//  	alert('Please fill Your City');
-						//  	document.getElementById("place").focus();
-						//  	return false;
-						//  }
-						//  if(timeDevote == ""){
-						//  	alert('Please fill time you can devote');
-						//  	document.getElementById("timeDevote").focus();
-						//  	return false;
-						//  }
-						//  if(otherSocities == ""){
-						//  	alert('Please fill Your Socities');
-						//  	document.getElementById("otherSocities").focus();
-						//  	return false;
-						//  }
-						//  if(Hobbies == ""){
-						//  	alert('Please fill Your Hobbies');
-						//  	document.getElementById("Hobbies").focus();
-						//  	return false;
-						//  }
-						//  if(des == ""){
-						//  	alert('Describe Yourself in 3 word!');
-						//  	document.getElementById("des").focus();
-						//  	return false;
-						//  }
-						//  if(!email.endsWith("thapar.edu")){
-						// 	alert('Enter Thapar Email only');
-						//  	document.getElementById("email").focus();
-						//  	return false;	
-						//  }
-						//  if(message == ""){
-						//  	alert(" TFF'19 ke View toh batao! ");
-						//  	document.getElementById("message").focus();
-						// 	 return false;
-						//  }
-						//  if(rateQ1 == ""){
-						//  	alert('Please rate yourself');
-						//  	$("input[name='entry.1694120072']").focus();
-						//  	return false;
-						//  }
-						//  if(rateQ2 == ""){
-						//  	alert('Please rate yourself');
-						//  	$("input[name='entry.200074965']").focus();
-						//  	return false;
-						//  }
-						//  if(rateQ3 == ""){
-						//  	alert('Please rate yourself');
-					 	// $("input[name='entry.1343528650']").focus();
-						//  	return false;
-						//  }
-						//  if(rateQ4 == ""){
-						//  	alert('Please rate yourself');
-						//  	$("input[name='entry.280603844']").focus();
-						//  	return false;
-						//  }
-						//  if(rateQ5 == ""){
-						//  	alert('Please rate yourself');
-						//  	$("input[name='entry.1656877776']").focus();
-					 	// return false;
-						//  }
-						//  if(thaparFood == ""){
-						//  	alert('Kuch to milega hi 60 me, batate jao');
-						//  	document.getElementById("thaparfood").focus();
-						//  	return false;
-						//  }
+						 if( phone.length > 10 || phone.length < 10){
+						 	alert('Please fill PhoneNo (10 digits only)');
+						 	document.getElementById("phone").focus();
+						 	return false;
+						 }
+						 if(place == ""){
+						 	alert('Please fill Your City');
+						 	document.getElementById("place").focus();
+						 	return false;
+						 }
+						 if(timeDevote == ""){
+						 	alert('Please fill time you can devote');
+						 	document.getElementById("timeDevote").focus();
+						 	return false;
+						 }
+						 if(otherSocities == ""){
+						 	alert('Please fill Your Socities');
+						 	document.getElementById("otherSocities").focus();
+						 	return false;
+						 }
+						 if(Hobbies == ""){
+						 	alert('Please fill Your Hobbies');
+						 	document.getElementById("Hobbies").focus();
+						 	return false;
+						 }
+						 if(des == ""){
+						 	alert('Describe Yourself in 3 word!');
+						 	document.getElementById("des").focus();
+						 	return false;
+						 }
+						 if(!email.endsWith("thapar.edu")){
+							alert('Enter Thapar Email only');
+						 	document.getElementById("email").focus();
+						 	return false;	
+						 }
+						 if(message == ""){
+						 	alert(" TFF'19 ke View toh batao! ");
+						 	document.getElementById("message").focus();
+							 return false;
+						 }
+						 if(rateQ1 == ""){
+						 	alert('Please rate yourself');
+						 	$("input[name='entry.1694120072']").focus();
+						 	return false;
+						 }
+						 if(rateQ2 == ""){
+						 	alert('Please rate yourself');
+						 	$("input[name='entry.200074965']").focus();
+						 	return false;
+						 }
+						 if(rateQ3 == ""){
+						 	alert('Please rate yourself');
+					 	$("input[name='entry.1343528650']").focus();
+						 	return false;
+						 }
+						 if(rateQ4 == ""){
+						 	alert('Please rate yourself');
+						 	$("input[name='entry.280603844']").focus();
+						 	return false;
+						 }
+						 if(rateQ5 == ""){
+						 	alert('Please rate yourself');
+						 	$("input[name='entry.1656877776']").focus();
+					 	return false;
+						 }
+						 if(thaparFood == ""){
+						 	alert('Kuch to milega hi 60 me, batate jao');
+						 	document.getElementById("thaparfood").focus();
+						 	return false;
+						 }
 		
 		
 						
