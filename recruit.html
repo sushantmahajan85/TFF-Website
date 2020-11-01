@@ -576,12 +576,12 @@ $(".loader_wrapper").fadeOut("slow");
 				Good Luck !
 			</p>
 				<div class="btn__container_pop">
-					<a href="https://instagram.com/thaparfoodfestival?igshid=f4917zov84zo" class="btn_pop">
-					<i class="link_pop fab fa-instagram" style="background-color:white;"></i>
+					<a onclick="newWindow1()" class="btn_pop">
+					<i  class="link_pop fab fa-instagram" style="background-color:white;"></i>
 					<span class="social">instagram</span>
 					</a>
-					<a href="https://www.facebook.com/thaparfoodfestival/" class="btn-f_pop">
-					<i class="link_pop fab fa-facebook" style="background-color: white;"></i>
+					<a onclick="newWindow2()" class="btn-f_pop">
+					<i  class="link_pop fab fa-facebook" style="background-color: white;"></i>
 					<span class="social">facebook</span>
 					</a>
 				</div>
@@ -636,6 +636,15 @@ $(".loader_wrapper").fadeOut("slow");
     	}
 
 		}
+	</script>
+	<script>
+		function newWindow2(){
+			window.open("https://www.facebook.com/thaparfoodfestival/","_blank");
+		}
+		function newWindow1(){
+			window.open("https://instagram.com/thaparfoodfestival?igshid=f4917zov84zo","_blank");
+		}
+		
 	</script>
 	<!-- <script>
 		var bgvideo1 = document.getElementById("bgvideo1");
