@@ -579,13 +579,24 @@ textarea.input100 {
   -o-transform: translateX(10px);
   transform: translateX(10px); }
 
+#logo_popup {
+  width: 60%;
+  margin-top: -9rem;
+  margin-bottom: -9rem; }
+
 /*------------------------------------------------------------------
 [ Responsive ]*/
+@media (min-width: 900px) {
+  #logo_popup {
+    width: 50%; } }
+
 @media (max-width: 750px) {
   .wrap-contact100 {
     width: 560px; }
   .label-input100 {
-    line-height: 1.5; } }
+    line-height: 1.5; }
+  #logo_popup {
+    width: 70%; } }
 
 @media (max-width: 600px) {
   .contact100-form {
@@ -612,7 +623,9 @@ textarea.input100 {
     font-size: 15px; }
   .contact100-form-title-2 {
     font-size: 24px;
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  #logo_popup {
+    width: 80%; } }
 
 @media (max-width: 480px) {
   .wrap-contact100 {
