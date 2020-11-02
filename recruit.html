@@ -4,6 +4,9 @@
 	<title>Recruitment</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="TFF'20 Welcomes you to its recruitment form! Be a part of the journey">
+	
+    <link rel="shortcut icon" type="image/png" href="sass/img/favicon.png" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!--===============================================================================================-->
@@ -24,39 +27,66 @@
 	<link rel="stylesheet" type="text/css" href="RecruitForm/vendor/select2/select2.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="RecruitForm/vendor/daterangepicker/daterangepicker.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="sass/css/style.css">
 	<link rel="stylesheet" href="sass/css/radio.css">
 	<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 <!--===============================================================================================-->
-</head>
-<body style="padding:unset">
+<script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-146468970-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
+      gtag("config", "UA-146468970-1");
+    </script>
+    
+</head>
+<body style="padding:unset" >
+	<!-- <div id="loading" ><h1 class="wait">plzz wait <span class="ready">cooking the code for you</span></h1></div>
+	<div class="loader_wrapper">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div></div>
+          <script>
+          $(window).on("load",function(){
+$(".loader_wrapper").fadeOut("slow");
+          }); -->
+          </script>
 <div class="bg-contact100">
 	
-	<div class="bg-video" id="bg-video1">
-		<video class="bg-video_content videos" autoplay loop muted>
+	<div  class="bg-video" id="bg-video1">
+		<video class="bg-video_content videos" autoplay loop muted > 
 		  <source
-			src="sass/img/1.mp4"
+			src="sass/img/forms1.mp4"
 			type="video/mp4"
 		  />
 		</video>
 	  </div>	
 	  
-	<div class="bg-video" id="bg-video3">
-		<video class="bg-video_content videos" autoplay loop muted>
-		  <source
-			src="sass/img/3.mp4"
-			type="video/mp4"
-		  />
-		</video>
-	  </div>	
 	  
-	<div class="bg-video" id="bg-video2">
+	<div  class="bg-video" id="bg-video2">
 		<video class="bg-video_content videos" autoplay loop muted>
 		  <source
 			src="sass/img/2.mp4"
+			type="video/mp4"
+		  />
+		</video>
+	  </div>	
+	  
+	<div  class="bg-video" id="bg-video3">
+		<video class="bg-video_content videos" autoplay loop muted>
+		  <source
+			src="sass/img/1.mp4"
 			type="video/mp4"
 		  />
 		</video>
@@ -72,18 +102,17 @@
 					
 					<!-- <div class="contact100-form-title" style="background-image: url(RecruitForm/images/bg-01.jpg);"> -->
 						<span class="contact100-form-title-1">
-							Thapar Food Festival
+							<img id="logo_top" src="sass/img/typo 2020_w-min.png">
 						</span>
-
 						<span class="contact100-form-title-2">
-							Recruitment form
+							RECRUITMENT FORM
 						</span>
 					</div>
 					
 					<form target="_self" class="contact100-form validate-form" onsubmit="return postToGoogle();" action="" id="recruit_form">
 						<div id="section_one">
-							<div class="wrap-input100 validate-input" data-validate="Name is required">
-								<span class="label-input100">Name on your Aadhar card
+							<div class="wrap-input100 validate-input" data-validate="Required">
+								<span class="label-input100">Name on your Aadhaar card
 								</span>
 								<input class="input100" type="text" name="entry.49493946" id="name" placeholder="Enter full name">
 								<span class="focus-input100"></span>
@@ -93,17 +122,22 @@
 							<!-- <% if(errors['data.email']){%>
 								<%=errors['data.email'].msg%>
 							<%}%> -->
-							<div class="wrap-input100 validate-input" data-validate="Roll No is required">
-								<span class="label-input100">Proxy kis number per lagate ho?</span>
-								<input class="input100" type="text" name="entry.1670025806" id="roll" placeholder="Enter Roll Number">
+							<div class="wrap-input100 validate-input" data-validate="Required">
+								<span class="label-input100">Enter roll number</span>
+								<input class="input100" type="text" name="entry.1670025806" id="roll" placeholder="Kisi zamane me jispe Proxy lgwaate the!">
 								<span class="focus-input100"></span>
 								
 							</div>
-							<div class="wrap-input100 validate-input" data-validate="Branch is required">
+							<div class="wrap-input100 validate-input" data-validate="Required">
 								<span class="label-input100">Kaun si branch mein ho?</span>
-								<input class="input100" type="text" name="entry.600816742" id ="branch" placeholder="Enter Branch">
+								<input class="input100" type="text" name="entry.600816742" id ="branch" placeholder="Enter branch">
 								<span class="focus-input100"></span>
 								
+							</div>
+							<div class="wrap-input100 validate-input" data-validate="Required">
+								<span class="label-input100">Email ID</span>
+								<input class="input100" type="text" name="entry.41547401" id ="email" placeholder="Enter your Thapar ID">
+								<span class="focus-input100"></span>
 							</div>
 							<!-- <div class="wrap-input100 validate-input" data-validate="CG is required">
 								<span class="label-input100">अभियांत्रिकी में क्या grade चल रहा है?</span>
@@ -111,8 +145,8 @@
 								<span class="focus-input100"></span>
 								
 							</div> -->
-							<div class="wrap-input100 validate-input" data-validate="Phone is required">
-								<span class="label-input100">Aap ko updates kis number per chahiye(WhatsApp please)</span>
+							<div class="wrap-input100 validate-input" data-validate="Required">
+								<span class="label-input100">Aap ko updates kis number par chahiye? (Whatsapp Only!)</span>
 								<input class="input100" type="text" name="entry.1965159740" id="phone" placeholder="Enter phone number">
 								<span class="focus-input100"></span>
 							</div>
@@ -123,12 +157,7 @@
 							</div>
 							<div class="wrap-input100 validate-input" data-validate="Required">
 								<span class="label-input100">Aapka shehar aur uski khasiyat?</span>
-								<input class="input100" type="text" name="entry.1690533821" id="place" placeholder="Enter City and famous food">
-								<span class="focus-input100"></span>
-							</div>
-							<div class="wrap-input100 validate-input" data-validate="Required">
-								<span class="label-input100">How much time are you ready to devote to tff?</span>
-								<input class="input100" type="text" name="entry.1025971147" id="timeDevote" placeholder="Enter time you can devote">
+								<input class="input100" type="text" name="entry.1690533821" id="place" placeholder="Enter hometown and its famous food">
 								<span class="focus-input100"></span>
 							</div>
 							<div class="container-contact100-form-btn">
@@ -139,30 +168,27 @@
 									</span>
 								</button>
 							</div>
-									
 						</div>
 						<div id="section_two">
 							<div class="wrap-input100 validate-input" data-validate="Required">
-								<span class="label-input100">Kaun kaun si societies mein kam Kiya hai?</span>
-								<input class="input100" type="text" name="entry.1234333045" id="otherSocities"placeholder="Enter Socities">
+								<span class="label-input100">How much time are you ready to devote to TFF?</span>
+								<input class="input100" type="text" name="entry.1025971147" id="timeDevote" placeholder="Enter time you can devote">
+								<span class="focus-input100"></span>
+							</div>
+							<div class="wrap-input100 validate-input" data-validate="Required">
+								<span class="label-input100">Kaun kaun si societies mein kaam Kiya hai?</span>
+								<input class="input100" type="text" name="entry.1234333045" id="otherSocities"placeholder="Enter socities">
 								<span class="focus-input100"></span>
 								
 							</div>
 							<div class="wrap-input100 validate-input" data-validate="Required">
 								<span class="label-input100">Apne free time mein kya karte ho?</span>
-								<input class="input100" type="text" name="entry.1056349084" id="Hobbies" placeholder="Enter Your Hobbies!">
+								<input class="input100" type="text" name="entry.1056349084" id="Hobbies" placeholder="Enter your hobbies">
 								<span class="focus-input100"></span>
 								
 							</div>
-							<div class="wrap-input100 validate-input" data-validate="Required">
-								<span class="label-input100">Describe yourself in 3 words.</span>
-								<input class="input100" type="text" name="entry.1814998359" id="des" placeholder="">
-								<span class="focus-input100"></span>
-								
-							</div>
-
 							<div class="wrap-input100 validate-input" data-validate = "Required">
-								<span class="label-input100">What is the best and worst thing about tff-19?</span>
+								<span class="label-input100">What was the best and the worst thing about TFF'19?</span>
 								<textarea class="input100" name="entry.2061973106" id="message" placeholder="Your Comment..."></textarea>
 								<span class="focus-input100"></span>
               </div>
@@ -189,6 +215,8 @@
 							</div>
 						
 						<div id="section_three">
+							
+
 							<p id="rateQ" style="border-bottom: 1px solid #b2b2b2;">Rate yourself from 1-5
 							</p>
 							
@@ -196,7 +224,7 @@
 
 							
 							<div class="wrap-input100 validate-input" style="border-bottom: none;" >
-								<span class="label-input100">Build & Lead a team</span>
+								<span class="label-input100">Build & Lead a team<span style="margin-left:10px ;"></span> [ 1 <--> 5 ]</span>
 								<br>
 								
 								<!-- <input class="input100" type="text" name="data[email]" placeholder="Enter email addess"> -->
@@ -215,34 +243,35 @@
 								<ul>
 									<li>
 									  <input type="radio" id="ratingQ11" name="entry.1694120072" value="1">
-									  <label for="ratingQ11">1</label>
+									  
+										<label for="ratingQ11" ></label>
 									  <div class="check"></div>
 									</li>
 									
 									<li>
 									  <input type="radio" id="ratingQ12" name="entry.1694120072" value="2">
-									  <label for="ratingQ12">2</label>
+									  <label for="ratingQ12"></label>
 									  
 									  <div class="check"><div class="inside"></div></div>
 									</li>
 									
 									<li>
 									  <input type="radio" id="ratingQ13" name="entry.1694120072" value="3">
-									  <label for="ratingQ13">3</label>
+									  <label for="ratingQ13"></label>
 									  
 									  <div class="check"><div class="inside"></div></div>
 									</li>
 									
 									<li>
 										<input type="radio" id="ratingQ14" name="entry.1694120072" value="4">
-										<label for="ratingQ14">4</label>
+										<label for="ratingQ14"></label>
 										
 										<div class="check"><div class="inside"></div></div>
 									  </li>
 									  
 									<li>
 										<input type="radio" id="ratingQ15" name="entry.1694120072" value="5">
-										<label for="ratingQ15">5</label>
+										<label for="ratingQ15"></label>
 										
 										<div class="check"><div class="inside"></div></div>
 									  </li>
@@ -268,34 +297,34 @@
 								 <ul>
 									<li>
 									  <input type="radio" id="ratingQ21" name="entry.200074965" value="1">
-									  <label for="ratingQ21">1</label>
+									  <label for="ratingQ21"></label>
 									  <div class="check"></div>
 									</li>
 									
 									<li>
 									  <input type="radio" id="ratingQ22" name="entry.200074965" value="2">
-									  <label for="ratingQ22">2</label>
+									  <label for="ratingQ22"></label>
 									  
 									  <div class="check"><div class="inside"></div></div>
 									</li>
 									
 									<li>
 									  <input type="radio" id="ratingQ23" name="entry.200074965" value="3">
-									  <label for="ratingQ23">3</label>
+									  <label for="ratingQ23"></label>
 									  
 									  <div class="check"><div class="inside"></div></div>
 									</li>
 									
 									<li>
 										<input type="radio" id="ratingQ24" name="entry.200074965" value="4">
-										<label for="ratingQ24">4</label>
+										<label for="ratingQ24"></label>
 										
 										<div class="check"><div class="inside"></div></div>
 									  </li>
 									  
 									<li>
 										<input type="radio" id="ratingQ25" name="entry.200074965" value="5">
-										<label for="ratingQ25">5</label>
+										<label for="ratingQ25"></label>
 										
 										<div class="check"><div class="inside"></div></div>
 									  </li>
@@ -320,34 +349,34 @@
 								 <ul>
 									<li>
 									  <input type="radio" id="ratingQ31" name="entry.1343528650" value="1">
-									  <label for="ratingQ31">1</label>
+									  <label for="ratingQ31"></label>
 									  <div class="check"></div>
 									</li>
 									
 									<li>
 									  <input type="radio" id="ratingQ32" name="entry.1343528650" value="2">
-									  <label for="ratingQ32">2</label>
+									  <label for="ratingQ32"></label>
 									  
 									  <div class="check"><div class="inside"></div></div>
 									</li>
 									
 									<li>
 									  <input type="radio" id="ratingQ33" name="entry.1343528650" value="3">
-									  <label for="ratingQ33">3</label>
+									  <label for="ratingQ33"></label>
 									  
 									  <div class="check"><div class="inside"></div></div>
 									</li>
 									
 									<li>
 										<input type="radio" id="ratingQ34" name="entry.1343528650" value="4">
-										<label for="ratingQ34">4</label>
+										<label for="ratingQ34"></label>
 										
 										<div class="check"><div class="inside"></div></div>
 									  </li>
 									  
 									<li>
 										<input type="radio" id="ratingQ35" name="entry.1343528650" value="5">
-										<label for="ratingQ35">5</label>
+										<label for="ratingQ35"></label>
 										
 										<div class="check"><div class="inside"></div></div>
 									  </li>
@@ -372,34 +401,34 @@
 								 <ul>
 									<li>
 									  <input type="radio" id="ratingQ41" name="entry.280603844" value="1">
-									  <label for="ratingQ41">1</label>
+									  <label for="ratingQ41"></label>
 									  <div class="check"></div>
 									</li>
 									
 									<li>
 									  <input type="radio" id="ratingQ42" name="entry.280603844" value="2">
-									  <label for="ratingQ42">2</label>
+									  <label for="ratingQ42"></label>
 									  
 									  <div class="check"><div class="inside"></div></div>
 									</li>
 									
 									<li>
 									  <input type="radio" id="ratingQ43" name="entry.280603844" value="3">
-									  <label for="ratingQ43">3</label>
+									  <label for="ratingQ43"></label>
 									  
 									  <div class="check"><div class="inside"></div></div>
 									</li>
 									
 									<li>
 										<input type="radio" id="ratingQ44" name="entry.280603844" value="4">
-										<label for="ratingQ44">4</label>
+										<label for="ratingQ44"></label>
 										
 										<div class="check"><div class="inside"></div></div>
 									  </li>
 									  
 									<li>
 										<input type="radio" id="ratingQ45" name="entry.280603844" value="5">
-										<label for="ratingQ45">5</label>
+										<label for="ratingQ45"></label>
 										
 										<div class="check"><div class="inside"></div></div>
 									</li>
@@ -424,34 +453,34 @@
 								 <ul>
 									<li>
 									  <input type="radio" id="ratingQ51" name="entry.1656877776" value="1">
-									  <label for="ratingQ51">1</label>
+									  <label for="ratingQ51"></label>
 									  <div class="check"></div>
 									</li>
 									
 									<li>
 									  <input type="radio" id="ratingQ52" name="entry.1656877776" value="2">
-									  <label for="ratingQ52">2</label>
+									  <label for="ratingQ52"></label>
 									  
 									  <div class="check"><div class="inside"></div></div>
 									</li>
 									
 									<li>
 									  <input type="radio" id="ratingQ53" name="entry.1656877776" value="3">
-									  <label for="ratingQ53">3</label>
+									  <label for="ratingQ53"></label>
 									  
 									  <div class="check"><div class="inside"></div></div>
 									</li>
 									
 									<li>
 										<input type="radio" id="ratingQ54" name="entry.1656877776" value="4">
-										<label for="ratingQ54">4</label>
+										<label for="ratingQ54"></label>
 										
 										<div class="check"><div class="inside"></div></div>
 									  </li>
 									  
 									<li>
 										<input type="radio" id="ratingQ55" name="entry.1656877776" value="5">
-										<label for="ratingQ55">5</label>
+										<label for="ratingQ55"></label>
 										
 										<div class="check"><div class="inside"></div></div>
 									  </li>
@@ -459,6 +488,13 @@
 								<span class="focus-input100"></span>
 							</div>
 							<div class="wrap-input100 validate-input" data-validate="Required">
+								<span class="label-input100">Describe yourself in 3 words.</span>
+								<input class="input100" type="text" name="entry.1814998359" id="des" placeholder="In 3 words only">
+								<span class="focus-input100"></span>
+								
+							</div>
+
+							<!-- <div class="wrap-input100 validate-input" data-validate="Required">
 								<span class="label-input100">Witty!</span>
 								<input class="input100" type="text" name="entry.1413529514" id="Witty" placeholder="">
 								<span class="focus-input100"></span>
@@ -470,10 +506,10 @@
 								<input class="input100" type="text" name="entry.1470925297" id="urlValue" placeholder="URL">
 								<span class="focus-input100"></span>
 								
-							</div>
+							</div> -->
 							
 							<div class="wrap-input100 validate-input" data-validate="Required">
-								<span class="label-input100">If you have 60 rupees in Thapar what will you eat and why?</span>
+								<span class="label-input100">If you have 60 rupees in Thapar, what will you eat and why?</span>
 								<input class="input100" type="text" name="entry.1622578703" id="thaparFamousFood" placeholder="Special Food of Thapar">
 								<span class="focus-input100"></span>
 							</div>
@@ -514,30 +550,39 @@
 
 
 	<div id="dropDownSelect1"></div>
-	<div class="successpop" id="successpop">
+	<div class="successpop"  id="successpop">
 		<div class="successpop_content">
 		  <!-- <div class="successpop_left">
 			<img src="sass/img/qw.jpg" alt="hi" class="successpop_img" />
 			 <img src="img/about3.jpeg" alt="hi" class="successpop_img"
 		  </div> -->
 		  <div class="successpop_right">
-			<a href="#" onclick="exit_form()" class="successpop_cross">&times;</a>
+			<!-- <a href="#" onclick="exit_form()" class="successpop_cross">&times;</a> -->
 			<div class="popupimg">
-			<h1 class="heading-secondary successpop_heading u-centre"><img style="margin: unset; width: 90px;" src="https://image.flaticon.com/icons/svg/1047/1047711.svg" alt="Cookie" class="img"></h1>
+			<h1 class="heading-secondary successpop_heading u-centre"><img id="logo_popup" src="sass/img/typo black (1).png"></h1>
 			</div>
-			<p class="paragraph successpop_paragraph" style="column-count: unset;">
-				Your form has been successfully submitted.
-				<br>
-				For more info regarding the shortlisted students, you can follow us
+			<p class="paragraph successpop_paragraph" style="column-count: unset; margin-bottom: 1.5rem;">
+				Thank You for applying . We will look over your submission and will get back to you soon . 
+				
+				In the meantime, we would like to offer you a token of love for taking out your time.
+				<div style="display: flex; flex-direction: column; text-align: center;">
+				<a href="sass/pdf/CraveLab.pdf" download="TFF_CraveLab" style="margin: -2rem;">The Crave Lab <i  class="fas fa-download" style="font-size: 1.7rem; color: #1C4AEC;"></i></a>
+				<a href="sass/pdf/GazingOwl.pdf" download="TFF_GazingOwl"style="margin: -2rem;" >The Gazing Owl <i class="fas fa-download" style="font-size: 1.7rem; color: #1C4AEC;"></i></a>
+				</div>
 				<!-- Button Instagram -->
+				<p class="paragraph successpop_paragraph" id="thanksmsg" style="column-count: unset; margin-top: 10px;">
+				We hope you like your gift ! For further updates , don't forget to follow us on Instagram and Facebook .
+				
+				Good Luck !
+			</p>
 				<div class="btn__container_pop">
-					<a href="https://instagram.com/thaparfoodfestival?igshid=f4917zov84zo" class="btn_pop">
-					<i class="link_pop fab fa-instagram" style="background-color:white;"></i>
-					<span class="social">instagram</span>
+					<a onclick="newWindow1()" class="btn_pop">
+					<i  class="link_pop fab fa-instagram" style="background-color:white;"></i>
+					<span class="social">Instagram</span>
 					</a>
-					<a href="https://www.facebook.com/thaparfoodfestival/" class="btn-f_pop">
-					<i class="link_pop fab fa-facebook" style="background-color: white;"></i>
-					<span class="social">facebook</span>
+					<a onclick="newWindow2()" class="btn-f_pop">
+					<i  class="link_pop fab fa-facebook" style="background-color: white;"></i>
+					<span class="social">Facebook</span>
 					</a>
 				</div>
 			</p>
@@ -583,6 +628,37 @@
 
 	  gtag('config', 'UA-23581568-13');
 	</script>
+	<script>
+			window.onload = function() {
+    		if(!window.location.hash) {
+			window.location = window.location + '#loaded';
+			window.location.reload();
+    	}
+
+		}
+	</script>
+	<script>
+		function newWindow2(){
+			window.open("https://www.facebook.com/thaparfoodfestival/","_blank");
+		}
+		function newWindow1(){
+			window.open("https://instagram.com/thaparfoodfestival?igshid=f4917zov84zo","_blank");
+		}
+		
+	</script>
+	<!-- <script>
+		var bgvideo1 = document.getElementById("bgvideo1");
+		bgvideo1.muted = true;
+		bgvideo1.play();
+		
+		var bgvideo2 = document.getElementById("bgvideo2");
+		bgvideo2.muted = true;
+		bgvideo2.play();
+		
+		var bgvideo3 = document.getElementById("bgvideo3");
+		bgvideo3.muted = true;
+		bgvideo3.play();
+	</script> -->
 	<script>
 
 		function forward_one(){
@@ -656,59 +732,58 @@
 						var Hobbies = $("#Hobbies").val();
 						var des = $("#des").val();
 						var message = $("#message").val();
-						var witty = $("#Witty").val();
+						var email = $("input[name='entry.41547401']").val();
 						var rateQ1 = $("input[name='entry.1694120072']:checked").val();
 						var rateQ2 = $("input[name='entry.200074965']:checked").val();
 						var rateQ3 = $("input[name='entry.1343528650']:checked").val();
 						var rateQ4 = $("input[name='entry.280603844']:checked").val();
 						var rateQ5 = $("input[name='entry.1656877776']:checked").val();
-						var url = $("input[name='entry.1470925297']").val();
 						var thaparFood = $("input[name='entry.1622578703']").val();
 						
 						 if(name == ""){
-						 	alert('Please Fill Your Name');
+						 	alert('Please fill Your Name');
 						 	document.getElementById("name").focus();
 						 	return false;
 						 }
 						
 						 if(roll == ""){
-						 	alert('Please Fill Your RollNo');
+						 	alert('Please fill Your RollNo');
 						 	document.getElementById("roll").focus();
 						 	return false;
 						 }
 						 if(branch == ""){
-						 	alert('Please Fill Your Branch');
+						 	alert('Please fill Your Branch');
 						 	document.getElementById("name").focus();
 						 	return false;
 						 }
 						 if(phone == ""){
-						 	alert('Please Fill Your PhoneNo');
+						 	alert('Please fill Your PhoneNo');
 						 	document.getElementById("phone").focus();
 						 	return false;
 						 }
 						
 						 if( phone.length > 10 || phone.length < 10){
-						 	alert('Please fill correct PhoneNo');
+						 	alert('Please fill PhoneNo (10 digits only)');
 						 	document.getElementById("phone").focus();
 						 	return false;
 						 }
 						 if(place == ""){
-						 	alert('Please Fill Your City');
+						 	alert('Please fill Your City');
 						 	document.getElementById("place").focus();
 						 	return false;
 						 }
 						 if(timeDevote == ""){
-						 	alert('Please Fill Your Name');
+						 	alert('Please fill time you can devote');
 						 	document.getElementById("timeDevote").focus();
 						 	return false;
 						 }
 						 if(otherSocities == ""){
-						 	alert('Please Fill Your otherSocities');
+						 	alert('Please fill Your Socities');
 						 	document.getElementById("otherSocities").focus();
 						 	return false;
 						 }
 						 if(Hobbies == ""){
-						 	alert('Please Fill Your Hobbies');
+						 	alert('Please fill Your Hobbies');
 						 	document.getElementById("Hobbies").focus();
 						 	return false;
 						 }
@@ -717,59 +792,44 @@
 						 	document.getElementById("des").focus();
 						 	return false;
 						 }
-						 if(message == ""){
-						 	alert('View toh batao!');
-						 	document.getElementById("message").focus();
-						 	return false;
+						 if(!email.endsWith("thapar.edu")){
+							alert('Enter Thapar Email only');
+						 	document.getElementById("email").focus();
+						 	return false;	
 						 }
-						 if(witty == ""){
-						 	alert('Witty Question left!');
-						 	document.getElementById("witty").focus();
-						 	return false;
+						 if(message == ""){
+						 	alert(" TFF'19 ke View toh batao! ");
+						 	document.getElementById("message").focus();
+							 return false;
 						 }
 						 if(rateQ1 == ""){
-						 	alert('Please Fill Your Name');
+						 	alert('Please rate yourself');
 						 	$("input[name='entry.1694120072']").focus();
 						 	return false;
 						 }
 						 if(rateQ2 == ""){
-						 	alert('Please Fill Your Name');
+						 	alert('Please rate yourself');
 						 	$("input[name='entry.200074965']").focus();
 						 	return false;
 						 }
 						 if(rateQ3 == ""){
-						 	alert('Please Fill Your Name');
+						 	alert('Please rate yourself');
 					 	$("input[name='entry.1343528650']").focus();
 						 	return false;
 						 }
 						 if(rateQ4 == ""){
-						 	alert('Please Fill Your Name');
+						 	alert('Please rate yourself');
 						 	$("input[name='entry.280603844']").focus();
 						 	return false;
 						 }
 						 if(rateQ5 == ""){
-						 	alert('Please Fill Your Name');
+						 	alert('Please rate yourself');
 						 	$("input[name='entry.1656877776']").focus();
 					 	return false;
 						 }
-						 if(url == ""){
-						 	alert('Please Fill Your Name');
-						 	document.getElementById("url").focus();
-						 	return false;
-						 }
 						 if(thaparFood == ""){
-						 	alert('Please Fill Your Name');
+						 	alert('Kuch to milega hi 60 me, batate jao');
 						 	document.getElementById("thaparfood").focus();
-						 	return false;
-						 }
-						 if(field2 == ""){
-						 	alert('Please Fill Your Email');
-						 	document.getElementById("emailField").focus();
-						 	return false;
-						 }
-						 if(field3 == "" || field3.length > 10 || field3.length < 10){
-						 	alert('Please Fill Your Mobile Number');
-						 	document.getElementById("mobField").focus();
 						 	return false;
 						 }
 		
@@ -780,9 +840,9 @@
 							url: "https://docs.google.com/forms/d/e/1FAIpQLSd7g2G9nZJ5FM9jG0-fRZPXNc4Cflv7NjpjhP-CHcYl6HMbZg/formResponse?",
 							data: {"entry.49493946": name, "entry.1670025806": roll, "entry.600816742": branch,
 							"entry.1965159740": phone, "entry.1690533821": place, "entry.1025971147": timeDevote, "entry.1234333045": otherSocities,
-							"entry.1056349084": Hobbies, "entry.1814998359": des, "entry.2061973106": message, "entry.1413529514": witty,
+							"entry.1056349084": Hobbies, "entry.1814998359": des, "entry.2061973106": message, "entry.41547401": email,
 							"entry.1694120072": rateQ1, "entry.200074965": rateQ2, "entry.1343528650": rateQ3, "entry.280603844": rateQ4,
-							"entry.1656877776": rateQ5, "entry.1470925297": url, "entry.1622578703": thaparFood},
+							"entry.1656877776": rateQ5,  "entry.1622578703": thaparFood},
 							type: "POST",
 							dataType: "xml",
 							success: function(d)
@@ -794,9 +854,7 @@
 								{	
 									document.querySelector(".successpop").style.opacity = 1;
 									document.querySelector(".successpop").style.visibility = "visible";
-									
 									console.log("added successfully");
-
 								}
 						});
 						return false;
