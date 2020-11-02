@@ -77,8 +77,8 @@
 			<p class="paragraph alertpopup_paragraph" style="column-count: unset; margin-bottom: 1.5rem;">
 				Please note that the filling of the main form for core team recruitment of Thapar food festival is compulsory, otherwise this form will NOT be considered Valid. 
 				If you haven't filled the main form yet, you can fill it here:
-				<div style="display: flex; flex-direction: row; text-align: center;justify-content: center;">
-					<button type="button" class="contact100-form-btn nexty" onclick="recruitform()" style="margin-right: 12px;"> 
+				<div style="display: flex; flex-direction: row; text-align: center;justify-content: center; margin-top: 20px;">
+					<button type="button"  class="contact100-form-btn nexty" onclick="recruitform()" style="margin-right: 12px; margin-top: 12px;"> 
 						<span>
 							Go to Main Form
 							<!-- <i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i> -->
@@ -86,7 +86,7 @@
 					</button>
 				
 				
-					<button class="contact100-form-btn nexty" onclick="ardourform()" style="margin-left: 12px;" > 
+					<button class="contact100-form-btn nexty" onclick="ardourform()" style="margin-left: 12px; margin-top: 12px;" > 
 						<span  >Continue</span>
 					</button>
 				</div>
@@ -331,19 +331,10 @@
         if(!window.location.hash) {
         window.location = window.location + '#loaded';
         window.location.reload();
-    }
+    	}
+	}
+	</script>
 
-    }
-</script>
-<script>
-    function newWindow2(){
-        window.open("https://www.facebook.com/thaparfoodfestival/","_blank");
-    }
-    function newWindow1(){
-        window.open("https://instagram.com/thaparfoodfestival?igshid=f4917zov84zo","_blank");
-    }
-    
-</script>
 
 <script>
 	function recruitform(){

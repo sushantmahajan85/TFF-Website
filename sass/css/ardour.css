@@ -51,6 +51,9 @@
     }
     
   }
+
+}
+
   
   @media (max-width: 520px) {
     #logo_popup_alert{
@@ -58,5 +61,10 @@
       margin-bottom: -9rem;
       margin-top: -9rem;
     }
+  }
+  @media (min-width: 500px){
+      .paragraph{
+          font-size: 2rem;
+      }
   }
   
