@@ -4,6 +4,9 @@
 	<title>ARDOUR</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="description" content="TFF'20 Welcomes you to its ARDOUR form! Fill precisely to skip your GD ">
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!--===============================================================================================-->
@@ -32,6 +35,20 @@
 	<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 <!--===============================================================================================-->
+<script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-146468970-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-146468970-1");
+    </script>
+    
 </head>
 <body style="padding:unset">
 
@@ -40,7 +57,16 @@
 	<div class="bg-video" id="bg-video1">
 		<video class="bg-video_content videos" autoplay loop muted>
 		  <source
-			src="sass/img/forms1.mp4"
+			src="sass/img/forms5.mp4"
+			type="video/mp4"
+		  />
+		</video>
+	  </div>	
+	
+	<div class="bg-video" id="bg-video2">
+		<video class="bg-video_content videos" autoplay loop muted>
+		  <source
+			src="sass/img/forms5.mp4"
 			type="video/mp4"
 		  />
 		</video>
@@ -49,16 +75,7 @@
 	<div class="bg-video" id="bg-video3">
 		<video class="bg-video_content videos" autoplay loop muted>
 		  <source
-			src="sass/img/forms2.mp4"
-			type="video/mp4"
-		  />
-		</video>
-	  </div>	
-	  
-	<div class="bg-video" id="bg-video2">
-		<video class="bg-video_content videos" autoplay loop muted>
-		  <source
-			src="sass/img/form3.mp4"
+			src="sass/img/forms5.mp4"
 			type="video/mp4"
 		  />
 		</video>
@@ -72,7 +89,7 @@
 		  <div class="alertpopup_right">
 			<!-- <a href="#" onclick="exit_form()" class="alertpopup_cross">&times;</a> -->
 			<div class="popupimg">
-			<h1 class="heading-secondary alertpopup_heading u-centre"><img id="logo_popup_alert" src="sass/img/typo black (1).png"></h1>
+			<h1 class="heading-1 alertpopup_heading u-centre"><img id="logo_popup_alert" src="sass/img/Untitled-1.png"></h1>
 			</div>
 			<p class="paragraph alertpopup_paragraph" style="column-count: unset; margin-bottom: 1.5rem;">
 				Please note that the filling of the main form for core team recruitment of Thapar food festival is compulsory, otherwise this form will NOT be considered Valid. 
@@ -117,7 +134,7 @@
 					<form target="_self" class="contact100-form validate-form" onsubmit="return postToGoogle();" action="" id="recruit_form">
 						<div id="section_one">
 							<div class="wrap-input100 validate-input" data-validate="Name is required">
-								<span class="label-input100">Name on your Aadhaar card
+								<span class="label-input100">Name
 								</span>
 								<input class="input100" type="text" name="entry.1258730763" id="name" placeholder="Enter full name">
 								<span class="focus-input100"></span>
@@ -128,13 +145,13 @@
 								<%=errors['data.email'].msg%>
 							<%}%> -->
 							<div class="wrap-input100 validate-input" data-validate="Roll No is required">
-								<span class="label-input100">Enter roll number</span>
-								<input class="input100" type="text" name="entry.1631932354" id="roll" placeholder="Kisi zamane me jispe Proxy lgwaate the!">
+								<span class="label-input100">Roll number</span>
+								<input class="input100" type="text" name="entry.1631932354" id="roll" placeholder="Enter roll number">
 								<span class="focus-input100"></span>
 								
 							</div>
 							<div class="wrap-input100 validate-input" data-validate="Branch is required">
-								<span class="label-input100">Kaun si branch mein ho?</span>
+								<span class="label-input100">Branch</span>
 								<input class="input100" type="text" name="entry.775066577" id ="branch" placeholder="Enter branch">
 								<span class="focus-input100"></span>
 								
@@ -146,8 +163,8 @@
 								
 							</div>
 							<div class="wrap-input100 validate-input" data-validate="Phone is required">
-								<span class="label-input100">what is your unique selling point?</span>
-								<input class="input100" type="text" name="entry.44849303" id="uniquesell" placeholder="">
+								<span class="label-input100">What makes you stand out from others?</span>
+								<input class="input100" type="text" name="entry.44849303" id="uniquesell" placeholder="Comment...">
 								<span class="focus-input100"></span>
 							</div>
 							<div class="errors">
@@ -156,12 +173,12 @@
 								<%}%> -->
 							</div>
 							<div class="wrap-input100 validate-input" data-validate="Required">
-								<span class="label-input100">why are you filing this form?</span>
+								<span class="label-input100">Why are you filing this form?</span>
 								<input class="input100" type="text" name="entry.144292572" id="reason" placeholder="Reason to Fill">
 								<span class="focus-input100"></span>
                             </div>
                             <div class="wrap-input100 validate-input" data-validate="Required">
-								<span class="label-input100">if your senior asks you to complete a task which seems impossible, how will you proceed with it?</span>
+								<span class="label-input100">If your senior asks you to complete a task which seems impossible, how will you proceed with it?</span>
 								<input class="input100" type="text" name="entry.1490075807" id="response" placeholder="Enter response to given condition">
 								<span class="focus-input100"></span>
                             </div>
@@ -177,7 +194,7 @@
 						</div>
 						<div id="section_two">
 							
-                            <p id="rateQ" style="border-bottom: 1px solid #b2b2b2;">you have to plan an event with 5 people.
+                            <p id="rateQ" style="border-bottom: 1px solid #b2b2b2;">You have to plan an event with 5 people.
 							</p>
 							<div class="wrap-input100 validate-input" data-validate="Required">
 								<span class="label-input100">Which 5 friends will you choose?</span>
@@ -209,8 +226,8 @@
                             </div>
                             
 							<div class="wrap-input100 validate-input" data-validate="Required">
-								<span class="label-input100">Showcase any of your talents here.</span>
-								<input class="input100" type="text" name="entry.39614086" id="link" placeholder="You can upload the drive link of video clips/ images/ projects here">
+								<span class="label-input100">Showcase any of your talents here (You can upload the drive link of video clips/ images/ projects here).</span>
+								<input class="input100" type="text" name="entry.39614086" id="link" placeholder="Please enter">
 								<span class="focus-input100"></span>
 								
 							</div>
@@ -344,6 +361,11 @@
 		var popup = document.getElementById("alertpopup");
 		popup.style.visibility = "hidden";
 		popup.style.opacity = 0;
+		document.getElementById("bg-video1").style.visibility = "hidden";
+		document.getElementById("bg-video1").style.display = "none";
+		document.getElementById("bg-video2").style.visibility = "visible";
+		document.getElementById("bg-video2").style.display = "block";
+		
 	}
 </script>
 
@@ -356,12 +378,12 @@
 			document.getElementById("section_two").style.visibility = "visible";
 			document.getElementById("section_one").style.visibility = "hidden";
 			// document.getElementById("section_three").style.visibility = "hidden";
-			document.getElementById("bg-video2").style.visibility = "visible";
-			document.getElementById("bg-video2").style.display = "block";
+			document.getElementById("bg-video2").style.visibility = "hidden";
+			document.getElementById("bg-video2").style.display = "none";
 			document.getElementById("bg-video1").style.visibility = "hidden";
 			document.getElementById("bg-video1").style.display = "none";
-			// document.getElementById("bg-video3").style.visibility = "hidden";
-			// document.getElementById("bg-video3").style.display = "none";
+			document.getElementById("bg-video3").style.visibility = "visible";
+			document.getElementById("bg-video3").style.display = "block";
 		}
 		
 		function previous_two(){
@@ -371,12 +393,12 @@
 			document.getElementById("section_one").style.visibility = "visible";
 			// document.getElementById("section_three").style.visibility = "hidden";
 			document.getElementById("section_two").style.visibility = "hidden";
-			document.getElementById("bg-video1").style.visibility = "visible";
-			document.getElementById("bg-video1").style.display = "block";
+			document.getElementById("bg-video1").style.visibility = "hidden";
+			document.getElementById("bg-video1").style.display = "none";
 			// document.getElementById("bg-video3").style.visibility = "hidden";
 			// document.getElementById("bg-video3").style.display = "none";
-			document.getElementById("bg-video2").style.visibility = "hidden";
-			document.getElementById("bg-video2").style.display = "none";
+			document.getElementById("bg-video2").style.visibility = "visible";
+			document.getElementById("bg-video2").style.display = "block";
 		}
 	
 	</script>
