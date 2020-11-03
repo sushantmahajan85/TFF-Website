@@ -49,10 +49,10 @@ display: inline-block;
   }
 @media (max-width:1300px){
     #logo_popup_alert{
-      width: 45%;
-      margin-bottom: -8rem;
+      width: 60%;
+      margin-bottom: -7rem;
       
-      margin-top: -8rem;
+      margin-top: -7rem;
     }
   }
 
