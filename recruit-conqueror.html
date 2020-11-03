@@ -218,7 +218,7 @@
 								<textarea class="input100" name="entry.145778626" id="procedure" placeholder="Event procedure"></textarea>
 								<span class="focus-input100"></span>
                             </div>
-							<div class="wrap-input100 validate-input" >
+							<div class="wrap-input100 " >
 								<span class="label-input100">List any of your skill, you want to polish or explore. (marketing, media, creativity, publicity, web/app development or any other talent) -- Optional</span>
                                     <br>
                                     <span class="label-input100">Limit-100 words</span>
@@ -226,7 +226,7 @@
 								<span class="focus-input100"></span>
                             </div>
                             
-							<div class="wrap-input100 validate-input" >
+							<div class="wrap-input100 " >
 								<span class="label-input100">Showcase any of your talents here (You can upload the drive link of video clips/ images/ projects here) -- Optional</span>
 								<input class="input100" type="text" name="entry.39614086" id="link" placeholder="Please enter">
 								<span class="focus-input100"></span>
@@ -366,7 +366,6 @@
 		document.getElementById("bg-video1").style.display = "none";
 		document.getElementById("bg-video2").style.visibility = "visible";
 		document.getElementById("bg-video2").style.display = "block";
-		
 	}
 </script>
 
@@ -425,9 +424,9 @@
 						var friends = $("#friends").val();
 						var link = $("#link").val();
 						var eventname = $("input[name='entry.71852525']").val();
-						var allot = $("input[name='entry.130370810']").val();
-						var procedure = $("input[name='entry.145778626']").val();
-						var skill = $("input[name='entry.1066814659']").val();
+						var allot = $("#allot").val();
+						var procedure = $("#procedure").val();
+						var skill = $("#skill").val();
 						// var rateQ5 = $("input[name='entry.1656877776']:checked").val();
 						// var url = $("input[name='entry.1470925297']").val();
 						// var thaparFood = $("input[name='entry.1622578703']").val();
