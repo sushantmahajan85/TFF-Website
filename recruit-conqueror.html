@@ -54,7 +54,7 @@
 
 <div class="bg-contact100">
 	
-	<div class="bg-video" id="bg-video1">
+	<div class="bg-video" id="bg-video1" style="visibility: visible; display: block;" >
 		<video class="bg-video_content videos" autoplay loop muted>
 		  <source
 			src="sass/img/forms5.mp4"
@@ -62,7 +62,7 @@
 		  />
 		</video>
 	  </div>	
-	
+<!-- 	
 	<div class="bg-video" id="bg-video2">
 		<video class="bg-video_content videos" autoplay loop muted>
 		  <source
@@ -79,16 +79,16 @@
 			type="video/mp4"
 		  />
 		</video>
-	  </div>	
-	  <div class="alertpopup"  id="alertpopup">
-		<div class="alertpopup_content" style="width: 60%;">
+	  </div>	 -->
+	  <!-- <div class="alertpopup"  id="alertpopup">
+		<div class="alertpopup_content" style="width: 60%;"> -->
 		  <!-- <div class="alertpopup_left">
 			<img src="sass/img/qw.jpg" alt="hi" class="alertpopup_img" />
 			 <img src="img/about3.jpeg" alt="hi" class="alertpopup_img"
 		  </div> -->
-		  <div class="alertpopup_right">
+		  <!-- <div class="alertpopup_right"> -->
 			<!-- <a href="#" onclick="exit_form()" class="alertpopup_cross">&times;</a> -->
-			<div class="popupimg">
+			<!-- <div class="popupimg">
 				
 			<h1 class="heading-1 successpop_heading u-centre"><img id="logo_popup_alert" src="sass/img/typo black (1).png"></h1>
 			</div>
@@ -98,9 +98,9 @@
 				<div style="display: flex; flex-direction: row; text-align: center;justify-content: center; margin-top: 20px;">
 					<button type="button"  class="contact100-form-btn nexty" onclick="recruitform()" style="margin-right: 12px; margin-top: 12px;"> 
 						<span>
-							Main Form
+							Main Form -->
 							<!-- <i class="fa fa-long-arrow-right m-l-7"  aria-hidden="true"></i> -->
-						</span>
+						<!-- </span>
 					</button>
 				
 				
@@ -111,7 +111,7 @@
 				</p>
 		  </div>
 		</div>
-	</div>
+	</div> -->
 	
 		<div class="container-contact100">
 			<div class="wrap-contact100">
@@ -124,7 +124,7 @@
 					
 					<!-- <div class="contact100-form-title" style="background-image: url(RecruitForm/images/bg-01.jpg);"> -->
 						<span class="contact100-form-title-1">
-							<img id="logo_top" style="margin-bottom: -110px;" src="sass/img/Untitled-1.png" >
+							<img style="display: none; visibility: hidden;" id="logo_top" style="margin-bottom: -110px;" src="sass/img/Untitled-1.png" >
 						</span>
 
 						<!-- <span class="contact100-form-title-2">
@@ -132,7 +132,7 @@
 						</span> -->
 					</div>
 					
-					<form target="_self" class="contact100-form validate-form" onsubmit="return postToGoogle();" action="" id="recruit_form">
+					<form style="display: none; visibility: hidden;" target="_self" class="contact100-form validate-form" onsubmit="return postToGoogle();" action="" id="recruit_form">
 						<div id="section_one">
 							<div class="wrap-input100 validate-input" data-validate="Name is required">
 								<span class="label-input100">Name
@@ -268,29 +268,20 @@
 
 
 	<div id="dropDownSelect1"></div>
-	<div class="successpop"  id="successpop">
+	<div class="successpop"  id="successpop" style="opacity: 1; visibility: visible;background-color: rgba(0,0,0,0.300);">
 		<div class="successpop_content" >
 		  <!-- <div class="successpop_left">
 			<img src="sass/img/qw.jpg" alt="hi" class="successpop_img" />
 			 <img src="img/about3.jpeg" alt="hi" class="successpop_img"
 		  </div> -->
 		  <div class="successpop_right">
-			<a href="#" onclick="exit_form()" class="successpop_cross">&times;</a>
+			<!-- <a href="#" onclick="exit_form()" class="successpop_cross">&times;</a> -->
 			<div class="popupimg">
 				<h1 class="heading-1 alertpopup_heading u-centre"><img id="logo_popup_alert" src="sass/img/Untitled-1.png"></h1>
 			</div>
 			<p class="paragraph successpop_paragraph" style="column-count: unset; margin-bottom: 1.5rem;">
-				Thanks for submitting the form!
-				<!-- <div style="display: flex; flex-direction: column; text-align: center;">
-				<a href="sass/pdf/CraveLab.pdf" download="TFF_CraveLab" style="margin: -2rem;">The Crave Lab <i  class="fas fa-download" style="font-size: 1.7rem; color: #1C4AEC;"></i></a>
-				<a href="sass/pdf/GazingOwl.pdf" download="TFF_GazingOwl"style="margin: -2rem;" >The Gazing Owl <i class="fas fa-download" style="font-size: 1.7rem; color: #1C4AEC;"></i></a>
-				</div> -->
-				<!-- Button Instagram -->
-				<p class="paragraph successpop_paragraph" id="thanksmsg" style="column-count: unset; margin-top: 10px;">
-				 For further updates , don't forget to follow us on Instagram and Facebook .
+				Thank you for all your incredible responses and overwhelming support. The further details of the recruitment process will be sent to you on your email id as well as WhatsApp as well as updated on social media handles of Thapar Food Festival. Till then stay tuned!
 				
-				Good Luck !
-			</p>
 				<div class="btn__container_pop">
 					<a onclick="newWindow1()" class="btn_pop">
 					<i  class="link_pop fab fa-instagram" style="background-color:white;"></i>
@@ -353,7 +344,7 @@
 	}
 	</script>
 
-
+<!-- 
 <script>
 	function recruitform(){
 		location.href = "/recruit";
@@ -367,7 +358,7 @@
 		document.getElementById("bg-video2").style.visibility = "visible";
 		document.getElementById("bg-video2").style.display = "block";
 	}
-</script>
+</script> -->
 
 	<script>
 
@@ -431,73 +422,73 @@
 						// var url = $("input[name='entry.1470925297']").val();
 						// var thaparFood = $("input[name='entry.1622578703']").val();
 						
-						 if(name == ""){
-						 	alert('Please fill Your Name');
-						 	document.getElementById("name").focus();
-						 	return false;
-						 }
-						
-						 if(roll == ""){
-						 	alert('Please fill Your RollNo');
-						 	document.getElementById("roll").focus();
-						 	return false;
-						 }
-						 if(branch == ""){
-						 	alert('Please fill Your Branch');
-						 	document.getElementById("name").focus();
-						 	return false;
-                         }
-                         if(!email.endsWith("thapar.edu")){
-                            alert('Please fill Correct Email');
-						 	document.getElementById("email").focus();
-						 	return false;
-                         }
-						 if(email == ""){
-						 	alert('Please fill Your Email');
-						 	document.getElementById("email").focus();
-						 	return false;
-						 }
-						
-						//  if( phone.length > 10 || phone.length < 10){
-						//  	alert('Please fill correct PhoneNo');
-						//  	document.getElementById("phone").focus();
+						//  if(name == ""){
+						//  	alert('Please fill Your Name');
+						//  	document.getElementById("name").focus();
 						//  	return false;
 						//  }
-						 if(uniquesell == ""){
-						 	alert('Please fill all details');
-						 	document.getElementById("uniquesell").focus();
-						 	return false;
-						 }
-						 if(reason == ""){
-						 	alert('Please fill all details');
-						 	document.getElementById("reason").focus();
-						 	return false;
-						 }
-						 if(response == ""){
-						 	alert('Please fill all details');
-						 	document.getElementById("response").focus();
-						 	return false;
-						 }
-						 if(friends == ""){
-						 	alert('Please fill all details');
-						 	document.getElementById("friends").focus();
-						 	return false;
-						 }
-						 if(eventname == ""){
-						 	alert('Please fill all details');
-						 	document.getElementById("eventname").focus();
-						 	return false;
-						 }
-						 if(allot == ""){
-						 	alert('Please fill all details');
-						 	document.getElementById("allot").focus();
-							 return false;
-						 }
-						 if(procedure == ""){
-						 	alert('Please fill all details');
-						 	document.getElementById("procedure").focus();
-						 	return false;
-						 }
+						
+						//  if(roll == ""){
+						//  	alert('Please fill Your RollNo');
+						//  	document.getElementById("roll").focus();
+						//  	return false;
+						//  }
+						//  if(branch == ""){
+						//  	alert('Please fill Your Branch');
+						//  	document.getElementById("name").focus();
+						//  	return false;
+                        //  }
+                        //  if(!email.endsWith("thapar.edu")){
+                        //     alert('Please fill Correct Email');
+						//  	document.getElementById("email").focus();
+						//  	return false;
+                        //  }
+						//  if(email == ""){
+						//  	alert('Please fill Your Email');
+						//  	document.getElementById("email").focus();
+						//  	return false;
+						//  }
+						
+						// //  if( phone.length > 10 || phone.length < 10){
+						// //  	alert('Please fill correct PhoneNo');
+						// //  	document.getElementById("phone").focus();
+						// //  	return false;
+						// //  }
+						//  if(uniquesell == ""){
+						//  	alert('Please fill all details');
+						//  	document.getElementById("uniquesell").focus();
+						//  	return false;
+						//  }
+						//  if(reason == ""){
+						//  	alert('Please fill all details');
+						//  	document.getElementById("reason").focus();
+						//  	return false;
+						//  }
+						//  if(response == ""){
+						//  	alert('Please fill all details');
+						//  	document.getElementById("response").focus();
+						//  	return false;
+						//  }
+						//  if(friends == ""){
+						//  	alert('Please fill all details');
+						//  	document.getElementById("friends").focus();
+						//  	return false;
+						//  }
+						//  if(eventname == ""){
+						//  	alert('Please fill all details');
+						//  	document.getElementById("eventname").focus();
+						//  	return false;
+						//  }
+						//  if(allot == ""){
+						//  	alert('Please fill all details');
+						//  	document.getElementById("allot").focus();
+						// 	 return false;
+						//  }
+						//  if(procedure == ""){
+						//  	alert('Please fill all details');
+						//  	document.getElementById("procedure").focus();
+						//  	return false;
+						//  }
 						// //  if(rateQ3 == ""){
 						// //  	alert('Please Fill Your Name');
 					 	// // $("input[name='entry.1343528650']").focus();

@@ -98,4 +98,9 @@ display: inline-block;
           font-size: 2rem;
       }
   }
+  @media (min-width:1200px){
+      .no_BT{
+          margin-top: -100px;
+      }
+  }
   
